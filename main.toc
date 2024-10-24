@@ -1,0 +1,42 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}{}%
+\contentsline {subsubsection}{From Newton to Einstein}{2}{}%
+\contentsline {paragraph}{Example}{3}{}%
+\contentsline {chapter}{\numberline {2}Math tools}{4}{}%
+\contentsline {section}{\numberline {2.1}A recap of SR}{4}{}%
+\contentsline {paragraph}{Galilean Relativity:}{4}{}%
+\contentsline {paragraph}{Space-time}{6}{}%
+\contentsline {paragraph}{Event}{6}{}%
+\contentsline {paragraph}{World line}{6}{}%
+\contentsline {paragraph}{Example:}{6}{}%
+\contentsline {paragraph}{Proper time:}{7}{}%
+\contentsline {section}{\numberline {2.2}Lecture 3}{9}{}%
+\contentsline {paragraph}{Physical meaning of $\Delta \tau $}{10}{}%
+\contentsline {paragraph}{Example}{10}{}%
+\contentsline {subsection}{\numberline {2.2.1}Tensor Calculus}{12}{}%
+\contentsline {paragraph}{Translations}{13}{}%
+\contentsline {paragraph}{Rotations}{13}{}%
+\contentsline {paragraph}{Vectors}{13}{}%
+\contentsline {paragraph}{Basis}{14}{}%
+\contentsline {paragraph}{Components}{15}{}%
+\contentsline {paragraph}{covariant vector}{15}{}%
+\contentsline {paragraph}{Second definition}{15}{}%
+\contentsline {section}{\numberline {2.3}Lecture 4}{17}{}%
+\contentsline {subsubsection}{Brief recap of lec3}{17}{}%
+\contentsline {subsubsection}{Dual vectors}{17}{}%
+\contentsline {paragraph}{Example}{17}{}%
+\contentsline {paragraph}{1\textsuperscript {st} statement}{17}{}%
+\contentsline {paragraph}{2\textsuperscript {nd} statement}{17}{}%
+\contentsline {paragraph}{Basis for T\textsubscript {P}\textsuperscript {*}}{17}{}%
+\contentsline {subsection}{\numberline {2.3.1}Tensors}{18}{}%
+\contentsline {subsubsection}{Tensor product}{19}{}%
+\contentsline {subsubsection}{Basis for a tensor}{19}{}%
+\contentsline {section}{\numberline {2.4}Lec 5}{20}{}%
+\contentsline {subsection}{\numberline {2.4.1}Transformations}{20}{}%
+\contentsline {subsection}{\numberline {2.4.2}Tensor Manipulations / Operations}{20}{}%
+\contentsline {subsubsection}{Particular Tensor in flat ST}{20}{}%
+\contentsline {subsubsection}{Other operations}{21}{}%
+\contentsline {paragraph}{Contraction}{21}{}%
+\contentsline {paragraph}{Raising/Lowering Indices}{21}{}%
+\contentsline {paragraph}{Inner Product}{21}{}%
+\contentsline {subsubsection}{Symmetry Properties}{22}{}%
+\contentsline {subsubsection}{Trace}{22}{}%

@@ -1,0 +1,127 @@
+\section{Lec 5}
+\subsection{Transformations}
+The goal is to find that is this $T^{\mu_{1}', \ldots , \mu_{k}'}_{\nu_{1}', \ldots , \nu_{l}'}= ?$.
+\begin{equation}
+T = T^{\mu_{1}, \ldots , \mu_{k}}_{\nu_{1, \ldots , \nu_{l}}} \left( \hat{e}_{\left( \mu_{1} \right)} \otimes \ldots  \right) = T^{\mu_{1}', \ldots , \mu_{k}'}_{\nu_{1}', \ldots , \nu_{l}'} \left( \hat{e}_{\left( \mu_{1}' \right)} \otimes  \right)
+\end{equation}
+I know two facts:
+\begin{equation}
+\begin{cases}
+\hat{e}_{\mu '} = \Lambda^{\mu }_{\mu '} \hat{e}_{\left( \mu  \right)} \\
+\hat{o}^{\mu '} = \Lambda^{\mu' }_{\mu } \hat{o}^{\mu } \\
+\end{cases}
+\end{equation}
+and also the \emph{inverse.} \\
+
+So i apply the Lambda transformation to each term of the basis and I get the following
+\begin{equation}
+T^{\mu_{1}', \ldots , \mu_{k}'}_{\nu_{1}', \ldots , \nu_{l}' } = \left( \Lambda^{\mu_{1}'}_{\mu_{1}} \ldots \Lambda^{\mu_{k}'}_{\mu_{k}} \right) \left( \Lambda^{\nu_{1}}_{\nu_{1}'} \ldots  \Lambda^{\nu_{l}}_{\nu_{l}'} \right) \left( T^{\mu_{1}, \ldots , \mu_{k}}_{\nu_{1}, \ldots , \nu_{l}} \right)
+\end{equation}
+that is something that was obvious by looking at indexes.
+
+\subsection{Tensor Manipulations / Operations}
+We defined $\left( k,l \right)$ vectors as a multilinear map from dual spaces and vector spaces to real numbers, but it is not only that. For example a $\left( 1,1 \right)$ tensor could be a map from vectors to vectors, in this way
+\begin{equation}
+V^{\mu } \to A^{\mu }_{\nu } V^{\nu }
+\end{equation}
+so if i do not saturate all the indices, i get a tensor of rank made by what remains. If we saturate, we get real numbers or (0,0) tensors.
+
+There are some objects that are well known in flat spacetime.
+\subsubsection{Particular Tensor in flat ST}
+These are
+\begin{itemize}
+	\item $\eta_{\mu  \nu }$ metric, or metric tensor
+	\item $\eta^{\mu \nu }$, inverse metric
+	\item $\delta^{\mu }_{\nu }, kronecker's \delta $
+	\item $\epsilon_{\mu \nu \rho \delta }$, totally anti-symmetric tensor of Levi-Civita
+\end{itemize}
+
+This last one is defined:
+\begin{equation}
+\begin{cases}
++1 \text{ if } \left( 0,1,2,3 \right) \text{ or even permutations } \\
+-1 \text{ if  odd permutations} \\
+0 \text{ otherwise }
+\end{cases}
+\end{equation}
+
+These are the only tensors of the flat spacetime that their components do not depend on the RF. \\
+
+\subsubsection{Other operations}
+\paragraph{Contraction} \[
+	\left( k,l \right) \to \left( k-1, l-1 \right)
+\]
+Example: I have (3,2) tensor $T^{\mu \nu \rho }_{\delta \gamma } \to \left( 2,1 \right) ??$
+We contract:
+\[
+	T^{\mu \colorbox{yellow}{$\nu$ } \rho  }_{\delta \colorbox{yellow}{$\gamma$} } \to T^{\mu  \colorbox{yellow}{$ \nu   $} \rho }_{\delta \colorbox{yellow}{$ \nu   $} } \equiv A^{\mu  \rho }_{\delta } 
+\]
+
+Obviously I can \emph{only} contract an upper with a lower index. \\
+It is very important the order, and which indices we contract.
+\[
+T^{\mu  \colorbox{yellow}{$ \nu   $} \rho }_{\delta  \colorbox{yellow}{$ \nu   $} } \neq T^{\mu  \colorbox{yellow}{$ \nu   $} \rho }_{ \colorbox{yellow}{$ \nu   $} \delta  }
+\]
+
+What is the actual operation we perform?
+\[
+T^{\mu \nu \rho }_{\delta  \gamma } = \delta^{\gamma }_{\nu } T^{\mu  \nu \rho }_{\delta \gamma }
+\]
+\paragraph{Raising/Lowering Indices}
+To raise we use $\eta^{\mu \nu }$, to lower $\eta_{\mu \nu }$.
+\begin{gather*}
+\eta^{\rho \alpha } T^{\mu \nu }_{\alpha \beta } \equiv T^{\mu  \nu  \rho }_{ \beta  } \\
+\eta^{\rho \colorbox{yellow}{$ \beta   $} } T^{\mu \nu }_{\alpha \colorbox{yellow}{$ \beta   $} } \equiv T^{\mu \nu \colorbox{yellow}{$ \beta   $} }_{\alpha }
+\end{gather*}
+The order is important, and wring by hand one should be careful keeping the position moving up and down the indices. \\
+
+Simple operations:
+\begin{gather*}
+V^{\mu } \to V_{\mu} = \eta_{\mu \nu } V^{\nu } \\
+V_{\mu } \to V^{\mu } = \eta^{\mu \nu } V_{\nu }
+\end{gather*}
+
+\paragraph{Inner Product}
+\[
+	T_{P}\times T_{P} \to \mathbb{R}
+\]
+\[
+	\left( V,W \right) \to \eta_{\mu \nu }V^{\mu }V^{\nu }
+\]
+
+\subsubsection{Symmetry Properties}
+Let's consider a (0,2) tensor $T_{\mu \nu }$, or to be precise, its components.
+It is symmetric? Anti-symmetric? Both? None?
+
+A tensor is \emph{symmetric} if
+\[
+T_{\mu \nu } = T_{\nu  \mu }
+\]
+it is \emph{anti-symmetric} if
+\[
+T_{\mu  \nu } = - T_{\nu  \mu }
+\]
+It is \textbf{never} possible to have a tensor that is \emph{both}. But really possible that is \emph{none} of the above.
+
+We can \emph{symmetrize} a tensor:
+\[
+T_{\left( \mu  \nu  \right)} = \frac{1}{2} \left( T_{\mu  \nu } + T_{\nu \mu } \right)
+\]
+We can \emph{anti-symmetrize} a tensor:
+\[
+	T_{[\mu  \nu ]} = \frac{1}{2} \left( T_{\mu \nu } - T_{\nu  \mu } \right)
+\]
+A tensor can be symmetric on all indices, so it \emph{totally symmetric}, or just on some indices, like two, three etc.
+The general formula can be:
+\[
+T_{\left( \mu  \nu  \rho  \right)} = \frac{1}{3!} \left( T_{\mu  \nu  \rho } + \text{ all permutations } \right)
+\]
+For anti-simmetrizing odd permutations get the minus in front.
+
+\subsubsection{Trace}
+\[
+x^{\mu }_{\mu }
+\]
+given a (1,1) tensor $\to \mathbb{R}$ by summing all indices.
+For example the trace of metric tensor is 2.
+Of Kronecker delta is 4.

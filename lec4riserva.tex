@@ -1,0 +1,152 @@
+\section{Lecture 4}
+
+\subsubsection{Brief recap of lec3}
+We defined vectors
+\begin{itemize}
+	\item localized at each spacetime point
+	\item for each event P we defined the tangent space $T_{P}$
+	\item there is linear combination inside $T_{P}$
+	\item it has a basis
+	\item Vectors and basis transform under LT Group.
+\end{itemize}
+
+\subsubsection{Dual vectors}
+Using old terminology they are covariant, so with lower indices. Meanwhile contravariant do have upper indices.
+
+Let's start with defining the \textbf{dual space} of a vector space:
+\emph{Given a vector space (for concreteness T\textsubscript{P})}, we define the \textbf{dual space} $T_{P}^{*}$ as the space of linear maps between $T_{P}$ and $\mathbb{R}$.
+
+\paragraph{Example}
+Being $\omega  \in T_{P}^{*}$, $V \in T_{P}$ then
+\[
+	\omega \left( V \right) \in \mathbb{R}
+\]
+Linearity tells me that 
+\[
+\omega \left( \alpha V + \beta  W \right) = \alpha \omega \left( V \right) + \beta \omega \left( W \right)
+\]
+
+\paragraph{1\textsuperscript{st} statement}: The dual space is a vector space.
+\[
+	\left( \alpha \omega  + \beta \eta  \right)\left( v \right) = \alpha \omega \left( v \right) + \beta \eta \left( v \right)
+\]
+\paragraph{2\textsuperscript{nd} statement}: What is the dual of the dual?
+\[
+	\left( T_{P}^{*} \right)^{*} = T_{P} \implies v\left( \omega  \right) = \omega \left( v \right) \in \mathbb{R}
+\]
+
+\paragraph{Basis for T\textsubscript{P}\textsuperscript{*}}: $\hat{o}^{\left( \mu  \right)}$. \\
+How to define this? Definition is
+\[
+\hat{o}^{\left( \mu  \right)}\left( \hat{e}_{\left( \nu  \right)} \right) \equiv \delta^{\mu }_{\nu }
+\]
+Now let's see if we can get how dual vectors work with vectors.
+If I have:
+\begin{itemize}
+	\item generic item of $T_{P}$: $V = V^{\nu }\hat{e}_{\left( \nu  \right)}$
+	\item generic item of $T_{P}^{*}: \omega = \omega_{\mu }\hat{o^{\left( \mu  \right)}}$ 
+\end{itemize} 
+
+I can compute:
+\begin{gather*}
+\omega \left( v \right) = \omega_{\mu }\hat{o}^{\left( \mu  \right)}\left( v^{\nu }\hat{e}_{\left( \nu  \right)} \right) =  \\
+= \omega_{\mu }v^{\nu }\hat{o}^{\left( \mu  \right)}\left( \hat{e}_{\left( \nu  \right)} \right) = \omega_{\mu } v^{\nu } \delta^{\mu}_{\nu } = \omega_{\mu }v^{\mu }
+\end{gather*}
+
+\noindent\fbox{\begin{minipage}{\textwidth}
+Once we know this we can do an \textbf{exercise}: show the way $\omega_{\mu '}$ transform.
+What to do is to start from $\Lambda $ equality.\\
+\end{minipage}} \\
+
+What is the example of a dual vector? \\
+\[
+A_{\mu '} = \Lambda_{\mu }^{\mu '} A_{\mu }
+\]
+the gradient is a beautiful example of a \emph{dual vector}.
+\[
+A_{\mu } = \frac{\partial\phi }{\partial x^{\mu }} \text{  ;   } A_{\mu '} = \frac{\partial\phi }{\partial x^{\mu '}}
+\]
+This is useful to define LTs, in this way
+\[
+\frac{\partial\phi }{\partial x^{\mu '}} = \frac{\partial\phi }{\partial x^{\mu }} \frac{\partial x^{\mu }}{\partial x^{\mu '}} \to A_{\mu '} = \frac{\partial x^{\mu }}{\partial x^{\mu '}}A_{\mu }
+\]
+the LT is the last partial derivative. \\
+
+There is a \emph{more compact} notation tho write partial derivatives that is
+\[
+\partial_{\mu } \phi \equiv \frac{\partial\phi }{\partial x^{\mu }}
+\]
+
+\subsection{Tensors}
+
+Tensors are generalization of dual vectors and vectors. \\
+They are \emph{multilinear maps}, i.e. functions of several variables and linear for all of them. For each tensor of \emph{rank} (k,l), we have
+\[
+T_{P}^{*}\times \ldots \times T_{P}^{*} \times T_{P}\times \ldots \times T_{P} \to \mathbb{R} \]
+Where each dual vector space is present \textbf{k}-times, and vector space \textbf{l}-times.
+
+Now let's see what is multilinearity on the combat field.
+
+\noindent\fbox{
+	\begin{minipage}{0.95\textwidth}
+	Be a (1,1) tensor:
+	\begin{itemize}
+		\item $\alpha , \beta , \gamma , \delta \in \mathbb{R}$
+		\item $\omega , \eta  \in T_{P}^{*}$
+		\item v,w $\in $ T\textsubscript{P}
+	\end{itemize}
+	Given these we have
+	\begin{equation}
+	T\left( \alpha \omega + \beta \eta , \gamma v + \delta w \right) = \\
+	= \alpha \gamma T\left( \omega , v \right) + \beta \delta T\left( \eta , w \right) + \alpha \delta T\left( \omega , w \right) + \beta \gamma T\left( \eta ,v \right)
+	\end{equation}
+
+\end{minipage}}
+
+Once we have this general definition, let's take one step back:
+\begin{itemize}
+	\item Scalar $\to$ (0,0) tensor
+	\item Vector $\to$ (1,0) tensor
+	\item Dual vector $\to$ (0,1) tensor
+\end{itemize}
+
+\subsubsection{Tensor product}
+Be:
+\begin{itemize}
+	\item T, rank (k,l) tensor
+	\item S, rank (m,n) tensor
+\end{itemize} 
+We want to understand the action of $\otimes$. \\
+So we know that $T\otimes S$ outputs (k+m, l+n) tensor. In particular,
+\begin{gather*}
+	T\otimes S \left[\omega^{\left( 1 \right)}, \ldots, \omega^{\left( k \right)}, \omega^{\left( k+1 \right)}, \ldots , \omega^{\left( k+m \right)}, v^{\left( 1 \right)}, \ldots , v^{\left( l \right)}, v^{\left( l+1 \right)}, \ldots , v^{\left( l+n \right)}\right] \equiv \\
+	\equiv T\left( \omega^{\left( 1 \right)}, \ldots , \omega^{\left( k \right)}, v^{\left( 1 \right)}, \ldots , v^{\left( l \right)} \right) \times S\left( \omega^{\left( k+1 \right)}, \ldots , \omega^{\left( k+m \right)}, v^{\left( l+1 \right)}, \ldots , v^{\left( l+n \right)} \right) \\
+	\implies T \otimes S \neq S \otimes T
+\end{gather*}
+so tensors do not commute.\\
+
+\subsubsection{Basis for a tensor}
+Let \emph{T} be a generic tensor with rank (k,l), \emph{basis} is given by
+\[
+\hat{e}_{\left( \mu_{1} \right)} \otimes \ldots \otimes \hat{e}_{( \mu_{k})} \otimes  \hat{o}^{\left( \nu_{1} \right)} \otimes \ldots \otimes \hat{o}^{(\nu_{l})}
+\]
+
+ A tensor can be written as 
+ \[
+ T = T^{\mu_{1}, \ldots , \mu_{k}}_{\nu_{1}, ..., \nu_{l}} \left( \hat{e}_{\left( \mu_{1} \right)} \otimes \ldots  \right) = T^{\mu_{1}^{'}, \ldots , \mu_{k}^{'}}_{\nu_{1}^{'}, \ldots , \nu _{l}^{'}}\left( \hat{e}_{\left( \mu_{1}^{'}  \right)} \otimes \ldots  \right)
+ \]
+So the tensor is always the same, the thing that changes is its components, because a change of RF I think.
+
+We will often write the components instead of the actual tensor, but it is our convention to think they are equivalent.
+
+This is how the components are related:
+\begin{gather*}
+\hat{e}_{\left( \mu ' \right)} = \Lambda^{\mu }_{\mu '} \hat{e}_{\left( \mu  \right)} \\
+\hat{o}^{\left( \mu ' \right)} = \Lambda^{\mu '}_{\mu }\hat{o}^{\left( \mu  \right)} \\
+\implies T = T^{\mu_{1}, \ldots , \mu_{k}}_{\nu_{1}, \ldots , \nu_{l}} \left( \Lambda^{\mu_{1}'}_{\mu_{1}} \hat{e}_{\left( \mu_{1}' \right)} \otimes \ldots  \right)
+\end{gather*}
+So we find, as result, that when I change frame
+\begin{equation}
+T^{\mu_{1}', \ldots , \mu_{k}'}_{\nu_{1}', \ldots , \nu_{k}'} = \Lambda^{\mu_{1}'}_{\mu_{1}} \ldots \Lambda^{\nu_{1}}_{\nu_{1}'} \ldots T^{\mu_{1}, ..., \mu_{k}}_{\nu_{1}, \ldots , \nu_{l}}
+\end{equation}
+
