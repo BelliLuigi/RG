@@ -40,3 +40,6 @@
 \contentsline {paragraph}{Inner Product}{21}{}%
 \contentsline {subsubsection}{Symmetry Properties}{22}{}%
 \contentsline {subsubsection}{Trace}{22}{}%
+\contentsline {section}{\numberline {2.5}Lec 6}{23}{}%
+\contentsline {subsection}{\numberline {2.5.1}Energy \& momentum}{23}{}%
+\contentsline {subsection}{\numberline {2.5.2}Energy-Momentum Tensor}{24}{}%
