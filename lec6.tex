@@ -142,7 +142,38 @@ T^{\alpha 0} = \sum_{j}^{}{p^{\alpha }_{j} \frac{dt}{dt} \delta\left( \vec{r}-\v
 T^{\alpha i} = \sum_{j}^{}{p^{\alpha }_{j} \frac{dx^{i}_{j}}{dt} \delta\left( \vec{r}-\vec{r}_{j} \right) }
 \end{gather*}
  
+RECUPERA
 
+
+So what is a tensor?
+It is not obvious, so our goal is to prove that this is actually a tensor by see how it transform under LTs.
+
+First thing we compute:
+\[
+	\left\frac{ dx^{i}_{j} \right}{dt} = \left\frac{ dx^{i}_{j} \right}{d\tau } \colorbox{yellow}{$ \frac{d\tau }{dt}$} = \frac{dx^{i}_{j}}{d\tau } \colorbox{yellow}{$ \frac{1}{\gamma_{j}}$} 
+\]
+because
+\[
+\frac{d\tau ^{2}}{dt^{2}} = \frac{dt^{2}-dx^{2}}{dt^{2}} = 1 - v^{2}_{j} = \frac{1}{\gamma^{2}_{j}}
+\]
+why is it useful? Because it appears in components
+\[
+\frac{dx^{i}_{j}}{d\tau } = \left( m^{j} \frac{dx^{i}_{j}}{d\tau } \right) \frac{1}{m_{j}\gamma_{j}} = \frac{p^{i}_{j}}{p^{0}_{j}}		
+\]
+so i can rewrite the energy-momentum tensor like:
+\[
+T^{\alpha \beta } = \sum_{j}^{}{\frac{ p^{\alpha }_{j}p^{\beta }_{j}}{p^{0}_{j}}\delta\left( \vec{r}-\vec{r}_{j} \right)}
+\]
+so if 
+\begin{itemize}
+	\item $\beta =0 \to p^{\alpha }_{j}$ 
+	\item $\beta =1 \to \frac{p^{i}_{j}}{p^{0}_{j}}$
+\end{itemize}
+If i switch $\alpha $ with $\beta $, I find the same objects, because the tensor is symmetric.
+\[
+	T^{\left( \alpha \beta  \right)} = T^{\alpha \beta } \text{  ;   } T^{[\alpha \beta }]} = 0
+\]
+Why is a tensor? If I change frame I can change 
 
 
 
