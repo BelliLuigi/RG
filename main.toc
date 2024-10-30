@@ -43,3 +43,4 @@
 \contentsline {section}{\numberline {2.5}Lec 6}{23}{}%
 \contentsline {subsection}{\numberline {2.5.1}Energy \& momentum}{23}{}%
 \contentsline {subsection}{\numberline {2.5.2}Energy-Momentum Tensor}{24}{}%
+\contentsline {subsubsection}{Case I: Dust}{27}{}%

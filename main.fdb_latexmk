@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730139118.3537 "main.tex" "main.pdf" "main" 1730139119.46677 0
+["pdflatex"] 1730221988.10223 "main.tex" "main.pdf" "main" 1730221988.77839 0
   "/etc/texmf/web2c/texmf.cnf" 1728230949.06372 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/gigi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1728231229.12969 11524 0cd0599d92eeebf65b97e1a49eb13480 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -51,6 +51,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb" 1248133631 36607 d654cb3f2bc54f57509240071db3bffa ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1248133631 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1673816307 1016 1c2b89187d12a2768764b83b4945667c ""
@@ -148,15 +149,15 @@
   "imm/galileianboost.png" 1728339931.59435 14100 b6771cc45b092777962f99878d216532 ""
   "imm/lightcone.png" 1729006412.9026 67058 499fa18ca7d8a7b6f1d2dc787335740e ""
   "imm/segnale.png" 1728564270.42093 21533 ecf6ccddd84a909a9ceb29925f505ae5 ""
-  "lec4.aux" 1730139119.28088 1490 d76183dcf03ae1d5028bd9e89382c5b1 "pdflatex"
+  "lec4.aux" 1730221988.65735 1490 d76183dcf03ae1d5028bd9e89382c5b1 "pdflatex"
   "lec4.tex" 1729773346.14407 6774 b5a3c636b9713d81244e16d7393fc3f1 ""
-  "lec5.aux" 1730139119.29587 1476 c822567cce3ed31dbdba1ee394481770 "pdflatex"
+  "lec5.aux" 1730221988.66735 1476 c822567cce3ed31dbdba1ee394481770 "pdflatex"
   "lec5.tex" 1729779907.46807 5162 8917e0476d666ec9ed69a9662cdeef61 ""
-  "lec6.aux" 1730139119.35483 804 815bbb6558654a20d3e9ab7409535418 "pdflatex"
-  "lec6.tex" 1730139116.40997 7796 6781f06be8ca47dad227ca0d2a561c44 ""
-  "main.aux" 1730139119.35483 3082 05969911aa352b0f03febf0c09f0be21 "pdflatex"
-  "main.tex" 1730135636.2278 25823 3b3606a65c0ce88c7a7097270b17a14e ""
-  "main.toc" 1730139119.35683 2504 6d8971e944b9028d04499b0eb2555f7a "pdflatex"
+  "lec6.aux" 1730221988.70935 896 f6ec13b89a131ebd2915aaf82061f29e "pdflatex"
+  "lec6.tex" 1730221985.74496 12885 e07a26d3bdbf8cd2bb8f5f9529fc9972 ""
+  "main.aux" 1730221988.71035 3082 8fa1228f388ce7a0772a46cb5a2b76d0 "pdflatex"
+  "main.tex" 1730140029.30218 25823 3b3606a65c0ce88c7a7097270b17a14e ""
+  "main.toc" 1730221988.71135 2555 e7cda1026a975542e007419b0f1a649c "pdflatex"
   (generated)
   "lec4.aux"
   "lec5.aux"

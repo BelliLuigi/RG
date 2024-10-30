@@ -141,16 +141,14 @@ So we have these components of the energy-momentum tensor:
 T^{\alpha 0} = \sum_{j}^{}{p^{\alpha }_{j} \frac{dt}{dt} \delta\left( \vec{r}-\vec{r}_{j} \right)} \\
 T^{\alpha i} = \sum_{j}^{}{p^{\alpha }_{j} \frac{dx^{i}_{j}}{dt} \delta\left( \vec{r}-\vec{r}_{j} \right) }
 \end{gather*}
- 
-RECUPERA
+The $\frac{dt}{dt}$ is obvious that is simplified but we put it for clarity, while $ \frac{dx^{i}_{j}}{dt} $ is the flux.
+The meaning is that the tensor is the output of many contribution, each contribute has the center around the \emph{j-th} particle.
 
-
-So what is a tensor?
-It is not obvious, so our goal is to prove that this is actually a tensor by see how it transform under LTs.
+This gives me all the components of the E-M tensor. Now, what is a tensor? We used the word tensor because we know a priori what we are gonna find it, but without knowing and looking at the definition and components. We will do it by looking at LTs, and how they act on this object.
 
 First thing we compute:
 \[
-	\left\frac{ dx^{i}_{j} \right}{dt} = \left\frac{ dx^{i}_{j} \right}{d\tau } \colorbox{yellow}{$ \frac{d\tau }{dt}$} = \frac{dx^{i}_{j}}{d\tau } \colorbox{yellow}{$ \frac{1}{\gamma_{j}}$} 
+\frac{ dx^{i}_{j}}{dt} = \frac{ dx^{i}_{j}}{d\tau } \colorbox{yellow}{$ \frac{d\tau }{dt}$} = \frac{dx^{i}_{j}}{d\tau } \colorbox{yellow}{$ \frac{1}{\gamma_{j}}$}
 \]
 because
 \[
@@ -171,9 +169,69 @@ so if
 \end{itemize}
 If i switch $\alpha $ with $\beta $, I find the same objects, because the tensor is symmetric.
 \[
-	T^{\left( \alpha \beta  \right)} = T^{\alpha \beta } \text{  ;   } T^{[\alpha \beta }]} = 0
+	T^{\left( \alpha \beta  \right)} = T^{\alpha \beta } \text{  ;   } T^{[\alpha \beta ]} = 0
 \]
 Why is a tensor? If I change frame I can change 
 
+If I change frame I have to change $\alpha , \beta $ but also $p_{0}$ that is not Lorentz Invariant, It's the energy of the particle \emph{j}, and with a boost it will be different.\\
+We have shown that 
+\[
+\frac{\delta\left( \vec{r}-\vec{r}_{j} \right)}{p^{0}_{j}}
+\]
+is a Lorentz scalar. 
+Writing
+\[
+T^{\alpha \beta }_{j}= \frac{p^{\alpha }_{j}p^{\beta }_{j}}{p^{0}_{j}} \delta^{\left( 3 \right)}\left( \vec{r}-\vec{r}_{j} \right) 
+\]
+with a 3-d Dirac Delta function, and with this definition 
+\[
+T^{\alpha  \beta } = \sum_{j}^{}{T^{\alpha \beta }_{j}}
+\]
+that is a tensor because sum of tensors is still a tensor.
 
+Let's focus on the single contribution:
+\begin{gather*}
+T^{\alpha \beta }_{j} = \frac{p^{\alpha }_{j} m u^{\beta }_{j}}{m \gamma_{j}} \delta^{\left( 3 \right)}\left( \vec{r}-\vec{r}_{j} \right) =\\
+\end{gather*}
+we see that $m u^{\beta }$ is $p^{\beta }$, and $m \gamma $ is $p^{0}$. We can simplify the masses and we get:
+\begin{gather*}
+T^{\alpha \beta }_{j} = \frac{p^{\alpha }_{j} u^{\beta }_{j}}{ \gamma_{j}} \delta^{\left( 3 \right)}\left( \vec{r}-\vec{r}_{j} \right) =\\
+= \int_{}^{}{d\tau_{j} p^{\alpha }_{j} u^{\beta }_{j} \delta^{\left( 4 \right)}\left( x^{\mu }-x^{\mu }_{j}\left( \tau_{j} \right) \right)} =
+\end{gather*}
+The two expression are equivalent, to show it I have to compute the integral. I use the delta function of the 0 component: so the \emph{p,u, $\gamma $} elements can be extracted from the integral and we compute just
+\begin{equation}
+	= \int_{}^{}{d\tau_{j} \delta\left( x^{0}-x^{0}_{j}\left( \tau  \right) \right)} = \int_{}^{}{\frac{1}{\left| \frac{dx^{0}_{j}}{d\tau }\right|_{d\overline{\tau }}} d\tau_{j} \delta\left( \tau_{j}-\overline{\tau_{j}} \right)}= 
+\end{equation}
+$\overline{\tau }$ is where the argument of the delta function is 0. The integral is straightforward. We have to change variable of the delta function, that gets contributes only from the point that match the argument, I integrate $\tau_{j} - \text{ number }$, There is a jacobian factor: $\frac{1}{\left| \frac{dx^{0}_{j}}{d\tau }\right|_{d\overline{\tau }}}$ that is equal to $\gamma_{j} = \frac{dt}{d\tau_{j}}$.
+
+This is a tensor, because I have objects with indices $\alpha, \beta $, integral over $\tau_{j}$ which is a Lorentz Invariant Scalar and a $\delta $ over all space coordinates.
+
+Delta function has the very useful property:
+\begin{gather*}
+\delta\left( f\left( x \right) \right) = \frac{1}{\left| f'\left( x_{0} \right)\right|} \delta\left( x-x_{0} \right) \to \int_{x-\epsilon }^{x+\epsilon }{dx \delta \left( x-x_{0} \right)}=1\\
+\end{gather*}
+
+\subsubsection{Case I: Dust}
+The dust is defined as \emph{generic ensemble of N particles that move very slowly}. So it's any set of particles with kinetic energy much smaller than rest mass energy.
+
+SO the important part is that the relative velocity in some RF $\to 0$.
+
+The total energy density $\rho $ is described as 
+\[
+	T^{00} = \sum_{j = 1}^{N}{p^{0}_{j} \delta\left( x- \overline{x}_{j} \right)} = \rho 
+\]
+So dust in the rest frame is 
+\begin{equation}
+T^{\mu \nu }\begin{pmatrix}
+m\cdot n & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix} 
+\end{equation}
+where $\rho = m\cdot n$, all particles have the same mass, $n$ is the number density. It's clear that if the particles are at rest, the flux is null.
+
+What is $T^{\mu \nu }$ in a generic frame? I could apply LTs, (and we are invited to try it), but actually i can reason a little on the meaning of the tensor.
+
+I can call $u^{}$
 
