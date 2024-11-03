@@ -7,7 +7,7 @@
 \contentsline {paragraph}{Space-time}{6}{}%
 \contentsline {paragraph}{Event}{6}{}%
 \contentsline {paragraph}{World line}{6}{}%
-\contentsline {paragraph}{Example:}{6}{}%
+\contentsline {paragraph}{Example:}{7}{}%
 \contentsline {paragraph}{Proper time:}{7}{}%
 \contentsline {section}{\numberline {2.2}Lecture 3}{9}{}%
 \contentsline {paragraph}{Physical meaning of $\Delta \tau $}{10}{}%
@@ -38,9 +38,22 @@
 \contentsline {paragraph}{Contraction}{21}{}%
 \contentsline {paragraph}{Raising/Lowering Indices}{21}{}%
 \contentsline {paragraph}{Inner Product}{21}{}%
-\contentsline {subsubsection}{Symmetry Properties}{22}{}%
+\contentsline {subsubsection}{Symmetry Properties}{21}{}%
 \contentsline {subsubsection}{Trace}{22}{}%
 \contentsline {section}{\numberline {2.5}Lec 6}{23}{}%
 \contentsline {subsection}{\numberline {2.5.1}Energy \& momentum}{23}{}%
 \contentsline {subsection}{\numberline {2.5.2}Energy-Momentum Tensor}{24}{}%
 \contentsline {subsubsection}{Case I: Dust}{27}{}%
+\contentsline {subsubsection}{Case II: Fluid with pressure or \emph {Perfect FLuid} }{27}{}%
+\contentsline {subsubsection}{Conservation of energy and momentum}{28}{}%
+\contentsline {paragraph}{Results for perfect fluids}{28}{}%
+\contentsline {paragraph}{exercise}{29}{}%
+\contentsline {section}{\numberline {2.6}Lec 7}{30}{}%
+\contentsline {subsection}{\numberline {2.6.1}Equivalence Principle}{30}{}%
+\contentsline {subsubsection}{Weak Equivalence Principle, WEP}{30}{}%
+\contentsline {subsubsection}{Einstein's Equivalence Principle, EEP}{31}{}%
+\contentsline {subsubsection}{Strong Equivalence Principle, SEP}{31}{}%
+\contentsline {subsubsection}{Gravitational Redshift}{32}{}%
+\contentsline {subsection}{\numberline {2.6.2}Manifolds}{33}{}%
+\contentsline {subsubsection}{Coordinate System}{34}{}%
+\contentsline {subsubsection}{Vectors again}{34}{}%

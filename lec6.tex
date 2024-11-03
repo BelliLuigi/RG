@@ -233,5 +233,148 @@ where $\rho = m\cdot n$, all particles have the same mass, $n$ is the number den
 
 What is $T^{\mu \nu }$ in a generic frame? I could apply LTs, (and we are invited to try it), but actually i can reason a little on the meaning of the tensor.
 
-I can call $u^{}$
+I can call $u^{\mu }$ \emph{fluid four-velocity}, if you think about that there is a velocity field on a moving fluid like a river. In the rest frame
+\[
+u^{\mu }= \left( 1,0,0,0 \right)
+\]
+so 
+\[
+T^{\mu \nu } = \rho u^{\mu }u^{\nu }
+\]
+This is more generic way to find the tensor $T^{\mu \nu }$ in a generic frame, The strategy, as you may guess, is that I know the expression in a generic frame and I want to recover the tensor from this.
+
+Dust is something very common in cosmology, and is a fluid with zero pressure. But is not always true that in a fluid the pressure is negligible. Photons for example do not have 0 pressure or relative velocity $\to 0$.
+
+\subsubsection{Case II: Fluid with pressure or \emph{Perfect FLuid} }
+
+Be
+\begin{equation}
+T^{\mu \nu }_{rest} = \begin{pmatrix}
+\rho  & 0 & 0 & 0 \\
+0 & p & 0 & 0 \\
+0 & 0 & p & 0 \\
+0 & 0 & 0 & p
+\end{pmatrix} 
+\end{equation}
+
+Let's talk about the physics underlying this definition: \\
+The parts $0i$ or $i0$ under rotations or LTs transform like \emph{3-d} vectors, and since the values are 0s, the fluid is \emph{isotropic} $\to $ no preference about any direction.\\
+\emph{ij} parts represent the flux of momentum \emph{p} against surface of constant spatial coordinates. Momentum flux is the force, and force flux is the pressure. We could have different $p_{i}$ along the diagonal, the fluid wouldn't be isotropic, but there will still be 0 sheer forces.
+
+In the most generic frame:
+\begin{equation}
+T^{\mu \nu } = \rho u^{\mu }u^{\nu }+ p \eta^{\mu \nu } + p u^{\mu } u^{\nu } = \left( \rho +p \right) u^{\mu }u^{\nu } + p \eta^{\mu \nu }
+\end{equation}
+
+\subsubsection{Conservation of energy and momentum}
+$p^{\mu _{ \text{ total }}}$ has to be constant, so energy and momentum are constant.
+I want this condition to be local:
+\[
+p^{\mu }_{ \text{ total } } = \int_{V}^{}{dx^{3}T^{\mu 0}} = \int_{4d}^{}{dS_{\nu }T^{\mu \nu }}
+\]
+If i set $\nu =0$ I simplify it. I integrate over the entire $V$ that is the entire space. It can be written as the flux of the $\nu $ components. The four dimensional integral has a surface $S$ where $T^{\mu \nu }$ is constant. It's a flux integral. $dS_{\nu } = \left( 1,0,0,0 \right)$.
+
+\[
+\Delta p^{\mu }_{ \text{ total }} = p^{\mu }_{ \text{ total }}\left( t_{2} \right) - p^{\mu }_{ \text{ total }}\left( t_{1} \right)
+\]
+So let's make a scheme to understand the situation.
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \vspace*{0pt}
+\tikzset{every picture/.style={line width=0.5pt}} %set default line width to 0.75pt       
+\begin{tikzpicture}[x=0.25pt,y=0.25pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,514); %set diagram left start at 0, and has height of 514
+
+%Straight Lines [id:da944915482116456] 
+\draw    (250.32,299.23) -- (250.32,32) ;
+\draw [shift={(250.32,30)}, rotate = 90] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da15966795743012707] 
+\draw    (252.32,300.23) -- (596.16,300.23) ;
+\draw [shift={(598.16,300.23)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Shape: Rectangle [id:dp13264483463125742] 
+\draw   (179.7,224.73) -- (488.23,224.73) -- (321.76,373.73) -- (13.23,373.73) -- cycle ;
+%Shape: Rectangle [id:dp5241947086840221] 
+\draw   (179.29,90.11) -- (487.82,90.11) -- (321.35,239.11) -- (12.82,239.11) -- cycle ;
+%Straight Lines [id:da9873328008653245] 
+\draw    (383,118.5) -- (383.98,40.5) ;
+\draw [shift={(384,38.5)}, rotate = 90.72] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (21.86,-6.58) .. controls (13.9,-2.79) and (6.61,-0.6) .. (0,0) .. controls (6.61,0.6) and (13.9,2.79) .. (21.86,6.58)   ;
+%Straight Lines [id:da7100914300813527] 
+\draw    (389,268.5) -- (389.98,190.5) ;
+\draw [shift={(390,188.5)}, rotate = 90.72] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (21.86,-6.58) .. controls (13.9,-2.79) and (6.61,-0.6) .. (0,0) .. controls (6.61,0.6) and (13.9,2.79) .. (21.86,6.58)   ;
+%Straight Lines [id:da5752286958121103] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (12.82,239.11) -- (13.23,373.73) ;
+%Straight Lines [id:da3625750970621462] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (179.29,90.11) -- (179.7,224.73) ;
+%Straight Lines [id:da36524075127919386] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (487.82,90.11) -- (488.23,224.73) ;
+%Straight Lines [id:da5000478553674463] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (321.35,239.11) -- (321.76,373.73) ;
+
+% Text Node
+\draw (219.7,32.51) node [anchor=north west]   [align=left] {{\large t}};
+% Text Node
+\draw (602.64,306.78) node [anchor=north west]   [align=left] {{\large x}};
+% Text Node
+\draw (266,267) node [anchor= north east]   [align=left] {{ t = t\textsubscript{1}}};
+% Text Node
+\draw (268,110) node [anchor=north west]   [align=left] {{ t = t\textsubscript{2}}};
+% Text Node
+\draw (401,43) node [anchor=north west]   [align=left] {{ dS\textsubscript{nu}}};
+% Text Node
+\draw (407,193) node [anchor=  west]   [align=left] {{ dS\textsubscript{nu}}};
+\end{tikzpicture}
+\end{minipage}
+\begin{minipage}[t]{0.48\textwidth}
+    \vspace*{0pt} 
+    This is an integral of the flux along the time direction. \par
+    So the expression of $\Delta p^{\mu }_{ \text{ total }}$ can be written as \par
+\end{minipage}
+
+\[
+= \int_{ \text{ total surface }}^{}{dS_{\nu }T^{\mu \nu }} = \int_{Volume}^{}{dx^{3}\partial_{\nu }T^{\mu \nu }} = \int_{volume}^{}{dV \partial_{\nu }T^{\mu \nu }}
+\]
+So we have two surfaces and we closed it inside a solid, and it is like we are doing gauss theorem, We can use the divergence theorem in 4d. We state that the divergence of $T^{\mu \nu }$:
+\begin{gather*}
+\partial_{\mu }T^{\mu \nu } = 0 \\
+\partial_{\nu }T^{\mu \nu } = 0
+\end{gather*}
+And that's a way to express conservation.
+
+\paragraph{Results for perfect fluids}
+\[
+T^{\mu \nu } = \left( \rho  +p \right) u^{\mu }u^{\nu }+p \eta^{\mu \nu }
+\]
+and taking the derivative
+\begin{gather*}
+\partial_{\mu } T^{\mu \nu } = \partial_{\mu }\left( \rho +p \right)u^{\mu }u^{\nu } + \partial_{\mu }p \eta^{\mu \nu } + \left( \rho +p \right)\left( \partial_{\mu }u^{\mu } \right)u^{\nu } + \left( \rho +p \right) u^{\mu }\partial_{\mu }u^{\nu } = \\
+= \partial_{\mu }\left( \rho +p \right)u^{\mu }u^{\nu }+ \partial_{\mu }p \eta^{\mu \nu } + \left( \rho +p \right) [\left( \partial_{\mu }u^{\mu }u^{\nu } + u^{\mu }\partial_{\mu }u^{\nu } \right)]
+\end{gather*}
+It is quite clear, just the thing that we neglect derivative of the metric because in flat spacetime it is a constant matrix, and so it's 0.\par
+Let's take the projection of this identity along the direction of the four-velocity.
+\begin{gather*}
+	u_{\nu }\partial_{\mu }T^{\mu \nu } = -\partial_{\mu }\left( \rho +p \right)u^{\mu }+\left( \partial_{\mu }p \right)u^{\mu }+\left( \rho +p \right)[-\partial_{\mu }u^{\mu }+u_{\nu }u^{\mu }\partial_{\mu }u^{\nu }] =
+\end{gather*}
+and since, 
+\[
+\partial_{\mu }\left( u_{\nu }u^{\nu } \right) = 0 = \partial_{\mu }\left( -1 \right)
+\]
+we get
+\begin{equation}
+= -\partial_{\mu }\left( \rho +p \right)u^{\mu } + \partial_{\mu }p u^{\mu }- \left( \rho +p \right)\partial_{\mu }u^{\mu } = 0
+\end{equation}
+And in the NR limit, $p\ll \rho $:
+\begin{gather*}
+-\partial_{\mu }\rho  u^{\mu }+\rho \partial_{\mu }u^{\mu }+ \partial_{\mu }pu^{\mu }=0 \\
+\text{ we can neglect the last term since the hypothesis } \\
+\partial_{\mu }\left( \rho u^{\mu } \right) = 0 \implies \partial_{t}\rho +\partial_{i}\left( \rho u^{i} \right) = 0
+\end{gather*}
+we recover the continuity equation.
+
+\paragraph{exercise}: instead of projecting on $u^{\nu  }$, project orthogonal to $u^{\mu }$,compute: $p^{\alpha }_{\nu } \partial_{\mu }T^{\mu \nu }=0$.
+idk what it means: $p^{\alpha }_{\beta }\equiv \delta^{\alpha }_{\beta } + u^{\alpha }u_{\beta }$. Evaluate alpha = 1,2,3.
+
+
+
+
 

@@ -99,16 +99,14 @@ Newtonian dynamics is based on three principles
 	\item $\vec{F} = m \vec{a}$
 	\item action-reaction
 \end{enumerate}
-The first says something like \emph{An object at rest remains at rest, and an object in motion remains in motion at constant speed and in a straight line unless acted on by an unbalanced force}. \\
+The first says something like \emph{An object at rest remains at rest, and an object in motion remains in motion at constant speed and in a straight line unless acted on by an unbalanced force}. \par
 The second one says:
 \[
 	(2): \vec{F} = 0 \implies \vec{a} = 0 \implies (1)
 \]
 
-So, it seems the first principle is contained by the second, but we know that $\vec{F} = m \vec{a} $ is valid only in Inertial Frames (IF). \\
-\paragraph{Galilean Relativity:} all the laws of \emph{mechanics} take the same form in every IF. (You can not distinguish two IF just by doing experiments.) \\
-%\newpage
-\noindent
+So, it seems the first principle is contained by the second, but we know that $\vec{F} = m \vec{a} $ is valid only in Inertial Frames (IF). \par
+\paragraph{Galilean Relativity:} all the laws of \emph{mechanics} take the same form in every IF. (You can not distinguish two IF just by doing experiments.) \par
 \begin{figure}
 \begin{minipage}[t]{0.4\textwidth}
     \vspace*{0pt} 
@@ -116,7 +114,7 @@ So, it seems the first principle is contained by the second, but we know that $\
     \includegraphics[width=\linewidth]{imm/galileianboost.png} 
     %\caption{G. Boost}
 \end{minipage}
-\hfill
+
 \end{figure}
 \begin{minipage}[t]{0.4\textwidth}
     \vspace*{0pt}
@@ -126,9 +124,10 @@ So, it seems the first principle is contained by the second, but we know that $\
     y' = y \\
     z' = z \\
     t' = t
-    \end{cases} \\
-    $  $t = t' = 0 \implies O = O'$
-\end{minipage} \\
+    \end{cases}$ \par
+      $t = t' = 0 \implies O = O'$
+\end{minipage} 
+\bigskip
 
 Taking the first derivative:
 \begin{equation}
@@ -147,19 +146,18 @@ so also $\vec{F}' = \vec{F}$. And if \emph{m} is independent on the frame, we go
 \begin{equation}
 \vec{F}'=m \vec{a}' = \vec{F} = m \vec{a}
 \end{equation}
-\\
-\\
-Then there are Maxwell equations, people thanks to them find that EM-waves propagates with speed \emph{c} in the void. \\
-But they found also that these equations were not invariant in Galilean Boosts. \\
-Things started to go better when the idea of a preferred IF was ditched and Einstein decided to use Lorentz Transformations.\\
+\bigskip
 
-There are two postulates: \\
+Then there are Maxwell equations, people thanks to them find that EM-waves propagates with speed \emph{c} in the void. \par
+But they found also that these equations were not invariant in Galilean Boosts. \par
+Things started to go better when the idea of a preferred IF was ditched and Einstein decided to use Lorentz Transformations.\par
+
+There are two postulates: \par
 \begin{itemize}
 	\item \emph{Relativity principle}: same as before but with \emph{physics} instead of \emph{mechanics}. \textbf{All the laws of physics ...}
 	\item \emph{Speed of light}: in every IF, light propagates with constant speed, \emph{c}.
 \end{itemize}
-So we see that Galilean transformation become inconsistent with this, meanwhile stays valid for $\vec{v} \ll \vec{c}$.
-\\
+So we see that Galilean transformation become inconsistent with this, meanwhile stays valid for $\vec{v} \ll \vec{c}$.\par
 As mentioned before, updated version of G. Boosts are Lorentz transformations (or Lorentz Boosts.)
 \begin{equation}
 \begin{cases}
@@ -203,7 +201,7 @@ dt' = \gamma \left(dt - \frac{v dx}{c^{2}}\right)
 v_{z}' = \frac{dz'}{dt} = ...
 \end{cases}
 \end{equation}
-So we see that space-time changes also along other axes.\\
+So we see that space-time changes also along other axes.\par
 
 Now let's talk about space-time and its parts.
 
@@ -221,8 +219,8 @@ Now let's talk about space-time and its parts.
 There is no notion of absolute time anymore, because now it is dependent on the frame. 
 Regarding the light-cone, after the event on the ( x,y ) plane, the particle can move \emph{only} inside the light-cone, in the appropriate direction (time forward).
 
-Now let's talk about \textbf{Clock Synchronization.} \\
-It is kinda easy if in in IF. In GR it is quite subtle instead. \\
+Now let's talk about \textbf{Clock Synchronization.} \par
+It is kinda easy if in in IF. In GR it is quite subtle instead. \par
 
 \paragraph{Example:} Be me in Origin of a RF watching my clock (A). How to define \emph{t} at another generic location (B)??
 
@@ -262,7 +260,7 @@ A Lorentz Transformation cornets these two events.
 Be $\Delta s^{2}$ the Lorentz Invariant separation between E-F.
 \begin{gather*}
 \Delta s^{2} = -c \left( t_{F}-t_{E} \right)^{2} + \left( x_{F}- x_{E} \right)^{2} + \left( y_{F}-y_{E} \right)^{2} + \left( z_{F}-z_{E} \right)^{2} =\\
-= -c (t_{F'}-t_{E'}) ²  + (x_{F'}- x_{E'}) ²  + (y_{F'}-y_{E'}) ²  + (z_{F'}-z_{E'}) ² \\
+= -c (t_{F'}-t_{E'})^{2}  + (x_{F'}- x_{E'})^{2}  + (y_{F'}-y_{E'})^{2}  + (z_{F'}-z_{E'})^{2} \\
 \Delta s^{2} = \eta_{\mu \nu } \Delta x^{\mu } \Delta x^{\nu } \\
 \text{From this point we set } c = 1 \text{ just a rescaling} \\
 \text{we have defined } \Delta x^{\mu } \equiv x_{F}^{\mu} - x_{F}^{\mu }, \text{with } \mu = 0,1,2,3.
@@ -272,7 +270,7 @@ So, repeating for clarity, the Lorentz Invariant separation is
 \begin{equation}
 \Delta s^{2} = \eta_{\mu  \nu } \Delta x^{\mu } x^{\nu } = \eta_{\mu'\nu'} \Delta x^{\mu '} \Delta x^{\nu'}
 \end{equation}
-Minkowski metric tensor does not change form if we change coordinates (Cartesian coordinates, meanwhile if we use like polar ones it changes for obvious reasons.) \\
+Minkowski metric tensor does not change form if we change coordinates (Cartesian coordinates, meanwhile if we use like polar ones it changes for obvious reasons.) \par
 
 if 
 \begin{align*}
@@ -304,7 +302,7 @@ So to recap what we did in the last lecture, be:
 x_{E}^{\mu } \text{ and } x_{E}^{\mu'}
 \end{equation}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=\linewidth]{imm/lightcone.png}
 \caption{Given event E, the separation \textbf{EF} could be of different types based on the position respect the light cone}
@@ -422,17 +420,17 @@ this one is a boost along the $x$ direction. If we do some computing we find tha
 \[
 tanh \eta \equiv v
 \]
-so this is the same of the L.T. we saw last week. \\
+so this is the same of the L.T. we saw last week. \par
 
 Rotations do not change the time coordinate. The point was to tell what L.T. is in this language.
 
 \paragraph{Vectors}
 
 
-I have a generic vector, \textbf{do i need to  specify about the RF} where it is defined, so in a specific spacetime location? {\tiny yes} \\
+I have a generic vector, \textbf{do i need to  specify about the RF} where it is defined, so in a specific spacetime location? {\tiny yes} \par
 
-In newtonian mechanics parallel vectors are the same because I can superpose them, I can move them around, also to use the parallelogram rule to get a sum. \\
-$\implies$If I have 3D euclidean space there is no ambiguities about where i move my vectors.\\
+In newtonian mechanics parallel vectors are the same because I can superpose them, I can move them around, also to use the parallelogram rule to get a sum. \par
+$\implies$If I have 3D euclidean space there is no ambiguities about where i move my vectors.\par
 \textbf{BUT} in a sphere:
 
 \noindent
@@ -464,17 +462,18 @@ $\implies$If I have 3D euclidean space there is no ambiguities about where i mov
 \begin{minipage}[t]{0.48\textwidth}
     \vspace*{0pt} 
     I have this vector at the equator tangent to the surface. If I transport it to the pole i get a different vector.		
-\end{minipage} \\
+\end{minipage}
+\bigskip
 
-There are ambiguities. So in a non-flat space we need a \textbf{different} procedure. \\
+There are ambiguities. So in a non-flat space we need a \textbf{different} procedure. \par
 A vector field is a map between:
 \[
 x^{\mu } \to v^{\mu }
 \]
-where $x^{\mu }$ is an event and $v^{\mu }$ is a vector. \\
+where $x^{\mu }$ is an event and $v^{\mu }$ is a vector. \par
 
-Let's define: \textbf{Tangent space T\textsubscript{P}}.\\
-Given an event $P$ we define the tangent space $T_{P}$ as all the vectors in $P$.\\
+Let's define: \textbf{Tangent space T\textsubscript{P}}.\par
+Given an event $P$ we define the tangent space $T_{P}$ as all the vectors in $P$.\par
 
 Instead of having spacetime we have a sphere.
 
@@ -518,19 +517,20 @@ Instead of having spacetime we have a sphere.
 \begin{minipage}[t]{0.48\textwidth}
     \vspace*{0pt} 
 	Define a plane tangent to the sphere only in $P$. All vectors that lie there $\in T_{P}$.    
-\end{minipage}\\
+\end{minipage}
+\bigskip
 
 
 $T_{P}$ is a \textbf{vector space}:
 \[
 	V,W \in T_{P} \implies \alpha V + \beta W, \left( \alpha , \beta \in \mathbb{R} \right) \in T_{P}
 \]
-So if there is a vector there is also the inverse vector.\\
-Whenever i have a vector space, I can define infinite basis independently on the coordinate choice. The nUmber of elements in the basis is equal to the dimension of the space, in our case 4 elements.\\
+So if there is a vector there is also the inverse vector.\par
+Whenever i have a vector space, I can define infinite basis independently on the coordinate choice. The nUmber of elements in the basis is equal to the dimension of the space, in our case 4 elements.\par
 Obviously if I define the basis its elements need to be Linearly Independent. 
 
 \paragraph{Basis}
-Given a generic vector $V \in T_{P}$, I can define $V$ regardless the coordinate system I'm using. So we can say \emph{meTaphorically} that $V$ exists before I define coordinates.\\
+Given a generic vector $V \in T_{P}$, I can define $V$ regardless the coordinate system I'm using. So we can say \emph{meTaphorically} that $V$ exists before I define coordinates.\par
 
 Be our basis:
 \[
@@ -547,7 +547,7 @@ V = V^{0}\hat{e}_{\left( 0 \right)} + V^{1}\hat{e}_{\left( 1 \right)} + V^{2}\ha
 \]
 using repeating indices we get the last equivalence.
 
-$V^{\mu }$ are components of the vector $V$ in this specific frame. \\
+$V^{\mu }$ are components of the vector $V$ in this specific frame. \par
 In another frame $V^{\mu '}$ could not be the same:
 \[
 	V = V^{\mu }\hat{e}_{\left( \mu  \right)} = V^{\mu '}\hat{e}_{\left( \mu ' \right)}
@@ -604,5 +604,6 @@ Now we can study how basis vectors change.
 \include{lec4.tex}
 \include{lec5.tex}
 \include{lec6.tex}
+\include{lec7.tex}
 \end{document}
 
