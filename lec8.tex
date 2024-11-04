@@ -1,0 +1,143 @@
+\section{Lec 8}
+\subsection{Brief Recap}
+We saw the WEP, that states $m_{i}= m_{g}$, and as consequence we get that is is impossible distinguish a gravitational field from motion, at least locally. \par
+With the EEP we were able to derive the expression that quantify the gravitational redshift.
+The SEP included gravity.\par
+
+Focusing on EEP, we introduced \emph{Locally Inertial Frames, LIF} (equivalent to Freely Falling Frames).
+Having accepted that gravity cannot be treated as a force, because it is impossible to disentangle acceleration due to gravity, we identified a preferred class of frames: LIFs.\par
+In LIFs laws of physics are equal to the laws of SR and spacetime is\break Minkowskian.
+
+We introduced Coordinates: with a generic set M, a chart, given a subset $U \subset M $, is a injective linear  map $\phi $, that \[
+\phi : U \to \mathbb{R}^{n}
+\]
+An \emph{atlas }is an indexed $\{U_{\alpha}, \phi_{\alpha }\}$, in such a way that $U_{\alpha }$ cover \emph{M}.
+A \emph{manifold} is a set M along with an atlas. A manifold can be $C^{\infty}$ if $\phi $ are differentiable an infinite amount of times, otherwise is $C^{p}$, differentiable p-times.
+\subsubsection{Vectors again again}
+We resurrected $T_{P}$, \emph{P} generic \emph{M} point. $T_{P}$ is the vector space of all the vectors defined at that point.
+\begin{quote}
+$T_{P}$ is identified with the space of directional derivatives operators acting along the curves through \emph{P}
+\end{quote}
+Why this identification makes sense?\par
+A generic curve through spacetime, that we call WL, is a parametric curve that is indicated by $x^{\mu }\left( \lambda  \right)$: for a specific value of $\lambda $ I have the $x^{\mu }$ point.
+\[
+x^{\mu }\left( \overline{\lambda } \right) = P
+\]
+How do I define the directional derivatives?
+Be \[
+\frac{d}{d\lambda }
+\]
+that acts on functions, \emph{f},
+\[
+f : M \to \mathbb{R}
+\]
+then
+\begin{equation}
+\frac{d}{d\lambda } \left( f \right) = \frac{\partial f}{\partial x^{\mu }} \frac{d x^{\mu }}{d \lambda } = \frac{dx^{\mu }}{d\lambda } \frac{\partial}{\partial x^{\mu }} f
+\end{equation}
+And if true $\forall f$, I can identify the equality among the operators:
+\[
+\frac{d}{d\lambda } = \frac{dx^{\mu }}{d\lambda }\partial_{\mu }
+\]
+We see that it is like a basis.\par
+\textbf{Basis vectors } for $T_{P}\to \partial_{\mu }$. (we previously called them $\hat{e}_{\left( \mu  \right)}$). \par
+In conclusion a generic vector is 
+\[
+V = V^{\mu }\partial_{\mu }
+\]
+where $V^{\mu }$ are the components, and $\partial_{\mu }$ are the basis elements.\par
+
+It's very easy to show how vectors transform because we know how derivatives transform:
+\begin{equation}
+\frac{\partial}{\partial  x^{\mu'}} = \frac{\partial  x^{\mu }}{\partial  x^{\mu '}} \frac{\partial}{\partial  x^{\mu }}
+\end{equation}
+or in a tensor-like notation:
+\begin{equation}
+\partial_{\mu '} = \frac{\partial  x^{\mu }}{\partial x^{\mu '}} \partial_{\mu }
+\end{equation}
+If \emph{V} tensor is invariant, by definition, it's components transform anyway like
+\[
+V^{\mu '} = \frac{\partial x^{\mu '}}{\partial x^{\mu }}V^{\mu }
+\]
+
+\paragraph{Example} LTs
+\[
+x^{\alpha '} = \Lambda^{\alpha '}_{\alpha }x^{\alpha }
+\]
+I consider a specific change of coordinates: LTs, so
+\[
+\frac{\partial x^{\mu '}}{\partial x^{\mu }} = \frac{\partial}{\partial x^{\mu }} \left( \Lambda^{\mu '}_{\alpha }x^{\alpha } \right) = \Lambda^{\mu '}_{\alpha } \frac{\partial x^{\alpha }}{\partial x^{\mu }} = \Lambda^{\mu '}_{\alpha } \delta^{\alpha }_{\mu } = \Lambda^{\mu '}_{\mu }
+\]
+we get under more general transformations vectors components transform like this, and more, we recovered the LT transformation.
+
+\subsection{Dual Vectors}
+Be the \emph{cotangent space} $T_{P}^{*}$. If $\omega \in T_{P}^{*}$, $\omega $is a linear map $\omega : T_{P}\to \mathbb{R}$.
+We want to define formally $T_{P}^{*}$ (like we did for $T_{P}$).
+We know that the tangent space $T_{P}$ holds directional derivatives, while cotangent space $T_{P}^{*}$ holds gradients. \par
+For a generic $f: M\to \mathbb{R}$:
+\begin{gather*}
+\frac{d}{d\lambda } \in T_{P} \\
+d \in T_{P}^{*} \\
+\text{ and so } \\
+df \left( \frac{d}{d\lambda } \right) \equiv \frac{df}{d\lambda }\\
+\downarrow \quad\; \downarrow \qquad \;\downarrow \\
+\in T_{P}^{*}, \in T_{P}, \in \mathbb{R}
+\end{gather*}
+\textbf{Basis} for T\textsubscript{P}\textsuperscript{*}: $dx^{\mu }$.\par
+\[
+dx^{\mu } \left( \frac{\partial}{\partial x^{\nu }} \right) = \frac{\partial x^{\mu }}{\partial x^{\nu }} = \delta^{\mu }_{\nu }
+\]
+that is the same as the old $\hat{O}^{\left( \mu  \right)}\left( \hat{e}_{\nu } \right)=\delta^{\mu }_{\nu }$.
+
+A dual vector is \[
+\omega = \omega_{\mu }dx^{\mu }
+\]
+the basis component transform like
+\[
+dx^{\mu '} = \frac{\partial x^{\mu '}}{\partial x^{\mu }} dx^{\mu }
+\]
+and the vector components
+\[
+\omega_{\mu '} = \frac{\partial x^{\mu }}{\partial x^{\mu '}}\omega_{\mu }
+\]
+
+\subsection{Tensors (k,l)}
+\[
+T : T_{P}^{*}\times \ldots \times T_{P}^{*} \times T_{P}\times \ldots \times T_{P}\to \mathbb{R}
+\]
+Tensors can be expanded into components:
+\[
+T = T^{\mu_{1}\ldots \mu_{k}}_{\nu_{1}\ldots \nu_{l}} \left( \partial_{\mu_{1}} \otimes \ldots \otimes \partial_{\mu_{k}} \otimes dx^{\nu_{1}} \otimes \ldots \otimes dx^{\nu_{l}} \right)
+\]
+So the components of a generic tensor transform like
+\[
+T^{\mu_{1}' \ldots \mu_{k}'}_{\nu_{1}' \ldots \nu_{l}'} = \left( \frac{\partial x^{\mu_{1}'}}{\partial x^{\mu_{1}}} \ldots \frac{\partial x^{\nu_{1}}}{\partial x^{\nu_{1}'}}\ldots  \right) T^{\mu_{1}\ldots \mu_{k}}_{\nu_{1}\ldots \nu_{l}}
+\]
+
+Now let's see a unusual tensor, it's a (2,1) tensor, how does transform?
+\[
+T^{\alpha' \beta'}_{\gamma'} = \frac{\partial x^{\alpha '}}{\partial x^{\alpha }} \frac{\partial x^{\beta '}}{\partial x^{\beta }} \frac{\partial x^{\gamma }}{\partial x^{\gamma '}} T^{\alpha \beta }_{\gamma }	 
+\]
+\paragraph{Example/exercise} (from 2.4 of Carroll)
+Be a tensor $S_{ij}$, with $i,j =1,2$, so it's a (0.2) tensor.
+We know that
+\begin{itemize}
+	\item S\textsubscript{11} = 1
+	\item S\textsubscript{12}=S\textsubscript{21} = 0
+	\item S\textsubscript{22} = x\textsuperscript{2}
+\end{itemize}
+We get new coordinates:
+\begin{gather*}
+x' = \frac{2x}{y} \\
+y' = \frac{y}{2}
+\end{gather*}
+What are the expressions for $S_{i'j'}$?\par
+One could think to compute each entry doing
+\[
+S_{i'j'}= \frac{\partial x^{i}}{\partial x^{i'}} \frac{\partial x^{j}}{\partial x^{j'}} S_{ij}
+\]
+So, like the (1,1) one looks like
+\[
+S_{1'1'} = \frac{\partial x^{i}}{\partial x^{1'}} \frac{\partial x^{j}}{\partial x^{1'}} S_{ij}
+\]
+But it seems that there is a much faster way than this.

@@ -57,3 +57,10 @@
 \contentsline {subsection}{\numberline {2.6.2}Manifolds}{33}{}%
 \contentsline {subsubsection}{Coordinate System}{34}{}%
 \contentsline {subsubsection}{Vectors again}{34}{}%
+\contentsline {section}{\numberline {2.7}Lec 8}{35}{}%
+\contentsline {subsection}{\numberline {2.7.1}Brief Recap}{35}{}%
+\contentsline {subsubsection}{Vectors again again}{35}{}%
+\contentsline {paragraph}{Example}{36}{}%
+\contentsline {subsection}{\numberline {2.7.2}Dual Vectors}{36}{}%
+\contentsline {subsection}{\numberline {2.7.3}Tensors (k,l)}{37}{}%
+\contentsline {paragraph}{Example/exercise}{37}{}%
