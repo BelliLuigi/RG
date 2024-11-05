@@ -64,3 +64,6 @@
 \contentsline {subsection}{\numberline {2.7.2}Dual Vectors}{36}{}%
 \contentsline {subsection}{\numberline {2.7.3}Tensors (k,l)}{37}{}%
 \contentsline {paragraph}{Example/exercise}{37}{}%
+\contentsline {subsection}{\numberline {2.7.4}Special Tensors}{38}{}%
+\contentsline {subsubsection}{Derivative}{39}{}%
+\contentsline {subsubsection}{Metric tensor}{39}{}%

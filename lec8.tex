@@ -140,4 +140,120 @@ So, like the (1,1) one looks like
 \[
 S_{1'1'} = \frac{\partial x^{i}}{\partial x^{1'}} \frac{\partial x^{j}}{\partial x^{1'}} S_{ij}
 \]
-But it seems that there is a much faster way than this.
+It is good exercise to do this.
+But it seems that there is a much faster way than this.\par
+We can write the tensor $S$ as
+\[
+S = S_{\mu \nu }\left( dc^{\mu } \otimes dx^{\nu } \right)
+\]
+and for our case 
+\[
+S = S_{ij}\left( dx^{i} \otimes dx^{j} \right)
+\]
+The action of this tensor could be written as 
+\begin{equation}\label{eq:1}
+S \left( dx^{i},dx^{j} \right) = S_{11}dx^{2} + S_{12}dxdy + S_{21}dydx + S_{22}dy^{2} = dx^{2} +x^{2}dy^{2}		
+\end{equation}
+the two middle terms are not grouped because tensor product does not commute.\par
+
+Now we can take the inverse coordinate transformation and write it down.
+\begin{equation}
+\begin{cases}
+x = x'y' \\
+ y = 2y'\\
+\end{cases} \to 
+\begin{cases}
+dx = x'dy' + y'dx' \\
+dy = 2dy' \\
+\end{cases}
+\end{equation}
+and then we substitute inside eq. [\ref{eq:1}], getting
+\begin{gather*}
+	\left( x'dy' + y'dx' \right)^{2} + 4dy'^{2} = \\
+	x'^{2}dy'^{2} + y'^{2}dx'^{2} + x'y'\left( dx'dy'+dy'dx' \right) + 4dy'^{2} 
+\end{gather*}
+so we get:
+\begin{equation}
+\begin{cases}
+S_{ii} = y'^{2} \\
+S_{ij} = S_{ji} = x'y' \\
+S_{jj} = x'^{2} + 4\left( x'y' \right)^{2}
+\end{cases}
+\to 
+\begin{pmatrix}
+y'^{2} & x'y' \\
+x'y' & x'^{2}+4\left( x'y' \right)^{2}
+\end{pmatrix} = S_{i'j'} 
+\end{equation}
+
+\subsection{Special Tensors}
+Special tensor that we will see are
+\begin{itemize}
+	\item Derivative
+	\item metric tensor
+	\item Levi-Civita Symbol
+\end{itemize}
+
+\subsubsection{Derivative}
+We will show that the derivative of a tensor is not a tensor anymore.\par
+
+Derivative of a scalar is a (0,1) tensor.
+\[
+\partial_{\mu }\phi \to \partial_{\mu '}\phi = \frac{\partial x^{\mu }}{\partial x^{\mu '}} \partial_{\mu }\phi 
+\]
+$\phi $ does not change under transformation, but the derivative does.
+
+Derivative of a tensor $\neq$ tensor:
+\textbf{example} : 
+\[
+A_{\mu \nu } = \partial_{\mu }V_{\nu }
+\]
+But why? \par
+Let's transform it:
+\begin{gather*}
+A_{\mu '\nu '} = \partial_{\mu '}V_{\nu '} = \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial }{\partial x^{\mu }} \left( \frac{\partial x^{\nu }}{\partial x^{\nu '}}V_{\nu }  \right) = \\
+\text{now if we apply the partial derivative we obtain}\\
+= \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu }}{\partial x^{\nu '}} \partial_{\mu } V_{\nu } + \left( \frac{\partial x^{\mu }}{\partial x^{\mu '}}  \right)\left( \frac{\partial^{2}x^{\nu }}{\partial x^{\nu '}\partial x^{\mu }}  \right)V_{\nu }
+\end{gather*}
+What happened? We see there is a piece that we don't like. This second piece is 0 for LTs, because they are linear so second derivatives are null. This because in Euclidean space the derivative is independent on the coordinates, and on Minkowski space too, since it's flat. \par
+The tensor itself is independent of the coordinate system, but the operation of taking a partial derivative is highly dependent on what coordinate system you're using.\par
+We give importance to this anyway because GR is not a theory for just LTs.
+We will develop a covariant derivative that applied to a tensor will give back a tensor.
+
+\subsubsection{Metric tensor}
+It describes the curvature of ST, the infinitesimal line element of ST and other things.\par
+We know the Minkowski's one:
+\begin{equation}
+\eta_{\mu \nu } = diag\left( -1,1,1,1 \right) = \begin{pmatrix}
+-1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} 
+\end{equation}
+\bigskip
+In general $g_{\mu \nu }$ will be the metric tensor.\par
+We assume the determinant of $g_{\mu \nu }: det\left( g_{\mu \nu } \right) \equiv g \neq 0 \to $ the metric tensor is \emph{invertible}.
+\[
+g_{\mu \nu }g^{\nu \alpha } = \delta^{\alpha }_{\mu } \text{ ; } g^{\mu \nu }g_{\nu \alpha } = \delta^{\mu }_{\alpha }
+\]
+A constant metric tensor implies not curvature.\par
+A metric tensor that depends explicitly on the coordinates must describe a non-flat space? \textbf{FALSE} e.g. the polar coordinates: writing $\eta_{\mu \nu }$ in them
+\begin{equation}
+\eta_{\mu \nu }^{polar} = \begin{pmatrix}
+-1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & r^{2} & 0 \\
+0 & 0 & 0 & r^{2}sin^{2}\theta ,
+\end{pmatrix} 
+\end{equation}.
+Given a generic metric $g_{\mu \nu }$ and a given event P, it is always possible to find new coordinates:
+\[
+g_{\hat{\mu }\hat{\nu }} = \frac{\partial x^{\mu }}{\partial x^{\hat{\mu }}} \frac{\partial x^{\nu }}{\partial x^{\hat{\nu }}} g_{\mu \nu }
+\]
+And
+\[
+g_{\hat{\mu }\hat{\nu }}\left( P \right) = \eta_{\hat{\mu }\hat{\nu }} \text{ ; } \partial_{\hat{\sigma }}g_{\hat{\mu }\hat{\nu }}\left( P \right)=0
+\]
+This recalls the definition of LIFs.
+
