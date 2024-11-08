@@ -1,0 +1,42 @@
+\section{Lec 9}
+\subsubsection{Active and passive transformations}
+Active transformations change the physical position of a set of points relative to a fixed coordinate system. \par
+Passive transformations leave the points fixed but change the coordinate system relative to which they are described.
+We prefer the first approach, we leave vectors untouched and transform RFs.
+
+\subsection{Still on Metric Tensor}
+We described a little this tensor in the previous lecture. I remember that:
+\[
+det\left( g \right) = g \neq 0
+\]
+in 3D Euclidean Space
+\[
+	g = \mathbb{I} = \begin{pmatrix}
+	1 & 0 & 0 \\
+	0 & 1 & 0 \\
+	0 & 0 & 1
+	\end{pmatrix} 		
+\]
+and in spherical it would be like
+\[
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & r^{2}sin^{2}\theta  & 0 \\
+0 & 0 & r^{2}
+\end{pmatrix} 
+\]
+In general the metric tensor has this form
+\[
+g_{\mu \nu } = diag\left( -1, \ldots, 1, \ldots , 0, \ldots   \right)
+\]
+If there are just '$+1$', the metric is Euclidean.\par
+If I have one ' $-1$' and only ' $+1$' the metric is Lorentzian.\par
+We will not discuss other combinations.
+
+Today we will try to formalize EEP.\par
+
+Let $P$ be a spacetime point and 
+\[
+g_{\mu \nu }\left( P \right)= \text{ some generic matrix } \neq \eta_{\mu \nu }
+\]
+I want to find new coordinates $x^{\hat{\mu }}$ such that $g_{\hat{\mu }\hat{\nu }}\left( P \right)=\eta_{\mu \nu }$ and $\partial_{\hat{\rho }}g_{\hat{\mu }\hat{\nu }}\left( P \right)=0$.
