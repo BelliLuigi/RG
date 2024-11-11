@@ -40,3 +40,58 @@ Let $P$ be a spacetime point and
 g_{\mu \nu }\left( P \right)= \text{ some generic matrix } \neq \eta_{\mu \nu }
 \]
 I want to find new coordinates $x^{\hat{\mu }}$ such that $g_{\hat{\mu }\hat{\nu }}\left( P \right)=\eta_{\mu \nu }$ and $\partial_{\hat{\rho }}g_{\hat{\mu }\hat{\nu }}\left( P \right)=0$.
+If you watch the last expression you see that it includes 40 different expressions $\left( 64/2 \right)+8$
+
+I choose $x^{\mu }_{P}= x^{\hat{\mu }}_{P}=0$, so $P$ is the origin of both frames. So I get
+\[
+g_{\hat{\mu }\hat{\nu }}\left( x^{\hat{\alpha }} \right) = \frac{\partial x^{\mu }}{\partial x^{\hat{\mu }}} \frac{\partial x^{\nu }}{\partial x^{\hat{\nu }}} g_{\mu \nu }\left( x^{\alpha } \right) 
+\]
+I'm interested in transformations around $P$, so I see that spacetime is locally Minkoskian.\par
+Doing a Taylor expansion I will see that first order is Minkoskian:
+\begin{equation}
+x^{\mu }\left( x^{\hat{\mu }} \right) = \left( \frac{\partial x^{\mu }}{\partial x^{\hat{\mu }}}  \right)_{P}x^{\hat{\mu }} + \frac{1}{2}\left( \frac{\partial^{2}x^{\mu }}{\partial x^{\hat{\mu }}\partial  x^{\hat{\nu }}}  \right)_{P}x^{\hat{\mu }}x^{\hat{\nu }}+ \frac{1}{6} \left( \frac{\partial^{3}x^{\mu }}{\partial x^{\hat{\mu }}\partial x^{\hat{\nu }}\partial x^{\hat{\rho }} }  \right)_{P} x^{\hat{\mu }}x^{\hat{\nu }}x^{\hat{\rho }}+ \ldots 
+\end{equation}
+
+Why did he stop at $3^{rd}$ order? Listen to recording at $\sim 39:00$.
+\begin{equation}
+\frac{\partial x^{\mu }}{\partial x^{\hat{\mu }}} = \left( \frac{\partial x^{\mu }}{\partial x^{\hat{\mu }}}  \right)_{P} + \left( \frac{\partial^{2}x^{\mu }}{\partial x^{\hat{\mu }}\partial x^{\hat{\alpha }} }  \right)_{P} x^{\hat{\alpha }} +\frac{1}{2} \left( \frac{\partial^{3}x^{\mu }}{\partial x^{\hat{\mu }}\partial x^{\hat{\alpha }} \partial x^{\hat{\beta  }}}  \right)_{P} x^{\hat{\alpha }}x^{\hat{\beta }}
+\end{equation}
+
+\begin{equation}
+g_{\mu \nu } \left( x^{\alpha } \right) = \left( g_{\mu \nu } \right)_{P} + \left( \partial_{\rho }g_{\mu \nu } \right)_{P} x^{\rho } +\frac{1}{2} \left( \partial_{\rho }\partial _{\sigma } g_{\mu \nu } \right)_{P} x^{\rho }x^{\sigma }+ \ldots 
+\end{equation}
+Now i just need to write down the metric tensor in new coordinates:
+\begin{gather*}
+\hat{g} + \left( \hat{\partial }\hat{g} \right)_{P}\hat{x} + \left( \hat{\partial }\hat{\partial }\hat{g} \right)_{P}\hat{x}\hat{x}  = \left( \frac{\partial x}{\partial \hat{x}} \frac{\partial x}{\partial \hat{x}} g \right)_{P} + \left( \frac{\partial x}{\partial \hat{x}}  \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} + \frac{\partial x}{\partial \hat{x}} \frac{\partial x}{\partial \hat{x}} \partial g \right)_{P}\hat{x} + \\
++ \left( \frac{\partial x}{\partial \hat{x}} \frac{\partial^{3}x}{\partial \hat{x} \partial \hat{x} \partial \hat{x}} g + \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} g + \frac{\partial x}{\partial \hat{x}} \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} \partial \hat{g} + \frac{\partial x}{\partial \hat{x}} \frac{\partial x}{\partial \hat{x}} \hat{\partial }\hat{\partial g}   \right) \hat{\partial }\hat{x}
+\end{gather*}
+
+This is the structure (with all indices suppressed) of the Taylor expansion (.rec..) around point $P$. \par
+It's true to write:
+\[
+	\hat{g} = A+ B \hat{x} + C \hat{x}\hat{x} + \ldots 
+\]
+with \emph{A,B,C} the three terms up there. So we can set terms of equal order in $\hat{x}$ on each side equal to each other. Therefore it's like having
+\[
+	\left( g_{\hat{\mu }\hat{\nu }} \right)_{P} = A = \left( \frac{\partial x}{\partial } \hat{x} \frac{\partial x}{\partial \hat{x}} g  \right)_{P}
+\]
+On the left we have 10 numbers in all to describe a symmetric two-index tensor, and they are determined by the matrix on the right, This is a $4\times 4$ matrix without constraints, so we have enough freedom to put the 10 numbers of the left tensor into \emph{canonical form}.\par
+At first order we have, on the left, four derivatives of 10 components for a total of 40 numbers, while on the right side we have 10 choices of $\hat{\mu }$s and four choices of $\mu$s, for a total of 40 degrees of freedom. This is precisely the number of choices we need to determine all of the first derivatives of the metric, which we can therefore set to 0. \par
+At second order with left side the item is symmetric on it's indices in pairs for a total of $10 \times 10 = 100$ numbers, On the right-hand side we have symmetry in the three lower indices gaining 20 possibilities multiplied by four for the upper index we have 80 degrees of freedom, 20 fewer than we require to set the second derivative of the metric to 0.\par
+
+\subsection{Levi Civita symbol}
+We like tensors but sometimes we also like nontensorial objects.
+Let's remember the Levi Civita symbol 
+\[
+	\tilde{\epsilon}_{\mu _{1}\ldots \mu _{n }} = \begin{cases}
+	+1 \text{ if even permutations } \\
+	-1 \text{ if odd permutations } \\
+	0 \text{ otherwise }
+	\end{cases}
+	
+\]
+By definition this symbol has the components specified above in \emph{any} coordinate system, and it is a symbol and not a tensor because it is defined to not change under coordinate transformations, We are able to treat him like tensor only in inertial coordinates in flat spacetime.
+
+
+
+
