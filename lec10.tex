@@ -35,4 +35,46 @@ It has a special property: \emph{dA} is a tensor.
 \partial_{\alpha }A_{\beta  \gamma  \delta \ldots } \text{ is not a tensor, we already saw that, because of the extra piece that is symmetric and become 0 by anti-symmetrization }\\
 \partial_{[\alpha }A_{\beta  \gamma  \delta  \ldots ]} \text{ is a tensor! }
 \end{gather}
+Now let's see how this is related to integrals.\par
+Be in 3D, can be cartesian coordinates (x,y,z) or spherical (r, $\theta $, $\phi $), and be the gravitational field $\Phi\left( x,y,z \right)$ or $\Phi \left( r,\theta ,\phi  \right)$. What's the integral over space of $\Phi $?
+\[
+\int_{space}^{}{\Phi dV}
+\]
+with 
+\[
+dV = dxdydz = \left( r^{2}sin^{2}\theta  \right)drd\theta d\phi 
+\]
+Thinking about our guidelines: we want to describe independently on the chosen coordinates. $\Phi $ is a scalar, so let's see it's integration
+\[
+I = \int_{}^{}{\Phi \left( x \right) d^{n}x} \neq \int_{}^{}{\phi \left( x' \right)d^{n}x'}
+\]
+because
+\[
+d^{n}x^{\mu '} = \left| \frac{\partial x^{\mu '}}{\partial x^{\mu }}\right| d^{n}x^{\mu }
+\]
+there is a Jacobian in there.\par
+The integrand of an integral is a p-form, and the integral a real number.
+\[
+d^{n}x = dx^{0}\wedge \ldots  \wedge dx^{n-1} = \frac{1}{n!} \tilde{\epsilon }_{\mu_{1}\ldots \mu _{n}}dx^{\mu _{1}} \wedge \ldots \wedge dx^{\mu _{n}}
+\]
+This is the integration measure. When I change coordinate system I get
+\begin{gather}
+d^{n}x = \frac{1}{n!} \tilde{\epsilon}_{\mu_{1}\ldots \mu _{n}} \left( dx^{\mu _{1}} \wedge \ldots dx^{\mu _{n}} \right) = \frac{1}{n!}\tilde{\epsilon }_{\mu _{1}\ldots \mu _{n}} \frac{\partial x^{\mu _{1}}}{\partial x^{\mu _{1}'}} \ldots \frac{\partial x^{\mu _{n}}}{\partial x^{\mu _{n}'}} \times \left( dx^{\mu _{1}'} \wedge \ldots \wedge dx^{\mu _{n}'} \right) = \\
+= \frac{1}{n!} \tilde{\epsilon }_{\mu _{1}' \ldots \mu_{n}'} det\left( \frac{\partial x^{\mu }}{\partial x^{\mu }'}  \right)\left( dx^{\mu_{1}}\ldots dx^{\mu _{n}} \right)
+\end{gather}
+What did I get? That 
+\[
+	d^{n}x = \left[ det\left( \frac{\partial x^{\mu }'}{\partial x^{\mu }}  \right)\right]^{-1} d^{n}x'
+\]
+$d^{n}x$ is not a tensor but it is a tensor density.
+We want an invariant integration measure $\sqrt{|g|}d^{n}x$, such that if $\Phi $ is a scalar also
+\[
+	\int_{}^{}{d^{n}x \sqrt{|g|}\Phi }
+\]
+is a scalar.\par
+
+Now why $\partial_{\alpha }$ does not give a tensor? $\partial_{\mu }A_{\nu }$ is not a tensor.
+\[
+	\partial_{\mu '}A_{\nu '} = \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu }}{\partial x^{\nu '}} \partial_{\mu } A_{\nu } + \frac{\partial^{2}x^{\nu }}{\partial x^{\mu '}x^{\nu '}} A_{\nu }
+\]
 
