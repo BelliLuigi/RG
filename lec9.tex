@@ -87,11 +87,75 @@ Let's remember the Levi Civita symbol
 	+1 \text{ if even permutations } \\
 	-1 \text{ if odd permutations } \\
 	0 \text{ otherwise }
-	\end{cases}
-	
+	\end{cases}	
 \]
 By definition this symbol has the components specified above in \emph{any} coordinate system, and it is a symbol and not a tensor because it is defined to not change under coordinate transformations, We are able to treat him like tensor only in inertial coordinates in flat spacetime.
 
+If $\epsilon_{\mu \nu \rho \gamma }$ was a tensor then it should transform like
+\begin{equation}
+\tilde{\epsilon}_{\mu_{1}' \ldots \mu_{n}'} = \frac{\partial x^{\mu_{1}}}{\partial x^{\mu_{1'}}} \ldots \frac{\partial x^{\mu_{n'}}}{\partial x^{\mu_{n'}}} \tilde{\epsilon}_{\mu_{1}\ldots \mu_{n}}
+\end{equation}
+
+but this is \textbf{NOT TRUE}.\par
+ 
+
+We are able to treat it as a tensor only in inertial coordinates of spacetime since LTs would have left the components invariant anyway.\par
+It's behaviour can be related to the determinant of a generic matrix $M$:
+\[
+\tilde{\epsilon}_{\mu_{1'}\ldots \mu_{n'}} \|M\| = \tilde{\epsilon}_{\mu_{1}\ldots \mu_{n}} M^{\mu_{1}}_{\mu_{1'}} \ldots M^{\mu_{n}}_{\mu_{n'}}.
+\]
+
+For example, a $2\times 2$ matrix:\par
+$M^{\mu }_{\nu }$ with $\mu ,\nu =1,2$.
+\begin{gather}
+	\tilde{\epsilon }_{12} \cdot det\left( M \right) = det\left( M \right)= \tilde{\epsilon }_{\mu_{1}\mu_{2}} M^{\mu_{1}}_{1} M^{\mu_{2}}_{2} = \\
+	= \tilde{\epsilon }_{12} M^{1}_{1} M^{2}_{2} + \tilde{\epsilon }_{21}M^{2}_{1}M^{1}_{2} = M^{1}_{1}M^{2}_{2} - M^{2}_{1}M^{1}_{2} = ad- bc
+\end{gather}\par
+
+Setting $M^{\mu }_{\mu '} = \partial x^{\mu } / \partial x^{\mu '} $, we get
+\[
+\tilde{\epsilon }_{\mu_{1}' \ldots \mu_{n}'} = \left| \frac{\partial x^{\mu '}}{\partial x^{\mu }} \right| \tilde{\epsilon }_{\mu _{1}\ldots \mu_{n}} \frac{\partial x^{\mu _{1}}}{\partial x^{\mu _{1}'}} \ldots \frac{\partial x^{\mu _{n}}}{\partial x^{\mu_{n}'}} 
+\]
+
+If you notice, we moved the determinant from the left-hand side to the right-hand one, by reversing it.\par
+$\tilde{\epsilon }$ is not a tensor because otherwise that determinant wouldn't be there. So it does not transform the way I want. Let's construct a Levi-Civita \emph{tensor.}\par
+Remember the transformation of the metric tensor?
+\[
+g_{\mu \nu }= \frac{\partial x^{\mu '}}{\partial x^{\mu }} \frac{\partial x^{\nu '}}{\partial x^{\nu }} g_{\mu '\nu '}
+\]
+I can take the determinant and apply the Binet Rule \footnote{det(AB) = det(A)*det(B)}
+\[
+det g\left( x^{\mu } \right) = det\left( \frac{\partial x^{\mu '}}{\partial x^{\mu }}  \right)^{2} det g\left( x^{\mu '} \right)
+\]
+and rewrite it in 
+\[
+det g\left( x^{\mu '} \right) = \frac{1}{det\left( \frac{\partial x^{\mu '}}{\partial x^{\mu }}  \right)^{2}} det g\left( x^{\mu } \right)
+\]
+I see that \emph{g} is not invariant if i change coordinates.
+
+\paragraph{Weights}
+Tensor densities, they almost transform like a tensor up to a given factor of a given power. \par
+For example $\tilde{\epsilon }$ has weight $w=+1$\par
+\emph{g} has weight $w=-2$\par
+Using this I get that
+\[
+	\sqrt{|g|} \tilde{\epsilon }_{\mu _{1}\ldots \mu_{n}} (\to w=0) \equiv \epsilon_{\mu_{1}\ldots  \mu _{n}}
+\]
+So it is a tensor, because a tensor has $w=0$. 
+We introduce this distinction:
+\begin{itemize}
+	\item $\tilde{\epsilon }$ is the \textbf{symbol}
+	\item $\epsilon $ it the L-C \textbf{tensor} 
+\end{itemize}
+
+For the L-C symbol with upper indices $\tilde{\epsilon}^{\mu _{1}\ldots \mu _{n}}$ the values are
+\[
+\epsilon ^{\mu _{1}\ldots \mu _{n}} = sgn\left( g \right) \tilde{\epsilon }_{\mu _{1}\ldots \mu _{n}}
+\]
+so we have a weight of $-1$ and so the relative tensor with upper indices is 
+\[
+	\epsilon ^{\mu _{1}\ldots \mu _{n}} = \frac{1}{\sqrt{|g|}} \tilde{\epsilon }^{\mu _{1}\ldots \mu _{n}}
+\]
 
 
 

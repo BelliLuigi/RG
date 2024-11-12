@@ -1,0 +1,38 @@
+\section{Lec 10}
+\subsection{Differential form}
+A \emph{p-form} or \emph{differential form} is a (0,p) that is completely antisymmetric.
+Examples of p-forms
+\begin{itemize}
+	\item scalars are 0-forms
+	\item dual vectors are 1-forms
+	\item $\tilde{\epsilon }$ is a 4-form
+\end{itemize}
+P-forms do have a operation called \emph{wedge product}:\par
+be A a p-form and B a q-form, then $\left( A \wedge B \right)$ is a (p+q)-form, in detail
+\[
+	\left( A \wedge B \right)_{\mu _{1}\ldots \mu _{p+q}} = \frac{\left( p+q \right)!}{p!q!} A_{[\mu _{1}\ldots }B_{\mu _{p+1}\ldots \mu _{p+q}]}
+\]
+So, for example, if A and B are both a 1-form,
+\[
+	\left( A \wedge B \right) = \frac{2!}{1!1!} A_{[\mu }B_{\nu ]} = \frac{2!}{1!} \frac{1}{2!} \left( A_{\mu }B_{\nu }-A_{\nu }B_{\mu } \right) = A_{\mu }B_{\nu }-A_{\nu }B_{\mu }	
+\]
+Also note that
+\[
+A\wedge B = \left( -1 \right)^{pq} B\wedge A	
+\]
+There is also something about Integral over volume \& principle of least action. To Be Filled
+
+\subsubsection{Exterior Derivative}
+There is also this operation, not really used, that is
+\[
+d : p-form \to \left( p+1 \right)-form
+\]
+\[
+	\left( dA \right)_{\mu _{1}\ldots \mu _{p+1} } = \left( p+1 \right) \partial_{[\mu _{1}}A_{\mu _{2}\ldots \mu _{n}]}
+\]
+It has a special property: \emph{dA} is a tensor.
+\begin{gather}
+\partial_{\alpha }A_{\beta  \gamma  \delta \ldots } \text{ is not a tensor, we already saw that, because of the extra piece that is symmetric and become 0 by anti-symmetrization }\\
+\partial_{[\alpha }A_{\beta  \gamma  \delta  \ldots ]} \text{ is a tensor! }
+\end{gather}
+
