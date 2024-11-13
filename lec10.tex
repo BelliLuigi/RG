@@ -32,7 +32,9 @@ d : p-form \to \left( p+1 \right)-form
 \]
 It has a special property: \emph{dA} is a tensor.
 \begin{gather}
-\partial_{\alpha }A_{\beta  \gamma  \delta \ldots } \text{ is not a tensor, we already saw that, because of the extra piece that is symmetric and become 0 by anti-symmetrization }\\
+\partial_{\alpha }A_{\beta  \gamma  \delta \ldots }\\
+\text{ is not a tensor, we already saw that, because of the extra piece}\\
+\text{that is symmetric and become 0 by anti-symmetrization }\\
 \partial_{[\alpha }A_{\beta  \gamma  \delta  \ldots ]} \text{ is a tensor! }
 \end{gather}
 Now let's see how this is related to integrals.\par
@@ -59,12 +61,13 @@ d^{n}x = dx^{0}\wedge \ldots  \wedge dx^{n-1} = \frac{1}{n!} \tilde{\epsilon }_{
 \]
 This is the integration measure. When I change coordinate system I get
 \begin{gather}
-d^{n}x = \frac{1}{n!} \tilde{\epsilon}_{\mu_{1}\ldots \mu _{n}} \left( dx^{\mu _{1}} \wedge \ldots dx^{\mu _{n}} \right) = \frac{1}{n!}\tilde{\epsilon }_{\mu _{1}\ldots \mu _{n}} \frac{\partial x^{\mu _{1}}}{\partial x^{\mu _{1}'}} \ldots \frac{\partial x^{\mu _{n}}}{\partial x^{\mu _{n}'}} \times \left( dx^{\mu _{1}'} \wedge \ldots \wedge dx^{\mu _{n}'} \right) = \\
-= \frac{1}{n!} \tilde{\epsilon }_{\mu _{1}' \ldots \mu_{n}'} det\left( \frac{\partial x^{\mu }}{\partial x^{\mu }'}  \right)\left( dx^{\mu_{1}}\ldots dx^{\mu _{n}} \right)
+d^{n}x = \frac{1}{n!} \tilde{\epsilon}_{\mu_{1}\ldots \mu _{n}} \left( dx^{\mu _{1}} \wedge \ldots dx^{\mu _{n}} \right) =\\
+\frac{1}{n!}\tilde{\epsilon }_{\mu _{1}\ldots \mu _{n}} \frac{\partial x^{\mu _{1}}}{\partial x^{\mu _{1}'}} \ldots \frac{\partial x^{\mu _{n}}}{\partial x^{\mu _{n}'}} \times \left( dx^{\mu _{1}'} \wedge \ldots \wedge dx^{\mu _{n}'} \right) = \\
+= \frac{1}{n!} \tilde{\epsilon }_{\mu _{1}' \ldots \mu_{n}'} det\left( \frac{\partial x^{\mu }}{\partial x^{\mu '}}  \right)\left( dx^{\mu_{1}}\ldots dx^{\mu _{n}} \right)
 \end{gather}
 What did I get? That 
 \[
-	d^{n}x = \left[ det\left( \frac{\partial x^{\mu }'}{\partial x^{\mu }}  \right)\right]^{-1} d^{n}x'
+	d^{n}x = \left[ det\left( \frac{\partial x^{\mu' }}{\partial x^{\mu }}  \right)\right]^{-1} d^{n}x'
 \]
 $d^{n}x$ is not a tensor but it is a tensor density.
 We want an invariant integration measure $\sqrt{|g|}d^{n}x$, such that if $\Phi $ is a scalar also
@@ -86,4 +89,108 @@ This is the only derivative that matters for real.
 \]
 the factor $\Gamma $ is unknown and we need to construct it. Keep in mind that the combination of the two addends makes a tensor, but singularly they aren't.
 
-The transof
+The transformation need to be both \emph{linear on V}
+\[
+\nabla \left( T+S \right) = \nabla T + \nabla S
+\]
+and needs to follow the \emph{Leibniz product rule}\footnote{ $\left( fg \right)' = f'g + fg'$ to have an example on things we already studied.}
+\[
+\nabla \left( T \otimes S \right) = \left( \nabla T \right) \otimes S + T \otimes \left( \nabla S \right)
+\]
+$\Gamma^{\nu }_{\mu \alpha }$ is called \emph{connection} and it is \emph{not a tensor} nut we can think of it like a collection of numbers. \par
+It is a Christoffel symbol.\par
+
+Before diving in the deep of this symbol $\Gamma^{\mu }_{\nu \alpha }$ we want to know hot it transform. One could think the trivial way, because if we have two coordinates systems \[
+\Gamma^{\alpha '}_{\mu '\nu '} \neq \frac{\partial x^{\alpha '}}{\partial x^{\alpha }}  \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu }}{\partial x^{\nu '}} \Gamma ^{\alpha }_{\mu \nu } 
+\]
+but this is not true since $\Gamma $ is not a tensor.\par
+Since we know that the covariant derivative is a tensor by construction, let's start from here
+\begin{equation}\label{eq:coder}
+\nabla _{\mu '}V^{\nu '} = \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu '}}{\partial x^{\nu }}  \nabla _{\mu }V^{\nu }
+\end{equation}
+How are the sides of the equality related?
+The left-hand side of eq.\ref{eq:coder} is 
+\begin{equation}
+\nabla _{\mu '}V^{\nu '} = \partial_{\mu '}V^{\nu '} + \Gamma ^{\nu '}_{\mu '\alpha '} V^{\alpha '} = \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial }{\partial x^{\mu }} \left( \frac{\partial x^{\nu '}}{\partial x^{\nu }} V^{\nu } \right) + \Gamma ^{\nu '}_{\mu '\alpha '} \frac{\partial x^{\alpha '}}{\partial x^{\alpha }} V^{\alpha }
+\end{equation}
+while the right hand side of eq.\ref{eq:coder} is 
+\begin{equation}
+\frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu '}}{\partial x^{\nu }} \left( \partial_{\mu }V^{\nu } + \Gamma ^{\nu }_{\mu \alpha } V^{\alpha } \right) = \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu '}}{\partial x^{\nu }} \partial_{\mu }V^{\nu } + \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu '}}{\partial x^{\nu }} \Gamma ^{\nu }_{\mu \alpha }V^{\alpha } 
+\end{equation}
+we see that we have free indices $\mu ', \nu '$	on both sides.
+Now let's develop the left-hand side some more
+\begin{equation}
+	\frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial ^{2}x^{\mu '}}{\partial x^{\mu }\partial x^{\nu }} V^{\nu } + \text{\colorbox{green}{$ \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu '}}{\partial x^{\nu }} \frac{\partial V^{\nu }}{\partial x^{\mu }}$}} + \Gamma ^{\nu '}_{\mu '\alpha '} \frac{\partial x^{\alpha '}}{\partial x^{\alpha }}V^{\alpha }
+\end{equation}
+Remember that for us partial derivatives commute.\par
+Let's compare the sides:
+\begin{itemize}
+\item the first on the right-side cancels out with the second on the left (green).
+\item Renaming the first term on the left to get $V^{\alpha }$, lead to simplifying every vector on both sides.
+\end{itemize}
+We can \emph{rename} the vector because everything is valid for a generic vector, and its indices were summed over.\par
+We are left with
+\[
+\frac{\partial x^{\mu }}{\partial x^{\mu '}}  \frac{\partial x^{\nu '}}{\partial x^{\nu }} \Gamma ^{\nu }_{\mu \alpha } = \frac{\partial x^{\alpha' }}{\partial x^{\alpha }} \Gamma ^{\nu '}_{\mu '\alpha '} + \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial ^{2}x^{\nu '}}{\partial x^{\mu }\partial x^{\alpha }} 
+\]
+And this is how $\Gamma $ transforms.\par
+
+If this derivation is still obscure to you and want to see it on paper, old-style, I did again the derivation of this result, see image \ref{imm:conntransf}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\linewidth]{imm/conntransf.jpg}
+\caption{Same derivation but on paper. If you have any doubts compare with this one.}
+\label{imm:conntransf}
+\end{figure}
+We see that $\Gamma $ is not a tensor because of this extra piece after the transformation.\par
+We saw that for a \emph{vector} the covariant derivative acts like
+\[
+\nabla_{\mu }V^{\nu } = \partial_{\mu }V^{\nu } + \Gamma ^{\nu }_{\mu \alpha }V^{\alpha }
+\]
+Instead for a \emph{dual vector} the derivative is defined as
+\[
+\nabla _{\mu} \omega _{\nu } \equiv \partial_{\mu }\omega _{\nu } + \tilde{\Gamma }^{\alpha }_{\mu \nu }\omega _{\alpha }
+\]
+The question that arises from this is obvious: \emph{how $\tilde{\Gamma }$ is related to $\Gamma $?}\par
+Let's compute 
+\[
+\nabla _{\mu }\left( \omega _{\lambda }V^{\lambda } \right) = \partial_{\mu } \left( \omega _{\lambda }V^{\lambda } \right)
+\]
+This because the covariant derivative of a scalar \emph{is} the derivative of a scalar. So, applying the Leibniz Rule:
+\begin{gather*}
+\nabla _{\mu }V^{\lambda }\cdot \omega _{\lambda } + V^{\lambda }\nabla _{\mu }\omega _{\lambda } = \partial_{\mu }V^{\lambda }\omega _{\lambda } + V^{\lambda }\partial_{\mu }\omega _{\lambda } \\
+\left( \partial_{\mu }V^{\lambda } + \Gamma ^{\lambda }_{\mu  \alpha }V^{\alpha } \right)\omega _{\lambda } + V^{\lambda }\left( \partial_{\mu }\omega _{\lambda } + \tilde{\Gamma }^{\alpha }_{\mu  \lambda } \omega _{\alpha } \right) = \left( \partial_{\mu }V^{\lambda } \right)\omega _{\lambda }+ \left( \partial_{\mu }\omega _{\lambda } \right)V^{\lambda }\\
+\to  \Gamma ^{\lambda }_{\mu  \alpha }V^{\alpha }\omega _{\lambda } + \tilde{\Gamma }^{\alpha }_{\mu \lambda } V^{\lambda }\omega _{\alpha } = 0 \\
+\text{ renaming some indices to get }\\
+\Gamma ^{\lambda }_{\mu \alpha }V^{\alpha }\omega _{\lambda } + \tilde{\Gamma }^{\lambda }_{\mu  \alpha } V^{\alpha }\omega _{\lambda } \\
+\implies \Gamma ^{\lambda }_{\mu \alpha } + \tilde{\Gamma }^{\lambda }_{\mu  \alpha } = 0
+\end{gather*}
+
+To conclude, the covariant derivative of a dual vector is actually
+\begin{equation}
+\nabla _{\mu }\omega_{\nu  }= \partial_{\mu }\omega _{\nu } - \Gamma ^{\alpha }_{\mu \nu }\omega _{\alpha }
+\end{equation}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

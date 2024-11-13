@@ -75,3 +75,4 @@
 \contentsline {section}{\numberline {2.9}Lec 10}{45}{}%
 \contentsline {subsection}{\numberline {2.9.1}Differential form}{45}{}%
 \contentsline {subsubsection}{Exterior Derivative}{45}{}%
+\contentsline {subsection}{\numberline {2.9.2}Covariant Derivative}{47}{}%
