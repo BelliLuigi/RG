@@ -82,3 +82,4 @@
 \contentsline {paragraph}{Statement I}{50}{}%
 \contentsline {paragraph}{Statement II}{50}{}%
 \contentsline {subsubsection}{Metric Compatibility}{51}{}%
+\contentsline {subsection}{\numberline {2.10.2}Parallel Transport}{53}{}%
