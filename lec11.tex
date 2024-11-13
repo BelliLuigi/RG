@@ -1,0 +1,45 @@
+\section{Lec 11}
+\subsection{Covariant derivative - Connection}
+In the last lecture we talked about the covariant derivative and we saw the version for the vector, for the dual vector, and how it transform between two coordinates systems. We constructed it so the output is a vector, and we saw that even after changes of coordinates we still get a tensor.\par
+The question now is, how to do
+\[
+\nabla _{\rho }T^{\mu _{1}\ldots \mu _{k}}_{\nu _{1}\ldots \nu _{l}} = ?
+\]
+The development is pretty boring but straight-forward:
+\begin{equation}
+= \partial_{\rho }T^{\mu_{1} \ldots \mu_{k}}_{\nu_{1} \ldots \nu_{l}} + \Gamma ^{\mu _{1}}_{\rho \alpha } T^{\alpha \mu_{2} \ldots \mu_{k}}_{\nu_{1} \ldots \nu_{l}} + \Gamma ^{\mu_{2}}_{\rho \alpha }T^{\mu_{1} \alpha \mu_{3} \ldots \mu_{k}}_{\nu_{1} \ldots \nu_{l}} + \ldots - \Gamma ^{\alpha }_{\mu \nu _{1}} T^{\mu _{1} \ldots \mu _{k}}_{\alpha \nu_{2} \ldots \nu_{l}} - \ldots 
+\end{equation}
+These $\Gamma $ connections are just tables of 64 entries of numbers, not tensors, and putting indices up and down to it it's abuse of notation. \par
+Now we will make a couple of assumptions on the structure of $\Gamma $.
+\subsubsection{Torsion}
+\paragraph{Statement I} Given two different connections $\Gamma^{\mu }_{\alpha \beta }$ and $\tilde{\Gamma }^{\mu }_{\alpha \beta }$, we define
+\[
+S^{\mu }_{\alpha \beta } = \Gamma ^{\mu }_{\alpha \beta } - \tilde{\Gamma }^{\mu }_{\alpha \beta }	
+\]
+$\to  S^{\mu }_{\alpha \beta }$ is a (1,2) tensor. Why? Since I have
+\[
+\nabla _{\mu }V^{\nu } = \partial_{\mu }V^{\nu }+ \Gamma ^{\nu }_{\mu  \alpha }V^{\alpha }
+\]
+I can define a complement
+\[
+\tilde{\nabla }_{\mu }V^{\nu } = \partial_{\mu }V^{\nu } + \tilde{\Gamma }^{\nu }_{\mu \alpha }V^{\alpha }
+\]
+so i get
+\[
+\to  \nabla _{\mu }V^{\nu }- \tilde{\nabla }_{\mu }V^{\nu } = \left( \Gamma ^{\nu }_{\mu  \alpha } - \tilde{\Gamma }^{\nu }_{\mu  \alpha } \right)V^{\alpha } = S^{\nu }_{\mu  \alpha }V^{\alpha }
+\]
+and this is valid \emph{only} if $S^{\mu }_{\nu  \alpha }$ is a tensor.
+
+\paragraph{Statement II} if $\Gamma ^{\mu }_{\alpha \beta }$ is a connection $\implies  \Gamma ^{\mu }_{\beta  \alpha }$ is a connection.\par
+That's why we define the \emph{ Torsion tensor}
+\[
+	T^{\mu }_{\alpha \beta }\equiv \Gamma  ^{\mu }_{\alpha \beta } - \Gamma ^{\mu }_{\beta  \alpha } = 2 \Gamma ^{\mu }_{[\alpha \beta ]}
+\]
+The metric adopted in this course is a \emph{ Torsion-Free} metric, so the torsion tensor is vanishing.\par
+How many entries do I have for a connection?
+\[
+\Gamma ^{\mu \to 4}_{\alpha \beta \to 10}
+\]
+so in total I have 40 entries, 4 for the upper index and 10 for the lowers because symmetry, \par
+\subsubsection{Metric Compatibility}
+
