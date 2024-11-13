@@ -48,7 +48,7 @@ So, the torsion tensor is antisymmetric on its lower indices, and a connection t
 We can define a unique connection on a manifold with metric $g_{\mu \nu }$ by introducing two additional properties, torsion-freeness and the metric compatibility.
 The metric compatibility is a property of the covariant derivative and it's expressed as follows
 \[
-\nabla \rho g_{\mu \nu }
+\nabla \rho g_{\mu \nu } = 0
 \]
 A connection is \emph{metric compatible} if the covariant derivative of the metric with respect to that connection is everywhere 0. \par
 We want to see how this property works with the \emph{inverse metric tensor}, so let's start from
@@ -73,7 +73,37 @@ I get
 \]
 So, in conclusion the covariant derivative of the inverse of metric tensor is null. It was not trivial.
 
+After this we can see that a metric-compatible covariant derivative commutes with raising and lowering of indices, so for a generic vector $V^{\nu }$
+\[
+\nabla _{\mu }V^{\nu } = g_{\alpha \nu }\nabla _{\mu }\left( v^{\mu } \right) = \nabla _{\mu }\left( g_{\alpha \nu }V^{\nu } \right) = \nabla _{\mu }V_{\nu }
+\]
 
+With non-metric compatible connections we would have to be very careful about index placement wen taking a covariant derivative. \par
+There is exactly one torsion-free connection on a manifold that is compatible with some generic metric on that manifold. \par
+
+We can demonstrate \emph{existence} and \emph{uniqueness} by deriving a manifestly unique expression for the connection coefficients in terms of the metric, so we will expand the equation of metric compatibility for three different permutations of the indices.
+\begin{gather*}
+\nabla _{\rho }g_{\mu \nu } = \partial_{\rho }g_{\mu \nu } - \Gamma ^{\lambda }_{\rho \mu }g_{ \lambda \nu  } - \Gamma ^{\lambda }_{\rho \nu } g_{\mu \lambda }=0  \text{ (a) }\\
+\nabla _{\mu }g_{\nu \rho } = \partial_{\mu }g_{\nu \rho } - \Gamma ^{\lambda }_{\mu \nu }g_{\lambda \rho } - \Gamma ^{\lambda }_{\mu \rho }g_{\nu \lambda } =0 \text{ (b) }\\
+\nabla _{\nu }g_{\rho \mu } = \partial_{\nu }g_{\rho \mu } - \Gamma ^{\lambda }_{\nu \rho } g_{\lambda \mu } - \Gamma ^{\lambda }_{\nu \mu } g_{\rho  \lambda } = 0 \text{ (c) }
+\end{gather*}
+we see that \emph{(a)-(b)-(c) = 0}, and it is obvious because individually they're equal to 0. \par
+But let's see in detail what's happening
+\begin{gather*}
+\partial_{\rho }g_{\mu \nu } - \partial_{\mu }g_{\nu \rho } - \partial_{\nu }g_{\rho \mu } - \colorbox{yellow}{$ \Gamma^{\alpha }_{\rho \mu }g_{\alpha \nu }  $} - \colorbox{green}{$ \Gamma ^{\alpha }_{\rho \nu }g_{\mu \alpha }  $} + \Gamma ^{\alpha }_{\mu \nu }g_{\alpha \rho } + \colorbox{yellow}{$ \Gamma^{\alpha }_{\mu \rho }g_{\nu \alpha }  $} + \colorbox{green}{$ \Gamma ^{\alpha }_{\nu \rho }g_{\alpha \mu }  $} + \Gamma ^{\alpha }_{\nu \mu }g_{\rho \alpha } = 0 \\
+\end{gather*}
+ We subtract the highlighted ones and use the symmetry of the connection to get
+ \[
+ 2g_{\rho \alpha }\Gamma ^{\alpha }_{\mu \nu } - \partial_{\mu }g_{\nu \rho } + \partial_{\nu }g_{\mu \rho } - \partial_{\rho }g_{\mu \nu }
+ \]
+ We multiply both sides by $g^{\rho \sigma }$	
+\begin{equation}
+	\Gamma^{\sigma }_{\mu \nu } = \frac{1}{2} g^{\rho \sigma } [\partial_{\mu } g_{\nu \rho } + \partial_{\nu } g_{\mu \rho } - \partial_{\rho }g_{\mu \nu } ]
+\end{equation}
+ This is one of the most important expressions of the course. \par
+ We have seen that a flat spacetime has a Minkowski metric everywhere. \par
+ But how to define curvature? \par
+ The fact that $g_{\mu \nu }$ depends on the coordinates is not enough (e.g. spherical coordinates). But now we have a new object.
 
 
 
