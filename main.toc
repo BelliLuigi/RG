@@ -78,3 +78,7 @@
 \contentsline {subsection}{\numberline {2.9.2}Covariant Derivative}{47}{}%
 \contentsline {section}{\numberline {2.10}Lec 11}{50}{}%
 \contentsline {subsection}{\numberline {2.10.1}Covariant derivative - Connection}{50}{}%
+\contentsline {subsubsection}{Torsion}{50}{}%
+\contentsline {paragraph}{Statement I}{50}{}%
+\contentsline {paragraph}{Statement II}{50}{}%
+\contentsline {subsubsection}{Metric Compatibility}{51}{}%

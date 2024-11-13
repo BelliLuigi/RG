@@ -41,5 +41,59 @@ How many entries do I have for a connection?
 \Gamma ^{\mu \to 4}_{\alpha \beta \to 10}
 \]
 so in total I have 40 entries, 4 for the upper index and 10 for the lowers because symmetry, \par
+
+As we will see later, the name \emph{connection} comes from the fact that it is used to transport vectors from one tangent space to another.
 \subsubsection{Metric Compatibility}
+So, the torsion tensor is antisymmetric on its lower indices, and a connection that is symmetric on its lower indices is \emph{torsion-free}
+We can define a unique connection on a manifold with metric $g_{\mu \nu }$ by introducing two additional properties, torsion-freeness and the metric compatibility.
+The metric compatibility is a property of the covariant derivative and it's expressed as follows
+\[
+\nabla \rho g_{\mu \nu }
+\]
+A connection is \emph{metric compatible} if the covariant derivative of the metric with respect to that connection is everywhere 0. \par
+We want to see how this property works with the \emph{inverse metric tensor}, so let's start from
+\begin{equation}
+\nabla _{\rho } \left( g^{\alpha \beta } g_{\beta  \gamma } \right) =\nabla _{\rho } \left( \delta ^{\alpha }_{\gamma }  \right) = \Gamma ^{\alpha }_{\rho \lambda  }\delta^{\lambda }_{\gamma } - \Gamma ^{\sigma  }_{\rho \gamma }\delta^{\alpha }_{\sigma } + \partial_{\rho }\left( \delta ^{\alpha }_{\gamma } \right) = \left( \Gamma ^{\alpha }_{\rho  \gamma } - \Gamma ^{\alpha }_{\rho  \gamma } \right) = 0
+\end{equation}
+the term with the partial derivative cancels out because $\delta $ is constant, and we equal everything to zero because the covariant derivative of the Kronecker delta is 0. On the right side we can apply the Leibniz rule so
+\begin{equation}
+g^{\alpha \beta }\nabla _{\rho }\left( g_{\beta \gamma } \right) + \nabla _{\rho }\left( g^{\alpha \beta } \right)g_{\beta \gamma } = 0
+\end{equation}
+the first term is 0, because we said so, the connection is metric compatible. We are left with
+\[
+g_{\beta  \gamma }\nabla _{\rho }\left( g^{\alpha \beta } \right) = 0
+\]
+by multiplying on both sides $g^{\gamma \sigma }$
+\[
+g^{\gamma \sigma } g_{\beta \gamma } \nabla _{\rho } \left( g^{\alpha \beta } \right) =0
+\]
+I get
+\[
+\delta ^{\sigma }_{\beta }\nabla _{\rho }\left( g^{\alpha \beta } \right) = \nabla _{\rho }\left( \delta ^{\sigma }_{\beta } g^{\alpha \beta } \right) = \nabla _{\rho }\left( g^{\alpha \sigma } \right) = 0
+\]
+So, in conclusion the covariant derivative of the inverse of metric tensor is null. It was not trivial.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
