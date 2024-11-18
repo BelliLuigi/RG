@@ -84,3 +84,7 @@
 \contentsline {subsubsection}{Metric Compatibility}{51}{}%
 \contentsline {subsection}{\numberline {2.10.2}Parallel Transport}{53}{}%
 \contentsline {subsubsection}{Geodesics}{54}{}%
+\contentsline {section}{\numberline {2.11}Lec 12}{55}{}%
+\contentsline {subsection}{\numberline {2.11.1}Geodesic Equation}{55}{}%
+\contentsline {subsubsection}{Geodesic I}{55}{}%
+\contentsline {subsubsection}{Geodesic II}{55}{}%

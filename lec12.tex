@@ -1,0 +1,35 @@
+\section{Lec 12}
+\subsection{Geodesic Equation}
+Given a generic path (WL) $x^{\mu }\left( \lambda  \right)$, parallel transport of a generic tensor is
+\[
+\frac{D}{d\lambda } \left( T^{\mu _{1}\ldots \mu _{k}} \right)_{\nu _{1}\ldots \nu _{l}} =\frac{d x^{\sigma }}{d \lambda } \nabla _{\sigma } T^{\mu _{1}\ldots \mu _{k}}_{\nu _{1}\ldots \nu _{l}} = 0		
+\]
+while for a tensor is 
+\[
+	\frac{D}{d\lambda } \left( V^{\rho } \right) = \frac{d x^{\mu }}{d \lambda } \nabla _{\mu }V^{\rho } = \frac{d x^{\mu }}{d \lambda } \left[ \partial_{\mu }V^{\rho } + \Gamma ^{\rho }_{\mu \sigma  } V^{\sigma } \right]=0
+\]
+We can look at the parallel transport equations as a first-order differential equation defining an initial-value problem: given a tensor at some point along the path, there will be a unique continuation of the tensor to other points along the path.
+
+Probably was not said before but to make the parallel transport properly tensorial we need to replace the partial derivative by a covariant one, and define the \emph{directional covariant derivative} as
+\[
+\frac{D}{d\lambda } = \frac{d x^{\mu }}{d \lambda }\nabla _{\mu }
+\]
+
+We will review \emph{geodesic equation} and derive it again with another method.
+
+\subsubsection{Geodesic I}
+Geodesic is a path that transport its own tangent vector. That's the definition we will use for the first method. We schematized this in Lec 11, fig. \ref{imm:straightline}.
+\begin{gather*}
+\frac{D}{d\lambda } \left( \frac{d x^{\mu }}{d \lambda } \right) = 0 \\
+\to  \frac{d x^{\sigma }}{d \lambda }\nabla _{\sigma }\left( \frac{d x^{\mu }}{d \lambda } \right) = \frac{d x^{\sigma }}{d \lambda }\left[ \partial_{\sigma } \left( \frac{d x^{\mu }}{d \lambda } \right) + \Gamma ^{\mu }_{\sigma \rho } \frac{d x^{\rho }}{d \lambda } \right] = 0 \\
+\to \frac{d ^{2} x^{\mu }}{d \lambda ^{2}} + \Gamma ^{\mu }_{\rho \sigma } \frac{d x^{\rho }}{d \lambda } \frac{d x^{\sigma }}{d \lambda } 
+\end{gather*}
+so we get the \emph{geodesic equation.}
+
+\subsubsection{Geodesic II}
+
+This time let's start from the concept of distance so
+\[
+ds^{2} = g_{\mu \nu } dx^{\mu }dx^{\nu }
+\]
+There is no point in trying to minimize it, because if it's the path of a photon it is 0.
