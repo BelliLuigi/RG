@@ -4,7 +4,7 @@ Given a generic path (WL) $x^{\mu }\left( \lambda  \right)$, parallel transport 
 \[
 \frac{D}{d\lambda } \left( T^{\mu _{1}\ldots \mu _{k}} \right)_{\nu _{1}\ldots \nu _{l}} =\frac{d x^{\sigma }}{d \lambda } \nabla _{\sigma } T^{\mu _{1}\ldots \mu _{k}}_{\nu _{1}\ldots \nu _{l}} = 0		
 \]
-while for a tensor is 
+while for a vector is 
 \[
 	\frac{D}{d\lambda } \left( V^{\rho } \right) = \frac{d x^{\mu }}{d \lambda } \nabla _{\mu }V^{\rho } = \frac{d x^{\mu }}{d \lambda } \left[ \partial_{\mu }V^{\rho } + \Gamma ^{\rho }_{\mu \sigma  } V^{\sigma } \right]=0
 \]
@@ -18,11 +18,12 @@ Probably was not said before but to make the parallel transport properly tensori
 We will review \emph{geodesic equation} and derive it again with another method.
 
 \subsubsection{Geodesic I}
-Geodesic is a path that transport its own tangent vector. That's the definition we will use for the first method. We schematized this in Lec 11, fig. \ref{imm:straightline}.
+Geodesic is a path that transport its own tangent vector. That's the definition we will use for the first method. We schematized this in Lec 11, fig. \ref{imm:straigthline}.
+
 \begin{gather*}
 \frac{D}{d\lambda } \left( \frac{d x^{\mu }}{d \lambda } \right) = 0 \\
 \to  \frac{d x^{\sigma }}{d \lambda }\nabla _{\sigma }\left( \frac{d x^{\mu }}{d \lambda } \right) = \frac{d x^{\sigma }}{d \lambda }\left[ \partial_{\sigma } \left( \frac{d x^{\mu }}{d \lambda } \right) + \Gamma ^{\mu }_{\sigma \rho } \frac{d x^{\rho }}{d \lambda } \right] = 0 \\
-\to \frac{d ^{2} x^{\mu }}{d \lambda ^{2}} + \Gamma ^{\mu }_{\rho \sigma } \frac{d x^{\rho }}{d \lambda } \frac{d x^{\sigma }}{d \lambda } 
+\to \frac{d ^{2} x^{\mu }}{d \lambda ^{2}} + \Gamma ^{\mu }_{\rho \sigma } \frac{d x^{\rho }}{d \lambda } \frac{d x^{\sigma }}{d \lambda } = 0 
 \end{gather*}
 so we get the \emph{geodesic equation.}
 
@@ -32,4 +33,84 @@ This time let's start from the concept of distance so
 \[
 ds^{2} = g_{\mu \nu } dx^{\mu }dx^{\nu }
 \]
-There is no point in trying to minimize it, because if it's the path of a photon it is 0.
+There is no point in trying to minimize it, because if it's the path of a photon it is 0, it's already minimized for each null-path.\par
+Since the metric is compatible with the connection we are using, we take the parallel transportation of this quantity, that is a scalar, $g_{\mu \nu }V^{\mu }W^{\nu }$:
+\begin{equation}
+\frac{D}{d\lambda } \left( g_{\mu \nu }V^{\mu }W^{\nu }	 \right) = \left( \frac{D}{d\lambda } g_{\mu \nu } \right)V^{\mu }W^{\nu } + g_{\mu \nu } \frac{D}{d\lambda }\left( V^{\mu }\right)W^{\nu }+ g_{\mu \nu} V^{\mu }\left( W^{\nu } \right)
+\end{equation}
+And we get that the first term on the right is 0 because of \emph{metric compatibility} and the other two are 0 as well because we are parallel transporting a vector.\par
+What does it mean? It means that scalar product is preserved by parallel transportation.\par
+We will keep this lemma in mind while deriving the Geodesics Equation.
+
+Now since in Lorentzian spacetime the definition of distance is kinda tricky let's stick to use proper time $\tau $, instead. So for a time-like trajectory, like the one of a massive particle, we have
+\[
+d\tau ^{2}= -g_{\mu \nu }dx^{\mu }dx^{\nu } \text{ and } d\tau ^{2}> 0
+\]
+Now, for every trajectory we fix the extremes so we get the so-called \emph{proper time functional}
+\[
+\tau \equiv \int_{path}^{}\sqrt{-g_{\mu \nu } \frac{d x^{\mu }}{d \lambda } \frac{d x^{\nu }}{d \lambda }} d\lambda 	
+\]
+To search for the shortest distance one could do a thing called \emph{calculus of variations} or, thinking about the twin paradox, recognize that the twin that experience more time is the one who stands still on the Earth. But we will try to check this out anyway.  We can simplify the algebra writing the integral above as
+\begin{gather*}
+	\tau  \equiv \int_{path}^{}{\sqrt{-f} d\lambda } \\
+	\text{ with } f = g_{\mu \nu } \frac{d x^{\mu }}{d \lambda } \frac{d x^{\nu }}{d \lambda }.
+\end{gather*}
+Now we add perturbations to the path, and we pick the one with the maximum proper time.
+
+Now, to extremize the proper time functional, we need that its variation is null. This implies that the tangent vector to the path $\frac{d x^{\mu }}{d \lambda }$, behaves consistently along the curve. This vector is normalized such that the scalar product \emph{f} is constant, and the fact that parallel transport preserves the scalar product guarantees that this holds along the path.\par
+So, extremes called A and B, are fixed, we took a generic trajectory $x^{\mu }\left( \lambda  \right)$.
+We consider a \emph{perturbation} of this trajectory such that
+\begin{gather*}
+x^{\mu  }\to x^{\mu }\delta x^{\mu } \\
+g_{\mu \nu } \to  g_{\mu \nu } + \partial_{\rho }g_{\mu \nu } \delta  x^{\rho }
+\end{gather*}
+Where the second line comes from Taylor expansion in curved spacetime, which uses partial derivative not covariant one, because we are thinking of the components of $g_{\mu \nu }$ as functions of spacetime in some specific coordinates system.
+Since we modify the trajectory, $\tau $ also changes
+\[
+	\delta \tau = \int_{}^{}{-\frac{1}{2\sqrt{-f}}\delta f d\lambda }
+
+\]
+{\footnotesize reminder/pro-tip: it's convenient to choose the proper time to parametrize trajectory because we chose it time-like.}\par
+
+As said before \emph{f} is still kinda normalized (\emph{-1}) even changing parameters. 
+
+Stationary points of the \emph{functional of the proper time}, so path for which $\delta  \tau =0$, are equivalent to stationary points of this simpler integral
+\[
+I = \frac{1}{2} \int_{}^{}{d d\tau } = \frac{1}{2} \int_{}^{}{g_{\mu \nu }\frac{d x^{\mu }}{d \lambda }\frac{d x^{\nu }}{d \lambda }}
+\]
+adding the perturbations on \emph{I} gets us
+\begin{gather*}
+\delta I = \frac{1}{2} \int_{}^{}{\left( \partial_{\sigma }g_{\mu \nu }\frac{d x^{\mu }}{d \tau }\frac{d x^{\nu }}{d \tau }\delta x^{\sigma } + g_{\mu \nu } \frac{d \left( \delta x^{\mu } \right)}{d \tau }\frac{d x^{\nu }}{d \tau } + g_{\mu \nu }\frac{d x_{\mu }}{d \tau } \frac{d \left( x^{\nu } \right)}{d \tau } \right)d\tau } \\
+= \frac{1}{2} \int_{}^{}{\left( \partial_{\rho }g_{\mu \nu }\delta x^{\rho } \frac{d x^{\mu }}{d \tau } \frac{d x^{\nu }}{d \tau } \right)}
+\end{gather*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
