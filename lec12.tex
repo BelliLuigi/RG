@@ -65,10 +65,9 @@ x^{\mu  }\to x^{\mu }\delta x^{\mu } \\
 g_{\mu \nu } \to  g_{\mu \nu } + \partial_{\rho }g_{\mu \nu } \delta  x^{\rho }
 \end{gather*}
 Where the second line comes from Taylor expansion in curved spacetime, which uses partial derivative not covariant one, because we are thinking of the components of $g_{\mu \nu }$ as functions of spacetime in some specific coordinates system.
-Since we modify the trajectory, $\tau $ also changes
+Since we modify the trajectory, $\tau$ also changes
 \[
 	\delta \tau = \int_{}^{}{-\frac{1}{2\sqrt{-f}}\delta f d\lambda }
-
 \]
 {\footnotesize reminder/pro-tip: it's convenient to choose the proper time to parametrize trajectory because we chose it time-like.}\par
 
@@ -76,13 +75,58 @@ As said before \emph{f} is still kinda normalized (\emph{-1}) even changing para
 
 Stationary points of the \emph{functional of the proper time}, so path for which $\delta  \tau =0$, are equivalent to stationary points of this simpler integral
 \[
-I = \frac{1}{2} \int_{}^{}{d d\tau } = \frac{1}{2} \int_{}^{}{g_{\mu \nu }\frac{d x^{\mu }}{d \lambda }\frac{d x^{\nu }}{d \lambda }}
+I = \frac{1}{2} \int_{}^{}{f d\tau } = \frac{1}{2} \int_{}^{}{g_{\mu \nu }\frac{d x^{\mu }}{d \lambda }\frac{d x^{\nu }}{d \lambda }}
 \]
 adding the perturbations on \emph{I} gets us
-\begin{gather*}
+\begin{gather*}\label{eq:deltaI}
 \delta I = \frac{1}{2} \int_{}^{}{\left( \partial_{\sigma }g_{\mu \nu }\frac{d x^{\mu }}{d \tau }\frac{d x^{\nu }}{d \tau }\delta x^{\sigma } + g_{\mu \nu } \frac{d \left( \delta x^{\mu } \right)}{d \tau }\frac{d x^{\nu }}{d \tau } + g_{\mu \nu }\frac{d x_{\mu }}{d \tau } \frac{d \left( x^{\nu } \right)}{d \tau } \right)d\tau } \\
-= \frac{1}{2} \int_{}^{}{\left( \partial_{\rho }g_{\mu \nu }\delta x^{\rho } \frac{d x^{\mu }}{d \tau } \frac{d x^{\nu }}{d \tau } \right)}
+= \frac{1}{2} \int_{}^{}{\left( \partial_{\rho }g_{\mu \nu }\delta x^{\rho } \frac{d x^{\mu }}{d \tau } \frac{d x^{\nu }}{d \tau } g_{\mu \nu }\frac{d }{d \tau } \delta \left( x^{\mu } \right) \frac{d x^{\nu }}{d \tau } + g_{\mu \nu } \frac{d x^{\mu }}{d \tau } \frac{d }{d \tau } \delta \left( x^{\nu } \right) \right) d\tau }
 \end{gather*}
+The last two terms can be integrated by parts,
+\begin{gather*}
+	\int_{}^{}{g_{\mu \nu } \frac{d }{d \tau }\left( \delta x^{\mu } \right) \frac{d x^{\nu }}{d \tau } d\tau } = \text{ boundary term } - \int_{}^{}{\frac{d }{d \tau } \left( g_{\mu \nu }\frac{d x^{\nu }}{d \tau } \right) \delta x^{\mu } d\tau } \\
+ = - \int_{}^{}{\left( \partial_{\rho }g_{\mu \nu } \frac{d x^{\rho }}{d \tau } \frac{d x^{\nu }}{d \tau } + g_{\mu \nu } \frac{d ^{2} x^{\nu }}{d \tau ^{2}} \right) \delta x^{\mu } d\tau }
+\end{gather*}
+the boundary term vanishes because we take our variation $\delta x^{\mu }$ to vanish at the endpoints of the path. \par
+So now we can insert back what we found in \ref{eq:deltaI}
+\begin{gather*}
+\delta I = \frac{1}{2} \int_{}^{}{\partial_{\rho }g_{\mu \nu } \frac{d x^{\nu }}{d \tau } \frac{d x^{\mu  }}{d \tau } \delta x^{\rho } d\tau } - \frac{1}{2} \int_{}^{}{\left( \partial_{\rho } g_{\mu \nu } \frac{d x^{\rho }}{d \tau } \frac{d x^{\nu }}{d \tau } + g_{\mu \nu } \frac{d ^{2}x^{\nu }}{d \tau ^{2}} \right) \delta x^{\mu }d\tau }  +\\
+- \frac{1}{2} \int_{}^{}{\left( \partial_{\rho } g_{\mu \nu } \frac{d x^{\rho }}{d \tau } \frac{d x^{\mu }}{d \tau } + g_{\mu \nu } \frac{d ^{2} x^{\mu }}{d \tau ^{2}} \right) \delta x^{\nu } d\tau }
+\end{gather*}
+Now, we can make things easier if
+\begin{itemize}
+\item we use $\alpha $ instead of $\rho $ in the first term
+\item $\alpha $ instead of $\mu $ in the second term
+\item $\alpha $ instead of $\nu $ in the third term
+\item $\rho $ in second term is now $\mu $
+\item $\rho $ in third term is now $\nu $
+\item $\nu $ in second term is now $\mu $
+\end{itemize}
+so
+\begin{equation}
+	\delta I = \int_{}^{}{ \left[ \frac{\left( \partial_{\alpha } g_{\mu \nu } - \partial_{\mu } g_{\alpha \nu } - \partial_{\nu }g_{\mu \alpha } \right)}{2} \frac{d x^{\mu }}{d \tau } \frac{d x^{\nu }}{d \tau } - \frac{2}{2} g_{\mu \alpha } \frac{d ^{2}x^{\mu }}{d \tau ^{2}} \right] \delta x^{\alpha }d\tau }
+\end{equation}
+{\footnotesize this has to be checked doing math by hand because probably there is a minus sign outside}\par
+Since we are searching for stationary points, we want $\delta I$ to vanish for any variation $\delta x^{\alpha } $, this implies 
+\begin{equation}
+g_{\beta \alpha } \frac{d ^{2}x^{\beta }}{d \tau ^{2}} + \frac{1}{2} \left( \partial_{\mu }g_{\alpha \nu } + \partial_{\nu } g_{\alpha \mu } - \partial_{\alpha }g_{\mu \nu } \right) \frac{d x^{\mu }}{d \tau } \frac{d x^{\nu }}{d \tau }
+\end{equation}
+now if I multiply for the inverse metric $g^{\rho \alpha }$ the full expression
+\begin{equation}
+	\frac{d ^{2}x^{\rho }}{d \tau ^{2}} + \frac{g^{\rho \alpha }}{2} \left[ \partial_{\mu }g_{\alpha \nu } + \partial_{\nu } g_{\mu \alpha } - \partial_{\alpha } g_{\mu \nu }\right] \frac{d x^{\mu }}{d \tau }\frac{d x^{\nu }}{d \tau }
+\end{equation}
+We see that we got the \emph{Geodesic Equation} but with a specific choice for the Christoffel connection.\par
+
+\paragraph{Some comments on geodesic}
+I can change variables, like $\tau \to \alpha \lambda + \beta $ but the geodesic equation does not change.\par
+
+The first derivation was hiding that $ \lambda $ need to be related to $\tau $ in a likear way. Since
+\begin{equation}
+u^{\mu }\nabla _{\mu }u^{\nu } = 0 \text{ or  } p^{\mu }\nabla _{\mu }p^{\nu } = 0
+\end{equation}
+geodesics are trajectories defined by this equation, freely falling particles move like this.
+
+
 
 
 
