@@ -94,3 +94,5 @@
 \contentsline {subsubsection}{Exponential Map}{60}{}%
 \contentsline {subsection}{\numberline {2.12.1}Riemann Normal Coordinates}{61}{}%
 \contentsline {subsubsection}{More in deep explanation}{61}{}%
+\contentsline {subsubsection}{Check on RNC}{62}{}%
+\contentsline {subsection}{\numberline {2.12.2}Riemann Curvature Tensor}{62}{}%

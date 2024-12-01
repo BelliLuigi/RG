@@ -91,14 +91,141 @@ Now, I understand that if this is the first time approaching this it's kinda dif
 The part that makes the exponential map useful is that it's hard to find a coordinates system $x^{\hat{\mu }}$ for which the basis vectors $\{ \hat{e}_{\left( h\mu  \right)}\}$ are made of $\hat{e}_{\left( \hat{\mu } \right)} = \partial_{\hat{\mu } }$m and such that the first partial derivatives of $g_{\hat{\mu }\hat{\nu }}$ vanish. But the exponential map achieves that automatically. For any point \emph{Q} sufficiently close to \emph{P}, there is a unique geodesic path connecting \emph{P} to \emph{Q}, and a unique parametrization $\lambda $. At \emph{P} the tangent vector can be written as a linear combination of our basis vectors $k = k^{\hat{\mu }} \hat{e}_{\left( \hat{\mu } \right)}$. Then we define $x^{\hat{\mu }}$ to be these components $x^{\hat{\mu }}\left( Q \right) = k^{\hat{\mu }}$
 
 \subsubsection{Check on RNC}
+We want to verify that RNC satisfy $\partial_{\hat{\rho }} g_{\hat{\mu }\hat{\nu }}\left( P \right) = 0$. Noting that a ray  in the tangent space gets mapped to a geodesic by the exponential map, leads to see that in RNC a curve $x^{\hat{\mu }}\left( \lambda  \right)$ of the form
+\[
+x^{\hat{\mu }} \left( \lambda  \right) = \lambda k^{\hat{\mu }}
+\]
+will solve the geodesic equation.  Plugging this inside gives
+\begin{equation}
+\frac{d ^{2} x^{\hat{\mu }}}{d \lambda ^{2}} + \Gamma ^{\hat{\mu }}_{\hat{\alpha }\hat{\beta }} \frac{d x^{\hat{\alpha }}}{d \lambda }\frac{d x^{\hat{\beta }}}{d \lambda } = 0
+\end{equation}
+where the second derivative is null, and the other two partial derivatives correspond to $k^{\hat{\alpha }}, k^{\hat{\beta }}$. So we are left with
+\begin{equation}
+\Gamma ^{\hat{\mu }}_{\hat{\alpha }\hat{\beta }} k^{\hat{\alpha }}k^{\hat{\beta }} = 0, \forall k
+\end{equation}
+and since it true for every \emph{k}
+\[
+\Gamma ^{\hat{\mu }}_{\hat{\alpha }\hat{\beta }} \left( P \right) = 0
+\]
+Now we apply the metric compatibility
+\begin{equation}
+\nabla _{\hat{\rho }} \left( g_{\hat{\mu }\hat{\nu }} \right) = \partial_{\hat{\rho }} g_{\hat{\mu }\hat{\nu }} - \Gamma - \Gamma 
+\end{equation}
+And each term is equal to zero. RNCs makes the LICs.
+
+\subsection{Riemann Curvature Tensor}
+
+As we already discussed, parallel transport of a vector around a closed loop in a curved space will result in a different vector than the one we started with. The transformation depends on the total curvature enclosed by the loop. \par
+Since spacetime looks flat locally, if we define a loop made by two infinitesimal vectors $A^{\mu }$ and $B^{\nu }$ we can  perform parallel transport on a vector $V^{\mu }$ by moving it anti-clockwise.
 
 
+\tikzset{every picture/.style={line width=0.5pt}} %set default line width to 0.75pt      
+\begin{tikzpicture}[x=0.5pt,y=0.5pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da4139814907991093] 
+\draw [line width=1.5]    (215,277) -- (461.17,202.16) ;
+\draw [shift={(465,201)}, rotate = 163.09] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
+%Straight Lines [id:da37994344236993594] 
+\draw [line width=1.5]    (215,277) -- (233.59,95.98) ;
+\draw [shift={(234,92)}, rotate = 95.86] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
+%Straight Lines [id:da11748394321022726] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (465,201) -- (483.69,18.98) ;
+\draw [shift={(484,16)}, rotate = 95.86] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da04954610847070795] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (234,92) -- (481.13,16.87) ;
+\draw [shift={(484,16)}, rotate = 163.09] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Curve Right Arrow [id:dp34474738978659925] 
+\draw  [fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ] (380.74,145.2) .. controls (387.81,164.58) and (362.48,187.06) .. (324.16,195.41) -- (324.16,195.41) .. controls (362.48,187.06) and (387.81,164.58) .. (380.74,145.2) -- cycle ;\draw  [fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ] (380.74,145.2) .. controls (374.73,128.72) and (347.22,119.8) .. (315.56,122.64) -- (318.67,131.17) -- (298.58,125.25) -- (312.44,114.11) -- (315.56,122.64) .. controls (347.22,119.8) and (374.73,128.72) .. (380.74,145.2) -- cycle ;
+
+% Text Node
+\draw (172,178) node [anchor=north west][inner sep=0.75pt]   [align=left] { $B^{\nu }$ };
+% Text Node
+\draw (370,236) node [anchor=north west][inner sep=0.75pt]   [align=left] { $A^{\mu }$};
+% Text Node
+\draw (494,104) node [anchor=north west][inner sep=0.75pt]   [align=left] { $B^{\nu }$};
+% Text Node
+\draw (288,34) node [anchor=north west][inner sep=0.75pt]   [align=left] { $A^{\mu }$};
+\end{tikzpicture}
+\bigskip
+
+As we know the action of parallel transport is independent on the coordinates, so there should be a tensor that quantifies the change of the vector, so with an upper and a lower index. Depending also on vectors \textbf{A} and \textbf{B}, there are two additional lower indices. And this tensor must be anti-symmetric since we can walk the loop in the opposite direction, and the outcome would be the inverse. So we should get something like this
+\begin{equation}
+\delta V^{\mu } = R^{\mu }_{\alpha \beta \gamma }A^{\alpha }B^{\beta }V^{\gamma}
+\end{equation}
+As decided above this tensor should be anti-symmetric on the \emph{last two indices}.
+\[
+R^{\mu }_{\alpha \beta \gamma } = - R^{\mu }_{\alpha \gamma  \beta }
+\]
+To compute what's inside the \textbf{R} tensor is kinda difficult so we take a related operation, the commutator of two covariant derivatives. \par
+The relation between the two is because the covariant derivative of a tensor in a certain direction measures how much the tensor changes relative to what it would have been if it had been parallel transported, because the covariant derivative of a tensor in a direction along which is parallel transported is null. The commutator of two covariant derivatives measures the difference between parallel transporting the tensor first one way and then the other, and viceversa.\bigskip
 
 
+\tikzset{every picture/.style={line width=0.5pt}} %set default line width to 0.75pt       
+\begin{tikzpicture}[x=0.5pt,y=0.5pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
+%Straight Lines [id:da4139814907991093] 
+\draw [line width=1.5]    (215,277) -- (461.17,202.16) ;
+\draw [shift={(465,201)}, rotate = 163.09] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
+%Straight Lines [id:da37994344236993594] 
+\draw [line width=1.5]    (215,277) -- (233.59,95.98) ;
+\draw [shift={(234,92)}, rotate = 95.86] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
+%Straight Lines [id:da11748394321022726] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (465,201) -- (483.69,18.98) ;
+\draw [shift={(484,16)}, rotate = 95.86] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da04954610847070795] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (234,92) -- (481.13,16.87) ;
+\draw [shift={(484,16)}, rotate = 163.09] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
 
+% Text Node
+\draw (172,178) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\nu }$};
+% Text Node
+\draw (370,236) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\mu }$};
+% Text Node
+\draw (494,104) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\nu }$};
+% Text Node
+\draw (288,34) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\mu }$};
+\end{tikzpicture}
+\bigskip
 
-
+We could do the computation with a scalar but
+\begin{equation}
+	[\nabla _{\mu }, \nabla _{\nu }] \phi = \nabla _{\mu}\left( \nabla _{\nu }\phi  \right) -\nabla _{\nu }\left( \nabla _{\mu }\phi  \right) = \partial_{\mu }\left( \partial_{\nu }\phi  \right) - \partial_{\nu }\left( \partial_{\mu }\phi  \right) = 0
+\end{equation}
+Not only is equal to zero, but it's trivially zero.\par
+So we will use a vector
+\begin{gather*}
+	[\nabla _{\mu },\nabla _{\nu }] V^{\rho } = \nabla _{\mu }\left( \nabla _{\nu }V^{\rho } \right) - \nabla_{\nu }\left( \nabla _{\mu }V^{\rho } \right)	 \\
+	\text{ now we take just one of the terms } \\
+	\nabla _{\mu }\left( \nabla _{\nu } V^{\rho } \right) = \partial_{\mu } \left( \nabla _{\nu } V^{\rho } \right) + \Gamma ^{\rho }_{\mu \beta } \nabla _{\nu }V^{\beta } - \Gamma ^{\beta }_{\mu \nu } \nabla _{\beta } V^{\rho } \\
+	\text{ again, we take the first term of the second part } \\
+	\partial_{\mu }\left( \partial_{\nu }V^{\rho } + \Gamma ^{\rho }_{\nu \alpha } V^{\alpha } \right) + \Gamma ^{\rho }_{\mu \beta } \left( \partial_{\nu }V^{\beta } + \Gamma ^{\beta}_{\nu \alpha } V^{\alpha } \right) - \Gamma ^{\beta }_{\mu \nu } \nabla _{\beta }V^{\rho } \\
+	\partial_{\mu }\partial_{\nu }V^{\rho } + \left( \partial_{\mu } \Gamma ^{\rho }_{\nu \alpha } \right)V^{\alpha } + \Gamma ^{\rho }_{\nu \alpha } \partial_{\mu }V^{\alpha } + \Gamma ^{\rho }_{\mu \beta } \partial_{\nu }V^{\beta } + \Gamma ^{\rho }_{\mu \beta }\Gamma ^{\beta }_{\nu \alpha } V^{\alpha }- \Gamma ^{\beta }_{\mu \nu }\nabla _{\beta} V^{\rho }
+\end{gather*}
+Now, let's look at this last row for some simplifications.
+\begin{itemize}
+\item The first term is symmetric in $\mu , \nu $.
+\item The sum of the third and the fourth is symmetric in $\mu , \nu $ if we swap the dummy index $\beta \to \alpha $.
+\item The last term is symmetric but only with \emph{zero torsion,}
+\end{itemize}
+The terms that are symmetric vanish since we are using the operator of anti-symmetry. So we are left, with
+\begin{equation}
+	[\nabla _{\mu }, \nabla _{\nu }]V^{\rho } = \left( \partial_{\mu }\Gamma ^{\rho }_{\nu \alpha } - \partial_{\nu }\Gamma ^{\rho }_{\mu \alpha } \right)V^{\alpha } + \left( \Gamma ^{\rho }_{\mu \beta } \Gamma ^{\beta }_{\nu \alpha } - \Gamma ^{\rho }_{\nu \beta }\Gamma ^{\beta }_{\mu \alpha } \right)V^{\alpha } - \left( \Gamma ^{\beta }_{\mu \nu } - \Gamma ^{\beta }_{\nu \mu } \right)\nabla _{\beta }V^{\rho }
+\end{equation}
+This last piece has equivalent to the \emph{torsion} that is
+\[
+T^{\beta }_{\mu \nu }\nabla _{\beta }V^{\rho }
+\]
+but since we work with torsion free connections, it's zero. We are left with
+\begin{equation}
+	[\nabla _{\mu }, \nabla _{\nu }]V^{\rho } = [\partial_{\mu }\Gamma ^{\rho }_{\nu \alpha } - \partial_{\nu }\Gamma ^{\rho }_{\mu \alpha } + \Gamma  ^{\rho }_{\mu  \beta }\Gamma  ^{ \beta }_{\nu  \alpha } - \Gamma ^{\rho }_{\nu \beta }\Gamma ^{\beta }_{\mu \alpha }] V^{\alpha }
+\end{equation}
+And this, can be written as 
+\begin{equation}
+	[\nabla _{\mu }, \nabla _{\nu }] V^{ \rho } = R^{\rho }_{\sigma \mu \nu } V^{\sigma }
+\end{equation}
+that is the Riemann Tensor.
 
 
 
