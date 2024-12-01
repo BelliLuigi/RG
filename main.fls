@@ -179,6 +179,9 @@ INPUT lec12.aux
 INPUT ./lec13.aux
 INPUT ./lec13.aux
 INPUT lec13.aux
+INPUT ./lec14.aux
+INPUT ./lec14.aux
+INPUT lec14.aux
 OUTPUT main.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -362,6 +365,11 @@ INPUT ./lec13.tex
 INPUT ./lec13.tex
 INPUT lec13.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT ./lec14.tex
+OUTPUT lec14.aux
+INPUT ./lec14.tex
+INPUT ./lec14.tex
+INPUT lec14.tex
 INPUT main.aux
 INPUT ./lec4.aux
 INPUT ./lec4.aux
@@ -393,6 +401,9 @@ INPUT lec12.aux
 INPUT ./lec13.aux
 INPUT ./lec13.aux
 INPUT lec13.aux
+INPUT ./lec14.aux
+INPUT ./lec14.aux
+INPUT lec14.aux
 INPUT /home/gigi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

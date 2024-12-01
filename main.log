@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.6)  1 DEC 2024 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.6)  1 DEC 2024 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -320,7 +320,7 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count295
 \l__pdf_internal_box=\box64
-) (./main.aux (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux))
+) (./main.aux (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux) (./lec14.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -527,17 +527,20 @@ Overfull \hbox (11.71274pt too wide) detected at line 215
 []\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10 r[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 r[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 V[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 V[] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 V[] \OMS/cmsy/m/n/10 ^^@ [] r[]\OML/cmm/m/it/10 V[]
  []
 
-) [64] (./main.aux (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux))
+) [64]
+\openout2 = `lec14.aux'.
+
+ (./lec14.tex) (./main.aux (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux) (./lec14.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13152 strings out of 476182
- 269278 string characters out of 5795595
+ 13177 strings out of 476182
+ 269775 string characters out of 5795595
  1942975 words of memory out of 5000000
- 34854 multiletter control sequences out of 15000+600000
+ 34872 multiletter control sequences out of 15000+600000
  571982 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,12n,93p,2236b,695s stack positions out of 10000i,1000n,20000p,200000b,200000s
