@@ -96,3 +96,4 @@
 \contentsline {subsubsection}{More in deep explanation}{61}{}%
 \contentsline {subsubsection}{Check on RNC}{62}{}%
 \contentsline {subsection}{\numberline {2.12.2}Riemann Curvature Tensor}{62}{}%
+\contentsline {section}{\numberline {2.13}Lec 14}{65}{}%
