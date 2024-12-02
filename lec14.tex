@@ -32,7 +32,42 @@ R_{\hat{\rho }\hat{\sigma }\hat{\mu }\hat{\nu }} \left( P \right) = g_{\hat{\rho
 = g_{\hat{\rho }\hat{\lambda }} \frac{1}{2} \partial_{\hat{\mu } } [ g^{\hat{\lambda }\hat{\alpha }} \left( \partial_{\hat{\nu }} g_{\hat{\alpha  }\hat{\sigma }} + \partial_{\hat{\sigma }} g_{\hat{\alpha }\hat{\nu }} - \partial_{\hat{\alpha }} g_{\hat{\sigma }\hat{\nu }} \right) ] - \left( \hat{\mu } \leftrightarrow \hat{\nu } \right) \\
 = \frac{g_{\hat{\rho }\hat{\lambda }}}{2} g^{\hat{\lambda }\hat{\alpha }} [ \partial_{\hat{\mu }} \partial_{\hat{\nu }} g_{\hat{\alpha }\hat{\sigma }} + \partial_{\hat{\mu }}\partial_{\hat{\sigma }} g_{\hat{\alpha }\hat{\nu }} - \partial_{\hat{\mu }}\partial_{\hat{\alpha }} g_{\hat{\sigma }\hat{\nu }}] - \left( \hat{\mu } \leftrightarrow \hat{\nu } \right)
 \end{gather*} %%% Da rivedere gli indici nella penultima/ultima riga.
-Now as usual let's look for some simplifications,
-
-
+Now as usual let's look for some simplifications: \par
+The first term inside the square brackets is symmetric so it goes away. The product of $g_{\hat{\rho }\hat{\lambda }} g^{\hat{\lambda }\hat{\alpha }} = \delta ^{\hat{\alpha }}_{\hat{\rho }} $ so every $\alpha $ becomes a $\rho $. We are left with
+\begin{equation}
+	R_{\hat{\rho }\hat{\sigma }\hat{\mu }\hat{\nu }} = \frac{1}{2} [\partial_{\hat{\mu }}\partial_{\hat{\sigma }} g_{\hat{\rho }\hat{\nu }} - \partial_{\hat{\mu }}\partial_{\hat{\rho }}g_{\hat{\sigma }\hat{\nu }} - \partial_{\hat{\nu }}\partial_{\hat{\sigma }} g_{\hat{\rho }\hat{\mu }}+ \partial_{\hat{\nu }}\partial_{\hat{\rho }}g_{\hat{\sigma }\hat{\mu }}]
+\end{equation}
+By looking at it, we see that the tensor is antisymmetric on it's first two indices
+\[
+R_{\rho \sigma \mu \nu } = - R_{\sigma \rho \mu \nu }
+\]
+also for exercise one can see that exchanging block, the tensor is invariant under interchange of the first pair of indices with the second:
+\[
+R_{\rho \sigma \mu \nu } = R_{\mu \nu \rho \sigma }
+\]
+another thing that could be checked is that the complete anti-symmetrization of this tensor is null
+\[
+	R_{[\rho \sigma \mu \nu ]} = 0
+\]
+so the properties are
+\begin{enumerate}
+\item $R_{\rho \sigma \mu \nu }  = - R_{\rho \sigma \nu \mu }$
+\item $R_{\rho \sigma \mu \nu } = - R_{\sigma \rho \mu \nu }$
+\item $R_{\rho \sigma \mu \nu } = R_{\mu \nu \rho \sigma }$
+\item $R_{[\rho \sigma \mu \nu ]} = 0$
+\end{enumerate}
+Now we have to count how many independent entries we are left with.\par
+Starting from anti-symmetry on the first two and last two indices and symmetry on the exchange of this pairs, we can think of a symmetric matrix $R_{[\rho \sigma ][\mu \nu ]}$. The pairs are thought as individual indices. An $m\times m$ symmetric matrix has 
+\[
+\frac{m\left( m+1 \right)}{2}
+\]
+individual components, while the two anti-symmetric matrices have
+\[
+\frac{n\left( n-1 \right)}{2}
+\]
+free components, so
+\[
+	\frac{1}{2} \left[ \frac{1}{2} n\left( n-1 \right)\right] \left[ \frac{1}{2} n \left( n-1 \right)+1\right] = \frac{1}{8} \left( n^{4} -2n^{3} +3n^{2} -2n \right)
+\]
+Independent components, and putting $n=4$ we get 21 independent entries.
 
