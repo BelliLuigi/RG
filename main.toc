@@ -97,3 +97,7 @@
 \contentsline {subsubsection}{Check on RNC}{62}{}%
 \contentsline {subsection}{\numberline {2.12.2}Riemann Curvature Tensor}{62}{}%
 \contentsline {section}{\numberline {2.13}Lec 14}{65}{}%
+\contentsline {subsubsection}{Bianchi Identity}{66}{}%
+\contentsline {subsubsection}{Ricci tensor}{67}{}%
+\contentsline {section}{\numberline {2.14}Lec 15}{68}{}%
+\contentsline {subsection}{\numberline {2.14.1}Einstein Equation}{68}{}%

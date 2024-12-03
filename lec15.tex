@@ -1,0 +1,94 @@
+\section{Lec 15}
+
+\subsection{Einstein Equation}
+Today we will derive the Einstein Equation. We will use a technique called \emph{minimal coupling principle}. It has three steps
+\begin{enumerate}
+\item Take a physics law valid in flat spacetime (e.g. poisson equation for gravitational potential).
+\item write it in a coordinates independent form ( tensorial).
+\item Assume it is valid for curved spacetime.
+\end{enumerate}
+
+Let's start with the first step. \par
+We consider the motion of freely-falling particles. From cartesian coordinates, $x^{\mu }$, we have a straigt line \[
+\frac{d ^{2}x^{\mu }}{d \lambda ^{2}} = 0 
+\]
+n.b. this is not a tensorial relation: $\frac{d x^{\mu }}{d \lambda }$ is a well-defined vector, but the second derivative is not.
+Now I change coordinates, but keeping spacetime flat. This is because a law that changes with coordinates is not coordinates independent.
+\[
+\frac{d }{d \lambda }\left( \frac{d x^{\mu }}{d \lambda } \right) = 0
+\]
+this one is composed by a vector inside the brackets, while the operator outside is not a tensor. \par
+We could use the chain rule to write
+\[
+\frac{d ^{2}x^{\mu }}{d \lambda ^{2}} = \frac{d x^{\sigma }}{d \lambda }\partial_{\sigma }\frac{d x^{\mu }}{d \lambda }
+\]
+but the partial derivative is still a problem. Maybe we should use the covariant one.
+So we get
+\[
+	\frac{d x^{\sigma }}{d \lambda }\nabla _{\sigma } \left( \frac{d x^{\mu }}{d \lambda } \right) = \frac{d x^{\sigma }}{d \lambda }\left[ \partial_{\sigma } \left( \frac{d x^{\mu }}{d \lambda } \right) + \Gamma ^{\mu }_{\sigma \alpha } \frac{d x^{\alpha }}{d \lambda }\right] = 0
+\]
+in the end
+\[
+\frac{d ^{2}x^{\mu }}{d \lambda ^{2}} + \Gamma ^{\mu }_{\sigma \alpha }\frac{d x^{\sigma }}{d \lambda }\frac{d x^{\alpha }}{d \lambda } = 0
+\]
+This is the geodesic equation. In general relativity we said freely-falling particles move along geodesics. Now we have generalized a small thing to curved spacetime but it is different from saying that this describes gravity.\par
+So, let's show how results from the Newtonian limit fit in this picture. This limit has three requirements
+\begin{itemize}
+\item slowly moving particles $v \ll c$
+\item weak gravitational field, so the metric could be Minkowskian with a little perturbation
+	\[
+		g_{\mu \nu } = \eta _{\mu \nu } + h_{\mu \nu }, |h_{\mu \nu }|\ll 1
+	\]
+\item the gravitational field is also static, it does not change in time ( $\partial_{0}g_{\mu \nu } = 0$)
+\end{itemize}
+We consider time-like geodesics, so trajectories of massive particles, so it is useful to parametrize them using the proper time $\tau $.
+\[
+\frac{d ^{2}x^{\mu }}{d \tau ^{2}} + \Gamma ^{\mu }_{\alpha  \beta } \frac{d x^{\alpha }}{d \tau }\frac{d x^{\beta }}{d \tau } = 0
+\]
+I want to use this to describe the motion under gravitational field, so we want to recover the $\vec{a} = -\vec{\nabla } \phi $. $\phi $ is hidden inside the connection, while $\vec{a}$ is the second derivative. \par
+Since we required slow motion 
+\[
+\frac{d t}{d \tau } \gg \frac{d x^{i}}{d \tau }	
+\]
+So the geodesics equation becomes
+\begin{equation}
+\frac{d ^{2}x^{\mu }}{d \tau ^{2}} + \Gamma ^{\mu }_{00}\frac{d x^{0}}{d \tau }\frac{d x^{0}}{d \tau } = 0 \to  \frac{d ^{2}x^{\mu }}{d \tau ^{2}} + \Gamma ^{\mu }_{00}\left( \frac{d t}{d \tau } \right)^{2} = 0
+\end{equation}
+In this situation I just need 4 entries for the connection, that is defined as
+\[
+	\Gamma ^{\rho }_{\mu \nu } = \frac{1}{2} g^{\rho \sigma }\left[ \partial_{\mu } g_{\sigma\nu } + \partial_{\nu }g_{\sigma \mu } - \partial_{\sigma }g_{\mu \nu } \right]
+\]
+so
+\begin{equation}
+	\Gamma ^{\mu }_{00} = \frac{1}{2} g^{\mu \alpha } \left[ \partial_{0}g_{\alpha 0} + \partial_{0}g_{\alpha 0} - \partial_{\alpha }g_{00} \right]
+\end{equation}
+since the condition of a static gravitational field, the time derivatives are equal to zero. We are left with 
+\[
+\partial_{\alpha }g_{00} = \partial_{\alpha }\left( \eta _{00} + h_{00} \right) = \partial_{\alpha }h_{00}
+\]
+because the Minkowskian metric tensor is constant. 
+\begin{equation}
+\Gamma ^{\mu }_{00} = -\frac{1}{2} g^{\mu \alpha } \partial_{\alpha }h_{00} = 
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
