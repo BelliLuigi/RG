@@ -378,6 +378,7 @@ OUTPUT lec15.aux
 INPUT ./lec15.tex
 INPUT ./lec15.tex
 INPUT lec15.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT main.aux
 INPUT ./lec4.aux
 INPUT ./lec4.aux

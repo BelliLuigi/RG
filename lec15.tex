@@ -138,6 +138,75 @@ This is what we were looking for: a combination of Ricci tensor and scalar that 
 \begin{equation}
 R_{\mu \nu } - \frac{1}{2}g_{\mu \nu }R = k T_{\mu \nu }
 \end{equation}
+It seems we are good about the left side, with
+\begin{equation}
+R_{\mu \nu } - \frac{1}{2} g_{\mu \nu } R = kT_{\mu \nu }
+\end{equation}
+we still consider something that is slow moving in a weak gravitational field. So we want to see if it works in this setup, so we need to choose $T_{\mu \nu }$.
+\[
+	T_{\mu \nu } = \rho  u_{\mu }u_{\nu }
+\]
+with $\rho $ is the rest frame energy, $u^{\mu }$ is the fluid four-velocity, where the fluid is a massive body such as the Earth.
+In flat spacetime: $u^{\mu } = \left( 1,0,0,0 \right)$. \par
+In curved spacetime: $u^{\mu } = \left( u^{0}, 0,0,0 \right)$.
+The time component can be fixed resorting to $g_{\mu \nu }u^{\mu }u^{\nu } = -1$. So with
+$g_{\mu \nu } = \eta _{\mu \nu } + h_{\mu \nu }$ and $g^{\mu \nu } = \eta ^{\mu \nu } - h^{\mu \nu }$ we can get
+\begin{gather*}
+g_{00} = -1 + h_{00} \\
+g^{00} = -1 - h_{00}
+\end{gather*}
+So in first order in $h_{\mu \nu }$
+\begin{equation}
+u^{0} = 1+ \frac{1}{2}h_{00}
+\end{equation}
+This means that
+\begin{equation}
+T_{00} = \rho u_{0}u_{0} \approx \rho \left( 1+ h_{00} + \ldots  \right)	
+\end{equation}
+Starting from the Ricci tensor we can see what happens to the Riemann tensor with 00 components
+\begin{gather*}
+R_{00} = R^{i}_{0i0}  \text{ roman indices since the others need to be different from 0 }\\
+R^{i}_{0j0} = \partial_{j}\Gamma ^{i}_{00} - \partial_{0}\Gamma ^{i}_{j0} + \Gamma ^{i}_{j\lambda }\Gamma ^{\lambda }_{00} - \Gamma ^{i}_{0\lambda }\Gamma ^{\lambda }_{j0} \\
+R^{i}_{0j0} = \partial_{j}\Gamma ^{i}_{00} = \partial_{j} [\frac{1}{2} g^{i_k} \left( \partial_{0}g_{k0}+ \partial_{0}g_{k0}- \partial_{k}g_{00} \right) = \\
+= \frac{1}{2} \partial_{j}k^{ik} \left( -\partial_{k}k_{00} \right) = - \frac{1}{2} \partial_{j} \partial^{i}h_{00}
+\end{gather*}
+In the second step, the time derivative is null, since we assumed static gravitational field, while the third and fourth term are in the second order in the metric perturbation, so they can be neglected.\par
+Now we would like to try to contract the proposed equation
+\begin{gather*}
+R_{\mu \nu } - \frac{1}{2} g_{\mu \nu } R = k T_{\mu \nu } \\
+R - \frac{1}{2} g^{\mu \nu } g_{\mu \nu }R = k g^{\mu \nu }T_{\mu \nu }\\
+R = -kT
+\to  R_{\mu \nu } = kT_{\mu \nu } - \frac{1}{2} kg_{\mu \nu }T = k \left( T_{\mu \nu } - \frac{1}{2} g_{\mu \nu } T \right)
+\end{gather*}
+So the 00 component of the Ricci tensor is 
+\begin{equation}\label{eq:RICCI00}
+R_{00} = -\frac{1}{2} \nabla ^{2}h_{00}
+\end{equation}
+for the energy-momentum tensor
+\begin{equation}
+T_{00} = \rho 
+\end{equation},
+it's trace
+\begin{equation}
+T = g^{\mu \nu } \left( \rho u_{\mu } u_{\nu }\right) = -\rho 
+\end{equation}
+Regarding the second covariant derivative of $h_{00}$, since we have
+\[
+	G_{\mu \nu } = k T_{\mu \nu }
+\]
+and eq.\ref{eq:RICCI00}, we get
+\begin{equation}
+\nabla ^{2}h_{00} = -k\rho 
+\end{equation}
+We also set before $h_{00} = -2 \Phi $, this means that $k = \left( \pi G \right)$.\par
+
+In conclusion we got the Einstein Equation for general relativity
+\begin{equation}
+R_{\mu \nu } - \frac{1}{2} R g_{\mu \nu } = 8\pi G T_{\mu \nu }
+\end{equation}
+This equation is non-linear.
+
+
 
 
 
