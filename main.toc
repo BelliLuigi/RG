@@ -105,3 +105,5 @@
 \contentsline {chapter}{\numberline {3}Black Holes}{73}{}%
 \contentsline {section}{\numberline {3.1}Lec 16}{73}{}%
 \contentsline {subsection}{\numberline {3.1.1}Scharzschild's Metric}{73}{}%
+\contentsline {paragraph}{Metric}{74}{}%
+\contentsline {paragraph}{Christoffel Symbols}{74}{}%

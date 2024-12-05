@@ -25,12 +25,60 @@ Now we would like simplify a little eq.\ref{eq:polarmetric}:
 \begin{itemize}
 \item $r^{2}C\left( r \right) \to  r^{2}$, this is a change of coordinates, nothing to do with spherical symmetry, but know we have to rescale $A\left( r \right), B\left( r \right)$
 \item $A \equiv e^{2\alpha \left( r \right)}$
-\item $B\equive^{2\beta \left( r \right)}$
+\item $B\equiv e^{2\beta \left( r \right)}$
 \end{itemize}.
-With this the most general guess is:
+With this, the most general guess is:
 \begin{equation}\label{eq:pmetric2}
 ds^{2} = -e^{2\alpha \left( r \right)}dt^{2} + e^{2\beta \left( r \right)}dr^{2} + r^{2}d\Omega ^{2}
 \end{equation}
-We have now two unknown functions $\alpha ,\beta $ of the radial coordinate, not time because of staticness, not angle because of isotropy.
-	
+We have now two unknown functions $\alpha ,\beta $ of the radial coordinate, not time because of staticness, not angle because of isotropy.\par
+Now it's time to \textbf{compute the metric tensor, Christoffel thing and Riemann tensor.}\par
+\paragraph{Metric} 
+\begin{equation}
+\begin{matrix} 
+g_{tt}= -e^{2\alpha \left( r \right)} & g_{rr}=e^{2\beta \left( r \right)} & g_{\theta \theta }= r^{2} & g_{\phi \phi } = r^{2}sin^{2}\theta  \\
+g^{tt}=-e^{-2\alpha \left( r \right)} & g^{rr}=e^{-2\beta \left( r \right)} & g^{\theta \theta }= \frac{1}{r^{2}} & g^{\phi \phi }=\frac{1}{r^{2}sin^{2}\theta } \\
+\end{matrix}
+\end{equation}
+other entries are null.
+\paragraph{Christoffel Symbols}
+ In most generic spacetimes there are 40 independent Christoffel coefficients. %unclear why there are less
+As you may remember the Christoffel connection is defined as
+\begin{equation}
+	\Gamma ^{\rho }_{\mu \nu } = \frac{1}{2}g^{\rho \sigma }\left[ \partial_{\mu }g_{\sigma \nu }+\partial_{\nu }g_{\sigma \mu }-\partial_{\sigma }g_{\mu \nu }\right]
+\end{equation}
+if $\rho = t $:
+\begin{equation}
+	\Gamma^{t}_{\mu \nu } = \frac{1}{2} g^{t\sigma } \left[ \partial_{\mu }g_{\sigma \nu }+\partial_{\nu }g_{\sigma \mu }- \partial_{\sigma }g_{\mu \nu }\right]
+\end{equation}
+from this I get contribution only for $\sigma =t$, because of how is defined the metric. 
+\begin{equation}
+	\left( \sigma = t \right) \to \Gamma ^{t}_{\mu \nu } = \frac{1}{2}g^{tt}\left[ \partial_{\mu }g_{t\nu } + \partial_{\nu }g_{t\mu } - \partial_{t}g_{\mu \nu }\right]
+\end{equation}
+At this point, one immediately see that the last derivative is null since staticness.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
