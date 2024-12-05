@@ -66,17 +66,78 @@ since the condition of a static gravitational field, the time derivatives are eq
 \[
 \partial_{\alpha }g_{00} = \partial_{\alpha }\left( \eta _{00} + h_{00} \right) = \partial_{\alpha }h_{00}
 \]
-because the Minkowskian metric tensor is constant. 
+because the Minkowskian metric tensor is constant.
+Now, since the metric tensor is the Minkowskian one plus a little perturbation it could be
+assumed directly as minkowskian, so it is a first-order approximation.
 \begin{equation}
-\Gamma ^{\mu }_{00} = -\frac{1}{2} g^{\mu \alpha } \partial_{\alpha }h_{00} = 
+\Gamma ^{\mu }_{00} = -\frac{1}{2} g^{\mu \alpha } \partial_{\alpha }h_{00} = - \frac{1}{2}\eta ^{\mu \alpha } \partial_{\alpha }h_{00} = - \frac{1}{2} d^{\mu }h_{00}	
 \end{equation}
 
+At this point we can start to put together again the geodesic equation.
+We have 
+\begin{equation}
+\frac{d ^{2}x^{\mu }}{d \tau ^{2}} = \frac{1}{2} \partial^{\mu }h_{00} \left( \frac{d t}{d \tau } \right)^{2}
+\end{equation}
+Now let's look what happens base on which coordinates we choose.\par
+For $\mu  = 0$ we are left with
+\[
+\frac{d^{2}t }{d \tau ^{2} } = 0 \implies \frac{d t}{d \tau } = \text{ const }
+\]
+while for $\mu  = i$
+\begin{equation}
+\frac{d ^{2}x^{i}}{d \tau ^{2}} = \frac{1}{2} \left( \frac{d t}{d \tau } \right)^{2}\partial^{i}h_{00}\left( \frac{d t}{d \tau } \right)^{2} \to  \frac{d ^{2}x^{i}}{d t^{2} } = \frac{1}{2}\partial_{i}h_{00}
+\end{equation}
+this because we divided both sides by $\left( \frac{d t}{d \tau }\right)^{2}$.
+As we said before the left term is exactly the acceleration
+\[
+a^{i} = \frac{1}{2} \partial^{i}h_{00} 
+\]
+and if $h_{00} = -2\Phi $ we get
+\begin{equation}
+	\vec{a} = -\vec{\nabla } \Phi 
+\end{equation}
+Also
+\[
+g_{00} = -\left( 1+ 2\Phi  \right)
+\].
+Now, we would like to substitute the poissonian equation for Newtonian potential.
+\[
+\nabla^{2} \Phi = 4\pi G\rho 	
+\]
 
+where $\nabla ^{2} = \delta ^{ij}\partial_{i}\partial_{j}  = \partial^{2}_{x}+\partial^{2}_{y}+\partial^{2}_{z}$. 
 
+So we have a second-order differential operator  acting on the  gravitational potential and non the right side a measure of the mass distribution, but we want an equation between tensors. The tensor generalization of the mass density is the energy-momentum tensor $T_{\mu \nu }$. The gravitational potential should get replaced by the metric tensor, because as above we need perturbed the metric to reproduce gravity. So the first attempt could be like
+\[
+\nabla ^{\sigma }\nabla _{\sigma }\left( g_{\mu \nu } \right) = k T_{\mu \nu }
+\]
+but it won't work because of metric compatibility $\nabla _{\sigma }\left( g_{\mu \nu } \right) = 0$.\par
 
-
-
-
+There is a quantity that is constructed from second derivative of the metric that is the Riemann tensor, but since it has too many indices we will resort to the Ricci tensor $R_{\mu \nu }$. So it could be something like
+\[
+R_{\mu \nu } = k T_{\mu \nu }
+\]
+with some constant \emph{k}. But there is a problem, with the conservation of energy. We like that 
+\[
+\nabla ^{\mu }T_{\mu \nu } = 0
+\]
+is true, this implies
+\[
+\nabla ^{\mu }R_{\mu \nu } = 0 \text{ \textbf{BUT} actually  } \nabla^{\mu }R_{\mu \nu } = \frac{1}{2}\nabla _{\nu }R
+\]
+That's an impasse. We will try to work it out writing the Bianchi Identity
+\begin{gather*}
+	g^{\nu \sigma }g^{\lambda \mu } \left[ \nabla _{\lambda }R_{\rho \sigma \nu \mu } + \nabla _{\rho }R_{\sigma \lambda \mu \nu } + \nabla _{\sigma }R_{\lambda \rho \mu \nu }\right] =0 \\
+	\nabla ^{\mu }R_{\mu \rho }- \nabla _{\rho }R	+ \nabla ^{\nu }R_{\rho \nu } =0\\
+	2\nabla ^{\mu }R_{\mu \rho } = \nabla _{\rho }R \to \nabla^{\mu }R_{\mu \rho } = \frac{1}{2} \nabla _{\rho }R \\
+	\nabla ^{\mu }R_{\mu \rho } - \frac{1}{2} \nabla _{\rho }R = 0 \\
+	\nabla ^{\mu }R_{\mu \rho } - \frac{1}{2} g_{\mu \rho } \nabla ^{\mu }R = 0 \\
+	\nabla ^{\mu } \left( R_{\mu \rho } - \frac{1}{2} g_{\mu \rho }R \right) = 0
+\end{gather*}
+This is what we were looking for: a combination of Ricci tensor and scalar that has vanishing divergence!
+\begin{equation}
+R_{\mu \nu } - \frac{1}{2}g_{\mu \nu }R = k T_{\mu \nu }
+\end{equation}
 
 
 
