@@ -55,11 +55,78 @@ from this I get contribution only for $\sigma =t$, because of how is defined the
 \begin{equation}
 	\left( \sigma = t \right) \to \Gamma ^{t}_{\mu \nu } = \frac{1}{2}g^{tt}\left[ \partial_{\mu }g_{t\nu } + \partial_{\nu }g_{t\mu } - \partial_{t}g_{\mu \nu }\right]
 \end{equation}
-At this point, one immediately see that the last derivative is null since staticness.
+At this point, one immediately see that the last derivative is null since staticness.\par
+If $\mu , \nu \neq t \to 0$ since components of the metric tensor with mixed indices are null. 
+\begin{equation}
+\Gamma ^{t}_{tr} = \frac{1}{2} g^{tt}\partial_{r}g_{tt} = \frac{1}{2} \left( -e^{-2\alpha }\left( r \right) \right)\left( -2\alpha ' e^{+2\alpha \left( r \right)} \right) = \alpha ' \to \Gamma ^{t}_{tr} = \alpha '
+\end{equation}
+Now for $\rho =r$, so $\sigma $ must be \emph{r}, too:
+\begin{equation}
+	\Gamma ^{t}_{\mu \nu } = \frac{1}{2} g^{rr}\left[ \partial_{\mu }g_{r\nu }+ \partial_{\nu }g_{r\mu }-\partial_{r}g_{\mu \nu }\right]
+\end{equation}
+if  also$\mu ,\nu  = r$
+\begin{equation}
+	\Gamma ^{r}_{rr} = \frac{1}{2} g^{rr}\left[ \partial_{r}g_{rr}+\partial_{r}g_{rr}-\partial_{r}g_{rr}\right] = \frac{1}{2}g^{rr}d_{r}g_{rr} = \beta ' \to  \Gamma ^{r}_{rr} = \beta '
+\end{equation}
+instead, if $\mu ,\nu  = t$:
+\begin{equation}
+\Gamma^{r}_{tt} = \frac{1}{2}g^{rr} \left( \partial_{t}g_{rt} +\partial_{t}g_{rt}-\partial_{r}g_{tt} \right) = -\frac{1}{2} g^{rr}\partial_{r}g_{tt} = \frac{1}{2}e^{-2\beta }e^{2\alpha }2\alpha ' = \alpha ' e^{2\left( \alpha -\beta  \right)}
+\end{equation}
+The remaining components are given but it would be interesting retrieving them by yourself, since professor said that he could ask to compute one component of the $\Gamma $ at the exam.
+\begin{equation}
+\begin{matrix}
+\Gamma ^{r}_{\theta \theta } = - r e^{-2\beta } & \Gamma ^{r}_{\phi \phi } = -r sin^{2}\theta e^{-2\beta } & \Gamma^{\theta }_{r\theta } = \frac{1}{r} \\
+\Gamma ^{\theta }_{\phi \phi } = -sin \theta cos \theta  & \Gamma ^{\phi }_{r\phi } = \frac{1}{r} & \Gamma ^{\phi }_{\theta \phi } = \frac{cos \theta }{sin \theta } ,
+\end{matrix} 
+\end{equation}
 
+\paragraph{Riemann tensor}
+As we know it is defined as
+\[
+R^{\rho }_{\sigma \mu \nu } = \partial_{\mu }\Gamma ^{\rho }_{\nu \sigma }- \partial_{\nu }\Gamma ^{\rho }_{\mu \sigma } + \Gamma ^{\rho }_{\mu \lambda }\Gamma ^{\lambda }_{\nu \sigma }- \Gamma ^{\rho }_{\nu \lambda }\Gamma ^{\lambda }_{\mu \sigma }
+\]
+And since we know all the $\Gamma$s we should know every Riemann tensor component. Eventually we care about $R_{\mu \nu } = 0$, so we will impose
+\[
+R_{\alpha \alpha } = 0, \alpha \text{ fixed } \to R^{\beta }_{\alpha \beta \alpha }
+\]
+\begin{itemize}
+\item $R^{t}_{rtr} = -\alpha '' -\alpha ^{2}' +\alpha '\beta '$
+\item $R^{t}_{\theta  t \theta } = -r \alpha ' e^{-2\beta }$
+\item $R^{t}_{\phi t \phi } = -r \alpha ' sin^{2} \theta  e^{-2\beta }$
+\item $R^{r}_{\theta r \theta } = r\beta ' e^{-2\beta }$
+\item $R^{r}_{\phi r \phi } = r \beta ' sin^{2}\theta  e^{-2\beta }$
+\item $R^{\theta }_{\phi \theta \phi } = \left( 1-e^{-2\beta } \right)sin^{2} \theta $
+\end{itemize}
+How to compute the others?
+\begin{equation}
+R^{r}_{trt} = g^{rr}R_{rtrt} = g^{rr}R_{trtr} = g^{rr}g_{tt}T^{t}_{rtr}
+\end{equation}
+So we can reconstruct them from elements we already have.
 
+\paragraph{Ricci tensor}
+We want $R_{\alpha \alpha } = 0$. Let's see:
+\begin{equation}
+	R_{tt} = R^{r}_{trt} + R^{\theta }_{t\theta t} + R^{\phi }_{t\phi t} = e^{2\left( \alpha -\beta  \right)}\left[ \alpha '' + \alpha ^{2}' - \alpha '\beta ' +\frac{2\alpha '}{r}\right] 
+\end{equation}
+\begin{equation}
+	R_{\theta \theta } = \left[ \left( \beta ' - \alpha '  \right)r-1\right] e^{-2\beta }+1
+\end{equation}
+\begin{equation}
+R_{rr} = -\alpha '' - \alpha ^{2}' + \alpha ' \beta ' + 2 \frac{\beta '}{r}
+\end{equation}
+\begin{equation}
+	R_{\phi \phi } = R_{\theta \theta }sin^{2}\theta 
+\end{equation}
 
+They are individually equal to zero.
 
+I will use some of these Ricci tensor components to retrieve some informations about $\alpha, \beta $.
+\begin{gather*}
+e^{2\left( \beta -\alpha  \right)}R_{tt} + R_{rr} = 0 \\
+\frac{2}{r}\left( \alpha '-\beta ' \right) = 0 , r\neq 0 \\
+\alpha '+ \beta ' = 0 \to  \alpha \left( r \right)+\beta \left( r \right) = const
+\end{gather*}
+it is possible to choose the time coordinates \emph{t} such that the constant is null.
 
 
 
