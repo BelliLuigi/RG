@@ -90,9 +90,9 @@ And since we know all the $\Gamma$s we should know every Riemann tensor componen
 R_{\alpha \alpha } = 0, \alpha \text{ fixed } \to R^{\beta }_{\alpha \beta \alpha }
 \]
 \begin{itemize}
-\item $R^{t}_{rtr} = -\alpha '' -\alpha ^{2}' +\alpha '\beta '$
-\item $R^{t}_{\theta  t \theta } = -r \alpha ' e^{-2\beta }$
-\item $R^{t}_{\phi t \phi } = -r \alpha ' sin^{2} \theta  e^{-2\beta }$
+\item $R^{t}_{rtr} = -\alpha^{\prime \prime } -\alpha ^{\prime 2} +\alpha^{\prime }\beta ^{\prime }$
+\item $R^{t}_{\theta  t \theta } = -r \alpha^{\prime } e^{-2\beta }$
+\item $R^{t}_{\phi t \phi } = -r \alpha^{\prime } sin^{2} \theta  e^{-2\beta }$
 \item $R^{r}_{\theta r \theta } = r\beta ' e^{-2\beta }$
 \item $R^{r}_{\phi r \phi } = r \beta ' sin^{2}\theta  e^{-2\beta }$
 \item $R^{\theta }_{\phi \theta \phi } = \left( 1-e^{-2\beta } \right)sin^{2} \theta $
@@ -106,13 +106,13 @@ So we can reconstruct them from elements we already have.
 \paragraph{Ricci tensor}
 We want $R_{\alpha \alpha } = 0$. Let's see:
 \begin{equation}
-	R_{tt} = R^{r}_{trt} + R^{\theta }_{t\theta t} + R^{\phi }_{t\phi t} = e^{2\left( \alpha -\beta  \right)}\left[ \alpha '' + \alpha ^{2}' - \alpha '\beta ' +\frac{2\alpha '}{r}\right] 
+	R_{tt} = R^{r}_{trt} + R^{\theta }_{t\theta t} + R^{\phi }_{t\phi t} = e^{2\left( \alpha -\beta  \right)}\left[ \alpha^{\prime \prime } + \alpha ^{\prime 2} - \alpha '\beta ' +\frac{2\alpha '}{r}\right] 
 \end{equation}
 \begin{equation}
 	R_{\theta \theta } = \left[ \left( \beta ' - \alpha '  \right)r-1\right] e^{-2\beta }+1
 \end{equation}
 \begin{equation}
-R_{rr} = -\alpha '' - \alpha ^{2}' + \alpha ' \beta ' + 2 \frac{\beta '}{r}
+R_{rr} = -\alpha^{\prime \prime } - \alpha ^{\prime 2} + \alpha ' \beta ' + 2 \frac{\beta '}{r}
 \end{equation}
 \begin{equation}
 	R_{\phi \phi } = R_{\theta \theta }sin^{2}\theta 
@@ -128,6 +128,75 @@ e^{2\left( \beta -\alpha  \right)}R_{tt} + R_{rr} = 0 \\
 \end{gather*}
 it is possible to choose the time coordinates \emph{t} such that the constant is null.
 
+Now we can do some restrictions on the metric
+\begin{equation}
+\begin{cases}
+ds^{2} = -e ^{2\alpha \left( r \right)}dt^{2} + e^{2\beta \left( r \right)} dr^{2} + r^{2 d\Omega ^{2}} \\
+ \alpha \left( r  \right) + \beta \left( r \right) = \gamma \to  \text{ constant }\\
+\end{cases}
+\end{equation}
+this allows us to write
+\begin{align}
+	ds^{2} &= -e^{2\left( \gamma  - \beta \left( r \right) \right)} dt^{2} + e^{2\beta \left( r \right)} dr^{2} + r^{2} d\Omega^{2} = \\
+	       & = -e ^{-2\beta \left( r \right)} \left( e^{\gamma }dt \right)^{2}i i ++ e^{2\beta }dr^{2} + r^{2} d\Omega ^{2} = \\
+	       \text{ we will operate this change of variables } dt^{\prime } = e^{\gamma }dt 
+\end{align}
+Now I can set $\gamma =0$ and trying to fins the solution for $\alpha \left( r \right)$.
+\[
+\alpha \left( r \right) = - \beta \left( r \right)
+\]
+I use $R_{\theta \theta } = 0$ to find the missing function, solving for $\alpha $:
+\begin{gather*}
+	\left[ \left( -2\alpha \prime  \right)r-1\right]e^{2\alpha }+1 = 0 \\
+	\frac{\partial }{\partial r} \left( re^{2\alpha } \right) = +1
+\end{gather*}
+this is a differential equation 
+\begin{gather*}
+re^{2\alpha }\left( r \right) = r + D \text{ , D is a constant } \\
+e^{2\alpha \left( r \right)} = 1 + \frac{D}{r}
+\end{gather*}
+I could call \emph{D} radius, and introduce a new variable $R_{S} = - D$
+\begin{equation}
+ds^{2} = - \left( 1- \frac{R_{S}}{r} \right)dt^{2} + \left( 1 - \frac{R_{S}}{r} \right)^{-1} dr^{2} + r^{2}d\Omega ^{2}
+\end{equation}
+What is $R_{S}$? And what is his physical meaning? Newtonian gravitation helps us. This one is the most  general solution of spherical symmetry and it has to reproduce something we already know.\par
+
+In the weak field regime we discussed how
+\begin{equation}
+\begin{cases}
+g_{\mu \nu } = \eta _{\mu \nu } + h_{\mu \nu } \\
+h_{00} = -2\Phi  \\
+\end{cases}
+\end{equation}
+with $\Phi $ gravitational potential. 
+\[
+\Phi  =  - \frac{GM}{r}
+\]
+so by comparison
+\[
+R_{S} = 2GM
+\]
+We need to adjust some dimensions still
+\[
+\left[ G \right] \left[ M \right] = \left[ F \right]\left[ L^{2} \right]\left[ M^{-2} \right]\left[ M \right] = \left[ L \right]\left[ T^{-2} \right]\left[ L^{2} \right] = \left[ L^{3} \right]\left[ T^{-2} \right] 
+\]
+so if we divide for velocity squared we get a distance. This means
+\[
+R_{S } = \frac{2GM}{c^{2}}
+\]
+Now if one plugs in the values of the masses of Sun and Earth, he can find the relative $R_{S}$, that is something like 3km and 9mm. This is where the metric blows up.\par
+
+\paragraph{Singularities}
+The metric blows up for $r = R_{S}, 0$, but this shouldn't be a problem since the metric previously derived is valid well outside the Sun. It could be a problem if the object is bigger or if the radius of the object is smaller than the Schwarzschild radius,\par
+What is a singularity?  Be in polar coordinates in the plane
+\[
+g^{\theta \theta } = \frac{1}{r^{2}}
+\]
+the only issue here is with the coordinates chosen, not with the space itself. But if I focus on \emph{scalars}, and I find one that blows up, then I have a singularity. Like
+\[
+R^{\mu \nu \rho \sigma }R_{\mu \nu \rho \sigma } = 48 \frac{G^{2}M^{2}}{r^{6}}
+\]
+we see that it blows up at $r=0$ but not at $r = R_{S}$
 
 
 
