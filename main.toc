@@ -110,3 +110,6 @@
 \contentsline {paragraph}{Riemann tensor}{75}{}%
 \contentsline {paragraph}{Ricci tensor}{75}{}%
 \contentsline {paragraph}{Singularities}{77}{}%
+\contentsline {section}{\numberline {3.2}Lec 17}{78}{}%
+\contentsline {subsection}{\numberline {3.2.1}Geodesic of Schwarzschild}{78}{}%
+\contentsline {subsubsection}{Gravitational Redshift}{79}{}%
