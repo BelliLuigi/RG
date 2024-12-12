@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.6)  12 DEC 2024 10:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.6)  12 DEC 2024 12:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -323,20 +323,20 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux (./lec1.aux) (./lec2.aux) (./lec3.aux) (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux) (./lec14.aux) (./lec15.aux) (./lec16.aux) (./lec17.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count296
@@ -356,11 +356,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -384,86 +384,76 @@ Chapter 1.
 
  (./lec2.tex
 Chapter 2.
-<imm/galileianboost.png, id=38, 704.6325pt x 437.635pt>
-File: imm/galileianboost.png Graphic file (type png)
-<use imm/galileianboost.png>
-Package pdftex.def Info: imm/galileianboost.png  used on input line 23.
-(pdftex.def)             Requested size: 137.9979pt x 85.70241pt.
 [5
 
 
 
 
-] [6 <./imm/galileianboost.png>]
-<imm/WLLC.png, id=49, 1409.265pt x 875.27pt>
-File: imm/WLLC.png Graphic file (type png)
-<use imm/WLLC.png>
-Package pdftex.def Info: imm/WLLC.png  used on input line 123.
-(pdftex.def)             Requested size: 345.0pt x 214.26273pt.
-<imm/segnale.png, id=50, 704.6325pt x 598.235pt>
+] [6]
+<imm/segnale.png, id=46, 704.6325pt x 598.235pt>
 File: imm/segnale.png Graphic file (type png)
 <use imm/segnale.png>
-Package pdftex.def Info: imm/segnale.png  used on input line 137.
-(pdftex.def)             Requested size: 345.0pt x 292.90038pt.
- [7] [8 <./imm/WLLC.png>] [9 <./imm/segnale.png>]) [10]
+Package pdftex.def Info: imm/segnale.png  used on input line 201.
+(pdftex.def)             Requested size: 172.5pt x 146.44562pt.
+ [7] [8 <./imm/segnale.png>]) [9]
 \openout2 = `lec3.aux'.
 
  (./lec3.tex
-<imm/examplelec3.png, id=67, 1328.965pt x 1196.47pt>
+<imm/examplelec3.png, id=60, 1328.965pt x 1196.47pt>
 File: imm/examplelec3.png Graphic file (type png)
 <use imm/examplelec3.png>
-Package pdftex.def Info: imm/examplelec3.png  used on input line 63.
+Package pdftex.def Info: imm/examplelec3.png  used on input line 76.
 (pdftex.def)             Requested size: 345.0pt x 310.60019pt.
- [11
+ [10
 
 
 
-] [12 <./imm/examplelec3.png>] [13] [14] [15]) [16]
+] [11 <./imm/examplelec3.png>] [12] [13] [14]) [15]
 \openout2 = `lec4.aux'.
 
- (./lec4.tex [17
+ (./lec4.tex [16
 
 
 
-] [18]) [19]
+] [17]) [18]
 \openout2 = `lec5.aux'.
 
- (./lec5.tex [20
+ (./lec5.tex [19
 
 
 
-] [21]) [22]
+] [20]) [21]
 \openout2 = `lec6.aux'.
 
- (./lec6.tex [23
+ (./lec6.tex [22
 
 
 
-] [24] [25] [26] [27] [28]) [29]
+] [23] [24] [25] [26] [27]) [28]
 \openout2 = `lec7.aux'.
 
- (./lec7.tex [30
+ (./lec7.tex [29
 
 
 
-] [31]
-<imm/failureglobal.png, id=140, 384.43625pt x 271.0125pt>
+] [30]
+<imm/failureglobal.png, id=133, 384.43625pt x 271.0125pt>
 File: imm/failureglobal.png Graphic file (type png)
 <use imm/failureglobal.png>
 Package pdftex.def Info: imm/failureglobal.png  used on input line 101.
 (pdftex.def)             Requested size: 276.00105pt x 194.58298pt.
-<imm/gravshift1.png, id=141, 689.57625pt x 229.85875pt>
+<imm/gravshift1.png, id=134, 689.57625pt x 229.85875pt>
 File: imm/gravshift1.png Graphic file (type png)
 <use imm/gravshift1.png>
 Package pdftex.def Info: imm/gravshift1.png  used on input line 112.
 (pdftex.def)             Requested size: 276.00105pt x 92.00148pt.
- [32 <./imm/failureglobal.png (PNG copy)> <./imm/gravshift1.png (PNG copy)>]
-<imm/gravshift2.png, id=145, 234.8775pt x 375.4025pt>
+ [31 <./imm/failureglobal.png (PNG copy)> <./imm/gravshift1.png (PNG copy)>]
+<imm/gravshift2.png, id=138, 234.8775pt x 375.4025pt>
 File: imm/gravshift2.png Graphic file (type png)
 <use imm/gravshift2.png>
 Package pdftex.def Info: imm/gravshift2.png  used on input line 125.
 (pdftex.def)             Requested size: 103.50105pt x 165.42392pt.
-<imm/notmanifold.png, id=146, 551.05875pt x 374.39874pt>
+<imm/notmanifold.png, id=139, 551.05875pt x 374.39874pt>
 File: imm/notmanifold.png Graphic file (type png)
 <use imm/notmanifold.png>
 Package pdftex.def Info: imm/notmanifold.png  used on input line 142.
@@ -472,35 +462,35 @@ Package pdftex.def Info: imm/notmanifold.png  used on input line 142.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33 <./imm/gravshift2.png (PNG copy)>]
-<imm/chart.png, id=150, 411.5375pt x 163.61125pt>
+[32 <./imm/gravshift2.png (PNG copy)>]
+<imm/chart.png, id=143, 411.5375pt x 163.61125pt>
 File: imm/chart.png Graphic file (type png)
 <use imm/chart.png>
 Package pdftex.def Info: imm/chart.png  used on input line 159.
 (pdftex.def)             Requested size: 224.2479pt x 89.15262pt.
-) [34 <./imm/notmanifold.png (PNG copy)> <./imm/chart.png (PNG copy)>]
+) [33 <./imm/notmanifold.png (PNG copy)> <./imm/chart.png (PNG copy)>]
 \openout2 = `lec8.aux'.
 
- (./lec8.tex [35
+ (./lec8.tex [34
 
 
 
-] [36] [37] [38] [39]) [40]
+] [35] [36] [37] [38]) [39]
 \openout2 = `lec9.aux'.
 
- (./lec9.tex [41
+ (./lec9.tex [40
 
 
 
-] [42] [43]) [44]
+] [41] [42]) [43]
 \openout2 = `lec10.aux'.
 
- (./lec10.tex [45
+ (./lec10.tex [44
 
 
 
-] [46] [47]
-<imm/conntransf.jpg, id=197, 967.615pt x 1284.8pt>
+] [45] [46]
+<imm/conntransf.jpg, id=190, 967.615pt x 1284.8pt>
 File: imm/conntransf.jpg Graphic file (type jpg)
 <use imm/conntransf.jpg>
 Package pdftex.def Info: imm/conntransf.jpg  used on input line 141.
@@ -509,83 +499,83 @@ Package pdftex.def Info: imm/conntransf.jpg  used on input line 141.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [48] [49 <./imm/conntransf.jpg>]
+) [47] [48 <./imm/conntransf.jpg>]
 \openout2 = `lec11.aux'.
 
- (./lec11.tex [50
+ (./lec11.tex [49
 
 
 
-] [51] [52] [53]) [54]
+] [50] [51] [52]) [53]
 \openout2 = `lec12.aux'.
 
- (./lec12.tex [55
+ (./lec12.tex [54
 
 
 
-] [56] [57]) [58]
+] [55] [56]) [57]
 \openout2 = `lec13.aux'.
 
- (./lec13.tex [59
+ (./lec13.tex [58
 
 
 
-] [60] [61] [62]
+] [59] [60] [61]
 Overfull \hbox (11.71274pt too wide) detected at line 215
 []\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10 r[]\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 r[]\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 V[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 V[] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 V[] \OMS/cmsy/m/n/10 ^^@ [] r[]\OML/cmm/m/it/10 V[]
  []
 
-) [63]
+) [62]
 \openout2 = `lec14.aux'.
 
- (./lec14.tex [64
+ (./lec14.tex [63
 
 
 
-] [65]) [66]
+] [64]) [65]
 \openout2 = `lec15.aux'.
 
- (./lec15.tex [67
+ (./lec15.tex [66
 
 
 
-] [68] [69] [70]) [71]
+] [67] [68] [69]) [70]
 \openout2 = `lec16.aux'.
 
  (./lec16.tex
 Chapter 3.
-[72
+[71
 
 
 
 
-] [73] [74] [75]) [76]
+] [72] [73] [74]) [75]
 \openout2 = `lec17.aux'.
 
- (./lec17.tex [77
+ (./lec17.tex [76
 
 
 
-] [78] [79]) [80] (./main.aux (./lec1.aux) (./lec2.aux) (./lec3.aux) (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux) (./lec14.aux) (./lec15.aux) (./lec16.aux) (./lec17.aux))
+] [77] [78]) [79] (./main.aux (./lec1.aux) (./lec2.aux) (./lec3.aux) (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux) (./lec14.aux) (./lec15.aux) (./lec16.aux) (./lec17.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13334 strings out of 476182
- 272754 string characters out of 5795595
+ 13323 strings out of 476182
+ 272494 string characters out of 5795595
  1942975 words of memory out of 5000000
- 34986 multiletter control sequences out of 15000+600000
+ 34975 multiletter control sequences out of 15000+600000
  572291 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,12n,93p,2236b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/gigi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (81 pages, 1230074 bytes).
+Output written on main.pdf (80 pages, 1190368 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
+ 419 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

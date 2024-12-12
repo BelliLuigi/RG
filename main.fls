@@ -273,16 +273,6 @@ OUTPUT lec2.aux
 INPUT ./lec2.tex
 INPUT ./lec2.tex
 INPUT lec2.tex
-INPUT ./imm/galileianboost.png
-INPUT ./imm/galileianboost.png
-INPUT ./imm/galileianboost.png
-INPUT ./imm/galileianboost.png
-INPUT ./imm/galileianboost.png
-INPUT ./imm/WLLC.png
-INPUT ./imm/WLLC.png
-INPUT ./imm/WLLC.png
-INPUT ./imm/WLLC.png
-INPUT ./imm/WLLC.png
 INPUT ./imm/segnale.png
 INPUT ./imm/segnale.png
 INPUT ./imm/segnale.png
