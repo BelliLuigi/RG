@@ -399,6 +399,16 @@ OUTPUT lec17.aux
 INPUT ./lec17.tex
 INPUT ./lec17.tex
 INPUT lec17.tex
+INPUT ./imm/newtmassive.png
+INPUT ./imm/newtmassive.png
+INPUT ./imm/newtmassive.png
+INPUT ./imm/newtmassive.png
+INPUT ./imm/newtmassive.png
+INPUT ./imm/grmassive.png
+INPUT ./imm/grmassive.png
+INPUT ./imm/grmassive.png
+INPUT ./imm/grmassive.png
+INPUT ./imm/grmassive.png
 INPUT main.aux
 INPUT ./lec1.aux
 INPUT ./lec1.aux

@@ -165,21 +165,23 @@ Let's focus on this potential
 \begin{equation}\label{eq:566}
 V_{eff}\left( r \right) = \frac{\epsilon }{2} + \frac{L^{2}}{2r^{2}}- \frac{\epsilon GM}{r} - \frac{GML^{2}}{r^{3}}
 \end{equation}
-the first term is constant, the second is centrifugal, the third is newtonian and the fourth is GR's son.
+the first term is constant, the second is centrifugal, the third is newtonian and the fourth is GR's son.\par
 
-\begin{figure}
-\begin{subfigure}
-	\includegraphics[width=0.4\linewidth]{imm/newtmassive.png}
+\bigskip
+\begin{minipage}{0.5\textwidth}
+	\includegraphics[width=0.8\linewidth]{imm/newtmassive.png}
 	\label{fig:sub1}
-\end{subfigure}
- \begin{subfigure}
-	 \includegraphics[width=0.4\linewidth]{grmassive.png} 
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}\label{fig:vrvsr}
+	 \includegraphics[width=0.8\linewidth]{imm/grmassive.png} 
 	\label{fig:sub2}
- \end{subfigure}
- \caption{Effective potential in Newtonian (left) and in general relativity (right). GM is set equal to 1. On the vertical axis \emph{V(r)}, on the horizontal one \emph{r}. For Newtonian, for large enough energy every orbit reaches a turning point and returns to infinity. In GR there is an innermost circular orbit $\geq 3GM$, and any orbit that falls inside this radius continues to $r=0$.}
-\label{fig:vrvsr}
-\end{figure}
-In fig\ref{fig:vrvsr} we see different curves for different values of \emph{L}. For all of this curves, the behaviour of the orbit of the particle woll be to move in the  potential until it reaches a \emph{turning point} where $V\left( r \right) = \mathcal{E}$, when it will begin to move in the other direction. Sometimes there is no turning point to hit, so the particle will keep going. In other cases the particle may simply  move in a circular orbit at radius $r_{c} = const$. This happens where the potential is flat
+ \end{minipage}
+ \vspace{0.5cm}
+
+Effective potential in Newtonian (left) and in general relativity (right). GM is set equal to 1. On the vertical axis \emph{V(r)}, on the horizontal one \emph{r}. For Newtonian, for large enough energy every orbit reaches a turning point and returns to infinity. In GR there is an innermost circular orbit $\geq 3GM$, and any orbit that falls inside this radius continues to $r=0$.\par
+ 
+In fig. \ref{fig:vrvsr} we see different curves for different values of \emph{L}. For all of this curves, the behaviour of the orbit of the particle woll be to move in the  potential until it reaches a \emph{turning point} where $V\left( r \right) = \mathcal{E}$, when it will begin to move in the other direction. Sometimes there is no turning point to hit, so the particle will keep going. In other cases the particle may simply  move in a circular orbit at radius $r_{c} = const$. This happens where the potential is flat
 \[
 \frac{d V}{d r} = 0
 \]
@@ -210,10 +212,39 @@ With decreasing \emph{ L} the two solutions come closer together , and coincide 
 \]
 So this \emph{r\textsubscript{c}} is the smallest possible radius for a stable circular orbit in this metric.
 
-
-
-
-
+\subsubsection{Precession of Mercury's perihelium}
+With this we mean the rotation of the perihelium of the orbit of Mercury. It is measured as 
+\[
+\Delta \phi = \frac{43^{\prime \prime }}{\text{century}}
+\]
+where $\phi $ is again the azimuthal angle. \par
+This phenomenon reflects the fact that noncircular orbits in GR are not perfect closed ellipses. We will try to derive it on our own. The strategy is to describe the evolution of the radial coordinate \emph{r} as function of $\phi $.\par
+We already talked about the fact that for a massive particle (e.g. Mercury), the symmetries of this spacetime, the Schwarzschild one, with metric
+\[
+ds^{2} = -\left( 1- \frac{2GM}{r} \right)dt^{2} + \left( 1- \frac{2GM}{r} \right)^{-1} + r^{2}d\Omega ^{2}
+\]
+lead to two conserved quantities, the momentum
+\begin{equation}
+	p_{\phi } = L = g_{\phi \phi } \frac{d \phi }{d \lambda } = r^{2} \frac{d \phi }{d \lambda }
+\end{equation}
+and the energy per unit mass
+\begin{equation}
+p_{t} = - E = g_{tt}\frac{d t}{d \lambda } = - \left( 1- \frac{2GM}{r} \right) \frac{d t }{d \lambda }
+\end{equation}.
+The normalization condition for the four-velocity rewritten with the values from the two above leads to
+\begin{equation}\label{eq:porcocane}
+\frac{1}{2}\left( \frac{d r}{d \lambda } \right)^{2} + V_{eff}\left( r \right) = \mathcal{E}
+\end{equation}
+As said before, we would like to express the radius in function of $\phi $, like $\frac{d r}{d \phi }$, so we can rewrite
+\begin{equation}
+	\left( \frac{d r}{d \lambda } \right) ^{2} = \left( \frac{d r}{d \phi } \frac{d \phi }{d \lambda } \right)^{2} = \left( \frac{d r}{d \phi } \right)^{2} \frac{L^{2}}{r^{4}}
+\end{equation}
+this allow us to write \ref{eq:porcocane} as 
+\begin{align}
+	\frac{1}{2} \left( \frac{d r}{d \phi } \right)^{2} \frac{L^{2}}{r^{4}} + V_{eff}\left( r \right) &= \mathcal{E} \\
+	\left( \frac{d r}{d \phi } \right)^{2} + \frac{2r^{4}}{L^{2}}V_{eff}\left( r \right) &= \frac{2r^{4}}{L^{2}}\mathcal{E}	
+\end{align}
+We found a differential equation for $r\left( \phi  \right)$, we will get to $\Delta \phi $.
 
 
 

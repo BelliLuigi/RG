@@ -115,3 +115,4 @@
 \contentsline {subsection}{\numberline {3.2.1}Geodesic of Schwarzschild}{76}{}%
 \contentsline {subsubsection}{Gravitational Redshift}{77}{}%
 \contentsline {subsubsection}{Planets}{78}{}%
+\contentsline {subsubsection}{Precession of Mercury's perihelium}{80}{}%
