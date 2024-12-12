@@ -33,7 +33,7 @@ The equation will go in this way
 	\frac{d x^{\nu }}{d \lambda } \partial_{\nu }p_{\mu } &= \Gamma ^{\sigma }_{\nu \mu }p^{\nu }p_{\sigma } \\
 	\frac{d x^{\nu }}{d \lambda }\frac{d }{d x^{ \nu }}p_{\mu } & = \Gamma ^{\sigma }_{\nu \mu }p^{\nu }p_{\sigma } \\
 	\frac{d p_{\mu }}{d \lambda } &= \Gamma ^{\sigma }_{\nu \mu } p_{\sigma }p^{\nu }\\
-	\frac{d p_{\mu }}{d \lambda } &= \frac{1}{2}g^{\sigma \rho } \left[ \partial_{\nu }g_{\rho \mu } + \partial_{\mu }g_{\rho \nu } - \partial_{\rho }g_{\mu \nu } \right] p_{\sigma }p^{\nu }
+	\frac{d p_{\mu }}{d \lambda } &= \frac{1}{2}g^{\sigma \rho } \left[ \partial_{\nu }g_{\rho \mu } + \partial_{\mu }g_{\rho \nu } - \partial_{\rho }g_{\mu \nu } \right] p_{\sigma }p^{\nu } \\
 				      &= \frac{1}{2} p^{\nu }p^{\rho } \left[ \partial_{\mu }g_{\rho \nu } \right] \\
 				     \frac{d p_{\mu }}{d \lambda } &= \frac{1}{2} \partial_{\mu }\left( g_{\rho \nu } \right) p^{\rho }p^{\nu } \\
 \end{align}
@@ -121,8 +121,51 @@ or
 \]
 where this $\phi $ is the gravitational potential, not a coordinate.
 
+\subsubsection{Planets}
 
-
+Most of the experimental tests of GR involve the motion of test particles in the solar system, Einstein suggested three tests two of which are the gravitational redshift, we talked about it above and the precession of perihelia. Now we will study the latter. To start we need to understand how the motion in the plane of the ecliptic works and in particular how to describe orbits in this particular metric, the Schwarzschild one.\par
+Since the orbits are elliptical we need to express the radius \emph{r} in terms of the azimuthal angle $\phi $. \par
+We shall start from two conserved quantities along the geodesics we mentioned before, $p_{t} = - E, p_{\phi } = L$.
+\[
+p_{t } = g_{tt}p^{t} = - \left( 1- \frac{2GM}{r} \right) \frac{d t}{d \lambda } = - E
+\]
+and 
+\[
+p_{\phi } = g_{\phi \phi } p^{\phi } = r^{2} sin^{2}\theta \frac{d \phi }{d \lambda } = r^{2} \frac{d \phi }{d \lambda } = L
+\]
+both quantities are expressed \emph{per unit mass}.\par
+We know that the four velocity satisfies the normalization condition
+\[
+g_{\mu \nu }u^{\mu }u^{\nu } = - \epsilon_{r}
+\]
+where $\epsilon_{r}$ is a place-holder that
+\[
+\epsilon _{r} = \begin{cases}
+ 0 \text{ if massless particle }\\
+ +1 if massive particle\\
+\end{cases}
+\]
+Now we apply the normalization in the Schwarzschild metric so
+\begin{equation}
+g_{tt}\left( \frac{d t}{d \lambda } \right)^{2} + g_{rr}\left( \frac{d r}{d \lambda } \right)^{2} + g_{\phi \phi }\left( \frac{d \phi }{d \lambda } \right)^{2}  = - \epsilon_{r}
+\end{equation}
+by substituting the conserved quantities and their friends we got
+\begin{equation}
+-\left( 1- \frac{2GM}{r} \right) \frac{E^{2}}{\left( 1- \frac{2GM}{r} \right)^{2}} + \frac{1}{\left( 1 - \frac{2GM}{r} \right)}\left( \frac{d r}{d \lambda }\right)^{2} + \frac{r^{2}L^{2}}{r^{4}} = - \epsilon_{r}
+\end{equation}
+with some manipulation,
+\begin{equation}
+\frac{1}{2}E^{2} = \frac{1}{2} \left( \frac{d r}{d \lambda } \right)^{2} + \left( 1- \frac{2GM}{r} \right)\left( \frac{\epsilon }{2} + \frac{L^{2}}{2r^{2}} \right)
+\end{equation}
+the second term of the right-hand side is $V_{eff}\left( r \right)$, the effective potential
+\begin{equation}
+\frac{1}{2} \left( \frac{d r}{d \lambda } \right)^{2} + V_{eff}\left( r \right) = \frac{1}{2}E^{2}
+\end{equation}
+Let's focus on this potential
+\begin{equation}
+V_{eff}\left( r \right) = \frac{\epsilon }{2} + \frac{L^{2}}{2r^{2}}- \frac{\epsilon GM}{r} - \frac{GML^{2}}{r^{3}}
+\end{equation}
+the first term is constant, the second is centrifugal, the third is newtonian and the fourth is GR's son.
 
 
 

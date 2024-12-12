@@ -1,115 +1,117 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {1.1}Lecture 1}{3}{}%
 \contentsline {subsubsection}{From Newton to Einstein}{3}{}%
 \contentsline {paragraph}{Example}{4}{}%
 \contentsline {chapter}{\numberline {2}Math tools}{5}{}%
-\contentsline {section}{\numberline {2.1}A recap of SR}{5}{}%
+\contentsline {section}{\numberline {2.1}Lec 2 - A recap of SR}{5}{}%
 \contentsline {paragraph}{Galilean Relativity:}{5}{}%
 \contentsline {paragraph}{Space-time}{7}{}%
 \contentsline {paragraph}{Event}{7}{}%
 \contentsline {paragraph}{World line}{7}{}%
-\contentsline {paragraph}{Example:}{8}{}%
+\contentsline {paragraph}{Example:}{7}{}%
 \contentsline {paragraph}{Proper time:}{8}{}%
-\contentsline {section}{\numberline {2.2}Lecture 3}{10}{}%
+\contentsline {section}{\numberline {2.2}Lecture 3}{11}{}%
 \contentsline {paragraph}{Physical meaning of $\Delta \tau $}{11}{}%
 \contentsline {paragraph}{Example}{11}{}%
 \contentsline {subsection}{\numberline {2.2.1}Tensor Calculus}{13}{}%
-\contentsline {paragraph}{Translations}{14}{}%
+\contentsline {paragraph}{Translations}{13}{}%
 \contentsline {paragraph}{Rotations}{14}{}%
 \contentsline {paragraph}{Vectors}{14}{}%
 \contentsline {paragraph}{Basis}{15}{}%
-\contentsline {paragraph}{Components}{16}{}%
+\contentsline {paragraph}{Components}{15}{}%
 \contentsline {paragraph}{covariant vector}{16}{}%
 \contentsline {paragraph}{Second definition}{16}{}%
-\contentsline {section}{\numberline {2.3}Lecture 4}{18}{}%
-\contentsline {subsubsection}{Brief recap of lec3}{18}{}%
-\contentsline {subsubsection}{Dual vectors}{18}{}%
-\contentsline {paragraph}{Example}{18}{}%
-\contentsline {paragraph}{1\textsuperscript {st} statement}{18}{}%
-\contentsline {paragraph}{2\textsuperscript {nd} statement}{18}{}%
-\contentsline {paragraph}{Basis for T\textsubscript {P}\textsuperscript {*}}{18}{}%
-\contentsline {subsection}{\numberline {2.3.1}Tensors}{19}{}%
-\contentsline {subsubsection}{Tensor product}{20}{}%
-\contentsline {subsubsection}{Basis for a tensor}{20}{}%
-\contentsline {section}{\numberline {2.4}Lec 5}{21}{}%
-\contentsline {subsection}{\numberline {2.4.1}Transformations}{21}{}%
-\contentsline {subsection}{\numberline {2.4.2}Tensor Manipulations / Operations}{21}{}%
-\contentsline {subsubsection}{Particular Tensor in flat ST}{21}{}%
-\contentsline {subsubsection}{Other operations}{22}{}%
-\contentsline {paragraph}{Contraction}{22}{}%
-\contentsline {paragraph}{Raising/Lowering Indices}{22}{}%
-\contentsline {paragraph}{Inner Product}{22}{}%
-\contentsline {subsubsection}{Symmetry Properties}{22}{}%
-\contentsline {subsubsection}{Trace}{23}{}%
-\contentsline {section}{\numberline {2.5}Lec 6}{24}{}%
-\contentsline {subsection}{\numberline {2.5.1}Energy \& momentum}{24}{}%
-\contentsline {subsection}{\numberline {2.5.2}Energy-Momentum Tensor}{25}{}%
-\contentsline {subsubsection}{Case I: Dust}{28}{}%
-\contentsline {subsubsection}{Case II: Fluid with pressure or \emph {Perfect FLuid} }{28}{}%
-\contentsline {subsubsection}{Conservation of energy and momentum}{29}{}%
-\contentsline {paragraph}{Results for perfect fluids}{29}{}%
-\contentsline {paragraph}{exercise}{30}{}%
-\contentsline {section}{\numberline {2.6}Lec 7}{31}{}%
-\contentsline {subsection}{\numberline {2.6.1}Equivalence Principle}{31}{}%
-\contentsline {subsubsection}{Weak Equivalence Principle, WEP}{31}{}%
-\contentsline {subsubsection}{Einstein's Equivalence Principle, EEP}{32}{}%
-\contentsline {subsubsection}{Strong Equivalence Principle, SEP}{32}{}%
-\contentsline {subsubsection}{Gravitational Redshift}{33}{}%
-\contentsline {subsection}{\numberline {2.6.2}Manifolds}{34}{}%
-\contentsline {subsubsection}{Coordinate System}{35}{}%
-\contentsline {subsubsection}{Vectors again}{35}{}%
-\contentsline {section}{\numberline {2.7}Lec 8}{36}{}%
-\contentsline {subsection}{\numberline {2.7.1}Brief Recap}{36}{}%
-\contentsline {subsubsection}{Vectors again again}{36}{}%
-\contentsline {paragraph}{Example}{37}{}%
-\contentsline {subsection}{\numberline {2.7.2}Dual Vectors}{37}{}%
-\contentsline {subsection}{\numberline {2.7.3}Tensors (k,l)}{38}{}%
-\contentsline {paragraph}{Example/exercise}{38}{}%
-\contentsline {subsection}{\numberline {2.7.4}Special Tensors}{39}{}%
-\contentsline {subsubsection}{Derivative}{40}{}%
-\contentsline {subsubsection}{Metric tensor}{40}{}%
-\contentsline {section}{\numberline {2.8}Lec 9}{42}{}%
-\contentsline {subsubsection}{Active and passive transformations}{42}{}%
-\contentsline {subsection}{\numberline {2.8.1}Still on Metric Tensor}{42}{}%
-\contentsline {subsection}{\numberline {2.8.2}Levi Civita symbol}{44}{}%
-\contentsline {paragraph}{Weights}{45}{}%
-\contentsline {section}{\numberline {2.9}Lec 10}{46}{}%
-\contentsline {subsection}{\numberline {2.9.1}Differential form}{46}{}%
-\contentsline {subsubsection}{Exterior Derivative}{46}{}%
-\contentsline {subsection}{\numberline {2.9.2}Covariant Derivative}{48}{}%
-\contentsline {section}{\numberline {2.10}Lec 11}{51}{}%
-\contentsline {subsection}{\numberline {2.10.1}Covariant derivative - Connection}{51}{}%
-\contentsline {subsubsection}{Torsion}{51}{}%
-\contentsline {paragraph}{Statement I}{51}{}%
-\contentsline {paragraph}{Statement II}{51}{}%
-\contentsline {subsubsection}{Metric Compatibility}{52}{}%
-\contentsline {subsection}{\numberline {2.10.2}Parallel Transport}{54}{}%
-\contentsline {subsubsection}{Geodesics}{55}{}%
-\contentsline {section}{\numberline {2.11}Lec 12}{56}{}%
-\contentsline {subsection}{\numberline {2.11.1}Geodesic Equation}{56}{}%
-\contentsline {subsubsection}{Geodesic I}{56}{}%
-\contentsline {subsubsection}{Geodesic II}{56}{}%
-\contentsline {paragraph}{Some comments on geodesic}{59}{}%
-\contentsline {section}{\numberline {2.12}Lec 13}{60}{}%
-\contentsline {subsubsection}{Quick recall on LIC}{60}{}%
-\contentsline {subsubsection}{Exponential Map}{60}{}%
-\contentsline {subsection}{\numberline {2.12.1}Riemann Normal Coordinates}{61}{}%
-\contentsline {subsubsection}{More in deep explanation}{61}{}%
-\contentsline {subsubsection}{Check on RNC}{62}{}%
-\contentsline {subsection}{\numberline {2.12.2}Riemann Curvature Tensor}{62}{}%
-\contentsline {section}{\numberline {2.13}Lec 14}{65}{}%
-\contentsline {subsubsection}{Bianchi Identity}{66}{}%
-\contentsline {subsubsection}{Ricci tensor}{67}{}%
-\contentsline {subsubsection}{A kind of Einstein Equation}{67}{}%
-\contentsline {section}{\numberline {2.14}Lec 15}{68}{}%
-\contentsline {subsection}{\numberline {2.14.1}Einstein Equation}{68}{}%
-\contentsline {chapter}{\numberline {3}Black Holes}{73}{}%
-\contentsline {section}{\numberline {3.1}Lec 16}{73}{}%
-\contentsline {subsection}{\numberline {3.1.1}Scharzschild's Metric}{73}{}%
-\contentsline {paragraph}{Metric}{74}{}%
-\contentsline {paragraph}{Christoffel Symbols}{74}{}%
-\contentsline {paragraph}{Riemann tensor}{75}{}%
-\contentsline {paragraph}{Ricci tensor}{75}{}%
-\contentsline {paragraph}{Singularities}{77}{}%
-\contentsline {section}{\numberline {3.2}Lec 17}{78}{}%
-\contentsline {subsection}{\numberline {3.2.1}Geodesic of Schwarzschild}{78}{}%
-\contentsline {subsubsection}{Gravitational Redshift}{79}{}%
+\contentsline {section}{\numberline {2.3}Lecture 4}{17}{}%
+\contentsline {subsubsection}{Brief recap of lec3}{17}{}%
+\contentsline {subsubsection}{Dual vectors}{17}{}%
+\contentsline {paragraph}{Example}{17}{}%
+\contentsline {paragraph}{1\textsuperscript {st} statement}{17}{}%
+\contentsline {paragraph}{2\textsuperscript {nd} statement}{17}{}%
+\contentsline {paragraph}{Basis for T\textsubscript {P}\textsuperscript {*}}{17}{}%
+\contentsline {subsection}{\numberline {2.3.1}Tensors}{18}{}%
+\contentsline {subsubsection}{Tensor product}{19}{}%
+\contentsline {subsubsection}{Basis for a tensor}{19}{}%
+\contentsline {section}{\numberline {2.4}Lec 5}{20}{}%
+\contentsline {subsection}{\numberline {2.4.1}Transformations}{20}{}%
+\contentsline {subsection}{\numberline {2.4.2}Tensor Manipulations / Operations}{20}{}%
+\contentsline {subsubsection}{Particular Tensor in flat ST}{20}{}%
+\contentsline {subsubsection}{Other operations}{21}{}%
+\contentsline {paragraph}{Contraction}{21}{}%
+\contentsline {paragraph}{Raising/Lowering Indices}{21}{}%
+\contentsline {paragraph}{Inner Product}{21}{}%
+\contentsline {subsubsection}{Symmetry Properties}{21}{}%
+\contentsline {subsubsection}{Trace}{22}{}%
+\contentsline {section}{\numberline {2.5}Lec 6}{23}{}%
+\contentsline {subsection}{\numberline {2.5.1}Energy \& momentum}{23}{}%
+\contentsline {subsection}{\numberline {2.5.2}Energy-Momentum Tensor}{24}{}%
+\contentsline {subsubsection}{Case I: Dust}{27}{}%
+\contentsline {subsubsection}{Case II: Fluid with pressure or \emph {Perfect FLuid} }{27}{}%
+\contentsline {subsubsection}{Conservation of energy and momentum}{28}{}%
+\contentsline {paragraph}{Results for perfect fluids}{28}{}%
+\contentsline {paragraph}{exercise}{29}{}%
+\contentsline {section}{\numberline {2.6}Lec 7}{30}{}%
+\contentsline {subsection}{\numberline {2.6.1}Equivalence Principle}{30}{}%
+\contentsline {subsubsection}{Weak Equivalence Principle, WEP}{30}{}%
+\contentsline {subsubsection}{Einstein's Equivalence Principle, EEP}{31}{}%
+\contentsline {subsubsection}{Strong Equivalence Principle, SEP}{31}{}%
+\contentsline {subsubsection}{Gravitational Redshift}{32}{}%
+\contentsline {subsection}{\numberline {2.6.2}Manifolds}{33}{}%
+\contentsline {subsubsection}{Coordinate System}{34}{}%
+\contentsline {subsubsection}{Vectors again}{34}{}%
+\contentsline {section}{\numberline {2.7}Lec 8}{35}{}%
+\contentsline {subsection}{\numberline {2.7.1}Brief Recap}{35}{}%
+\contentsline {subsubsection}{Vectors again again}{35}{}%
+\contentsline {paragraph}{Example}{36}{}%
+\contentsline {subsection}{\numberline {2.7.2}Dual Vectors}{36}{}%
+\contentsline {subsection}{\numberline {2.7.3}Tensors (k,l)}{37}{}%
+\contentsline {paragraph}{Example/exercise}{37}{}%
+\contentsline {subsection}{\numberline {2.7.4}Special Tensors}{38}{}%
+\contentsline {subsubsection}{Derivative}{39}{}%
+\contentsline {subsubsection}{Metric tensor}{39}{}%
+\contentsline {section}{\numberline {2.8}Lec 9}{41}{}%
+\contentsline {subsubsection}{Active and passive transformations}{41}{}%
+\contentsline {subsection}{\numberline {2.8.1}Still on Metric Tensor}{41}{}%
+\contentsline {subsection}{\numberline {2.8.2}Levi Civita symbol}{43}{}%
+\contentsline {paragraph}{Weights}{44}{}%
+\contentsline {section}{\numberline {2.9}Lec 10}{45}{}%
+\contentsline {subsection}{\numberline {2.9.1}Differential form}{45}{}%
+\contentsline {subsubsection}{Exterior Derivative}{45}{}%
+\contentsline {subsection}{\numberline {2.9.2}Covariant Derivative}{47}{}%
+\contentsline {section}{\numberline {2.10}Lec 11}{50}{}%
+\contentsline {subsection}{\numberline {2.10.1}Covariant derivative - Connection}{50}{}%
+\contentsline {subsubsection}{Torsion}{50}{}%
+\contentsline {paragraph}{Statement I}{50}{}%
+\contentsline {paragraph}{Statement II}{50}{}%
+\contentsline {subsubsection}{Metric Compatibility}{51}{}%
+\contentsline {subsection}{\numberline {2.10.2}Parallel Transport}{53}{}%
+\contentsline {subsubsection}{Geodesics}{54}{}%
+\contentsline {section}{\numberline {2.11}Lec 12}{55}{}%
+\contentsline {subsection}{\numberline {2.11.1}Geodesic Equation}{55}{}%
+\contentsline {subsubsection}{Geodesic I}{55}{}%
+\contentsline {subsubsection}{Geodesic II}{55}{}%
+\contentsline {paragraph}{Some comments on geodesic}{58}{}%
+\contentsline {section}{\numberline {2.12}Lec 13}{59}{}%
+\contentsline {subsubsection}{Quick recall on LIC}{59}{}%
+\contentsline {subsubsection}{Exponential Map}{59}{}%
+\contentsline {subsection}{\numberline {2.12.1}Riemann Normal Coordinates}{60}{}%
+\contentsline {subsubsection}{More in deep explanation}{60}{}%
+\contentsline {subsubsection}{Check on RNC}{61}{}%
+\contentsline {subsection}{\numberline {2.12.2}Riemann Curvature Tensor}{61}{}%
+\contentsline {section}{\numberline {2.13}Lec 14}{64}{}%
+\contentsline {subsubsection}{Bianchi Identity}{65}{}%
+\contentsline {subsubsection}{Ricci tensor}{66}{}%
+\contentsline {subsubsection}{A kind of Einstein Equation}{66}{}%
+\contentsline {section}{\numberline {2.14}Lec 15}{67}{}%
+\contentsline {subsection}{\numberline {2.14.1}Einstein Equation}{67}{}%
+\contentsline {chapter}{\numberline {3}Black Holes}{72}{}%
+\contentsline {section}{\numberline {3.1}Lec 16}{72}{}%
+\contentsline {subsection}{\numberline {3.1.1}Scharzschild's Metric}{72}{}%
+\contentsline {paragraph}{Metric}{73}{}%
+\contentsline {paragraph}{Christoffel Symbols}{73}{}%
+\contentsline {paragraph}{Riemann tensor}{74}{}%
+\contentsline {paragraph}{Ricci tensor}{74}{}%
+\contentsline {paragraph}{Singularities}{76}{}%
+\contentsline {section}{\numberline {3.2}Lec 17}{77}{}%
+\contentsline {subsection}{\numberline {3.2.1}Geodesic of Schwarzschild}{77}{}%
+\contentsline {subsubsection}{Gravitational Redshift}{78}{}%
+\contentsline {subsubsection}{Planets}{79}{}%
