@@ -200,6 +200,9 @@ INPUT lec16.aux
 INPUT ./lec17.aux
 INPUT ./lec17.aux
 INPUT lec17.aux
+INPUT ./lec18.aux
+INPUT ./lec18.aux
+INPUT lec18.aux
 OUTPUT main.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -409,6 +412,11 @@ INPUT ./imm/grmassive.png
 INPUT ./imm/grmassive.png
 INPUT ./imm/grmassive.png
 INPUT ./imm/grmassive.png
+INPUT ./lec18.tex
+OUTPUT lec18.aux
+INPUT ./lec18.tex
+INPUT ./lec18.tex
+INPUT lec18.tex
 INPUT main.aux
 INPUT ./lec1.aux
 INPUT ./lec1.aux
@@ -461,6 +469,9 @@ INPUT lec16.aux
 INPUT ./lec17.aux
 INPUT ./lec17.aux
 INPUT lec17.aux
+INPUT ./lec18.aux
+INPUT ./lec18.aux
+INPUT lec18.aux
 INPUT /home/gigi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -471,6 +482,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pf
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb

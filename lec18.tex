@@ -1,0 +1,130 @@
+\section{Lec 18}
+
+\subsection{Still about precession of perihelia}
+Last lecture we introduced the topic, dealing with conserved quantities along geodesics and expressing the radius of the orbit as $r\left( \phi  \right)$.\par
+We will introduce a new variable:
+\[
+x \equiv \frac{L^{2}}{GMr} \propto \frac{1}{r} 
+\]
+that makes
+\[
+\frac{d r}{d \phi } = \frac{d }{d \phi } \left( \frac{L^{2}}{GMx} \right) = \frac{L^{2}}{GM} \left( - \frac{1}{x^{2}} \right) \frac{d x}{d \phi }
+\]
+and 
+\begin{align}
+	\left( \frac{d r}{d \phi } \right)^{2} &= \frac{L^{4}}{G^{2}M^{2}} \frac{1}{x^{4}} \left( \frac{d x}{d \phi } \right)^{2} = \nonumber \\
+	&=\frac{L^{4}}{G^{2}M^{2}} \frac{G^{4}M^{4}}{L^{8}} r^{4} \left( \frac{d x}{d \phi } \right)^{2} \nonumber \\
+	\frac{1}{r^{4}} \left( \frac{d r}{d \phi } \right)^{2} &= \frac{G^{2}M^{2}}{L^{4}} \left( \frac{d x}{d \phi } \right)^{2} \label{eq:347}
+\end{align}
+putting eq.\ref{eq:347} in eq.\ref{eq:343} yields:
+\begin{equation}\label{eq:348}
+\frac{1}{2} \frac{G^{2}M^{2}}{L^{2}} \left( \frac{d x}{d \phi } \right)^{2} + V_{eff}\left( \frac{L^{2}}{GMx} \right) = \mathcal{E}		
+\end{equation}
+I want to express $V_{eff}\left( x \right)$, so
+\begin{align}
+	V_{eff\left( \frac{L^{2}}{GMx} \right)} &= \frac{1}{2} - \frac{G^{2}M^{2}x}{L^{2}}+ \frac{1}{2} \frac{G^{2}M^{2}x^{2}}{L^{2}} - GMl^{2} \left( \frac{GMx}{L^{2}} \right)^{3} \nonumber \\
+  V_{eff}\left( x \right) &= \frac{1}{2} - \left( \frac{GM}{L} \right)^{2}x +  \frac{1}{2}\left( \frac{GM}{L} \right)^{2}x^{2} - \left( \frac{GM}{L} \right)^{4}x^{3} \nonumber \\
+  \left( \frac{L}{GM} \right)^{2} V_{eff}\left( x \right)  &= \frac{1}{2}\left( \frac{L}{GM} \right)^{2} - x + \frac{x^{2}}{2} - \left( \frac{GM}{L} \right)^{2}x^{3}
+\end{align}
+
+This is useful since we can plug this in the equation for conservation of energy, \ref{eq:348}:
+\begin{align}
+	\frac{1}{2} \left( \frac{d x}{d \phi } \right)^{2} + \left( \frac{L}{GM} \right)^{2} V_{eff}\left( x \right) &= \left( \frac{L}{GM} \right)^{2} \mathcal{E} \nonumber\\ 
+	\frac{1}{2} \left( \frac{d x}{d \phi } \right)^{2} + \frac{1}{2}\left( \frac{L}{GM} \right)^{2} - x + \frac{1}{2}x^{2} - \left( \frac{GM}{L} \right)^{2}x^{3} &= const \nonumber \\
+	\to \frac{d x}{d \phi } \frac{d ^{2}x}{d \phi ^{2}} - \frac{d x}{d \phi } + \frac{2}{2}x \frac{d x}{d \phi } - 3 \left( \frac{GM}{L} \right)^{2}x^{2}\frac{d x}{d \phi } &=0\nonumber\\
+	\frac{d ^{2}x}{d \phi ^{2}} = 1 - x + 3 \left( \frac{GM}{L} \right)^{2} x^{2} \label{eq:355}
+\end{align}
+This last one, eq,\ref{eq:355} is a differential equation that describes the orbit of planets. The one from Newtonian approach is 
+\[
+\frac{d^{2}x_{0} }{d \phi ^{2}} = 1 - x_{0}
+\]
+with $x_{0} = 1 + e cos \phi $, and so $r_{0} = \frac{L^{2}/GM}{1+e cos\phi }$.\par
+We will treat the term that does not appear in the newtonian one as perturbation. \par
+We can expand our variable \emph{x} into the Newtonian solution plus a small correction 
+\begin{equation}\label{eq:xpansion}
+x = x_{0} + x_{1} 
+\end{equation}
+with $x_{0} \ll x_{1}$
+and we plug it into eq.\ref{eq:355}, that becomes
+\begin{align}
+	\frac{d ^{2}x_{0}}{d \phi ^{2}} + \frac{d ^{2}x^{1}}{d \phi ^{2}} &= 1 - x_{0} -x_{1} + 3\left( \frac{GM}{L} \right)^{2}\left( x_{0} +x_{1} \right)^{2} \\
+	\frac{d ^{2}x_{1}}{d \phi ^{2}} &\approx -x_{1} + 3 \left( \frac{GM}{L} \right)^{2}x_{0}^{2} \\
+	\frac{d ^{2}x_{1}}{d \phi^{2}} +x_{1} &= 3 \left( \frac{GM}{L} \right)^{2} \left[ 1 + 2ecos\phi + e^{2}cos^{2}\phi  \right] \\
+	\frac{d ^{2}x_{1}}{d \phi ^{2}} + x_{1} &= 3\left( \frac{GM}{L} \right)^{2} \left[ \left( 1 + \frac{1}{2}e^{2} \right) + 2ecos\phi + \frac{1}{2}e^{2} cos 2\phi  \right] \footnotemark
+\end{align}
+\footnotetext{ because $ cos^{2}\phi = \frac{1 + cos2\phi }{2}$.}
+While our dear Mr. Carrol tells us how one could solve this differential equation, our beloved professor D'Eramo, tells us directly the solution that is
+\begin{equation}
+x_{1} = 3 \left( \frac{GM}{L} \right)^{2}  \left[ \left( 1+ \frac{1}{2}e^{2} \right) + e\phi sin\phi - \frac{1}{6}e^{2}cos2\phi  \right]
+\end{equation}
+Inside the square brackets there are terms with different meaning:
+\begin{itemize}
+\item the first is just a constant
+\item the second has the most interesting effect
+\item the third has a periodic effect, it oscillates around zero.
+\end{itemize}
+We decide that we will deal with $x_{1}$ made just by this second term, so the expansion of \emph{x} (\ref{eq:xpansion}) becomes
+\begin{equation}\label{eq:xpantwo}
+x = 1 + ecos\phi + \frac{3G^{2}M^{2}e}{L^{2}}\phi sin\phi + \ldots 
+\end{equation}
+as we don't care of those other terms since they have little use for us. To lighten up the notation we introduce
+\[
+\alpha \equiv 3 \left( \frac{GM}{L} \right)^{2}
+\]
+Equation \ref{eq:xpantwo} can be rewritten as equation for an ellipse
+\begin{equation}
+x = 1 + ecos\left[ \left( 1-\alpha  \right)\phi  \right]
+\end{equation}
+indeed
+\[
+cos\left[ \left( 1-\alpha  \right)\phi  \right] = cos\phi  + \alpha \frac{d }{d \alpha }cos\left[ \left( 1-\alpha  \right)\phi  \right]_{\alpha =0} = cos\phi + \alpha \phi sin \phi 
+\]
+Since the inverse proportionality, the minimum radius is when the \emph{x} is max, so
+\[
+x_{P} = 1 +e
+\]
+and is achieved for $x=0$. The angular shift per revolution is calculated by finding the difference between the actual angle and $2\pi $:
+\[
+\Delta \phi = 2\pi \alpha = 6\pi \frac{G^{2}M^{2}}{L^{2}}
+\]
+Now we want to convert the angular momentum $L$ to more usable quantities. To do so we will use some expressions from the Newtonian orbits, since the quantity we are looking for is already a small perturbation. An ordinary ellipses
+\[
+r = \frac{\left( 1-e^{2} \right)a}{1+ecos\phi }
+\]
+with \emph{a} is the semi-major axis. To find \emph{a}
+\[
+r_{P} +r_{A} = 2a = \frac{L^{2}}{GM}\left[ \frac{1}{1-e} + \frac{1}{1+e} \right]
+\]
+so 
+\[
+a = \frac{L^{2}}{GM \left( 1-e^{2} \right)} \to  L^{2 }= GM\alpha \left( 1-e^{2} \right)
+\]
+that leads us to
+\begin{equation}
+\Delta \phi  = 6\pi \frac{GM}{a\left( 1-e^{2} \right)c^{2}}
+\end{equation}
+we added \emph{c} so it is dimesionally good.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

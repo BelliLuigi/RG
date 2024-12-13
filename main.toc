@@ -116,3 +116,5 @@
 \contentsline {subsubsection}{Gravitational Redshift}{77}{}%
 \contentsline {subsubsection}{Planets}{78}{}%
 \contentsline {subsubsection}{Precession of Mercury's perihelium}{80}{}%
+\contentsline {section}{\numberline {3.3}Lec 18}{82}{}%
+\contentsline {subsection}{\numberline {3.3.1}Still about precession of perihelia}{82}{}%
