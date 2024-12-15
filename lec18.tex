@@ -129,14 +129,13 @@ To analyze this we are interested in using light-like geodesics.
 ds^{2} = 0 = -\left( 1- \frac{2GM}{r} \right)dt^{2} + \left( 1 - \frac{2GM}{r} \right)^{-1}dr^{2} + r^{2}d\Omega 
 \end{equation}
 Since spherical symmetry, variations on the angles do not care. This let us write
-\begin{equation}
+\begin{equation}\label{eq:sloppyslope}
 \frac{d t}{d r} = \pm \left( 1- \frac{2GM}{r} \right)^{-1}
 \end{equation}
 We can use this to measure the slope of a light-cone on a spacetime diagram.\par
 \bigskip
-       
-
 \begin{tikzpicture}[x=0.5pt,y=0.5pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
 %Straight Lines [id:da6124197854166261] 
 \draw    (30.49,272) -- (29.51,11) ;
@@ -171,34 +170,83 @@ We can use this to measure the slope of a light-cone on a spacetime diagram.\par
 %Shape: Ellipse [id:dp9530096373998713] 
 \draw   (290.19,96.73) .. controls (290.19,92.46) and (303.47,89) .. (319.85,89) .. controls (336.22,89) and (349.5,92.46) .. (349.5,96.73) .. controls (349.5,101) and (336.22,104.47) .. (319.85,104.47) .. controls (303.47,104.47) and (290.19,101) .. (290.19,96.73) -- cycle ;
 %Straight Lines [id:da5935431649480939] 
-\draw    (218.36,98.31) -- (247.64,192.4) ;
+\draw    (218.36,100.31) -- (247.64,194.4) ;
 %Straight Lines [id:da6313442873856193] 
-\draw    (248.5,96.38) -- (217.5,190.47) ;
+\draw    (248.5,98.38) -- (217.5,192.47) ;
 %Shape: Ellipse [id:dp3556374939552184] 
-\draw   (217.5,192.4) .. controls (217.5,185.99) and (224.25,180.8) .. (232.57,180.8) .. controls (240.89,180.8) and (247.64,185.99) .. (247.64,192.4) .. controls (247.64,198.81) and (240.89,204) .. (232.57,204) .. controls (224.25,204) and (217.5,198.81) .. (217.5,192.4) -- cycle ;
+\draw   (217.5,194.4) .. controls (217.5,187.99) and (224.25,182.8) .. (232.57,182.8) .. controls (240.89,182.8) and (247.64,187.99) .. (247.64,194.4) .. controls (247.64,200.81) and (240.89,206) .. (232.57,206) .. controls (224.25,206) and (217.5,200.81) .. (217.5,194.4) -- cycle ;
 %Shape: Ellipse [id:dp47694972976540695] 
-\draw   (218.36,95.73) .. controls (218.36,91.46) and (225.11,88) .. (233.43,88) .. controls (241.75,88) and (248.5,91.46) .. (248.5,95.73) .. controls (248.5,100) and (241.75,103.47) .. (233.43,103.47) .. controls (225.11,103.47) and (218.36,100) .. (218.36,95.73) -- cycle ;
+\draw   (218.36,97.73) .. controls (218.36,93.46) and (225.11,90) .. (233.43,90) .. controls (241.75,90) and (248.5,93.46) .. (248.5,97.73) .. controls (248.5,102) and (241.75,105.47) .. (233.43,105.47) .. controls (225.11,105.47) and (218.36,102) .. (218.36,97.73) -- cycle ;
 %Straight Lines [id:da5359111848439203] 
-\draw    (163.94,98.31) -- (179.06,192.4) ;
+\draw    (163.94,100.31) -- (179.06,194.4) ;
 %Straight Lines [id:da3296379646187486] 
-\draw    (179.5,96.38) -- (163.5,190.47) ;
+\draw    (179.5,98.38) -- (163.5,192.47) ;
 %Shape: Ellipse [id:dp397205529464427] 
-\draw   (163.5,192.4) .. controls (163.5,185.99) and (166.98,180.8) .. (171.28,180.8) .. controls (175.57,180.8) and (179.06,185.99) .. (179.06,192.4) .. controls (179.06,198.81) and (175.57,204) .. (171.28,204) .. controls (166.98,204) and (163.5,198.81) .. (163.5,192.4) -- cycle ;
+\draw   (163.5,194.4) .. controls (163.5,187.99) and (166.98,182.8) .. (171.28,182.8) .. controls (175.57,182.8) and (179.06,187.99) .. (179.06,194.4) .. controls (179.06,200.81) and (175.57,206) .. (171.28,206) .. controls (166.98,206) and (163.5,200.81) .. (163.5,194.4) -- cycle ;
 %Shape: Ellipse [id:dp70871059514235] 
-\draw   (163.94,95.73) .. controls (163.94,91.46) and (167.43,88) .. (171.72,88) .. controls (176.02,88) and (179.5,91.46) .. (179.5,95.73) .. controls (179.5,100) and (176.02,103.47) .. (171.72,103.47) .. controls (167.43,103.47) and (163.94,100) .. (163.94,95.73) -- cycle ;
+\draw   (163.94,97.73) .. controls (163.94,93.46) and (167.43,90) .. (171.72,90) .. controls (176.02,90) and (179.5,93.46) .. (179.5,97.73) .. controls (179.5,102) and (176.02,105.47) .. (171.72,105.47) .. controls (167.43,105.47) and (163.94,102) .. (163.94,97.73) -- cycle ;
+%Shape: Circle [id:dp15059388844879684] 
+\draw  [fill={rgb, 255:red, 128; green, 128; blue, 128 }  ,fill opacity=1 ] (584,149) .. controls (584,146.79) and (585.79,145) .. (588,145) .. controls (590.21,145) and (592,146.79) .. (592,149) .. controls (592,151.21) and (590.21,153) .. (588,153) .. controls (585.79,153) and (584,151.21) .. (584,149) -- cycle ;
+%Shape: Circle [id:dp08377429660929026] 
+\draw  [fill={rgb, 255:red, 128; green, 128; blue, 128 }  ,fill opacity=1 ] (446,147) .. controls (446,144.79) and (447.79,143) .. (450,143) .. controls (452.21,143) and (454,144.79) .. (454,147) .. controls (454,149.21) and (452.21,151) .. (450,151) .. controls (447.79,151) and (446,149.21) .. (446,147) -- cycle ;
+%Shape: Circle [id:dp4991707965564979] 
+\draw  [fill={rgb, 255:red, 128; green, 128; blue, 128 }  ,fill opacity=1 ] (314,146) .. controls (314,143.79) and (315.79,142) .. (318,142) .. controls (320.21,142) and (322,143.79) .. (322,146) .. controls (322,148.21) and (320.21,150) .. (318,150) .. controls (315.79,150) and (314,148.21) .. (314,146) -- cycle ;
+%Shape: Circle [id:dp26010234564660695] 
+\draw  [fill={rgb, 255:red, 128; green, 128; blue, 128 }  ,fill opacity=1 ] (229,148) .. controls (229,145.79) and (230.79,144) .. (233,144) .. controls (235.21,144) and (237,145.79) .. (237,148) .. controls (237,150.21) and (235.21,152) .. (233,152) .. controls (230.79,152) and (229,150.21) .. (229,148) -- cycle ;
+%Shape: Circle [id:dp5236258431752047] 
+\draw  [fill={rgb, 255:red, 128; green, 128; blue, 128 }  ,fill opacity=1 ] (168,148) .. controls (168,145.79) and (169.79,144) .. (172,144) .. controls (174.21,144) and (176,145.79) .. (176,148) .. controls (176,150.21) and (174.21,152) .. (172,152) .. controls (169.79,152) and (168,150.21) .. (168,148) -- cycle ;
 
 % Text Node
 \draw (10,24) node [anchor=north west][inner sep=0.75pt]   [align=left] {t};
 % Text Node
 \draw (620,275) node [anchor=north west][inner sep=0.75pt]   [align=left] {r};
 % Text Node
-\draw (139,279) node [anchor=north west][inner sep=0.75pt]   [align=left] {r = r\textsubscript{s}};
+\draw (139,279) node [anchor=north west][inner sep=0.75pt]   [align=left] {r = r\textsubscript{S}};
+% Text Node
+\draw (604,139) node [anchor=north west][inner sep=0.75pt]   [align=left] {P};
+% Text Node
+\draw (466,137) node [anchor=north west][inner sep=0.75pt]   [align=left] {P};
+% Text Node
+\draw (334,136) node [anchor=north west][inner sep=0.75pt]   [align=left] {P};
+% Text Node
+\draw (249,138) node [anchor=north west][inner sep=0.75pt]   [align=left] {P};
+% Text Node
+\draw (188,138) node [anchor=north west][inner sep=0.75pt]   [align=left] {P};
+% Text Node
+\draw (569,62) node [anchor=north west][inner sep=0.75pt]   [align=left] {Future};
+% Text Node
+\draw (573,214) node [anchor=north west][inner sep=0.75pt]   [align=left] {Past};
 \end{tikzpicture}
 \bigskip
 
 
-%%to add to diagram is the future of the cone and the past of the cone, add point to the center, add "P"
-We see that the closer to the event horizon the steeper becomes the slope of the light-cone,
+We see that the closer to the event horizon the steeper becomes the slope of the light-cone, So a light ray that approaches $r=2GM$ never seems to get there in this coordinates system, but asymptote to it. \par
+This is just an illusion, a particle has no trouble in reaching the Schwarzschild radius, but an observer far away would never be able to tell. Indeed if \emph{friend}\footnote{if he was really your friend, you wouldn't have let him} dives in the black hole while sending signals at regular pace, we would see signal become less frequent. Proper time of \emph{friend} is
+\[
+d\tau = \left( 1 - \frac{2GM}{r} \right)^{1/2}dt
+\]
+The fact that his trajectory in the \emph{t-r} plane never reaches \emph{r\textsubscript{S}} is not a statement we like, instead we never \emph{see} him reach \emph{r\textsubscript{S}}. This is dependent on our coordinates system, so we want to change to a system that behaves better at \emph{r\textsubscript{S}}.
+\subsubsection{Tortoise coordinates}
+The time of \emph{friend} grows infinite approaching \emph{r\textsubscript{s}}, The tortoise coordinate is intended to grow infinite at the appropriate rate such as to cancel out the singular behaviour. 
+We start from eq.\ref{eq:sloppyslope},
+\begin{align}
+	\int_{}^{}{dt} &= \pm \int_{}^{}{ \frac{dr}{ 1 - \frac{2GM}{r}}}\\
+	t &= \pm r^{*} + \text{ constant } \\
+	r^{*} =  t-t_{0} &= \pm \left( r + 2GM \text{ln } \left[ \frac{r}{2GM} -1 \right] \right)
+\end{align}
+
+So we want to transform from $\left( t,r \right) \to \left( t,r^{*} \right)$. 
+So to rewrite the metric,
+\[
+dr* = \frac{dr}{\left( 1- \frac{2GM}{r} \right)}
+\]
+\begin{equation}
+	ds^{2} = - \left(  1 - \frac{2GM}{r} \right)\left( dt^{2} - dr^{*2} \right) + r^{2}d\Omega 
+\end{equation}
+with \emph{r} as function of \emph{r\textsuperscript{*}}. 
+
+
+
 
 
 

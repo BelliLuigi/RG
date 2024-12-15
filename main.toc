@@ -119,3 +119,4 @@
 \contentsline {section}{\numberline {3.3}Lec 18}{82}{}%
 \contentsline {subsection}{\numberline {3.3.1}Still about precession of perihelia}{82}{}%
 \contentsline {subsection}{\numberline {3.3.2}Finally Black Holes}{84}{}%
+\contentsline {subsubsection}{Tortoise coordinates}{86}{}%
