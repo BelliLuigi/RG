@@ -2,12 +2,12 @@
 
 ## For the Astrophysics & Cosmology / Physics of Data Master Degrees in Padua
 
-### Prof. Francesco D'Eramo, year 2024/2025
+### Prof. Francesco D'Eramo, academic  year 2024/2025
 
-I'm uploading all the *.tex* files because I'm using more than one machine. If you just need to consult the notes see [the PDF](main.pdf).  
+I'm uploading all the *.tex* files because I work across multiple machines. If you just need to consult the notes, please refer to [the PDF](main.pdf).  
 
-These notes relies heavily on Carroll's textbook, but I think they could be useful anyway because are tailored on prof. D'Eramo's lessons. 
+These notes rely heavily on Carroll's textbook, but I think they could still be useful as they are tailored to prof. D'Eramo's lessons. 
 
-If you find these notes useful feel free to use and distribute them, on the other hand, if you discover some errors/inaccuracies please let me know about it.
+If you find these notes helpful, feel free to use and share them. On the other hand, if you come across any errors or inaccuracies, I'd appreciate it if you could let me know.
 
-**Disclaimer**: I don't guarantee that what is written here is correct.
+**Disclaimer**: I don't guarantee the accuracy of the content in these notes..
