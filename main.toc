@@ -100,27 +100,31 @@
 \contentsline {section}{\numberline {2.13}Lec 14}{63}{section.2.13}%
 \contentsline {subsubsection}{Bianchi Identity}{64}{section*.65}%
 \contentsline {subsubsection}{Ricci tensor}{65}{section*.66}%
-\contentsline {subsubsection}{A kind of Einstein Equation}{65}{section*.67}%
+\contentsline {subsection}{\numberline {2.13.1}A kind of Einstein Equation}{65}{subsection.2.13.1}%
 \contentsline {section}{\numberline {2.14}Lec 15}{66}{section.2.14}%
 \contentsline {subsection}{\numberline {2.14.1}Einstein Equation}{66}{subsection.2.14.1}%
 \contentsline {chapter}{\numberline {3}Black Holes}{71}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Lec 16}{71}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Scharzschild's Metric}{71}{subsection.3.1.1}%
-\contentsline {paragraph}{Metric}{72}{section*.68}%
-\contentsline {paragraph}{Christoffel Symbols}{72}{section*.69}%
-\contentsline {paragraph}{Riemann tensor}{73}{section*.70}%
-\contentsline {paragraph}{Ricci tensor}{73}{section*.71}%
-\contentsline {paragraph}{Singularities}{75}{section*.72}%
+\contentsline {paragraph}{Metric}{72}{section*.67}%
+\contentsline {paragraph}{Christoffel Symbols}{72}{section*.68}%
+\contentsline {paragraph}{Riemann tensor}{73}{section*.69}%
+\contentsline {paragraph}{Ricci tensor}{73}{section*.70}%
+\contentsline {paragraph}{Singularities}{75}{section*.71}%
 \contentsline {section}{\numberline {3.2}Lec 17}{76}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Geodesic of Schwarzschild}{76}{subsection.3.2.1}%
-\contentsline {subsubsection}{Gravitational Redshift}{77}{section*.73}%
-\contentsline {subsubsection}{Planets}{78}{section*.74}%
-\contentsline {subsubsection}{Precession of Mercury's perihelium}{80}{section*.75}%
+\contentsline {subsubsection}{Gravitational Redshift}{77}{section*.72}%
+\contentsline {subsubsection}{Planets}{78}{section*.73}%
+\contentsline {subsubsection}{Precession of Mercury's perihelium}{80}{section*.74}%
 \contentsline {section}{\numberline {3.3}Lec 18}{82}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Still about precession of perihelia}{82}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Finally Black Holes}{84}{subsection.3.3.2}%
-\contentsline {subsubsection}{Tortoise coordinates}{86}{section*.76}%
+\contentsline {subsubsection}{Tortoise coordinates}{86}{section*.75}%
 \contentsline {section}{\numberline {3.4}Lec 19}{87}{section.3.4}%
-\contentsline {paragraph}{Eddington-Finkelstein}{87}{section*.77}%
-\contentsline {paragraph}{Something to digest BHs}{89}{section*.78}%
-\contentsline {subsubsection}{Kruskal-Szekeres coordinates}{89}{section*.79}%
+\contentsline {subsection}{\numberline {3.4.1}Eddington-Finkelstein}{87}{subsection.3.4.1}%
+\contentsline {paragraph}{Something to digest BHs}{89}{section*.76}%
+\contentsline {subsection}{\numberline {3.4.2}Kruskal-Szekeres coordinates}{89}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}Gravitational Waves}{93}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Linearized gravity}{93}{section.4.1}%
+\contentsline {paragraph}{Christoffel symbol}{94}{section*.77}%
+\contentsline {paragraph}{Riemann tensor}{94}{section*.78}%
