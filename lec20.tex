@@ -110,7 +110,27 @@ where the last three terms are
 \begin{equation}
 \partial^{\mu }_{\mu ^{\prime }}\partial^{\nu }_{\nu ^{\prime }}h_{\mu \nu } \equiv   h_{\mu ^{\prime }\nu ^{\prime }} +\partial_{\mu ^{\prime }}\xi _{\nu ^{\prime }}+\partial_{\nu ^{\prime }}\xi _{\mu ^{\prime }}
 \end{equation}
-we did this infinitesimal change of coordinates and we found that the metric is minkowskian plus a correction
+we did this infinitesimal change of coordinates and we found that the metric is minkowskian plus a correction.\par
+We have
+\[
+\begin{rcases*}
+h_{\mu \nu }\\
+h_{\mu \nu }+ 2\partial_{(\mu  }\xi _{\nu )}
+\end{rcases*}
+\text{ that are equivalent }
+\]
+they both describe the same physical perturbation. Indeed \emph{gauge invariance} allows $h_{\mu \nu } $ to be shifted as
+\[
+h_{\mu \nu }\to h_{\mu \nu }+\partial_{\mu }\xi _{\nu }+\partial_{\nu }\xi _{\mu }
+\]
+Now we can compute the variation of the linearized Riemann tensor under this transformation
+\begin{gather*}
+	\delta R_{\lambda \sigma \mu \nu } = \frac{1}{2}\left[ \partial_{\mu }\partial_{\sigma }\delta h_{\nu \lambda } - \partial_{\mu }\partial_{\lambda }\delta h_{\sigma \nu } - \partial_{\nu }\partial_{\sigma }\delta h_{\lambda \mu } + \partial_{\nu }\partial_{\lambda }\delta h_{\sigma \mu } \right]\\
+	= \frac{1}{2}[ \colorbox{yellow}{\underline{$ \partial_{\mu }\partial_{\sigma }$}$( \partial_{\nu }\xi _{\lambda }$}+ \text{ \underline{$\partial_{\lambda }\xi _{\nu }$}} ) \colorbox{pink}{\underline{$-  \partial_{\mu }\partial_{\lambda }$}}\text{\underline{$( \partial_{\sigma }\xi _{\nu }$}}+ \colorbox{pink}{$ \partial_{\nu }\xi _{\sigma }$}) + \\
+	\colorbox{yellow}{$ - \partial_{\nu }\partial_{\sigma }$}\left( \partial_{\lambda }\xi _{\mu }+ \colorbox{yellow}{$ \partial_{\mu }\xi _{\lambda } $}\right) + \colorbox{pink}{$ \partial_{\nu }\partial_{\lambda }$}\left( \partial_{\sigma }\xi _{\mu }+ \colorbox{pink}{$ \partial_{\mu }\xi _{\sigma }$} \right) ] 
+\end{gather*}
+As you see by colors and underlining each term cancel with an opposite other. Since the variation of the Riemann tensor is null, this transformation leaves Riemann tensor, Ricci tensor and scalar unchanged.
+
 
 
 
