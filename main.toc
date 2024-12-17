@@ -128,3 +128,6 @@
 \contentsline {section}{\numberline {4.1}Linearized gravity}{93}{section.4.1}%
 \contentsline {paragraph}{Christoffel symbol}{94}{section*.77}%
 \contentsline {paragraph}{Riemann tensor}{94}{section*.78}%
+\contentsline {paragraph}{Ricci tensor}{95}{section*.79}%
+\contentsline {paragraph}{Ricci scalar}{95}{section*.80}%
+\contentsline {subsection}{\numberline {4.1.1}Gauge Invariant}{95}{subsection.4.1.1}%

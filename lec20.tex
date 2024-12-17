@@ -33,13 +33,13 @@ g^{\mu \nu } = \eta ^{\mu \nu } + \Delta ^{\mu \nu }
 \end{equation}
 we will keep from now on only terms that are linear in $h_{\mu \nu }$, so $O\left( h \right)$ or that have the same order of $h_{\mu \nu }$.\par
 \begin{align}
-	g^{\mu \nu }g_{\nu \rho } &= \delta ^{\mu }_{\rho }\\
-	\left( \eta ^{\mu \nu } +\Delta ^{\mu \nu } \right)\left( \eta _{\nu \rho }+h_{\nu \rho } \right) &= \delta ^{\mu }_{\rho }\\
-	\delta ^{\mu }_{\rho } + \eta ^{\mu \nu }h_{\nu \rho } + \Delta ^{\mu \nu }\eta _{\nu \rho } + O\left( h^{2} \right) &= \delta ^{\mu }_{\rho } \\
-	\eta ^{\mu \nu }h_{\nu \rho } + \Delta ^{\mu \nu }\eta _{\nu \rho } & = 0 \\
-	\eta ^{\alpha \rho }\Delta ^{\mu \nu }\eta _{\nu \rho } & = - \eta ^{\mu \nu }h_{\nu \rho }\eta ^{\alpha \rho } \\
-	\delta ^{\alpha }_{\nu }\Delta ^{\mu \nu } &= - \eta ^{\mu \nu }\eta ^{\alpha \rho }h_{\nu \rho } \\
-	\Delta ^{\mu \alpha } &= -\eta ^{\mu \nu }\eta ^{\alpha \rho }h_{\nu \rho } \\
+	g^{\mu \nu }g_{\nu \rho } &= \delta ^{\mu }_{\rho } \nonumber\\
+	\left( \eta ^{\mu \nu } +\Delta ^{\mu \nu } \right)\left( \eta _{\nu \rho }+h_{\nu \rho } \right) &= \delta ^{\mu }_{\rho } \nonumber\\
+	\delta ^{\mu }_{\rho } + \eta ^{\mu \nu }h_{\nu \rho } + \Delta ^{\mu \nu }\eta _{\nu \rho } + O\left( h^{2} \right) &= \delta ^{\mu }_{\rho } \nonumber\\
+	\eta ^{\mu \nu }h_{\nu \rho } + \Delta ^{\mu \nu }\eta _{\nu \rho } & = 0 \nonumber\\
+	\eta ^{\alpha \rho }\Delta ^{\mu \nu }\eta _{\nu \rho } & = - \eta ^{\mu \nu }h_{\nu \rho }\eta ^{\alpha \rho } \nonumber\\
+	\delta ^{\alpha }_{\nu }\Delta ^{\mu \nu } &= - \eta ^{\mu \nu }\eta ^{\alpha \rho }h_{\nu \rho } \nonumber\\
+	\Delta ^{\mu \alpha } &= -\eta ^{\mu \nu }\eta ^{\alpha \rho }h_{\nu \rho } \nonumber\\
 	\Delta ^{\mu \nu } &= -\eta ^{\mu \alpha }\eta ^{\nu \beta }h_{\alpha \beta }
 \end{align}
 in the last step we changed indices to insert it on eq.\ref{eq:inversemetric}:
@@ -49,26 +49,68 @@ g^{\mu \nu } = \eta ^{\mu \nu } + \Delta^{\mu \nu } = \eta ^{\mu \nu }- \eta ^{\
 The theory we are studying is of a dynamical symmetric tensor that propagates in flat spacetime, where the word \emph{propagates} gives us an hint about our goal. This is to take take \emph{h} and rewrite the Einstein Equation that is a equation of motion. \par
 How does \emph{h} transform under LTs?
 \begin{align}
-	g_{\mu ^{\prime }\nu ^{\prime }} &= \Lambda ^{\mu }_{\mu ^{\prime }} \Lambda ^{\nu }_{\nu ^{\prime }}g_{\mu \nu } = \\
-	&= \Lambda ^{\mu }_{\mu ^{\prime }}\Lambda ^{\nu }_{\nu ^{\prime }}\left( \eta _{\mu \nu }+h_{\mu \nu } \right) = \\
-	&= \eta _{\mu ^{\prime }\nu ^{\prime }} + \Lambda ^{\mu }_{\mu ^{\prime }}\Lambda ^{\nu }_{\nu ^{\prime }}h_{\mu \nu } = \\
+	g_{\mu ^{\prime }\nu ^{\prime }} &= \Lambda ^{\mu }_{\mu ^{\prime }} \Lambda ^{\nu }_{\nu ^{\prime }}g_{\mu \nu } = \nonumber\\
+	&= \Lambda ^{\mu }_{\mu ^{\prime }}\Lambda ^{\nu }_{\nu ^{\prime }}\left( \eta _{\mu \nu }+h_{\mu \nu } \right) = \nonumber\\
+	&= \eta _{\mu ^{\prime }\nu ^{\prime }} + \Lambda ^{\mu }_{\mu ^{\prime }}\Lambda ^{\nu }_{\nu ^{\prime }}h_{\mu \nu } = \nonumber\\
 	&= \eta _{\mu ^{\prime }\nu ^{\prime }}+h_{\mu ^{\prime }\nu ^{\prime }}
 \end{align}
 \paragraph{Christoffel symbol}
 Now we can compute the Christoffel symbol
 \begin{align}
-	\Gamma ^{\rho }_{\mu \nu } &= \frac{1}{2} g^{\rho \sigma }\left[ \partial_{\mu }g_{\sigma \nu } + \partial_{\nu }g_{\sigma \mu } - \partial_{\sigma }g_{\mu \nu } \right] =\\
+	\Gamma ^{\rho }_{\mu \nu } &= \frac{1}{2} g^{\rho \sigma }\left[ \partial_{\mu }g_{\sigma \nu } + \partial_{\nu }g_{\sigma \mu } - \partial_{\sigma }g_{\mu \nu } \right] = \nonumber\\
 	&= \frac{1}{2} \eta ^{\rho \sigma }\left[ \partial_{\mu }h_{\sigma \nu }+\partial_{\nu }h_{\sigma \mu } - \partial_{\sigma }h_{\mu \nu } \right]
 \end{align}
 we kept just $\eta $ outside the square brackets because the partial derivatives inside them are already $O\left( h \right)$, since derivative of $\eta $ is null.\par
 \paragraph{Riemann tensor}
 \begin{align}
-	R^{\rho }_{\sigma \mu \nu } &= \partial_{\mu }\Gamma ^{\rho }_{\sigma \nu } - \partial_{\nu }\Gamma ^{\rho }_{\sigma \mu } + \Gamma \Gamma -\Gamma \Gamma  = \\
-				    &= \frac{1}{2} \partial_{\mu } \left[ \eta ^{\rho \alpha }\left( \partial_{\sigma} h_{\alpha \nu }+ \partial_{\nu }h_{\alpha \sigma }- \partial_{\alpha }h_{\sigma \nu } \right) \right] - \frac{1}{2}\partial_{\nu }\left[ \eta ^{\rho \alpha }\left( \partial_{\sigma }h_{\alpha \mu } +\partial_{\mu }h_{\sigma \alpha }- \partial_{\alpha }h_{\sigma \mu } \right) \right] 
+	R^{\rho }_{\sigma \mu \nu } = \partial_{\mu }\Gamma ^{\rho }_{\sigma \nu } - \partial_{\nu }\Gamma ^{\rho }_{\sigma \mu } + \Gamma \Gamma -\Gamma \Gamma  = \nonumber\\
+				    = \frac{1}{2} \partial_{\mu } \left[ \eta ^{\rho \alpha }\left( \partial_{\sigma} h_{\alpha \nu }+ \partial_{\nu }h_{\alpha \sigma }- \partial_{\alpha }h_{\sigma \nu } \right) \right] - \nonumber\\
+				     \frac{1}{2}\partial_{\nu }\left[ \eta ^{\rho \alpha }\left( \partial_{\sigma }h_{\alpha \mu } +\partial_{\mu }h_{\sigma \alpha }- \partial_{\alpha }h_{\sigma \mu } \right) \right] \nonumber
 \end{align}
 terms that are $\Gamma \Gamma $ as you can see are not linear in $h$.\par
 Now we will lower the upper index of the Riemann tensor since it is easier to manipulate.
+\begin{gather}
+	R_{\lambda \sigma \mu \nu } \simeq \eta _{\lambda \rho }R^{\rho }_{\sigma \mu \nu } = \nonumber \\
+	 =  \eta _{\lambda \rho }\eta ^{\rho \alpha } \left( \partial_{\mu }\partial_{\sigma }h _{\alpha \nu } + \partial_{\mu }\partial_{\nu }h_{\alpha \sigma }-\partial_{\mu }\partial_{\alpha }h_{\sigma \nu } \right) - \nonumber\\
+	  \frac{1}{2}\eta _{\lambda \rho }\eta ^{\rho \alpha }\left( \partial_{\nu }\partial_{\sigma }h_{\alpha \mu } + \partial_{\nu }\partial_{\mu }h_{\sigma \alpha }-\partial_{\nu }\partial_{\alpha }h_{\sigma \mu } \right) =  \nonumber\\
+	  = \frac{1}{2} \delta ^{\alpha }_{\lambda }\left[ \left( \ldots  \right)\left( \ldots  \right) \right] = \nonumber\\
+	  = \frac{1}{2} \left[ \left( \partial_{\mu }\partial_{\sigma }h_{\lambda \nu } +\partial_{\mu }\partial_{\nu }h_{\lambda \sigma }-\partial_{\nu }\partial_{\lambda }h_{\sigma \nu } \right) - \left( \partial_{\nu }\partial_{\sigma }h_{\lambda \mu }+ \partial_{\nu }\partial_{\mu }h_{\sigma \lambda } - \partial_{\nu }\partial_{\lambda }h_{\sigma \mu } \right) \right] \nonumber\\
+	 \text{ {\small Partial derivatives commute, \emph{h} is symmetric }} \nonumber\\
+	 = \frac{1}{2} \left[ \partial_{\mu }\partial_{\sigma }h_{\lambda \nu }-\partial_{\mu }\partial_{\lambda }h_{\sigma \nu } - \partial_{\nu }\partial_{\sigma }h_{\lambda \mu } + \partial_{\nu }\partial_{\lambda }h_{\sigma \mu } \right]
+\end{gather}
+\paragraph{Ricci tensor}
 
+\begin{gather}
+R^{\mu }_{\sigma \mu \nu } = \frac{1}{2}\left[ \partial^{\mu }\partial_{\sigma }h_{\mu \nu }- \partial^{\mu }\partial_{\mu }h_{\sigma \nu } - \partial_{\nu }\partial_{\sigma }h^{\mu }_{\mu }+ \partial_{\nu }\partial^{\mu }h_{\sigma \mu } \right] \nonumber\\
+R_{\sigma \nu } = \frac{1}{2} \left( \partial^{\mu }\partial_{\sigma }h_{\mu \nu } + \partial^{\mu }\partial_{\nu  }h_{\mu \sigma }+ \partial_{\sigma }\partial_{\nu }h-\Box h_{\sigma \nu } \right)\label{eq:lingriccitns}
+\end{gather}
+with
+\begin{gather*}
+h \equiv \eta ^{\mu \nu }h_{\mu \nu }, \text{ the trace of \emph{h} } \\
+\Box = \partial_{\mu }\partial^{\mu } = -\partial^{2}_{t} + \partial^{2}_{x}+\partial^{2}_{y}+\partial^{2}_{z}
+\end{gather*}
+\paragraph{Ricci scalar}
+\begin{equation}
+R = \eta ^{\sigma \nu }R_{\sigma \nu } = \frac{1}{2}\left( \partial^{\mu }\partial^{\sigma }h_{\mu \sigma }+ \partial^{\mu }\partial^{\sigma }h_{\sigma \mu }-\Box h -\Box h \right)= \partial^{\mu }\partial^{\sigma }h_{\mu \sigma }-\Box h
+\end{equation}
+
+\subsection{Gauge Invariant}
+In the context of linearized gravity, gauge invariance refers to the freedom to make certain transformations to the metric perturbation $h_{\mu \nu }$ without changing the physical content of the theory. In the linearized regime, this invariance implies that $h_{\mu \nu }$ can be transformed under an infinitesimal coordinate change
+\[
+x^{\mu } \to x^{\mu }+ \xi^{\mu }  
+\]
+$\xi $ is dependent on coordinates, is not a constant, and is small.\par
+Let's see how we write the metric tensor in new coordinate system.
+\begin{align}
+	g_{\mu ^{\prime }\nu ^{\prime }} &= \frac{\partial x^{\mu }}{\partial x^{\mu ^{\prime }}} \frac{\partial x^{\nu }}{\partial x^{\nu ^{\prime }}} \left( \eta _{\mu \nu } +h_{\mu \nu } \right) = \nonumber\\
+					 &= \left( \delta ^{\mu }_{\mu ^{\prime }} + \partial_{\mu ^{\prime }}\xi ^{\mu } \right)\left( \partial^{\nu }_{\nu ^{\prime }}+\xi ^{\nu } \right)\left( \eta _{\mu \nu }+h_{\mu \nu } \right) = \nonumber\\
+	&= \eta _{\mu ^{\prime }\nu ^{\prime }} + h_{\mu ^{\prime }\nu ^{\prime }} +\partial_{\mu ^{\prime }}\xi _{\nu ^{\prime }}+\partial_{\nu ^{\prime }}\xi _{\mu ^{\prime }}
+\end{align}
+where the last three terms are
+\begin{equation}
+\partial^{\mu }_{\mu ^{\prime }}\partial^{\nu }_{\nu ^{\prime }}h_{\mu \nu } \equiv   h_{\mu ^{\prime }\nu ^{\prime }} +\partial_{\mu ^{\prime }}\xi _{\nu ^{\prime }}+\partial_{\nu ^{\prime }}\xi _{\mu ^{\prime }}
+\end{equation}
+we did this infinitesimal change of coordinates and we found that the metric is minkowskian plus a correction
 
 
 
