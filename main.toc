@@ -122,3 +122,5 @@
 \contentsline {subsubsection}{Tortoise coordinates}{86}{section*.76}%
 \contentsline {section}{\numberline {3.4}Lec 19}{87}{section.3.4}%
 \contentsline {paragraph}{Eddington-Finkelstein}{87}{section*.77}%
+\contentsline {paragraph}{Something to digest BHs}{89}{section*.78}%
+\contentsline {subsubsection}{Kruskal-Szekeres coordinates}{89}{section*.79}%

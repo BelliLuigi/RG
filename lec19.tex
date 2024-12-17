@@ -101,6 +101,15 @@ The surface at $r=r_{S}$, acts as a point of no return, once a test particle pas
 
 In $\left( v,r \right)$ coordinates system we can cross the event horizon on future-directed paths, but not on past-directed ones. Well, wtf,\par
 If we have chosen \emph{u} instead of \emph{v} the metric would have been
+\begin{gather*}
+	\left( t,r \right) \to \left( u,r \right) \\
+	du = dt- dr^{*} = dt - \frac{dr}{1 - \frac{2GM}{r}} \\
+	\begin{cases}
+		\frac{d v}{d r} =-2 \left(  1 - \frac{2GM}{r} \right)^{-1} & \text{  infalling }\\
+		du = 0 &\text{  outgoing }
+	\end{cases}
+\end{gather*}
+and the metric becomes
 \begin{equation}
 ds^{2} = - \left( 1 - \frac{2GM}{r} \right)du^{2} - \left(  dudr + drdu \right) + r^{2}d\Omega 
 \end{equation}
@@ -160,8 +169,106 @@ Now we can pass through the event horizon but this time along past-directed curv
 
 So, we can follow either future or past directed geodesics through $r_{S}$, but we arrive at different places. If we keep \emph{v} constant and decrease \emph{r} we must have $t \to + \infty$, while for \emph{u} constant we get $t \to  -\infty$.
 
+\paragraph{Something to digest BHs} First, external geometry of a black hole is the Schwarzschild solution valid for any star or planet, this means BHs are not cosmic vacuum cleaners. \par
+Second, if I did understand, it is technically possible escape a Newtonian BH, indeed \emph{c} in here is just a number, and while light can't escape the BH travelling inertially, it could be accelerated by something and manage to escape. While in GR, inside the event horizon, the geometry of the spacetime is curved in such a way that all paths lead inward. \par
 
-
+\subsubsection{Kruskal-Szekeres coordinates}
+Enough with light-like geodesics, now we try with space-like geodesics. A first guess one could do is to use both \emph{u,v}. 
+\begin{gather*}
+v = t + r^{*} \\
+u = t - r^{*}\\
+dv = dt + dr^{*} = dt + \frac{d r}{ 1 - \frac{2GM}{r}}\\
+du = dt - dr^{*} = \ldots 
+\end{gather*}
+we see 
+\begin{gather*}
+dt = \frac{du + dv}{2} \\
+dr = \left( \frac{du-dv}{2} \right)\left( 1- \frac{2GM}{r} \right)
+\end{gather*}
+so the metric becomes
+\begin{align}
+	ds^{2} &= - \left( 1- \frac{2GM}{r} \right)dt^{2} + \left( 1 - \frac{2GM}{r} \right)^{-1} dr^{2} = \\
+	       &= - \left( 1 - \frac{2GM}{r}  \right)\left( \frac{du + dv}{2} \right)^{2} + \left( 1 - \frac{2GM}{r} \right) ^{+1} \left( \frac{du - dv}{2} \right)^{2} = \\
+	       &= - \left( 1 - \frac{2GM}{r} \right)dudv
+\end{align}
+so for $r \to  2GM$, $r^{*}\to  -\infty$, $v \to  -\infty$ and $u \to +\infty$.\par
+We can make an improvement, since in this coordinates \emph{r\textsubscript{S}} is at infinity like at the start. We choose new coordinates that are
+\begin{gather*}
+u^{\prime } = -e ^{- \frac{u}{4GM}} \\
+v^{\prime } = + e ^{\frac{v}{4GM}}\\
+du^{\prime } = \frac{1}{4GM} e^{-\frac{u}{4GM}}du\\
+dv^{\prime } = \frac{1}{4GM} e^{+\frac{v}{4GM}}dv
+\end{gather*}
+this makes
+\begin{align}
+	dudv &= 16G^{2}M^{2} e^{ \frac{u-v}{4GM}} du^{\prime }dv^{\prime }\\
+	     &\left( u -v = r^{*} \right) \\
+	     &=16G^{2}M^{2} e^{ -\frac{1}{2GM} \left( r + 2GM \text{ln}\left( \frac{r}{2GM} -1 \right)	 \right)} du^{\prime }dv^{\prime }
+\end{align}
+the metric becomes
+\begin{equation}
+ds^{2} = \frac{-32G^{3}M^{3}}{r} e ^{ -\frac{r}{2GM}} du^{\prime }dv^{\prime }
+\end{equation}
+this does not explode at $r = r_{S}$.\par
+Reminder: we used the notation $2dudv$ that should be instead $dudv +dvdu$, because tensor product does not commute.\par
+Coordinates $u^{\prime }$ and $v^{\prime }$ are null coordinates, since their partial derivatives are null vectors. We have four partial derivatives vectors (two null and two space-like) as basis for the tangent space. We prefer work with a system where coordinates are one time-like and the others three space-like. We define
+\begin{gather*}
+T = \frac{1}{2} \left( v^{\prime }+u^{\prime } \right) \\
+R = \frac{1}{2} \left( v^{\prime }-u^{\prime } \right)
+\end{gather*}
+these give us
+\begin{equation}
+ds^{2 } = \frac{32G^{3}M^{3}}{r}e^{-\frac{r}{2GM}}\left( -dT^{2}+dR^{2} \right)
+\end{equation}
+where \emph{r} is defined from
+\begin{equation}
+T^{2}-R^{2} = \left( 1- \frac{r}{2GM} \right)e^{\frac{r}{2GM}}
+\end{equation}
+These coordinates are the Kruskal-Szekres coordinates, $\left( T,R,\theta,\phi  \right)$.\par
+Radial null curves, here, or light-like geodesics are
+\begin{equation}
+T = \pm R + const
+\end{equation}
+while event horizon is at
+\begin{equation}\label{eq:t=r}
+T = \pm R
+\end{equation}
+consistent with being a null surface.\par
+Surfaces are $r =$ constant so
+\begin{equation}
+T^{2} - R^{2} = \text{ constant }
+\end{equation}
+these looks like hyperbolae in \emph{R-T} plane.\par
+Surfaces of constant \emph{t} are given by
+\begin{equation}
+\frac{T}{rR} = \text{ tanh }\left( \frac{t}{4GM} \right)
+\end{equation}
+this defines straight lines through the origin with slope given by hyper-tangent. For $t\to \infty$ it becomes eq,\ref{eq:t=r}.\par
+In this diagram each point on the diagram is a two-sphere, it represent the maximal extension of the Schwarzschild geometry.
+We see that $-\infty < R < +\infty$ and $T^{2}< R^{2 }+1$.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{imm/ksdiagram.png}
+\caption{Kruskal diagram}
+\label{imm:ksdiagram}
+\end{figure}
+It is convenient to divide the diagram in 4 regions:
+\begin{itemize}
+\item Region I corresponds to $r>2GM$
+\item With future directed light-like geodesics we reach region II
+\item With past ones we reach region III
+\item With space-like geodesics one gets to region IV
+\end{itemize}
+Definitions that relate (T,R) to (t,r) are good only in region I.\par
+Region II is a \emph{black hole}, every future-directed path there hits $r=0$.\par
+Region III is the time reversed of region II, could be the \emph{ white hole}. A singularity in the past from which everything appears to spring.\par
+Region IV, cannot be reached from our region and viceversa. It is a mirror image of region I and could be reached by a wormhole.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{imm/kregion.png}
+\caption{Regions of the kruskal diagram}
+\label{imm:kregion.png}
+\end{figure}
 
 
 

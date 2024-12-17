@@ -499,6 +499,16 @@ OUTPUT lec19.aux
 INPUT ./lec19.tex
 INPUT ./lec19.tex
 INPUT lec19.tex
+INPUT ./imm/ksdiagram.png
+INPUT ./imm/ksdiagram.png
+INPUT ./imm/ksdiagram.png
+INPUT ./imm/ksdiagram.png
+INPUT ./imm/ksdiagram.png
+INPUT ./imm/kregion.png
+INPUT ./imm/kregion.png
+INPUT ./imm/kregion.png
+INPUT ./imm/kregion.png
+INPUT ./imm/kregion.png
 INPUT main.aux
 INPUT ./title.aux
 INPUT ./title.aux
