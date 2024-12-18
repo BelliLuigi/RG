@@ -28,11 +28,11 @@ Given a vector $k \in T_{P}$, it defines a unique geodesic passing through it, f
 The uniqueness is given from the fact that the geodesic equation is a second order differential equation, and specifying the initial data in the form as above determines a solution.\par
 So the exponential map at \emph{P}, so given a point in spacetime  
 \begin{equation}
-exp_{P} : T_{P} \to M
+	\text{exp}_{P} : T_{P} \to M
 \end{equation}
 is a map from the tangent space to a point on the manifold \emph{M}. And is defined as
 \begin{equation}
-exp_{P}\left( k \right) = x^{\mu }\left( \lambda =1 \right) \to Q
+	\text{exp}_{P}\left( k \right) = x^{\mu }\left( \lambda =1 \right) \to Q
 \end{equation}
 
 The exponential map is invertible.
@@ -116,11 +116,10 @@ And each term is equal to zero. RNCs makes the LICs.
 \subsection{Riemann Curvature Tensor}
 
 As we already discussed, parallel transport of a vector around a closed loop in a curved space will result in a different vector than the one we started with. The transformation depends on the total curvature enclosed by the loop. \par
-Since spacetime looks flat locally, if we define a loop made by two infinitesimal vectors $A^{\mu }$ and $B^{\nu }$ we can  perform parallel transport on a vector $V^{\mu }$ by moving it anti-clockwise.
-
-
-\tikzset{every picture/.style={line width=0.5pt}} %set default line width to 0.75pt      
-\begin{tikzpicture}[x=0.5pt,y=0.5pt,yscale=-1,xscale=1]
+Since spacetime looks flat locally, if we define a loop made by two infinitesimal vectors $A^{\mu }$ and $B^{\nu }$ we can  perform parallel transport on a vector $V^{\mu }$ by moving it anti-clockwise.\par
+\bigskip
+\begin{center}
+\begin{tikzpicture}[x=0.4pt,y=0.4pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
 %Straight Lines [id:da4139814907991093] 
@@ -147,6 +146,7 @@ Since spacetime looks flat locally, if we define a loop made by two infinitesima
 % Text Node
 \draw (288,34) node [anchor=north west][inner sep=0.75pt]   [align=left] { $A^{\mu }$};
 \end{tikzpicture}
+\end{center}
 \bigskip
 
 As we know the action of parallel transport is independent on the coordinates, so there should be a tensor that quantifies the change of the vector, so with an upper and a lower index. Depending also on vectors \textbf{A} and \textbf{B}, there are two additional lower indices. And this tensor must be anti-symmetric since we can walk the loop in the opposite direction, and the outcome would be the inverse. So we should get something like this
@@ -160,9 +160,8 @@ R^{\mu }_{\alpha \beta \gamma } = - R^{\mu }_{\alpha \gamma  \beta }
 To compute what's inside the \textbf{R} tensor is kinda difficult so we take a related operation, the commutator of two covariant derivatives. \par
 The relation between the two is because the covariant derivative of a tensor in a certain direction measures how much the tensor changes relative to what it would have been if it had been parallel transported, because the covariant derivative of a tensor in a direction along which is parallel transported is null. The commutator of two covariant derivatives measures the difference between parallel transporting the tensor first one way and then the other, and viceversa.\bigskip
 
-
-\tikzset{every picture/.style={line width=0.5pt}} %set default line width to 0.75pt       
-\begin{tikzpicture}[x=0.5pt,y=0.5pt,yscale=-1,xscale=1]
+\begin{center}
+\begin{tikzpicture}[x=0.4pt,y=0.4pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
 %Straight Lines [id:da4139814907991093] 
@@ -187,6 +186,7 @@ The relation between the two is because the covariant derivative of a tensor in 
 % Text Node
 \draw (288,34) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\mu }$};
 \end{tikzpicture}
+\end{center}
 \bigskip
 
 We could do the computation with a scalar but

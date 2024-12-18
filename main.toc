@@ -13,13 +13,13 @@
 \contentsline {section}{\numberline {2.2}Lecture 3}{10}{section.2.2}%
 \contentsline {paragraph}{Physical meaning of $\Delta \tau $}{10}{section*.10}%
 \contentsline {paragraph}{Example}{10}{figure.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Tensor Calculus}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Tensor Calculus}{11}{subsection.2.2.1}%
 \contentsline {paragraph}{Translations}{12}{section*.12}%
-\contentsline {paragraph}{Rotations}{13}{section*.13}%
+\contentsline {paragraph}{Rotations}{12}{section*.13}%
 \contentsline {paragraph}{Vectors}{13}{section*.14}%
 \contentsline {paragraph}{Basis}{14}{section*.15}%
 \contentsline {paragraph}{Components}{14}{section*.16}%
-\contentsline {paragraph}{covariant vector}{15}{section*.17}%
+\contentsline {paragraph}{covariant vector}{14}{section*.17}%
 \contentsline {paragraph}{Second definition}{15}{section*.18}%
 \contentsline {section}{\numberline {2.3}Lecture 4}{16}{section.2.3}%
 \contentsline {subsubsection}{Brief recap of lec3}{16}{section*.19}%
@@ -44,7 +44,7 @@
 \contentsline {section}{\numberline {2.5}Lec 6}{22}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Energy \& momentum}{22}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Energy-Momentum Tensor}{23}{subsection.2.5.2}%
-\contentsline {subsubsection}{Case I: Dust}{26}{section*.34}%
+\contentsline {subsubsection}{Case I: Dust}{25}{section*.34}%
 \contentsline {subsubsection}{Case II: Fluid with pressure or \emph {Perfect FLuid} }{26}{section*.35}%
 \contentsline {subsubsection}{Conservation of energy and momentum}{27}{section*.36}%
 \contentsline {paragraph}{Results for perfect fluids}{27}{section*.37}%
@@ -131,3 +131,4 @@
 \contentsline {paragraph}{Ricci tensor}{95}{section*.79}%
 \contentsline {paragraph}{Ricci scalar}{95}{section*.80}%
 \contentsline {subsection}{\numberline {4.1.1}Gauge Invariant}{95}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Degrees of Freedom for $h_{\mu \nu }$}{96}{subsection.4.1.2}%

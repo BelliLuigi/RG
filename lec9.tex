@@ -21,13 +21,13 @@ and in spherical it would be like
 \[
 \begin{pmatrix}
 1 & 0 & 0 \\
-0 & r^{2}sin^{2}\theta  & 0 \\
+0 & r^{2} \text{sin}^{2}\theta  & 0 \\
 0 & 0 & r^{2}
 \end{pmatrix} 
 \]
 In general the metric tensor has this form
 \[
-g_{\mu \nu } = diag\left( -1, \ldots, 1, \ldots , 0, \ldots   \right)
+	g_{\mu \nu } = \text{diag}\left( -1, \ldots, 1, \ldots , 0, \ldots   \right)
 \]
 If there are just '$+1$', the metric is Euclidean.\par
 If I have one ' $-1$' and only ' $+1$' the metric is Lorentzian.\par
@@ -125,11 +125,11 @@ g_{\mu \nu }= \frac{\partial x^{\mu '}}{\partial x^{\mu }} \frac{\partial x^{\nu
 \]
 I can take the determinant and apply the Binet Rule \footnote{det(AB) = det(A)*det(B)}
 \[
-det g\left( x^{\mu } \right) = det\left( \frac{\partial x^{\mu '}}{\partial x^{\mu }}  \right)^{2} det g\left( x^{\mu '} \right)
+	\text{det} g\left( x^{\mu } \right) = \text{det}\left( \frac{\partial x^{\mu '}}{\partial x^{\mu }}  \right)^{2} \text{det} g\left( x^{\mu '} \right)
 \]
 and rewrite it in 
 \[
-det g\left( x^{\mu '} \right) = \frac{1}{det\left( \frac{\partial x^{\mu '}}{\partial x^{\mu }}  \right)^{2}} det g\left( x^{\mu } \right)
+	\text{det} g\left( x^{\mu '} \right) = \frac{1}{ \text{det}\left( \frac{\partial x^{\mu '}}{\partial x^{\mu }}  \right)^{2}} \text{det} g\left( x^{\mu } \right)
 \]
 I see that \emph{g} is not invariant if i change coordinates.
 
@@ -150,7 +150,7 @@ We introduce this distinction:
 
 For the L-C symbol with upper indices $\tilde{\epsilon}^{\mu _{1}\ldots \mu _{n}}$ the values are
 \[
-\epsilon ^{\mu _{1}\ldots \mu _{n}} = sgn\left( g \right) \tilde{\epsilon }_{\mu _{1}\ldots \mu _{n}}
+	\epsilon ^{\mu _{1}\ldots \mu _{n}} = \text{sgn}\left( g \right) \tilde{\epsilon }_{\mu _{1}\ldots \mu _{n}}
 \]
 so we have a weight of $-1$ and so the relative tensor with upper indices is 
 \[

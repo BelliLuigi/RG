@@ -73,7 +73,7 @@ Lets do an example:
 \paragraph{Example}
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{imm/examplelec3.png}
+\includegraphics[width=0.6\linewidth]{imm/examplelec3.png}
 \caption{It is like the twin paradox.}
 \label{imm:examplelec3}
 \end{figure}
@@ -121,7 +121,7 @@ We want to find linear transformations such that
 \end{equation}
 So the Lorentz Invariant is still invariant. (WTF)
 
-Now, because a SR property: if I move from IF to another, $\eta$ is still unchanged. So \[
+Now, because a SR\footnote{Special Relativity} property: if I move from IF\footnote{Inertial frame} to another, $\eta$ is still unchanged. So \[
 \eta_{\mu \nu } = \eta_{\mu' \nu'}
 \]
 
@@ -162,15 +162,15 @@ x_{i'} = R_{i i'} x_{i} \\
 it could be something like
 \begin{equation} \Lambda^{\mu'}_{\mu } = 
 \begin{pmatrix}
-cosh \eta  & -sinh \eta   & 0 & 0 \\
--sinh \eta  & cosh \eta  & 0 & 0 \\
+\text{ cosh } \eta  & - \text{ sinh } \eta   & 0 & 0 \\
+- \text{ sinh } \eta  & \text{ cosh } \eta  & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 1
 \end{pmatrix} 
 \end{equation}
 this one is a boost along the $x$ direction. If we do some computing we find that 
 \[
-tanh \eta \equiv v
+\text{ tanh } \eta \equiv v
 \]
 so this is the same of the L.T. we saw last week. \par
 
@@ -279,11 +279,11 @@ $T_{P}$ is a \textbf{vector space}:
 	V,W \in T_{P} \implies \alpha V + \beta W, \left( \alpha , \beta \in \mathbb{R} \right) \in T_{P}
 \]
 So if there is a vector there is also the inverse vector.\par
-Whenever i have a vector space, I can define infinite basis independently on the coordinate choice. The nUmber of elements in the basis is equal to the dimension of the space, in our case 4 elements.\par
+Whenever i have a vector space, I can define infinite basis independently on the coordinate choice. The number of elements in the basis is equal to the dimension of the space, in our case 4 elements.\par
 Obviously if I define the basis its elements need to be Linearly Independent. 
 
 \paragraph{Basis}
-Given a generic vector $V \in T_{P}$, I can define $V$ regardless the coordinate system I'm using. So we can say \emph{meTaphorically} that $V$ exists before I define coordinates.\par
+Given a generic vector $V \in T_{P}$, I can define $V$ regardless the coordinate system I'm using. So we can say \emph{metaphorically} that $V$ exists before I define coordinates.\par
 Be our basis:
 \[
 \hat{e}_{\left( \mu  \right)}, \text{ with } \mu = 0,1,2,3	

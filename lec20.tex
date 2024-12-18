@@ -129,8 +129,56 @@ Now we can compute the variation of the linearized Riemann tensor under this tra
 	= \frac{1}{2}[ \colorbox{yellow}{\underline{$ \partial_{\mu }\partial_{\sigma }$}$( \partial_{\nu }\xi _{\lambda }$}+ \text{ \underline{$\partial_{\lambda }\xi _{\nu }$}} ) \colorbox{pink}{\underline{$-  \partial_{\mu }\partial_{\lambda }$}}\text{\underline{$( \partial_{\sigma }\xi _{\nu }$}}+ \colorbox{pink}{$ \partial_{\nu }\xi _{\sigma }$}) + \\
 	\colorbox{yellow}{$ - \partial_{\nu }\partial_{\sigma }$}\left( \partial_{\lambda }\xi _{\mu }+ \colorbox{yellow}{$ \partial_{\mu }\xi _{\lambda } $}\right) + \colorbox{pink}{$ \partial_{\nu }\partial_{\lambda }$}\left( \partial_{\sigma }\xi _{\mu }+ \colorbox{pink}{$ \partial_{\mu }\xi _{\sigma }$} \right) ] 
 \end{gather*}
-As you see by colors and underlining each term cancel with an opposite other. Since the variation of the Riemann tensor is null, this transformation leaves Riemann tensor, Ricci tensor and scalar unchanged.
+As you see by colors and underlining each term cancel with an opposite other. Since the variation of the Riemann tensor is null, this transformation leaves Riemann tensor, Ricci tensor and scalar unchanged.\par
 
+If you have a gauge transformation, which is defined as the actual \emph{h}, nothing changes at the level of the Riemann tensor. 
+\subsection{Degrees of Freedom for $h_{\mu \nu }$}
+I can choose $\xi $ in such a way that $h$ takes the form that is particularly convenient for our purposes. Let's see more deeply the meaning of $h_{\mu \nu }$ tensor and its components.\par
+The issue of gauge invariant will be postponed to the next lecture.\par
+We assumed we work on a given coordinates system, we pick a specific gauge, and we will discuss what happens to $h_{\mu \nu }$.\par
+As one may remember
+\[
+h_{\mu ^{\prime }\nu ^{\prime }} = \Lambda ^{\mu }_{\mu ^{\prime }} \Lambda ^{\nu }_{\nu ^{\prime }}h_{\mu \nu }
+\]
+the components of $h$, transform exactly as a Lorents tensor. I change coordinates and this is a LT. Or I could say that the tensor transform as a Lorentz tensor, this sentence is stronger than the previous, and we already checked it. In particular when we discuss LTs we have rotations (3) and boosts (3). Let's focus on the rotations. It's convenient to decompose the metric $h$:
+\[
+h_{\mu \nu } = \begin{pmatrix}
+h_{00} & h_{01} & h_{02} & h_{03} \\
+h_{10}=h_{01} & \ldots  & \ldots  & \ldots  \\
+h_{02} & \ldots  & \ldots  & \ldots  \\
+h_{03} & \ldots  & \ldots  & \ldots 
+\end{pmatrix} 
+\]
+because the $h_{\mu \nu }$ tensor is symmetric.\par
+Under \textbf{spatial rotations}:
+\begin{itemize}
+\item $h_{00}$ is a scalar, and it's invariant for spatial rotations, and $h_{00} = -2\phi $, (1 degree of freedom)
+\item $h_{0i}$ is a vector, (3 degrees of freedom), $h_{0i} = w_{i}$
+\item $h_{ij}$ is a symmetric rank-2 tensor, (6 degrees of freedom), $h_{ij} = 2s_{ij} -2\Psi \delta _{ij}$
+\end{itemize}
+where $\Psi $ encodes the trace of $h_{ij}$ and $s_{ij}$ is traceless.\par
+Let's what can we say about $\Psi $. The trace of \emph{h} is 
+\[
+h \equiv \eta ^{\mu \nu } h_{\mu \nu }
+\]
+so 
+\begin{equation}
+	\delta _{ij}h_{ij} = 2\left( \delta _{ij}s_{ij} \right)-2\Psi \left( \delta _{ij}\delta _{ij} \right) = -6\Psi \to \Psi = -\frac{1}{6}\delta _{ij}h_{ij}
+\end{equation}
+in this case we don't care about the position of the indices because in Minkowski spatial the metric is the identity matrix; you can see that in the second step the first term just disappear because the $s$ is traceless.\par
+In the context of \textbf{weak field}, \textbf{staticness} and \textbf{slow motion} the metric is
+\[
+ds^{2} = - \left( 1+2\phi  \right)dt^{2}+dx^{2}+dy^{2}+dz^{2} = -\left( 1+2\phi  \right)dt^{2}+ \delta _{ij}dx^{i}dx_{j}		
+\]
+while in the case of just \textbf{weak field}, like ours
+\[
+ds^{2} = - \left( 1+2\phi  \right)dt^{2} + w_{i}\left( dtdx^{i}+dx^{1}dt \right)+\left[ 2s_{ij}+\left( 1-2\phi  \right)\delta _{ij} \right]dx^{i}dx^{j}
+\]
+This definitions of the parts of the perturbation tensor are not gauge or solving equations, we just defined some convenient notation. The traceless tensor $s_{ij}$ is known as \emph{strain}, and as we'll see later, it contains gravitational radiation. \par
+$\Psi $ is invariant under rotations because trace of a tensor is invariant under rotations.\par
+How do the components of the metric tensor evolve? According to the Einstein Equations\footnote{The Einstein equations are not just one, we write one in tensorial form, but they are many}, in the linear regime, obviously. We can say that $\phi , \Psi , w_{i}$ are not propagating degrees of freedom, while $s_{ij}$ is propagating
+
+What does it mean? If you write the Einstein Equations, with the expressions for $R_{\mu \nu }$ and \emph{R}, and instead of $h$ you write its decomposition, you can find the left-hand side of the EEs in function of $\phi ,\Psi , w_{i},s_{ij}$. The solution you find fo r $\phi ,\Psi ,w_{i}$ only involve derivatives of space, so they do not evolve with time and it means that if I know $T_{\mu \nu }$ and \emph{s} I can infer the functional dependence of the others. The actual field that propagates is the field of the strain.
 
 
 

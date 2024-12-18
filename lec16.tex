@@ -18,7 +18,7 @@ ds^{2}= -A\left( r \right) dt^{2} + B\left( r \right) dr^{2} + C\left( r \right)
 
 where $d\Omega ^{2}$ is the metric on a $S^{2}$ sphere.
 \[
-	d\Omega ^{2} = d\theta ^{2} + sin^{2}\theta d\phi ^{2}
+	d\Omega ^{2} = d\theta ^{2} + \text{sin}^{2}\theta d\phi ^{2}
 \]
 Since we are almost in the vacuum, we can start in fact from the Minkowski metric in polar coordinates: $ds^{2 }=-dt^{2} +dr^{2}+r^{2}d\Omega ^{2} $.
 Now we would like simplify a little eq.\ref{eq:polarmetric}:
@@ -36,8 +36,8 @@ Now it's time to \textbf{compute the metric tensor, Christoffel thing and Rieman
 \paragraph{Metric} 
 \begin{equation}
 \begin{matrix} 
-g_{tt}= -e^{2\alpha \left( r \right)} & g_{rr}=e^{2\beta \left( r \right)} & g_{\theta \theta }= r^{2} & g_{\phi \phi } = r^{2}sin^{2}\theta  \\
-g^{tt}=-e^{-2\alpha \left( r \right)} & g^{rr}=e^{-2\beta \left( r \right)} & g^{\theta \theta }= \frac{1}{r^{2}} & g^{\phi \phi }=\frac{1}{r^{2}sin^{2}\theta } \\
+	g_{tt}= -e^{2\alpha \left( r \right)} & g_{rr}=e^{2\beta \left( r \right)} & g_{\theta \theta }= r^{2} & g_{\phi \phi } = r^{2}\text{sin}^{2}\theta  \\
+	g^{tt}=-e^{-2\alpha \left( r \right)} & g^{rr}=e^{-2\beta \left( r \right)} & g^{\theta \theta }= \frac{1}{r^{2}} & g^{\phi \phi }=\frac{1}{r^{2}\text{sin}^{2}\theta } \\
 \end{matrix}
 \end{equation}
 other entries are null.
@@ -75,8 +75,8 @@ instead, if $\mu ,\nu  = t$:
 The remaining components are given but it would be interesting retrieving them by yourself, since professor said that he could ask to compute one component of the $\Gamma $ at the exam.
 \begin{equation}
 \begin{matrix}
-\Gamma ^{r}_{\theta \theta } = - r e^{-2\beta } & \Gamma ^{r}_{\phi \phi } = -r sin^{2}\theta e^{-2\beta } & \Gamma^{\theta }_{r\theta } = \frac{1}{r} \\
-\Gamma ^{\theta }_{\phi \phi } = -sin \theta cos \theta  & \Gamma ^{\phi }_{r\phi } = \frac{1}{r} & \Gamma ^{\phi }_{\theta \phi } = \frac{cos \theta }{sin \theta } ,
+	\Gamma ^{r}_{\theta \theta } = - r e^{-2\beta } & \Gamma ^{r}_{\phi \phi } = -r \text{sin}^{2}\theta e^{-2\beta } & \Gamma^{\theta }_{r\theta } = \frac{1}{r} \\
+	\Gamma ^{\theta }_{\phi \phi } = -\text{sin} \theta \text{cos} \theta  & \Gamma ^{\phi }_{r\phi } = \frac{1}{r} & \Gamma ^{\phi }_{\theta \phi } = \frac{ \text{cos} \theta }{\text{sin} \theta } ,
 \end{matrix} 
 \end{equation}
 
@@ -92,10 +92,10 @@ R_{\alpha \alpha } = 0, \alpha \text{ fixed } \to R^{\beta }_{\alpha \beta \alph
 \begin{itemize}
 \item $R^{t}_{rtr} = -\alpha^{\prime \prime } -\alpha ^{\prime 2} +\alpha^{\prime }\beta ^{\prime }$
 \item $R^{t}_{\theta  t \theta } = -r \alpha^{\prime } e^{-2\beta }$
-\item $R^{t}_{\phi t \phi } = -r \alpha^{\prime } sin^{2} \theta  e^{-2\beta }$
+\item $R^{t}_{\phi t \phi } = -r \alpha^{\prime } \text{sin}^{2} \theta  e^{-2\beta }$
 \item $R^{r}_{\theta r \theta } = r\beta ' e^{-2\beta }$
-\item $R^{r}_{\phi r \phi } = r \beta ' sin^{2}\theta  e^{-2\beta }$
-\item $R^{\theta }_{\phi \theta \phi } = \left( 1-e^{-2\beta } \right)sin^{2} \theta $
+\item $R^{r}_{\phi r \phi } = r \beta ' \text{sin}^{2}\theta  e^{-2\beta }$
+\item $R^{\theta }_{\phi \theta \phi } = \left( 1-e^{-2\beta } \right)\text{sin}^{2} \theta $
 \end{itemize}
 How to compute the others?
 \begin{equation}
@@ -115,7 +115,7 @@ We want $R_{\alpha \alpha } = 0$. Let's see:
 R_{rr} = -\alpha^{\prime \prime } - \alpha ^{\prime 2} + \alpha ' \beta ' + 2 \frac{\beta '}{r}
 \end{equation}
 \begin{equation}
-	R_{\phi \phi } = R_{\theta \theta }sin^{2}\theta 
+	R_{\phi \phi } = R_{\theta \theta }\text{sin}^{2}\theta 
 \end{equation}
 
 They are individually equal to zero.
@@ -124,7 +124,7 @@ I will use some of these Ricci tensor components to retrieve some informations a
 \begin{gather*}
 e^{2\left( \beta -\alpha  \right)}R_{tt} + R_{rr} = 0 \\
 \frac{2}{r}\left( \alpha '-\beta ' \right) = 0 , r\neq 0 \\
-\alpha '+ \beta ' = 0 \to  \alpha \left( r \right)+\beta \left( r \right) = const
+\alpha '+ \beta ' = 0 \to  \alpha \left( r \right)+\beta \left( r \right) = \text{const}
 \end{gather*}
 it is possible to choose the time coordinates \emph{t} such that the constant is null.
 
