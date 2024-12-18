@@ -275,6 +275,9 @@ INPUT lec19.aux
 INPUT ./lec20.aux
 INPUT ./lec20.aux
 INPUT lec20.aux
+INPUT ./lec21.aux
+INPUT ./lec21.aux
+INPUT lec21.aux
 OUTPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
@@ -528,6 +531,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT ./lec21.tex
+OUTPUT lec21.aux
+INPUT ./lec21.tex
+INPUT ./lec21.tex
+INPUT lec21.tex
 INPUT main.aux
 INPUT ./title.aux
 INPUT ./title.aux
@@ -592,6 +600,9 @@ INPUT lec19.aux
 INPUT ./lec20.aux
 INPUT ./lec20.aux
 INPUT lec20.aux
+INPUT ./lec21.aux
+INPUT ./lec21.aux
+INPUT lec21.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT /home/gigi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk

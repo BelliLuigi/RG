@@ -132,3 +132,4 @@
 \contentsline {paragraph}{Ricci scalar}{95}{section*.80}%
 \contentsline {subsection}{\numberline {4.1.1}Gauge Invariant}{95}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Degrees of Freedom for $h_{\mu \nu }$}{96}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Lec 21}{98}{section.4.2}%
