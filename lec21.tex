@@ -3,7 +3,7 @@ The Einstein tensor expressed with the components of $h_{\mu \nu }$ becomes
 \begin{align}
 	G_{00} &= 2 \nabla ^{2}\Psi + \partial_{k}\partial_{l}s^{kl} \label{eq:psi}\\
 	G_{0j} &= -\frac{1}{2} \nabla ^{2}w_{j}+\frac{1}{2}\partial_{j}\partial_{k}w^{k} + 2 \partial_{0}\partial_{j}\Psi + \partial_{0}\partial_{k}s^{k}_{j} \\
-	G_{ij} &= \left( \delta _{ij} \nabla ^{2} - \partial_{i}\partial_{j} \right)\left( \phi -\Psi  \right) + \delta _{ij}\partial_{0}\partial_{k}w^{k} - \partial_{0}\partial_{( i}w_{j)} \\
+	G_{ij} &= \left( \delta _{ij} \nabla ^{2} - \partial_{i}\partial_{j} \right)\left( \phi -\Psi  \right) + \delta _{ij}\partial_{0}\partial_{k}w^{k} - \partial_{0}\partial_{( i}w_{j)} \nonumber \\
 	       & +2\delta _{ij}\partial_{0}^{2}\Psi - \Box s_{ij} + 2\partial_{k}\partial_{( i}s_{j)}^{k}-\delta _{ij}\partial_{k}\partial_{l}s^{kl} 
 \end{align}
 Let's remember, the Einstein Equations are
@@ -18,6 +18,59 @@ If we know $T_{00 }$\footnote{energy density, via the sources} and $s_{ij}$, We 
 \[
 G_{00} = 8\pi G T_{00}
 \]
+also, since there is no time derivative, $\Psi $ does not propagate.\par
+The $G_{0i}$ term specifies $w_{j}$ in terms of $\Psi, s_{ij}, T_{0i}$. The $G_{ij}$ term specifies $\phi$. Always without a time derivative. \par
+So as probably just said the propagating terms are all in the $s_{ij}$ component of the metric.\par
+\subsubsection{Gauge transformations of components of $h_{\mu \nu }$}
+
+We already discussed the family of gauge transformations made from
+\[
+h_{\mu \nu } = h_{\mu \nu } + \partial_{\mu }\xi _{\nu }+\partial_{\nu }\xi _{\mu }
+\]
+What does it look like plugged in
+\begin{itemize}
+\item $h_{00} = -2\phi $
+\item $h_{0i} = w_{i}$
+\item $h_{ij} = 2s_{ij} -2\Psi \delta _{ij}$ 
+\end{itemize}
+Let's start from $h_{00} = -2\phi $
+\begin{gather*}
+h_{00} \to  h_{00}+\partial_{0}\xi _{0}+\partial_{0}\xi_{0} = h_{00} +2\partial_{0}\xi _{0} = h_{00} -2\partial_{0}\xi ^{0}\\
+\to -2\phi  = -2\phi - 2\partial_{0}\xi ^{0} \to  \phi = \phi +\partial_{0}\xi ^{0}
+\end{gather*}
+About $h_{0i} = w_{i} = w^{i}$:
+\begin{gather*}
+h_{0i} \to  h_{0i} + \partial_{0}\xi _{i} + \partial_{i}\xi _{0} \to w_{i} = w_{i} +\partial_{0}\xi^{i} -\partial_{i}\xi^{0}
+\end{gather*}
+Lastly, about $h_{ij} = 2s_{ij}-2\Psi \delta _{ij}$, we will split in the two components
+\begin{gather*}
+\Psi  = -\frac{1}{6}\delta _{ij}h_{ij} \\
+\Psi \to -\frac{1}{6} \delta _{ij}\left( h_{ij}+\partial_{i}\xi ^{j}+\partial_{j}\xi ^{i} \right) = \Psi -\frac{1}{3}\partial_{i}\xi ^{i}
+\end{gather*}
+last step we used the delta to make \emph{j} to \emph{i}. While for $s_{ij}$
+\begin{gather*}
+	2s_{ij} = h_{ij} +2\Psi \delta _{ij}  \to  s_{ij} = \frac{h_{ij}}{2} + \Psi \delta _{ij}\\
+	s_{ij} \to \frac{h_{ij} +\partial_{i}\xi ^{j}+\partial_{j}\xi ^{i}}{2} + \delta _{ij}\left( \Psi - \frac{1}{3}\partial_{k}\xi ^{k} \right) \\
+	s_{ij} \to s_{ij} + \frac{\partial_{i}\xi ^{j}+\partial_{j}\xi ^{i}}{2} -\frac{1}{3}\partial_{k}\xi ^{k}\delta _{ij} 
+\end{gather*}
+Now, about degrees of freedom we see that
+\begin{itemize}
+\item $\phi  \to  1$, it's a scalar
+\item $\Psi  \to  1$, same reason
+\item $w_{i} \to  3$ it's a vector
+\item $s_{ij}\to 5$, because it's symmetric but also traceless.	
+\end{itemize}
+We are ok. We foresaw 10 degrees of freedom and we got them.
+
+\subsubsection{Transverse Gauge}
+
+
+
+
+
+
+
+
 
 
 
