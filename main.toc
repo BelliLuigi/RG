@@ -135,3 +135,4 @@
 \contentsline {section}{\numberline {4.2}Lec 21}{98}{section.4.2}%
 \contentsline {subsubsection}{Gauge transformations of components of $h_{\mu \nu }$}{98}{section*.81}%
 \contentsline {subsubsection}{Transverse Gauge}{99}{section*.82}%
+\contentsline {subsection}{\numberline {4.2.1}Deflection of light}{100}{subsection.4.2.1}%
