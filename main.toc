@@ -136,3 +136,4 @@
 \contentsline {subsubsection}{Gauge transformations of components of $h_{\mu \nu }$}{98}{section*.81}%
 \contentsline {subsubsection}{Transverse Gauge}{99}{section*.82}%
 \contentsline {subsection}{\numberline {4.2.1}Deflection of light}{100}{subsection.4.2.1}%
+\contentsline {paragraph}{Geodesic Motion}{102}{section*.83}%

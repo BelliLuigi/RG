@@ -197,7 +197,7 @@ practically, these contribution are respectively of zero-th and first order in \
 Consequentially, the four momentum can also be split into two contributions
 \begin{gather*}
 k^{\mu } = \frac{d x^{\mu }_{\left( 0 \right)}}{d \lambda } \\
-l^{\mu } = \frac{d x^{\mu }_{\left( 1 \right)}}{d \lambda }
+\ell^{\mu } = \frac{d x^{\mu }_{\left( 1 \right)}}{d \lambda }
 \end{gather*}
 where we chose $\lambda $ in such a way that these are the four-momentum.\par
 Let's look now at the geodesic equation
@@ -213,10 +213,59 @@ and its only non-vanishing components are
 \Gamma ^{0}_{0i} = \Gamma ^{i}_{00} = \partial_{i}\phi  \\
 \Gamma ^{i}_{jk} = \delta _{jk}\partial_{i}\phi - \delta _{ik}\partial_{j} \phi - \delta _{ij}\partial_{k}\phi  
 \end{gather*}
+The geodesic becomes
+\begin{equation}
+\frac{d }{d \lambda }\left( k^{\mu }+ \ell^{\mu } \right) + \Gamma ^{\mu }_{\alpha \beta }\left( k^{\alpha }+ \ell^{\alpha } \right)\left( k^{\beta }+\ell^{\beta } \right) = 0
+\end{equation}
+we can split this equation based on the orders
+\begin{gather*}
+\mathcal{O} \left( h^{0} \right)  \to  \frac{d k^{\mu }}{d \lambda }\\
+\mathcal{O} \left( h^{2} \right) \to \frac{d \ell^{\mu }}{d \lambda } + \Gamma ^{\mu }_{\alpha \beta }k^{\alpha }k^{\beta } = 0
+\end{gather*}
 
+\paragraph{Geodesic Motion}
+Be
+\[
+k^{\mu } = \left( \omega ,\vec{k} \right), k^{\mu }k_{\mu }=0, \omega = |\vec{k}|=k
+\]
+Let's see what happens with $\ell^{0}$:
+\begin{gather*}
+\frac{d \ell^{0}}{d \lambda } + \Gamma ^{0}_{0i}\omega k^{i} + \Gamma ^{0}_{i0}\omega k^{i} = 0 \\
+\left( \Gamma ^{0}_{0i} = \Gamma ^{0}_{i0} = \partial_{i}\phi  \right) \\
+\frac{d \ell^{0}}{d \lambda } + 2\partial_{i}\phi k^{i}k = 0 \\
+\frac{d \ell^{0}}{d \lambda } = -2k\left( \vec{k}\cdot \vec{\nabla }\phi  \right)
+\end{gather*}
+while for the spatial part
+\begin{equation}
+	\frac{d \vec{\ell}}{d \lambda } = -2\left( k^{2}\nabla \phi - \vec{k}\left( \vec{k}\cdot \vec{\nabla }\phi  \right) \right) = -2k^{2}\vec{\nabla _{\bot}}\phi 
+\end{equation}
+This is the \emph{gradient transverse}, obtained by subtracting the part that is parallel to \emph{k}:
+\begin{equation}
+	\vec{\nabla _{\bot}}\phi   = \vec{\nabla }\phi - \frac{1}{k^{2}}\left( \vec{k}\cdot \vec{\nabla }\phi  \right)\vec{k}
+\end{equation}
 
+We found out that the motion of the photon is the composition of two four-vectors. \par
+The product of them gives
+\begin{gather*}
+	\vec{k}\cdot\vec{\ell}  = \left( k_{\mu }+ \ell_{\mu }\right)\left( k^{\mu }+\ell^{\mu } \right) = 0
+\end{gather*}
+or better
+\begin{gather*}
+	\left( \eta _{\mu \nu }+h_{\mu \nu } \right)\left( k + \ell \right)^{\mu }\left( k + \ell \right)^{\nu } = 0 \\
+	\text{ at first order }\\
+	\vec{k}\cdot \vec{\ell} = k\ell^{0}+2k^{2}\phi = 0 \to  \ell^{0} = -2k\phi 
+\end{gather*}
 
-
+This means that there are two directions, $\ell, k$, $\ell$ changes along the trajectory, it is max at the beginning and minimum at the end.
+\[
+	\alpha = \frac{|\Delta \vec{\ell}|}{k}
+\]
+with
+\begin{gather*}
+	\Delta \vec{\ell} = \int_{}^{}{d\lambda  \left( -2k^{2}\vec{\nabla _{\bot}} \phi  \right)} = -2 \int_{}^{}{d\left( \lambda k \right)k \vec{\nabla _{\bot}} \left( - \frac{GM}{\left( x^{2}+b^{2} \right)^{1/2}} \right)}\\
+	= -2k \int_{}^{}{dx \frac{GMb}{\left( x^{2}+b^{2} \right)^{3/2}}} \\
+	\to \Delta \alpha = GMb\int_{-\infty}^{+\infty}{dx \frac{1}{\left( x^{2}+b^{2} \right)^{3/2}}} = \frac{4GM}{b}
+\end{gather*}
 
 
 
