@@ -95,7 +95,7 @@ so also $\vec{F}' = \vec{F}$. And if \emph{m} is independent on the frame, we go
 
 Then there are Maxwell equations, people thanks to them found that EM-waves propagates with speed \emph{c} in the void. \par
 But they found also that these equations were not invariant in Galilean Boosts. \par
-Things started to go better when the idea of a preferred IF was ditched and Einstein decided to use Lorentz Transformations.\par
+Things started to get better when the idea of a preferred IF was ditched and Einstein decided to use Lorentz Transformations.\par
 
 There are two postulates: \par
 \begin{itemize}
@@ -109,11 +109,11 @@ As mentioned before, updated version of G. Boosts are Lorentz transformations (o
 	x' = \frac{x-vt}{\sqrt{1-(\frac{v}{c})^{2}}} \\
 	y' = y \\
 	z' = z \\
-	t' = \frac{t- \frac{vx}{c^{2}}}{\sqrt{1-(\frac{v}{c})^{2}}}
+	t' = \frac{t- vx/c^{2}}{\sqrt{1-(\frac{v}{c})^{2}}}
 \end{cases}
 \end{equation}
 
-To ensure the L.T. Is consistent we can perform three checks:
+To ensure the L.T. Is consistent we can perform three different checks:
 \begin{itemize}
 	\item $v \ll c$
 	\item v = 0
@@ -142,8 +142,8 @@ dt' = \gamma \left(dt - \frac{v dx}{c^{2}}\right)
 \begin{equation}
 \begin{cases}
  v_{x}' = \frac{dx'}{dt'} \\
- v_{y}' = \frac{dy'}{dt} = \frac{dy}{\gamma \left(dt - \frac{vdx}{c^{2}}\right)} = \frac{v_{y}}{\gamma \left(1- \frac{v v_{x}}{c^{2}}\right)} \\
-v_{z}' = \frac{dz'}{dt} = ...
+ v_{y}' = \frac{dy'}{dt^{\prime }} = \frac{dy}{\gamma \left(dt - \frac{vdx}{c^{2}}\right)} = \frac{v_{y}}{\gamma \left(1- \frac{v v_{x}}{c^{2}}\right)} \\
+v_{z}' = \frac{dz'}{dt^{\prime }} = ...
 \end{cases}
 \end{equation}
 So we see that space-time changes also along other axes.\par
@@ -234,9 +234,9 @@ Be $\Delta s^{2}$ the Lorentz Invariant separation between E-F.
 \Delta s^{2} = -c \left( t_{F}-t_{E} \right)^{2} + \left( x_{F}- x_{E} \right)^{2} + \left( y_{F}-y_{E} \right)^{2} + \left( z_{F}-z_{E} \right)^{2} =\\
 = -c (t_{F'}-t_{E'})^{2}  + (x_{F'}- x_{E'})^{2}  + (y_{F'}-y_{E'})^{2}  + (z_{F'}-z_{E'})^{2} \\
 \Delta s^{2} = \eta_{\mu \nu } \Delta x^{\mu } \Delta x^{\nu } \\
-\text{From this point we set } c = 1 \text{ just a rescaling} \\
 \text{we have defined } \Delta x^{\mu } \equiv x_{F}^{\mu} - x_{F}^{\mu }, \text{with } \mu = 0,1,2,3.
 \end{gather*}
+From this point onward, we will use $c=1$, not a big deal, it is just a rescaling.\par
 
 So, repeating for clarity, the Lorentz Invariant separation is
 \begin{equation}
@@ -247,19 +247,21 @@ Minkowski metric tensor does not change form if we change coordinates (Cartesian
 if 
 \begin{align*}
 	\Delta s^{2} & > 0 \text{, space-like separation} \\
-		     &< 0 \text{, time-like, (it could be an actual LL for a massive particle)} \\
+		     &< 0 \text{, time-like, (it could be an actual WL for a massive particle)} \\
 		     &= 0  \text{, light-like or null}
 \end{align*}
 
 Now we can define the \emph{proper time} as
-\begin{equation}
-	\Delta \tau^{2} \equiv - \Delta s^{2} \text{ or } \Delta \tau^{2} = - \eta_{\mu  \nu }\Delta x^{\mu } \Delta x^{\nu }
-\end{equation}
-So, if the proper time is \emph{positive} it is time-like.
+\begin{gather*}
+	\Delta \tau^{2} \equiv - \Delta s^{2}\\
+	 \text{ or }\\
+	 \Delta \tau^{2} = - \eta_{\mu  \nu }\Delta x^{\mu } \Delta x^{\nu }
+\end{gather*}
+to be clear, if the proper time is \emph{positive} it is time-like.
 
-If the segment \textbf{EF} marks the begin and end of the trajectory of a massive particle, $\Delta  \tau $, proper time, is the time elapsed on a clock sitting on a RF that moves with constant speed between E and F.
-\\
-Int the moving frame $\Delta \tau = \Delta t_{*}$ where \emph{t\textsubscript{*}} is the time coordinate of the moving frame. 
+If the segment \textbf{EF} marks the begin and end of the trajectory of a massive particle, $\Delta  \tau $ is the time elapsed on a clock sitting on a RF that moves with constant speed between E and F.\par
+
+In the moving frame $\Delta \tau = \Delta t_{*}$ where \emph{t\textsubscript{*}} is the time coordinate of the moving frame. 
 In a frame where I'm at rest this is how $\Delta t^{2}$ changes:
 \begin{equation}
 \Delta  \tau^{2} = + \Delta t^{2} - \Delta x^{2} - \Delta y^{2}- \Delta z^{2}.
