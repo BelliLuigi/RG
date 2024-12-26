@@ -37,7 +37,7 @@ x_{E}^{\mu } \text{ and } x_{E}^{\mu'}
 \draw [shift={(142,497.5)}, rotate = 313.87] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (21.86,-6.58) .. controls (13.9,-2.79) and (6.61,-0.6) .. (0,0) .. controls (6.61,0.6) and (13.9,2.79) .. (21.86,6.58)   ;
 
 % Text Node
-\draw (268.85,22) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ t}};
+\draw (280,22) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ t}};
 % Text Node
 \draw (603.48,362) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ x}};
 % Text Node
@@ -45,15 +45,15 @@ x_{E}^{\mu } \text{ and } x_{E}^{\mu'}
 % Text Node
 \draw (423,277) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ F}};
 % Text Node
-\draw (196,242) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ F}};
+\draw (196,260) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ F}};
 % Text Node
-\draw (325,164) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ F}};
+\draw (310,170) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ F}};
 % Text Node
 \draw (355,115) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ Time-like}};
 % Text Node
 \draw (452,299) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ Space-like}};
 % Text Node
-\draw (60,203) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ Light-like}};
+\draw (50,205) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ Light-like}};
 % Text Node
 \draw (181,475) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ y}};
 \end{tikzpicture}
@@ -83,7 +83,7 @@ Computing its proper time will be:
 \begin{equation}
 \Delta \tau_{ABC} = \left( t_{c}-t_{A} \right)
 \end{equation}
-But for the other WL, of a object moving at constant speed between \textbf{AB'} and \textbf{B'C}, first thing first, we see that
+But for the other WL, of a object moving at constant speed between \textbf{AB'} and \textbf{B'C}, we see that
 
 \begin{gather*}
 t_{B} = t_{B'} \\
@@ -225,8 +225,8 @@ x^{\mu } \to v^{\mu }
 \]
 where $x^{\mu }$ is an event and $v^{\mu }$ is a vector. \par
 
-Let's define: \textbf{Tangent space T\textsubscript{P}}.\par
-Given an event $P$ we define the tangent space $T_{P}$ as all the vectors in $P$.\par
+Let's define: \textbf{Tangent space T\textsubscript{P}}: \par
+\noindent Given an event $P$ we define the tangent space $T_{P}$ as all the vectors in $P$.\par
 
 Instead of having spacetime we have a sphere.
 
@@ -279,7 +279,7 @@ $T_{P}$ is a \textbf{vector space}:
 	V,W \in T_{P} \implies \alpha V + \beta W, \left( \alpha , \beta \in \mathbb{R} \right) \in T_{P}
 \]
 So if there is a vector there is also the inverse vector.\par
-Whenever i have a vector space, I can define infinite basis independently on the coordinate choice. The number of elements in the basis is equal to the dimension of the space, in our case 4 elements.\par
+Whenever I have a vector space, I can define infinite basis independently on the coordinate choice. The number of elements in the basis is equal to the dimension of the space, in our case 4 elements.\par
 Obviously if I define the basis its elements need to be Linearly Independent. 
 
 \paragraph{Basis}
@@ -293,7 +293,7 @@ those indices are label, does not mean "tensor". So my basis is made of \[
 \]
 Now we can talk about
 \paragraph{Components}
-given a generic vector $v$ 
+given a generic vector $V$ 
 \[
 V = V^{0}\hat{e}_{\left( 0 \right)} + V^{1}\hat{e}_{\left( 1 \right)} + V^{2}\hat{e}_{\left( 2 \right)} + V^{3}\hat{e}_{\left( 3 \right)} =  V^{\mu }\hat{e}_{\left( \mu  \right) }
 \]
@@ -306,7 +306,7 @@ In another frame $V^{\mu '}$ could not be the same:
 \]
 
 \textbf{Question:} how do components transform?
-\paragraph{covariant vector}: is a math object whose components transform based on position
+\paragraph{Covariant vector}: is a math object whose components transform based on position
 \[
 V^{\mu '} = \Lambda^{\mu '}_{\mu }V^{\mu }
 \]
