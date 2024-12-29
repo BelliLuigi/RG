@@ -4,7 +4,7 @@
 
 ### Prof. Francesco D'Eramo, academic  year 2024/2025
 
-I'm uploading all the *.tex* files because I work across multiple machines. If you just need to consult the notes, please refer to [the PDF](main.pdf).  
+I'm uploading all the *.tex* files because I work across multiple machines. If you just need to consult the notes, please refer to [the PDF](gr_notes.pdf).  
 
 These notes rely heavily on Carroll's textbook, but I think they could still be useful as they are tailored to prof. D'Eramo's lessons. 
 
