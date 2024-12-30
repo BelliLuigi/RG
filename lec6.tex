@@ -8,7 +8,7 @@ u^{\mu } \equiv \frac{d x^{\mu }}{d\tau }
 \]
 while the proper time is $\Delta \tau^{2} = - \eta_{\mu \nu }dx^{\mu }dx^{\nu }$. \\
 We need to make clear that we are talking about a time-like space-time trajectory, so $\Delta s^{2}<0$. \\
-Let's start with the WL of a single particle, this is specified by a map $\mathbb{R}\to M$, where $M$ is a manifold that represents spacetime. We usually think the path as a curve parameterized by $\lambda $ so $x^{\mu }\left( \lambda  \right)$. \\
+Let's start with the WL of a single particle, this is specified by a map $\mathbb{R}\to M$, where $M$ is a manifold that represents spacetime. We usually think about the path as a curve parameterized by $\lambda $ so $x^{\mu }\left( \lambda  \right)$. \\
 We also use as parameter the $\tau $ so $x^{\mu }\left( \tau  \right)$, this has some advantages because maybe it could be easier to switch to four-velocity.
 \begin{equation}
 u^{\mu }u_{\mu } = u_{\mu }u^{\mu } = \eta_{\mu \nu } u^{\mu }u^{\nu } = -1
@@ -19,7 +19,7 @@ p^{\mu } \equiv m u^{\mu }
 \end{equation}
 where m is the rest mass that has the same values $\forall$ RF, and it's just a number.
 
-So in rest frame (x',y',z'):
+%So in rest frame (x',y',z'):
 
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
@@ -71,9 +71,8 @@ So in rest frame (x',y',z'):
 \begin{minipage}[t]{0.48\textwidth}
     \vspace*{0pt}
 	So in the rest frame (x',y',z'): \\
-   $p^{\mu }= \left( m,0,0,0 \right)$, because the \\four-velocity in the rest frame is \\$u^{\mu }= \left( 1,0,0,0 \right)$.  \\
-   What is the expression of $p^{\mu }$ in the (x,y.z) frame?\\
-   And what is the fastest way to compute it?		
+   $p^{\mu ^{\prime}}= \left( m,0,0,0 \right)$, because the \\four-velocity in the rest frame is \\$u^{\mu^{\prime } }= \left( 1,0,0,0 \right)$.  \\
+   What is the expression of $p^{\mu }$ in the (x,y,z) frame?  What is the fastest way to compute it?		
 \end{minipage}\hfill \par
 \bigskip
 
@@ -129,8 +128,9 @@ p^{\alpha } = \sum_{j=1}^{N}{p^{\alpha }_{j}}
 where \emph{j} shows the \emph{j-th} particle, not an index to contract.
 The \emph{number density, n} for a system of \emph{N} particles is:
 \[
-n = \sum_{j}^{}{\delta\left( \vec{r}-\vec{r}_{j} \right)}
+n = \sum_{j}^{}{\delta\left( \vec{r}-\vec{r}_{j} \right)}\footnotemark
 \]
+\footnotetext{ $\delta \left( \vec{r} - \vec{r_{j}} \right)$ is the Dirac's delta function, here it is centered in $\vec{r_{j}}$. Its value is 0 everywhere but in $\vec{r}=\vec{r_{j}}$ where it assume value $\infty$. The function is normalized in such a way that the integral over the whole space(time?) region is 1. } 
 So we have these components of the energy-momentum tensor:
 \begin{gather*}
 T^{\alpha 0} = \sum_{j}^{}{p^{\alpha }_{j} \frac{dt}{dt} \delta\left( \vec{r}-\vec{r}_{j} \right)} \\
@@ -139,7 +139,7 @@ T^{\alpha i} = \sum_{j}^{}{p^{\alpha }_{j} \frac{dx^{i}_{j}}{dt} \delta\left( \v
 The $\frac{dt}{dt}$ is obvious that is simplified but we put it for clarity, while $ \frac{dx^{i}_{j}}{dt} $ is the flux.
 The meaning is that the tensor is the output of many contribution, each contribute has the center around the \emph{j-th} particle.
 
-This gives me all the components of the E-M tensor. Now, what is a tensor? We used the word tensor because we know a priori what we are gonna find it, but without knowing and looking at the definition and components. We will do it by looking at LTs, and how they act on this object.
+This gives me all the components of the E-M tensor. Now, what is a tensor? We used the word tensor because we know a priori what we are gonna find it, but without knowing neither looking at the definition and components. We will do it by looking at LTs, and how they act on this object.
 
 First thing we compute:
 \[
@@ -166,9 +166,9 @@ If i switch $\alpha $ with $\beta $, I find the same objects, because the tensor
 \[
 	T^{\left( \alpha \beta  \right)} = T^{\alpha \beta } \text{  ;   } T^{[\alpha \beta ]} = 0
 \]
-Why is a tensor? If I change frame I can change 
+Why is a tensor? 
 
-If I change frame I have to change $\alpha , \beta $ but also $p_{0}$ that is not Lorentz Invariant, It's the energy of the particle \emph{j}, and with a boost it will be different.\\
+If I change frame I have to change $\alpha , \beta $ but also $p_{0}$ that is not Lorentz Invariant. In fact, it's the energy of the particle \emph{j}, and with a boost it will be different.\\
 We have shown that 
 \[
 \frac{\delta\left( \vec{r}-\vec{r}_{j} \right)}{p^{0}_{j}}
@@ -182,7 +182,7 @@ with a 3-d Dirac Delta function, and with this definition
 \[
 T^{\alpha  \beta } = \sum_{j}^{}{T^{\alpha \beta }_{j}}
 \]
-that is a tensor because sum of tensors is still a tensor.
+gives us a tensor because sum of tensors is still a tensor.
 
 Let's focus on the single contribution:
 \begin{gather*}
@@ -197,7 +197,7 @@ The two expression are equivalent, to show it I have to compute the integral. I 
 \begin{equation}
 	= \int_{}^{}{d\tau_{j} \delta\left( x^{0}-x^{0}_{j}\left( \tau  \right) \right)} = \int_{}^{}{\frac{1}{\left| dx^{0}_{j}/d\tau \right|_{d\overline{\tau }}} d\tau_{j} \delta\left( \tau_{j}-\overline{\tau_{j}} \right)}= 
 \end{equation}
-$\overline{\tau }$ is where the argument of the delta function is 0. The integral is straightforward. We have to change variable of the delta function, that gets contributes only from the point that match the argument, I integrate $\tau_{j} - \text{ number }$, There is a jacobian factor: $\frac{1}{\left| dx^{0}_{j}/d\tau \right|_{d\overline{\tau }}}$ that is equal to $\gamma_{j} = \frac{dt}{d\tau_{j}}$.
+$\overline{\tau }$ is where the argument of the delta function is not 0. The integral is straightforward. We have to change variable of the delta function, that gets contributes only from the point that match the argument, I integrate $\tau_{j} - \text{ number }$, There is a jacobian factor: $\frac{1}{\left| dx^{0}_{j}/d\tau \right|_{d\overline{\tau }}}$ that is equal to $\gamma_{j} = \frac{dt}{d\tau_{j}}$.
 
 This is a tensor, because I have objects with indices $\alpha, \beta $, integral over $\tau_{j}$ which is a Lorentz Invariant Scalar and a $\delta $ over all space coordinates.
 
@@ -209,7 +209,7 @@ Delta function has the very useful property:
 \subsubsection{Case I: Dust}
 The dust is defined as \emph{generic ensemble of N particles that move very slowly}. So it's any set of particles with kinetic energy much smaller than rest mass energy.
 
-SO the important part is that the relative velocity in some RF $\to 0$.
+So the important part is that the relative velocity in some RF $\to 0$.
 
 The total energy density $\rho $ is described as 
 \[
@@ -226,7 +226,7 @@ m\cdot n & 0 & 0 & 0 \\
 \end{equation}
 where $\rho = m\cdot n$, all particles have the same mass, $n$ is the number density. It's clear that if the particles are at rest, the flux is null.
 
-What is $T^{\mu \nu }$ in a generic frame? I could apply LTs, (and we are invited to try it), but actually i can reason a little on the meaning of the tensor.
+What is $T^{\mu \nu }$ in a generic frame? I could apply LTs, (and we are invited to try it), but actually I could reason a little on the meaning of the tensor.
 
 I can call $u^{\mu }$ \emph{fluid four-velocity}, if you think about that there is a velocity field on a moving fluid like a river. In the rest frame
 \[
@@ -240,7 +240,7 @@ This is more generic way to find the tensor $T^{\mu \nu }$ in a generic frame, T
 
 Dust is something very common in cosmology, and is a fluid with zero pressure. But is not always true that in a fluid the pressure is negligible. Photons for example do not have 0 pressure or relative velocity $\to 0$.
 
-\subsubsection{Case II: Fluid with pressure or \emph{Perfect FLuid} }
+\subsubsection{Case II: Fluid with pressure or \emph{Perfect Fluid} }
 
 Be
 \begin{equation}
@@ -329,7 +329,7 @@ So let's make a scheme to understand the situation.
 \[
 = \int_{ \text{ total surface }}^{}{dS_{\nu }T^{\mu \nu }} = \int_{Volume}^{}{dx^{3}\partial_{\nu }T^{\mu \nu }} = \int_{volume}^{}{dV \partial_{\nu }T^{\mu \nu }}
 \]
-So we have two surfaces and we closed it inside a solid, and it is like we are doing gauss theorem, We can use the divergence theorem in 4d. We state that the divergence of $T^{\mu \nu }$:
+So we have two surfaces and we closed it inside a solid, and it is like we are doing Gauss theorem, We can use the divergence theorem in 4d. We state that the divergence of $T^{\mu \nu }$:
 \begin{gather*}
 \partial_{\mu }T^{\mu \nu } = 0 \\
 \partial_{\nu }T^{\mu \nu } = 0
@@ -364,7 +364,7 @@ And in the NR limit, $p\ll \rho $:
 \text{ we can neglect the last term since the hypothesis } \\
 \partial_{\mu }\left( \rho u^{\mu } \right) = 0 \implies \partial_{t}\rho +\partial_{i}\left( \rho u^{i} \right) = 0
 \end{gather*}
-we recover the continuity equation.
+we recover the continuity equation.\footnote{It states that the rate of mass flow into a volume is equal to the rate of mass flow out of the volume, plus the rate of change of mass within the volume}
 
 \paragraph{exercise}: instead of projecting on $u^{\nu  }$, project orthogonal to $u^{\mu }$,compute: $p^{\alpha }_{\nu } \partial_{\mu }T^{\mu \nu }=0$.
 idk what it means: $p^{\alpha }_{\beta }\equiv \delta^{\alpha }_{\beta } + u^{\alpha }u_{\beta }$. Evaluate alpha = 1,2,3.

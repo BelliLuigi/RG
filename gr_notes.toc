@@ -44,8 +44,8 @@
 \contentsline {section}{\numberline {2.5}Lec 6}{22}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Energy \& momentum}{22}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Energy-Momentum Tensor}{23}{subsection.2.5.2}%
-\contentsline {subsubsection}{Case I: Dust}{25}{section*.34}%
-\contentsline {subsubsection}{Case II: Fluid with pressure or \emph {Perfect FLuid} }{26}{section*.35}%
+\contentsline {subsubsection}{Case I: Dust}{26}{section*.34}%
+\contentsline {subsubsection}{Case II: Fluid with pressure or \emph {Perfect Fluid} }{26}{section*.35}%
 \contentsline {subsubsection}{Conservation of energy and momentum}{27}{section*.36}%
 \contentsline {paragraph}{Results for perfect fluids}{27}{section*.37}%
 \contentsline {paragraph}{exercise}{28}{section*.38}%

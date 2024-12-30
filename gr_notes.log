@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.6)  29 DEC 2024 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.6)  30 DEC 2024 13:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -600,23 +600,23 @@ Package pdftex.def Info: imm/examplelec3.png  used on input line 76.
 
 
 ] [30]
-<imm/failureglobal.png, id=542, 384.43625pt x 271.0125pt>
+<imm/failureglobal.png, id=549, 384.43625pt x 271.0125pt>
 File: imm/failureglobal.png Graphic file (type png)
 <use imm/failureglobal.png>
 Package pdftex.def Info: imm/failureglobal.png  used on input line 101.
 (pdftex.def)             Requested size: 276.00105pt x 194.58298pt.
-<imm/gravshift1.png, id=543, 689.57625pt x 229.85875pt>
+<imm/gravshift1.png, id=550, 689.57625pt x 229.85875pt>
 File: imm/gravshift1.png Graphic file (type png)
 <use imm/gravshift1.png>
 Package pdftex.def Info: imm/gravshift1.png  used on input line 112.
 (pdftex.def)             Requested size: 276.00105pt x 92.00148pt.
  [31 <./imm/failureglobal.png (PNG copy)> <./imm/gravshift1.png (PNG copy)>]
-<imm/gravshift2.png, id=551, 234.8775pt x 375.4025pt>
+<imm/gravshift2.png, id=558, 234.8775pt x 375.4025pt>
 File: imm/gravshift2.png Graphic file (type png)
 <use imm/gravshift2.png>
 Package pdftex.def Info: imm/gravshift2.png  used on input line 125.
 (pdftex.def)             Requested size: 103.50105pt x 165.42392pt.
-<imm/notmanifold.png, id=552, 551.05875pt x 374.39874pt>
+<imm/notmanifold.png, id=559, 551.05875pt x 374.39874pt>
 File: imm/notmanifold.png Graphic file (type png)
 <use imm/notmanifold.png>
 Package pdftex.def Info: imm/notmanifold.png  used on input line 142.
@@ -626,7 +626,7 @@ Package pdftex.def Info: imm/notmanifold.png  used on input line 142.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [32 <./imm/gravshift2.png (PNG copy)>]
-<imm/chart.png, id=558, 411.5375pt x 163.61125pt>
+<imm/chart.png, id=565, 411.5375pt x 163.61125pt>
 File: imm/chart.png Graphic file (type png)
 <use imm/chart.png>
 Package pdftex.def Info: imm/chart.png  used on input line 159.
@@ -653,7 +653,7 @@ Package pdftex.def Info: imm/chart.png  used on input line 159.
 
 
 ] [45] [46]
-<imm/conntransf.jpg, id=666, 967.615pt x 1284.8pt>
+<imm/conntransf.jpg, id=672, 967.615pt x 1284.8pt>
 File: imm/conntransf.jpg Graphic file (type jpg)
 <use imm/conntransf.jpg>
 Package pdftex.def Info: imm/conntransf.jpg  used on input line 141.
@@ -715,12 +715,12 @@ Chapter 3.
 
 
 ] [77] [78]
-<imm/newtmassive.png, id=915, 303.38344pt x 316.93407pt>
+<imm/newtmassive.png, id=921, 303.38344pt x 316.93407pt>
 File: imm/newtmassive.png Graphic file (type png)
 <use imm/newtmassive.png>
 Package pdftex.def Info: imm/newtmassive.png  used on input line 172.
 (pdftex.def)             Requested size: 129.72083pt x 135.5149pt.
-<imm/grmassive.png, id=916, 306.39468pt x 319.1925pt>
+<imm/grmassive.png, id=922, 306.39468pt x 319.1925pt>
 File: imm/grmassive.png Graphic file (type png)
 <use imm/grmassive.png>
 Package pdftex.def Info: imm/grmassive.png  used on input line 177.
@@ -740,7 +740,7 @@ Package pdftex.def Info: imm/grmassive.png  used on input line 177.
 
 
 ] [88] [89] [90]
-<imm/ksdiagram.png, id=1034, 524.71031pt x 363.60844pt>
+<imm/ksdiagram.png, id=1039, 524.71031pt x 363.60844pt>
 File: imm/ksdiagram.png Graphic file (type png)
 <use imm/ksdiagram.png>
 Package pdftex.def Info: imm/ksdiagram.png  used on input line 251.
@@ -749,7 +749,7 @@ Package pdftex.def Info: imm/ksdiagram.png  used on input line 251.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imm/kregion.png, id=1035, 347.04657pt x 226.59656pt>
+<imm/kregion.png, id=1040, 347.04657pt x 226.59656pt>
 File: imm/kregion.png Graphic file (type png)
 <use imm/kregion.png>
 Package pdftex.def Info: imm/kregion.png  used on input line 268.
@@ -804,8 +804,8 @@ Package rerunfilecheck Info: File `gr_notes.out' has not changed.
 (rerunfilecheck)             Checksum: 261BCF9D868FBCCA0F14EBF97A61DF76;7796.
  ) 
 Here is how much of TeX's memory you used:
- 21660 strings out of 476182
- 402244 string characters out of 5795595
+ 21662 strings out of 476182
+ 402268 string characters out of 5795595
  1945975 words of memory out of 5000000
  42677 multiletter control sequences out of 15000+600000
  573228 words of font info for 91 fonts, out of 8000000 for 9000
@@ -813,10 +813,10 @@ Here is how much of TeX's memory you used:
  84i,16n,93p,3375b,704s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/gigi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on gr_notes.pdf (104 pages, 2825415 bytes).
+Output written on gr_notes.pdf (104 pages, 2828740 bytes).
 PDF statistics:
- 1402 PDF objects out of 1440 (max. 8388607)
- 1195 compressed objects within 12 object streams
- 486 named destinations out of 1000 (max. 500000)
+ 1407 PDF objects out of 1440 (max. 8388607)
+ 1200 compressed objects within 12 object streams
+ 488 named destinations out of 1000 (max. 500000)
  534 words of extra memory for PDF output out of 10000 (max. 10000000)
 
