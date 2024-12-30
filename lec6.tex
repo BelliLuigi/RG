@@ -226,7 +226,7 @@ m\cdot n & 0 & 0 & 0 \\
 \end{equation}
 where $\rho = m\cdot n$, all particles have the same mass, $n$ is the number density. It's clear that if the particles are at rest, the flux is null.
 
-What is $T^{\mu \nu }$ in a generic frame? I could apply LTs, (and we are invited to try it), but actually I could reason a little on the meaning of the tensor.
+What is $T^{\mu \nu }$ in a generic frame? I could apply LTs, (and we are invited to try it (paragraph: \ref{ex:dustboost})), but actually I could reason a little on the meaning of the tensor.
 
 I can call $u^{\mu }$ \emph{fluid four-velocity}, if you think about that there is a velocity field on a moving fluid like a river. In the rest frame
 \[
@@ -366,8 +366,80 @@ And in the NR limit, $p\ll \rho $:
 \end{gather*}
 we recover the continuity equation.\footnote{It states that the rate of mass flow into a volume is equal to the rate of mass flow out of the volume, plus the rate of change of mass within the volume}
 
+\subsection{Check and practice with tensor operations}
+
+
 \paragraph{exercise}: instead of projecting on $u^{\nu  }$, project orthogonal to $u^{\mu }$,compute: $p^{\alpha }_{\nu } \partial_{\mu }T^{\mu \nu }=0$.
 idk what it means: $p^{\alpha }_{\beta }\equiv \delta^{\alpha }_{\beta } + u^{\alpha }u_{\beta }$. Evaluate alpha = 1,2,3.
+
+\paragraph{Lorentz Transformation on Energy-Momentum tensor for dust}\label{ex:dustboost}
+
+I should do $T^{\mu \prime \nu \prime } = \Lambda ^{\mu \prime }_{\mu }\Lambda ^{\nu \prime }_{\nu }T^{\mu \nu }$. \par
+Two ways, with matrices or with tensor components. Using matrices:
+\begin{gather*}
+\begin{pmatrix}
+\gamma  & -\gamma  v & 0 & 0 \\
+-\gamma v & \gamma  & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} \begin{pmatrix}
+\rho  & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix} \begin{pmatrix}
+\gamma  & -\gamma  v & 0 & 0 \\
+-\gamma v & \gamma  & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} = \\
+ \begin{pmatrix}
+\gamma  & -\gamma v & 0 & 0 \\
+-\gamma v & \gamma  & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix} \begin{pmatrix}
+\rho \gamma  & -\gamma \rho v & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}  = \begin{pmatrix}
+\gamma ^{2}\rho  & -\gamma ^{2}\rho v & 0 & 0 \\
+-\gamma ^{2}\rho v & \gamma ^{2}v^{2}\rho  & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix} 
+\end{gather*}
+With tensor components:
+\begin{align*}
+	T^{\mu \prime \nu \prime } &= \Lambda ^{\mu \prime }_{\mu }\Lambda ^{\nu \prime }_{\nu } T^{\mu \nu } = \\
+				   &= \Lambda ^{\mu \prime }_{0}\Lambda ^{\nu \prime }_{0}T^{00} = \Lambda ^{0}_{0}\Lambda ^{0}_{0}T^{00}+\Lambda ^{0}_{0}\Lambda ^{1}_{0}T^{00} + \Lambda ^{1}_{0}\Lambda ^{0}_{0}T^{00}+ \Lambda ^{1}_{0}\Lambda ^{1}_{0}T^{00} 
+\end{align*}
+and I get the same as above. I don't know which one could be faster but I think this one is more elegant. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
