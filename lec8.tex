@@ -115,7 +115,7 @@ Now let's see a unusual tensor, it's a (2,1) tensor, how does transform?
 T^{\alpha' \beta'}_{\gamma'} = \frac{\partial x^{\alpha '}}{\partial x^{\alpha }} \frac{\partial x^{\beta '}}{\partial x^{\beta }} \frac{\partial x^{\gamma }}{\partial x^{\gamma '}} T^{\alpha \beta }_{\gamma }	 
 \]
 \paragraph{Example/exercise} (from 2.4 of Carroll)
-Be a tensor $S_{ij}$, with $i,j =1,2$, so it's a (0.2) tensor.
+Be a tensor $S_{ij}$, with $i,j =1,2$, so it's a (0,2) tensor.
 We know that
 \begin{itemize}
 	\item S\textsubscript{11} = 1
@@ -136,7 +136,7 @@ So, like the (1,1) one looks like
 \[
 S_{1'1'} = \frac{\partial x^{i}}{\partial x^{1'}} \frac{\partial x^{j}}{\partial x^{1'}} S_{ij}
 \]
-It is good exercise to do this.
+It is good exercise to do this. (see sec \ref{ex:changebasis})
 But it seems that there is a much faster way than this.\par
 We can write the tensor $S$ as
 \[
@@ -262,4 +262,32 @@ And
 g_{\hat{\mu }\hat{\nu }}\left( P \right) = \eta_{\hat{\mu }\hat{\nu }} \text{ ; } \partial_{\hat{\sigma }}g_{\hat{\mu }\hat{\nu }}\left( P \right)=0
 \]
 This recalls the definition of LIFs.
+
+
+\subsection{Applying tensor transformation formula}\label{ex:changebasis}
+
+This is the suggested-to-try alternative way to do the exercise about tensor change of basis. I did it, and since I'm not that good with tensors I thought it is not trivial so will report here.\par
+\[
+S_{i\prime j\prime } = \frac{\partial x^{i}}{\partial x^{i\prime }} \frac{\partial x^{j}}{\partial x^{j\prime }} S_{ij}
+\]
+Partial derivatives are a jacobian. So one need to express \emph{x,y} in terms of $x^{\prime },y^{\prime }$, and then derive them to fill the jacobian
+\begin{equation}
+\frac{\partial x^{i}}{\partial x^{i\prime }}  = \begin{pmatrix}
+\partial x /\partial x^{\prime } & \partial x / \partial y^{\prime } \\
+\partial y / \partial x^{\prime } & \partial y / \partial y^{\prime }
+\end{pmatrix} 
+\end{equation}
+Express $S_{ij}$ in terms of $x^{\prime }, y^{\prime }$:
+\[
+S_{ij} = \begin{pmatrix}
+1 & 0 \\
+0 & \left( x^{\prime }y^{\prime } \right)^{2}
+\end{pmatrix} 
+\]
+And then compute each entry
+\[
+S_{1^{\prime }1^{\prime }} = \frac{\partial x^{i}}{\partial x^{1\prime }} \frac{\partial x^{j}}{\partial x^{1\prime }} S_{ij} 
+\]
+et cetera. 
+
 
