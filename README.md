@@ -1,3 +1,7 @@
+## Last (important) update:
+02/01/2025
+
+
 # Notes of General Relativity 
 
 ## For the Astrophysics & Cosmology / Physics of Data Master Degrees in Padua
