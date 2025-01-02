@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.6)  2 JAN 2025 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.6)  2 JAN 2025 16:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -525,7 +525,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 ...}Geodesic Equation}{56}{subsection.2.11.1}
+l.92 ...}Geodesic Equation}{55}{subsection.2.11.1}
                                                   % [1
 
 
@@ -650,22 +650,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-] [36] [37] [38] [39]) [40] [41]
+] [36] [37] [38] [39]) [40]
 \openout2 = `lec9.aux'.
 
- (./lec9.tex [42
+ (./lec9.tex [41
 
 
 
-] [43] [44]) [45]
+] [42] [43]) [44]
 \openout2 = `lec10.aux'.
 
- (./lec10.tex [46
+ (./lec10.tex [45
 
 
 
-] [47] [48]
-<imm/conntransf.jpg, id=694, 967.615pt x 1284.8pt>
+] [46] [47]
+<imm/conntransf.jpg, id=689, 967.615pt x 1284.8pt>
 File: imm/conntransf.jpg Graphic file (type jpg)
 <use imm/conntransf.jpg>
 Package pdftex.def Info: imm/conntransf.jpg  used on input line 141.
@@ -674,85 +674,85 @@ Package pdftex.def Info: imm/conntransf.jpg  used on input line 141.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [49] [50 <./imm/conntransf.jpg>]
+) [48] [49 <./imm/conntransf.jpg>]
 \openout2 = `lec11.aux'.
 
- (./lec11.tex [51
+ (./lec11.tex [50
 
 
 
-] [52] [53] [54]) [55]
+] [51] [52] [53]) [54]
 \openout2 = `lec12.aux'.
 
- (./lec12.tex [56
+ (./lec12.tex [55
 
 
 
-] [57] [58]) [59]
+] [56] [57]) [58]
 \openout2 = `lec13.aux'.
 
- (./lec13.tex [60
+ (./lec13.tex [59
 
 
 
-] [61] [62] [63]) [64]
+] [60] [61] [62]) [63]
 \openout2 = `lec14.aux'.
 
- (./lec14.tex [65
+ (./lec14.tex [64
 
 
 
-] [66]) [67]
+] [65]) [66]
 \openout2 = `lec15.aux'.
 
- (./lec15.tex [68
+ (./lec15.tex [67
 
 
 
-] [69] [70] [71]) [72]
+] [68] [69] [70]) [71]
 \openout2 = `lec16.aux'.
 
  (./lec16.tex
 Chapter 3.
-[73
+[72
 
 
 
 
-] [74] [75] [76]) [77]
+] [73] [74] [75]) [76]
 \openout2 = `lec17.aux'.
 
- (./lec17.tex [78
+ (./lec17.tex [77
 
 
 
-] [79] [80]
-<imm/newtmassive.png, id=942, 303.38344pt x 316.93407pt>
+] [78] [79]
+<imm/newtmassive.png, id=938, 303.38344pt x 316.93407pt>
 File: imm/newtmassive.png Graphic file (type png)
 <use imm/newtmassive.png>
 Package pdftex.def Info: imm/newtmassive.png  used on input line 172.
 (pdftex.def)             Requested size: 129.72083pt x 135.5149pt.
-<imm/grmassive.png, id=943, 306.39468pt x 319.1925pt>
+<imm/grmassive.png, id=939, 306.39468pt x 319.1925pt>
 File: imm/grmassive.png Graphic file (type png)
 <use imm/grmassive.png>
 Package pdftex.def Info: imm/grmassive.png  used on input line 177.
 (pdftex.def)             Requested size: 129.72083pt x 135.1363pt.
- [81 <./imm/newtmassive.png (PNG copy)> <./imm/grmassive.png (PNG copy)>] [82]) [83]
+ [80 <./imm/newtmassive.png (PNG copy)> <./imm/grmassive.png (PNG copy)>] [81]) [82]
 \openout2 = `lec18.aux'.
 
- (./lec18.tex [84
+ (./lec18.tex [83
 
 
 
-] [85] [86] [87]) [88]
+] [84] [85] [86]) [87]
 \openout2 = `lec19.aux'.
 
- (./lec19.tex [89
+ (./lec19.tex [88
 
 
 
-] [90] [91] [92]
-<imm/ksdiagram.png, id=1060, 524.71031pt x 363.60844pt>
+] [89] [90] [91]
+<imm/ksdiagram.png, id=1056, 524.71031pt x 363.60844pt>
 File: imm/ksdiagram.png Graphic file (type png)
 <use imm/ksdiagram.png>
 Package pdftex.def Info: imm/ksdiagram.png  used on input line 251.
@@ -761,7 +761,7 @@ Package pdftex.def Info: imm/ksdiagram.png  used on input line 251.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imm/kregion.png, id=1061, 347.04657pt x 226.59656pt>
+<imm/kregion.png, id=1057, 347.04657pt x 226.59656pt>
 File: imm/kregion.png Graphic file (type png)
 <use imm/kregion.png>
 Package pdftex.def Info: imm/kregion.png  used on input line 268.
@@ -769,17 +769,17 @@ Package pdftex.def Info: imm/kregion.png  used on input line 268.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [93] [94 <./imm/ksdiagram.png (PNG copy)> <./imm/kregion.png (PNG copy)>]
+) [92] [93 <./imm/ksdiagram.png (PNG copy)> <./imm/kregion.png (PNG copy)>]
 \openout2 = `lec20.aux'.
 
  (./lec20.tex
 Chapter 4.
-[95
+[94
 
 
 
 
-] [96] [97]
+] [95] [96]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 135.
@@ -800,14 +800,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 135.
 
-[98]) [99]
+[97]) [98]
 \openout2 = `lec21.aux'.
 
- (./lec21.tex [100
+ (./lec21.tex [99
 
 
 
-] [101] [102] [103] [104]) [105] (./gr_notes.aux (./title.aux) (./lec1.aux) (./lec2.aux) (./lec3.aux) (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux) (./lec14.aux) (./lec15.aux) (./lec16.aux) (./lec17.aux) (./lec18.aux) (./lec19.aux) (./lec20.aux) (./lec21.aux))
+] [100] [101] [102] [103]) [104] (./gr_notes.aux (./title.aux) (./lec1.aux) (./lec2.aux) (./lec3.aux) (./lec4.aux) (./lec5.aux) (./lec6.aux) (./lec7.aux) (./lec8.aux) (./lec9.aux) (./lec10.aux) (./lec11.aux) (./lec12.aux) (./lec13.aux) (./lec14.aux) (./lec15.aux) (./lec16.aux) (./lec17.aux) (./lec18.aux) (./lec19.aux) (./lec20.aux) (./lec21.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -816,8 +816,8 @@ Package rerunfilecheck Info: File `gr_notes.out' has not changed.
 (rerunfilecheck)             Checksum: B95EB8CDC15AAA48072AC6D2376E8DAC;8339.
  ) 
 Here is how much of TeX's memory you used:
- 21671 strings out of 476182
- 402393 string characters out of 5795595
+ 21670 strings out of 476182
+ 402385 string characters out of 5795595
  1947975 words of memory out of 5000000
  42681 multiletter control sequences out of 15000+600000
  573228 words of font info for 91 fonts, out of 8000000 for 9000
@@ -825,10 +825,10 @@ Here is how much of TeX's memory you used:
  84i,16n,93p,3375b,704s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/gigi/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on gr_notes.pdf (106 pages, 2832552 bytes).
+Output written on gr_notes.pdf (105 pages, 2832032 bytes).
 PDF statistics:
- 1430 PDF objects out of 1440 (max. 8388607)
- 1220 compressed objects within 13 object streams
- 493 named destinations out of 1000 (max. 500000)
+ 1425 PDF objects out of 1440 (max. 8388607)
+ 1216 compressed objects within 13 object streams
+ 492 named destinations out of 1000 (max. 500000)
  550 words of extra memory for PDF output out of 10000 (max. 10000000)
 
