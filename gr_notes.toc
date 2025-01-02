@@ -55,14 +55,14 @@
 \contentsline {subsection}{\numberline {2.6.1}Equivalence Principle}{30}{subsection.2.6.1}%
 \contentsline {subsubsection}{Weak Equivalence Principle, WEP}{30}{section*.40}%
 \contentsline {subsubsection}{Einstein's Equivalence Principle, EEP}{31}{section*.41}%
-\contentsline {subsubsection}{Strong Equivalence Principle, SEP}{31}{section*.42}%
-\contentsline {subsubsection}{Gravitational Redshift}{32}{section*.43}%
+\contentsline {subsubsection}{Gravitational Redshift}{32}{section*.42}%
 \contentsline {subsection}{\numberline {2.6.2}Manifolds}{33}{subsection.2.6.2}%
-\contentsline {subsubsection}{Coordinate System}{34}{section*.44}%
-\contentsline {subsubsection}{Vectors again}{34}{section*.45}%
+\contentsline {subsubsection}{Coordinate System}{33}{section*.43}%
+\contentsline {subsubsection}{Vectors again}{34}{section*.44}%
+\contentsline {subsubsection}{Strong Equivalence Principle, SEP}{34}{section*.45}%
 \contentsline {section}{\numberline {2.7}Lec 8}{35}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Brief Recap}{35}{subsection.2.7.1}%
-\contentsline {subsubsection}{Vectors again again}{35}{section*.46}%
+\contentsline {subsubsection}{Vectors again and again}{35}{section*.46}%
 \contentsline {paragraph}{Example}{36}{section*.47}%
 \contentsline {subsection}{\numberline {2.7.2}Dual Vectors}{36}{subsection.2.7.2}%
 \contentsline {subsection}{\numberline {2.7.3}Tensors (k,l)}{37}{subsection.2.7.3}%
