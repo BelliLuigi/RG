@@ -1,5 +1,7 @@
 ## Last (important) update:
+03/01/2025
 02/01/2025
+
 
 
 # Notes of General Relativity 
