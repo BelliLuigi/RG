@@ -48,7 +48,7 @@ So, the torsion tensor is antisymmetric on its lower indices, and a connection t
 We can define a unique connection on a manifold with metric $g_{\mu \nu }$ by introducing two additional properties, torsion-freeness and the metric compatibility.
 The metric compatibility is a property of the covariant derivative and it's expressed as follows
 \[
-\nabla \rho g_{\mu \nu } = 0
+\nabla_{\rho } g_{\mu \nu } = 0
 \]
 A connection is \emph{metric compatible} if the covariant derivative of the metric with respect to that connection is everywhere 0. \par
 We want to see how this property works with the \emph{inverse metric tensor}, so let's start from
@@ -75,7 +75,7 @@ So, in conclusion the covariant derivative of the inverse of metric tensor is nu
 
 After this we can see that a metric-compatible covariant derivative commutes with raising and lowering of indices, so for a generic vector $V^{\nu }$
 \[
-\nabla _{\mu }V^{\nu } = g_{\alpha \nu }\nabla _{\mu }\left( v^{\mu } \right) = \nabla _{\mu }\left( g_{\alpha \nu }V^{\nu } \right) = \nabla _{\mu }V_{\nu }
+\nabla _{\mu }V^{\nu } = g_{\alpha \nu }\nabla _{\mu }\left( V^{\mu } \right) = \nabla _{\mu }\left( g_{\alpha \nu }V^{\nu } \right) = \nabla _{\mu }V_{\nu }
 \]
 
 With non-metric compatible connections we would have to be very careful about index placement wen taking a covariant derivative. \par
@@ -105,22 +105,22 @@ But let's see in detail what's happening
  We have seen that a flat spacetime has a Minkowski metric everywhere. \par
  But how to define curvature? \par
  The fact that $g_{\mu \nu }$ depends on the coordinates is not enough (e.g. spherical coordinates). But now we have a new object\par
- Let's think a little bit: in flat spacetime if $\partial \leftrightarrow \nabla $ and this $\implies \Gamma  = 0$. Is that true? \par
+ Let's think a little bit: in flat spacetime if $\partial \leftrightarrow \nabla $ and this implies $\Gamma  = 0$. Is that true? \par
  
  In 3D coordinates, using other coordinates, do connections have to be 0? Be
  \[
  \overline{\nabla } = \left( \frac{\partial }{\partial x} , \frac{\partial }{\partial y}  \right)
  \]
- that's the gradient in cartesian coordinates, but in polar coordinates
+ that's the gradient in cartesian coordinates, while in polar coordinates
  \[
  = \left( \frac{\partial }{\partial r} , \frac{1}{r} \frac{\partial }{\partial \theta }  \right)
  \]
- I can compute the additional factor with christoffel symbols.
- Take $ds^{2} = dr^{2} + r^{2}d\theta ^{2}$, polar coordinates on plane, and compute the christoffel symbol. How many entries?
+ I can compute the additional factor with Christoffel symbols.
+ Take $ds^{2} = dr^{2} + r^{2}d\theta ^{2}$, polar coordinates on plane, and compute the Christoffel symbol. How many entries?
  \[
  \Gamma ^{\alpha \to 2}_{\beta \gamma \to 3} 
  \]
- I don't remember what the professor was trying to say but in doubt see Carroll.
+If you try to derive connection you will see that connection's component stays is curvilinear coordinates systems.
 
  \subsection{Parallel Transport}
  
@@ -199,9 +199,9 @@ But let's see in detail what's happening
 \draw [shift={(349.67,248.33)}, rotate = 179.48] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
 
 % Text Node
-\draw (109,5.5) node [anchor=north west][inner sep=0.75pt]   [align=left] {Flat Spacetime};
+\draw (109,5.5) node [anchor=north west][inner sep=0.75pt]   [align=left] {Flat Spacetime (FST )};
 % Text Node
-\draw (461.67,5.67) node [anchor=north west][inner sep=0.75pt]   [align=left] {Curved Spacetime};
+\draw (461.67,5.67) node [anchor=north west][inner sep=0.75pt]   [align=left] {Curved Spacetime (CST)};
 % Text Node
 \draw (58.67,155.67) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \overline{A}$};
 % Text Node

@@ -1,6 +1,6 @@
 \section{Lec 10}
 \subsection{Differential form}
-A \emph{p-form} or \emph{differential form} is a (0,p) that is completely antisymmetric.
+A \emph{p-form} or \emph{differential form} is a (0,p) tensor that is completely antisymmetric.
 Examples of p-forms
 \begin{itemize}
 	\item scalars are 0-forms
@@ -8,7 +8,7 @@ Examples of p-forms
 	\item $\tilde{\epsilon }$ is a 4-form
 \end{itemize}
 P-forms do have a operation called \emph{wedge product}:\par
-be A a p-form and B a q-form, then $\left( A \wedge B \right)$ is a (p+q)-form, in detail
+Be A a p-form and B a q-form, then $\left( A \wedge B \right)$ is a (p+q)-form, in detail
 \[
 	\left( A \wedge B \right)_{\mu _{1}\ldots \mu _{p+q}} = \frac{\left( p+q \right)!}{p!q!} A_{[\mu _{1}\ldots }B_{\mu _{p+1}\ldots \mu _{p+q}]}
 \]
@@ -20,7 +20,7 @@ Also note that
 \[
 A\wedge B = \left( -1 \right)^{pq} B\wedge A	
 \]
-There is also something about Integral over volume \& principle of least action. To Be Filled
+There is also something about Integral over volume \& principle of least action. 
 
 \subsubsection{Exterior Derivative}
 There is also this operation, not really used, that is
@@ -28,7 +28,7 @@ There is also this operation, not really used, that is
 	d : p-\text{form} \to \left( p+1 \right)-\text{form}
 \]
 \[
-	\left( dA \right)_{\mu _{1}\ldots \mu _{p+1} } = \left( p+1 \right) \partial_{[\mu _{1}}A_{\mu _{2}\ldots \mu _{n}]}
+	\left( dA \right)_{\mu _{1}\ldots \mu _{p+1} } = \left( p+1 \right) \partial_{[\mu _{1}}A_{\mu _{2}\ldots \mu _{p+1}]}
 \]
 It has a special property: \emph{dA} is a tensor.
 \begin{gather}
@@ -83,6 +83,7 @@ Now why $\partial_{\alpha }$ does not give a tensor? $\partial_{\mu }A_{\nu }$ i
 This last piece is symmetric, so in the exterior derivative it cancels out.\par
 
 \subsection{Covariant Derivative}
+
 This is the only derivative that matters for real.
 \[
 \nabla_{\mu }V^{\nu } \equiv \partial_{\mu }V^{\nu } + \Gamma ^{\nu }_{\mu \alpha }V^{\alpha }		
@@ -97,10 +98,10 @@ and needs to follow the \emph{Leibniz product rule}\footnote{ $\left( fg \right)
 \[
 \nabla \left( T \otimes S \right) = \left( \nabla T \right) \otimes S + T \otimes \left( \nabla S \right)
 \]
-$\Gamma^{\nu }_{\mu \alpha }$ is called \emph{connection} and it is \emph{not a tensor} nut we can think of it like a collection of numbers. \par
+$\Gamma^{\nu }_{\mu \alpha }$ is called \emph{connection} and it is \emph{not a tensor} but we can think of it like a collection of numbers. \par
 It is a Christoffel symbol.\par
 
-Before diving in the deep of this symbol $\Gamma^{\mu }_{\nu \alpha }$ we want to know hot it transform. One could think the trivial way, because if we have two coordinates systems \[
+Before diving in the deep of this symbol $\Gamma^{\mu }_{\nu \alpha }$ we want to know how it transform. One could think the trivial way, because if we have two coordinates systems \[
 \Gamma^{\alpha '}_{\mu '\nu '} \neq \frac{\partial x^{\alpha '}}{\partial x^{\alpha }}  \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu }}{\partial x^{\nu '}} \Gamma ^{\alpha }_{\mu \nu } 
 \]
 but this is not true since $\Gamma $ is not a tensor.\par
@@ -120,15 +121,15 @@ while the right hand side of eq.\ref{eq:coder} is
 we see that we have free indices $\mu ', \nu '$	on both sides.
 Now let's develop the left-hand side some more
 \begin{equation}
-	\frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial ^{2}x^{\mu '}}{\partial x^{\mu }\partial x^{\nu }} V^{\nu } + \text{\colorbox{green}{$ \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu '}}{\partial x^{\nu }} \frac{\partial V^{\nu }}{\partial x^{\mu }}$}} + \Gamma ^{\nu '}_{\mu '\alpha '} \frac{\partial x^{\alpha '}}{\partial x^{\alpha }}V^{\alpha }
+	\frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial ^{2}x^{\mu '}}{\partial x^{\mu }\partial x^{\nu }} V^{\nu } + \text{\colorbox{orange}{$ \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial x^{\nu '}}{\partial x^{\nu }} \frac{\partial V^{\nu }}{\partial x^{\mu }}$}} + \Gamma ^{\nu '}_{\mu '\alpha '} \frac{\partial x^{\alpha '}}{\partial x^{\alpha }}V^{\alpha }
 \end{equation}
 Remember that for us partial derivatives commute.\par
 Let's compare the sides:
 \begin{itemize}
-\item the first on the right-side cancels out with the second on the left (green).
+\item the first on the right-side cancels out with the second on the left (orange).
 \item Renaming the first term on the left to get $V^{\alpha }$, lead to simplifying every vector on both sides.
 \end{itemize}
-We can \emph{rename} the vector because everything is valid for a generic vector, and its indices were summed over.\par
+We can \emph{rename} the vector because everything is valid for a generic vector, and its indices are summed over.\par
 We are left with
 \[
 \frac{\partial x^{\mu }}{\partial x^{\mu '}}  \frac{\partial x^{\nu '}}{\partial x^{\nu }} \Gamma ^{\nu }_{\mu \alpha } = \frac{\partial x^{\alpha' }}{\partial x^{\alpha }} \Gamma ^{\nu '}_{\mu '\alpha '} + \frac{\partial x^{\mu }}{\partial x^{\mu '}} \frac{\partial ^{2}x^{\nu '}}{\partial x^{\mu }\partial x^{\alpha }} 
@@ -143,6 +144,8 @@ If this derivation is still obscure to you and want to see it on paper, old-styl
 \label{imm:conntransf}
 \end{figure}
 We see that $\Gamma $ is not a tensor because of this extra piece after the transformation.\par
+
+\paragraph{Covariant derivative - dual vector}
 We saw that for a \emph{vector} the covariant derivative acts like
 \[
 \nabla_{\mu }V^{\nu } = \partial_{\mu }V^{\nu } + \Gamma ^{\nu }_{\mu \alpha }V^{\alpha }
