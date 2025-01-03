@@ -1,3 +1,4 @@
 Carroll.pdf
 *.djvu
-
+*.synctex.gz
+*.aux
