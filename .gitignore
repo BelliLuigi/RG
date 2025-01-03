@@ -5,5 +5,5 @@ Carroll.pdf
 *.fdb_latexmk
 *.fls
 *.log
-*.log
+*.toc
 *.out
