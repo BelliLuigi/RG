@@ -52,18 +52,18 @@ Doing a Taylor expansion I will see that first order is Minkoskian:
 x^{\mu }\left( x^{\hat{\mu }} \right) = \left( \frac{\partial x^{\mu }}{\partial x^{\hat{\mu }}}  \right)_{P}x^{\hat{\mu }} + \frac{1}{2}\left( \frac{\partial^{2}x^{\mu }}{\partial x^{\hat{\mu }}\partial  x^{\hat{\nu }}}  \right)_{P}x^{\hat{\mu }}x^{\hat{\nu }}+ \frac{1}{6} \left( \frac{\partial^{3}x^{\mu }}{\partial x^{\hat{\mu }}\partial x^{\hat{\nu }}\partial x^{\hat{\rho }} }  \right)_{P} x^{\hat{\mu }}x^{\hat{\nu }}x^{\hat{\rho }}+ \ldots 
 \end{equation}
 
-Then we take the derivative of this expression:
+Then we take the derivative of this expression, finding the jacobian:
 \begin{equation}
 \frac{\partial x^{\mu }}{\partial x^{\hat{\mu }}} = \left( \frac{\partial x^{\mu }}{\partial x^{\hat{\mu }}}  \right)_{P} + \left( \frac{\partial^{2}x^{\mu }}{\partial x^{\hat{\mu }}\partial x^{\hat{\alpha }} }  \right)_{P} x^{\hat{\alpha }} +\frac{1}{2} \left( \frac{\partial^{3}x^{\mu }}{\partial x^{\hat{\mu }}\partial x^{\hat{\alpha }} \partial x^{\hat{\beta  }}}  \right)_{P} x^{\hat{\alpha }}x^{\hat{\beta }}
 \end{equation}
-
+Now, I can expand the metric tensor around \emph{P} like this
 \begin{equation}
 g_{\mu \nu } \left( x^{\alpha } \right) = \left( g_{\mu \nu } \right)_{P} + \left( \partial_{\rho }g_{\mu \nu } \right)_{P} x^{\rho } +\frac{1}{2} \left( \partial_{\rho }\partial _{\sigma } g_{\mu \nu } \right)_{P} x^{\rho }x^{\sigma }+ \ldots 
 \end{equation}
-Now i just need to write down the metric tensor in new coordinates:
+This is valid also for the metric tensor in new coordinates
 \begin{gather*}
 \hat{g} + \left( \hat{\partial }\hat{g} \right)_{P}\hat{x} + \left( \hat{\partial }\hat{\partial }\hat{g} \right)_{P}\hat{x}\hat{x}  = \left( \frac{\partial x}{\partial \hat{x}} \frac{\partial x}{\partial \hat{x}} g \right)_{P} + \left( \frac{\partial x}{\partial \hat{x}}  \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} + \frac{\partial x}{\partial \hat{x}} \frac{\partial x}{\partial \hat{x}} \partial g \right)_{P}\hat{x} + \\
-+ \left( \frac{\partial x}{\partial \hat{x}} \frac{\partial^{3}x}{\partial \hat{x} \partial \hat{x} \partial \hat{x}} g + \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} g + \frac{\partial x}{\partial \hat{x}} \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} \partial \hat{g} + \frac{\partial x}{\partial \hat{x}} \frac{\partial x}{\partial \hat{x}} \hat{\partial }\hat{\partial g} \right)_{P} \hat{x}\hat{x} 
++ \left( \frac{\partial x}{\partial \hat{x}} \frac{\partial^{3}x}{\partial \hat{x} \partial \hat{x} \partial \hat{x}} g + \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} g + \frac{\partial x}{\partial \hat{x}} \frac{\partial^{2}x}{\partial \hat{x} \partial \hat{x}} \hat{\partial}g + \frac{\partial x}{\partial \hat{x}} \frac{\partial x}{\partial \hat{x}} \hat{\partial }\hat{\partial} g \right)_{P} \hat{x}\hat{x} 
 \end{gather*}
 
 This is the structure (with all indices suppressed) of the Taylor expansion up to the quadratic term in the new frame of the metric tensor around point $P$. \par
@@ -73,7 +73,7 @@ It's true to write:
 \]
 with \emph{A,B,C} the three terms up there. So we can set terms of equal order in $\hat{x}$ on each side equal to each other. Therefore it's like having
 \[
-	\left( g_{\hat{\mu }\hat{\nu }} \right)_{P} = A = \left( \frac{\partial x}{\partial } \hat{x} \frac{\partial x}{\partial \hat{x}} g  \right)_{P}
+	\left( g_{\hat{\mu }\hat{\nu }} \right)_{P} = A = \left( \frac{\partial x}{\partial \hat{x}} \frac{\partial x}{\partial \hat{x}} g  \right)_{P}
 \]
 On the left we have 10 numbers in all to describe a symmetric two-index tensor, and they are determined by the matrix on the right, This is a $4\times 4$ matrix without constraints, so we have enough freedom to put the 10 numbers of the left tensor into \emph{canonical form}.\par
 At first order we have, on the left, four derivatives of 10 components for a total of 40 numbers, while on the right side we have 10 choices of $\hat{\mu }$s and four choices of $\mu$s, for a total of 40 degrees of freedom. This is precisely the number of choices we need to determine all of the first derivatives of the metric, which we can therefore set to 0. \par
