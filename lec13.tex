@@ -1,10 +1,6 @@
 \section{Lec 13}
-This lecture is about establishing if spacetime is curved or not. We already attempt at this but failed:
-\begin{itemize}
-\item metric depends on the curvature
-\item $\Gamma ^{\alpha }_{\beta \gamma } = 0$
-\end{itemize}
-Today we will develop an actual way to determine curvature of spacetime independently on coordinates chosen. This way is the \emph{Riemann Tensor.}\par
+We already tried to determine if the spacetime is curved or not, but we failed. We suggested in vain that the metric depends on the curvature and that the null connection is indicator of this.
+Today we will develop an actual way to determine curvature of spacetime independently on coordinates chosen.
 
 \subsubsection{Quick recall on LIC}
 Local Inertial coordinates. Given a generic spacetime with generic coordinates system $x^{\mu }$ and metric tensor $g_{\mu \nu }$, for a given spacetime point \emph{P} we can find LIC $x^{\hat{\mu }}$. \par
@@ -16,29 +12,24 @@ obviously this is valid only in \emph{P}. Also $\partial_{\hat{\rho }} g_{\hat{\
 
 \subsubsection{Exponential Map}
 
-Geodesics provide a convenient way of mapping the tangent space $T_{P}$ of a point $P$ to a region of the manifold that contains \emph{P}, called the \textbf{exponential map}. This map defines a set of coordinates for this region that are automatically the LIC, local inertial coordinates. \par
-These is only one geodesic such that 
-\[
-x^{\mu }\left( \lambda = 0 \right) \to P
-\]
-Given a vector $k \in T_{P}$, it defines a unique geodesic passing through it, for which \emph{k} is the tangent vector at $P$, and $\lambda \left( P \right) = 0$:
-\[
-\frac{d x^{\mu }}{d \lambda } \left( \lambda =0 \right) \to k
-\]
-The uniqueness is given from the fact that the geodesic equation is a second order differential equation, and specifying the initial data in the form as above determines a solution.\par
-So the exponential map at \emph{P}, so given a point in spacetime  
+Geodesics provide a convenient way of mapping the tangent space $T_{P}$ of a point $P$ to a region of the manifold that contains \emph{P}, called the \textbf{exponential map}.
 \begin{equation}
-	\text{exp}_{P} : T_{P} \to M
+	\text{exp}_{P} : T_{P} \to M,
 \end{equation}
-is a map from the tangent space to a point on the manifold \emph{M}. And is defined as
+This map defines a set of coordinates for this region that are automatically the LIC, local inertial coordinates. \par 
+Any vector $k \in T_{P}$ defines a unique geodesic passing through it, and \emph{k} is the tangent vector in \emph{P}, and $\lambda \left( P \right)$ = 0
+\[
+\frac{d x^{\mu }}{d \lambda } \left( \lambda =0 \right) =  k^{\mu }
+\]
+The uniqueness is given from the fact that the geodesic equation is a second order differential equation, and specifying the initial data in the form as above determines a solution. On this specific geodesic there will be a unique point $\in M$ for which $\lambda =1$.
+So the exponential map at \emph{P}, is a map from the tangent space to a point on the manifold, defined as
 \begin{equation}
 	\text{exp}_{P}\left( k \right) = x^{\mu }\left( \lambda =1 \right) \to Q
 \end{equation}
 
-The exponential map is invertible.
+The exponential map is invertible.\par \bigskip
 
-\tikzset{every picture/.style={line width=0.5pt}} %set default line width to 0.75pt
-\begin{tikzpicture}[x=0.5pt,y=0.5pt,yscale=-1,xscale=1]
+\begin{tikzpicture}[x=0.5pt,y=0.35pt,yscale=-1,xscale=1]
 %Shape: Free Drawing [id:dp1885039918119823]
 \draw  [line width=1.5] [line join = round][line cap = round] (93,148) .. controls (88.57,139.13) and (91.56,122.99) .. (93,114) .. controls (93.57,110.41) and (94.75,99.38) .. (97,96) .. controls (106.7,81.45) and (122.85,64.21) .. (142,62) .. controls (168.6,58.93) and (188.34,78.26) .. (208,93) .. controls (215.69,98.77) and (236.6,98.96) .. (244,98) .. controls (256.57,96.38) and (271,90.5) .. (282,85) .. controls (287.4,82.3) and (292.6,76.7) .. (298,74) .. controls (300.31,72.84) and (302.08,73.6) .. (304,72) .. controls (316.22,61.81) and (328.41,50.11) .. (345,47) .. controls (369.5,42.41) and (364.91,56.06) .. (380,69) .. controls (387.1,75.09) and (397.7,79.1) .. (407,80) .. controls (431.71,82.39) and (454.53,70.64) .. (479,70) .. controls (489.33,69.73) and (499.77,68.54) .. (510,70) .. controls (516.37,70.91) and (521.84,75.13) .. (528,77) .. controls (532.78,78.45) and (539.06,78.59) .. (544,80) .. controls (561.7,85.06) and (579,97) .. (587,113) .. controls (590.18,119.36) and (596.86,129.28) .. (597,137) .. controls (597.31,154.66) and (598.1,172.37) .. (597,190) .. controls (596.76,193.89) and (594.1,197.26) .. (593,201) .. controls (584.5,229.91) and (570.82,247.64) .. (541,259) .. controls (535.37,261.15) and (523.28,259.68) .. (520,260) .. controls (496.26,262.28) and (465.07,265.31) .. (442,273) .. controls (421.23,279.92) and (402.26,290.4) .. (382,299) .. controls (359.32,308.62) and (326.37,315.81) .. (306,320) .. controls (297.59,321.73) and (276.09,317.17) .. (271,317) .. controls (248.68,316.26) and (226.27,315.32) .. (204,317) .. controls (195.05,317.67) and (186.79,322.19) .. (178,324) .. controls (155.17,328.7) and (132.76,325.7) .. (111,319) .. controls (106.13,317.5) and (100.69,318.01) .. (96,316) .. controls (65.28,302.84) and (74.89,268.85) .. (80,245) .. controls (81.6,237.53) and (88.06,227.88) .. (84,220) .. controls (79.99,212.22) and (72.33,206.94) .. (67,200) .. controls (54.86,184.22) and (46.48,164.14) .. (49,144) .. controls (50.66,130.76) and (81.55,129.25) .. (89,131) .. controls (91.29,131.54) and (89.54,135.69) .. (90,138) .. controls (90.71,141.55) and (93,145.45) .. (93,148) -- cycle ;
 %Curve Lines [id:da0957475647721604]
@@ -52,22 +43,23 @@ The exponential map is invertible.
 \draw [shift={(244,133)}, rotate = 145.86] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
 
 % Text Node
-\draw (535,47) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\large M}};
+\draw (535,47) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ M}};
 % Text Node
-\draw (135,152) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\large P}};
+\draw (135,152) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ P}};
 % Text Node
-\draw (265,102) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\large Q}};
+\draw (260,100) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ Q}};
 % Text Node
-\draw (195,126) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\large k}};
+\draw (170,105) node [anchor=north west][inner sep=0.75pt]   [align=left] {{ k $\in T_{P}$}};
 % Text Node
-\draw (167,221) node [anchor=north west][inner sep=0.75pt]   [align=left] {\large $\lambda = 0$};
+\draw (167,200) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\lambda = 0$};
 % Text Node
-\draw (278,158) node [anchor=north west][inner sep=0.75pt]   [align=left] {\large $\lambda = 1$};
+\draw (278,140) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\lambda = 1$};
 % Text Node
-\draw (520,90) node [anchor=north west][inner sep=0.75pt]   [align=left] {\large \emph{geodesic}};
+\draw (440,115) node [anchor=north west][inner sep=0.75pt]   [align=left] { \emph{geodesic}};
 \end{tikzpicture}
 
 \subsection{Riemann Normal Coordinates}
+
 Given a generic $g_{\mu \nu }$ and a point \emph{P}, first I can find vectors $\hat{e}_{\left( \hat{\mu } \right)}$, (where the hat on the \emph{e} means that it is a basis vector and the hat on the index is means that is of inertial coordinates.)\par
 Those are requirements to 
 \[

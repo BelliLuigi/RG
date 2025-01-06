@@ -235,12 +235,10 @@ In curved spacetime, if I move $\overline{C}$ from \emph{P} to \emph{N} along th
 In curved spacetime parallel transport depends on the trajectory, we have to specify the path.\par
 Be the path $x^{\mu }\left( \lambda  \right) : \mathbb{R} \to \text{ spacetime coordinates }$. In FST parallel transportation of a generic tensor is
 \[
-\frac{d}{d\lambda } \left( T^{\mu _{1} \ldots \mu _{l}}_{\nu _{1}\ldots \nu _{l}} \right) = 0
+\frac{d}{d\lambda } \left( T^{\mu _{1} \ldots \mu _{l}}_{\nu _{1}\ldots \nu _{l}} \right) = \frac{d x^{\sigma }}{d \lambda } \partial_{\sigma } \left( T^{\mu _{1}\ldots \mu _{k}}_{\nu _{1}\ldots \nu _{l}} \right) = 0
 \]
-and the first factor is the directional derivative. Or
-\[
-\frac{d x^{\sigma }}{d \lambda } \partial_{\sigma } \left( T^{\mu _{1}\ldots \mu _{k}}_{\nu _{1}\ldots \nu _{l}} \right) = 0
-\]
+both notations are equivalent. \par
+
 While in CST:
 \[
 \frac{dx^{\sigma }}{d\lambda } \nabla _{\sigma } \left(T^{\mu _{1}\ldots \mu _{k}}_{\nu _{1}\ldots \nu _{l}} \right) = 0
@@ -252,7 +250,7 @@ In FST
 \]
 The vector does not change. \par
 
-Why is it useful? Let's introduce
+Why is it useful? Because it shows the parallel transport in action, provides a baseline for understanding cases where all these simplifications do not occur, and it is similar to the definition of geodesics. 
 \subsubsection{Geodesics}
 They are a straight line in curved space, the trajectory of a particle only subject to gravity. With \emph{straight line} we mean the path that is parallel transported along it's tangent vector.
 
