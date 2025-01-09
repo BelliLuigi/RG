@@ -1,0 +1,154 @@
+\chapter{Exercises}
+%\include{exes.pdf}
+%\subsection{Execution}
+\subsubsection{Ex 1}
+Since metric is \[
+ds^{2}= dx^{2} +dy^{2}
+\]
+then metric tensor in this coordinates system is
+\[
+\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix} 
+\]
+Now, requested transformation rule for (0,2) tensor is
+\[
+g_{\mu ^{\prime }\nu ^{\prime }} = \frac{d x^{\mu }}{d x^{\mu ^{\prime }}} \frac{d x^{\nu }}{d x^{\nu ^{\prime }}} g_{\mu \nu }
+\]
+those partial derivatives are the Jacobian, to compute it I have to express old coordinates in function of new coordinates:
+\[
+\begin{cases}
+u = \left( x+y \right)/2 \\
+v = \left( x-y \right)/2 \\
+\end{cases} \to 
+\begin{cases}
+x = u+v \\
+y = u-v \\
+\end{cases}
+\]
+then the Jacobian is 
+\[
+\frac{d x^{\mu }}{d x^{\mu ^{\prime }}} = \begin{pmatrix}
+dx^{0}/dx^{0^{\prime }} & dx^{0}/dx^{1^{\prime }} \\
+dx^{1}/dx^{0^{\prime }} & dx^{1}/dx^{1^{\prime }}
+\end{pmatrix} = \begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix} 
+\]
+with $x^{0}=x, x^{1} = y$, I apply transformation rule, just for first term, other follows straight up
+\[
+g_{0^{\prime }0^{\prime }} = \frac{d x^{\mu }}{d x^{0^{\prime }}}\frac{d x^{\nu }}{d x^{0^{\prime }}} g_{\mu \nu } = \frac{d x^{0}}{d x^{0^{\prime }}}\frac{d x^{0}}{d x^{0^{\prime }}} g_{00} + \frac{d x^{1}}{d x^{0^{\prime }}}\frac{d x^{1}}{d x^{0^{\prime }}} g_{11} = \left( 1\cdot1\cdot1 \right) + \left( 1\cdot1\cdot1 \right) = 2
+\]
+other terms of the metric tensor $g_{\mu \nu }$ are omitted since they're null. 
+\[
+g_{\mu ^{\prime }\nu ^{\prime }} = \begin{pmatrix}
+2 & 0 \\
+0 & 2
+\end{pmatrix} 
+\]
+
+\subsubsection{Ex 2}
+
+\[
+ds^{2} = dr^{2}+r^{2}d\phi ^{2}
+\]
+First question: how many free Christoffel symbols?
+\[
+\Gamma ^{\mu \to 2}_{\nu \rho \to 2\cdot 2 = 4}, 	
+\]
+8 total, since symmetry on lower two, we have $4 \to  3$, then $2\cdot3=6$.\par
+Second quesstion: how many Christoffel symbols do not vanish?\par
+\begin{gather*}
+g_{\mu \nu } = \begin{pmatrix}
+1 & 0 \\
+0 & r^{2}
+\end{pmatrix} ; g^{\mu \nu } = \frac{1}{r^{2}} \begin{pmatrix}
+r^{2} & 0 \\
+0 & 1
+\end{pmatrix}  = \begin{pmatrix}
+1 & 0 \\
+0 & \frac{1}{r^{2}}
+\end{pmatrix} 
+\end{gather*}
+with this you can determine how many non vanishing Christoffel symbols there are.
+\[
+\Gamma ^{\sigma }_{\mu \nu } = \frac{1}{2} G^{\sigma \rho }\left( \partial_{\mu }g_{\nu \rho }+\partial_{\nu }g_{\rho \mu }-\partial_{\rho }g_{\mu \nu } \right)
+\]
+we see that only non-zero component of derivative of metric is $\partial_{r}g_{\phi \phi } = 2r$, and only non-zero component of inverse metric are $g_{\rho \sigma }, \rho =\sigma $.
+\begin{gather*}
+\Gamma ^{x}_{xx} = \oslash \\
+\Gamma ^{r}_{r\phi } = \Gamma ^{r}_{\phi r} = \oslash\\
+\Gamma ^{r}_{\phi \phi } = \frac{1}{2}g^{rr}\left( \partial_{\phi }g_{\phi r} + \partial_{\phi }g_{r\phi }-\partial_{r}g_{\phi \phi } \right) = -\frac{1}{2}\cdot 2r = -r\\
+\Gamma ^{\phi }_{rr } = \oslash\\
+\Gamma ^{\phi }_{r\phi } = \Gamma ^{\phi }_{\phi r} = \frac{1}{2}g_{\phi \phi } \left( \partial_{\phi }g_{r\phi } + \partial_{r}g_{\phi \phi }-\partial_{\phi }g_{\phi r} \right) = \frac{1}{2}\cdot 2r\cdot \frac{1}{r^{2}}\\
+\Gamma ^{\phi }_{\phi \phi } = \oslash
+\end{gather*}
+\subsubsection{Ex 3}
+Same as Ex 2
+\subsubsection{Ex 4}
+Same as Ex 2,3
+\subsubsection{Ex 5}
+\[
+ds^{2} = -\left( 1+2\phi  \right)dt^{2} +\left( 1-2\phi  \right)dr^{2}+r^{2}d\theta ^{2}+r^{2}\text{sin}^{2}\theta d\phi ^{2}, \phi = - \frac{GM}{r}	
+\]
+To compute time, I need to compute an interval, but since both clock stand still in their position, in generic interval spatial coordinates vanish. I'm left with
+\[
+ds^{2} = -\left( 1+2\phi  \right)dt^{2}
+\]
+Being $d\tau ^{2} =- ds^{2} = \left( 1+2\phi  \right)dt^{2}$,
+\[
+	d\tau  = \sqrt{1+2\phi }dt
+\]
+\begin{gather*}
+	\tau _{1} = \sqrt{1+2\phi \left( R \right)}t \\
+	\tau _{2} = \sqrt{1+2\phi \left( R+h \right)}t
+\end{gather*}
+
+\begin{gather*}
+	\frac{\tau _{2}}{\tau _{1}} = \frac{\sqrt{1+2\phi\left( R+h \right)}}{\sqrt{1+2\phi \left( R \right)}} \\
+\phi \left( R+h \right) = \phi \left( R \right) +\phi ^{\prime }\left( R \right)h +\ldots = - \frac{GM}{R} + \frac{GMh}{R^{2}} +\ldots 	 
+\end{gather*}
+Since $\phi\gg 1 $, like $60e6 \frac{MJ}{kg}$, I thought that $1$ is negligible, so
+\begin{gather*}
+\frac{\tau _{2}}{\tau _{1}} = \frac{\sqrt{1+2\phi \left( R+h \right)}}{\sqrt{1+2\phi \left( R \right)}} = \frac{\sqrt{2\phi \left( R+h \right)}}{\sqrt{2\phi \left( R \right)}} = \sqrt{ \frac{\phi \left( R \right) + \phi ^{\prime }\left( R \right)h}{\phi \left( R \right)}} =\\
+= \sqrt{ 1+\frac{\phi ^{\prime }\left( R \right)h}{\phi \left( R \right)}} = \sqrt{1 + \frac{h}{R}} \approx 1+ \frac{h}{2R}	 
+\end{gather*}
+\subsubsection{Ex 6 wrong!!}
+
+If you don't remember, you can get the geodesics equation from
+\[
+\frac{D}{d\lambda }\left( \frac{dx^{\nu }}{d\lambda } \right) = \frac{d x^{\mu }}{d \lambda }\nabla _{\mu }\left( \frac{d x^{\nu }}{d \lambda } \right) = \ldots 
+\]
+So we get two geodesics equations:
+\begin{gather}
+	\frac{d ^{2}x^{\phi }}{d \lambda ^{2}} + \Gamma ^{\phi }_{\theta \phi }\frac{d x^{\theta }}{d \lambda }\frac{d x^{\phi }}{d \lambda } =0  = \frac{d ^{2}x^{\phi }}{d \lambda ^{2}} + \frac{\text{cos}\theta }{\text{sin}\theta }\frac{d x^{\theta }}{d \lambda }\frac{d x^{\phi }}{d \lambda } \label{ex:1g}\\
+	\frac{d^{2}x^{\theta }}{d\lambda ^{2}} + \Gamma ^{\theta }_{\phi \phi }\frac{d x^{\phi }}{d \lambda }\frac{d x^{\phi }}{d \lambda } = 0  = \frac{d ^{2}\theta }{d \lambda ^{2}} - \text{sin}\theta \text{cos}\theta \frac{d x^{\phi }}{d \lambda }\frac{d x^{\phi }}{d \lambda }\label{ex:2g}
+\end{gather}
+Now you have to check both conditions for both equations.\par
+First one: constant longitude means $\frac{d x^{\phi }}{d \lambda } = 0$, I think it's trivial. \par
+Second one: you get that in \ref{ex:1g}, since we are at constant latitude, vanishes. In \ref{ex:2g} you get that the second term vanishes only for $\theta =0 , \frac{\pi }{2}$, but only 0 is a geodesics, other solution are the poles, degenerate solution. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -60,8 +60,7 @@ The exponential map is invertible.\par \bigskip
 
 \subsection{Riemann Normal Coordinates}
 
-Given a generic $g_{\mu \nu }$ and a point \emph{P}, first I can find vectors $\hat{e}_{\left( \hat{\mu } \right)}$, (where the hat on the \emph{e} means that it is a basis vector and the hat on the index is means that is of inertial coordinates.)\par
-Those are requirements to 
+Given a generic $g_{\mu \nu }$ and a point \emph{P}, first I can find vectors $\hat{e}_{\left( \hat{\mu } \right)}$,\footnote{ \^\ on the \emph{e} means that it is a basis vector and \^\ on the index is means that is of inertial coordinates.} such that
 \[
 g_{\hat{\mu }\hat{\nu }} =  g\left( \hat{e}_{\left( \hat{\mu } \right)}, \hat{e}_{\left( \hat{\nu } \right)} \right) = \eta _{\hat{\mu }\hat{\nu }}
 \]
@@ -72,15 +71,15 @@ Let's define coordinates
 x_{P} = 0 \\
 x_{Q} = x^{\hat{\mu }}_{Q} \hat{e}_{\left( \hat{\mu } \right)} = k^{\hat{\mu }} \hat{e}_{\left( \hat{\mu } \right)}
 \end{gather*}
-where $x^{\hat{\mu }}_{Q}$ is the inverse of \emph{exp\textsubscript{P}}, \emph{x\textsubscript{Q}} is the position vector and it is represented as a linear combination of basis vectors.\par
-So, RNC are $x_{Q } = k^{\mu } \hat{e}_{\left( \hat{\mu } \right)}$, and a particular property is that in this coordinates system 
+\emph{x\textsubscript{Q}} is the position vector and it is represented as a linear combination of basis vectors.\par
+So, RNC are $x_{Q } = k^{\hat{\mu} } \hat{e}_{\left( \hat{\mu } \right)}$, and a particular property is that in this coordinates system 
 \[
 x^{\hat{\mu }}\left( \lambda  \right) = \lambda k^{\hat{\mu }}
 \]
 is a geodesic, only in these coordinates.
 \subsubsection{More in deep explanation}
 Now, I understand that if this is the first time approaching this it's kinda difficult to get the point. 
-The part that makes the exponential map useful is that it's hard to find a coordinates system $x^{\hat{\mu }}$ for which the basis vectors $\{ \hat{e}_{\left( h\mu  \right)}\}$ are made of $\hat{e}_{\left( \hat{\mu } \right)} = \partial_{\hat{\mu } }$m and such that the first partial derivatives of $g_{\hat{\mu }\hat{\nu }}$ vanish. But the exponential map achieves that automatically. For any point \emph{Q} sufficiently close to \emph{P}, there is a unique geodesic path connecting \emph{P} to \emph{Q}, and a unique parametrization $\lambda $. At \emph{P} the tangent vector can be written as a linear combination of our basis vectors $k = k^{\hat{\mu }} \hat{e}_{\left( \hat{\mu } \right)}$. Then we define $x^{\hat{\mu }}$ to be these components $x^{\hat{\mu }}\left( Q \right) = k^{\hat{\mu }}$
+The part that makes the exponential map useful is that it's hard to find a coordinates system $x^{\hat{\mu }}$ for which the basis vectors $\{ \hat{e}_{\left( h\mu  \right)}\}$ are made of $\hat{e}_{\left( \hat{\mu } \right)} = \partial_{\hat{\mu } }$ and such that the first partial derivatives of $g_{\hat{\mu }\hat{\nu }}$ vanish. But the exponential map achieves that automatically. For any point \emph{Q} sufficiently close to \emph{P}, there is a unique geodesic path connecting \emph{P} to \emph{Q}, and a unique parametrization $\lambda $. At \emph{P} the tangent vector can be written as a linear combination of our basis vectors $k = k^{\hat{\mu }} \hat{e}_{\left( \hat{\mu } \right)}$. Then we define $x^{\hat{\mu }}$ to be these components $x^{\hat{\mu }}\left( Q \right) = k^{\hat{\mu }}$
 
 \subsubsection{Check on RNC}
 We want to verify that RNC satisfy $\partial_{\hat{\rho }} g_{\hat{\mu }\hat{\nu }}\left( P \right) = 0$. Noting that a ray  in the tangent space gets mapped to a geodesic by the exponential map, leads to see that in RNC a curve $x^{\hat{\mu }}\left( \lambda  \right)$ of the form
@@ -150,32 +149,22 @@ As decided above this tensor should be anti-symmetric on the \emph{last two indi
 R^{\mu }_{\alpha \beta \gamma } = - R^{\mu }_{\alpha \gamma  \beta }
 \]
 To compute what's inside the \textbf{R} tensor is kinda difficult so we take a related operation, the commutator of two covariant derivatives. \par
-The relation between the two is because the covariant derivative of a tensor in a certain direction measures how much the tensor changes relative to what it would have been if it had been parallel transported, because the covariant derivative of a tensor in a direction along which is parallel transported is null. The commutator of two covariant derivatives measures the difference between parallel transporting the tensor first one way and then the other, and viceversa.\bigskip
+The relation between the two is because the covariant derivative of a tensor in a certain direction measures how much the tensor changes relative to what it would have been if it had been parallel transported, because the covariant derivative of a tensor in a direction along which is parallel transported is null. The commutator of two covariant derivatives measures the difference between parallel transporting the tensor first one way and then the other, and vice versa.\bigskip
 
 \begin{center}
 \begin{tikzpicture}[x=0.4pt,y=0.4pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
 
-%Straight Lines [id:da4139814907991093] 
 \draw [line width=1.5]    (215,277) -- (461.17,202.16) ;
 \draw [shift={(465,201)}, rotate = 163.09] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
-%Straight Lines [id:da37994344236993594] 
 \draw [line width=1.5]    (215,277) -- (233.59,95.98) ;
 \draw [shift={(234,92)}, rotate = 95.86] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
-%Straight Lines [id:da11748394321022726] 
 \draw  [dash pattern={on 4.5pt off 4.5pt}]  (465,201) -- (483.69,18.98) ;
 \draw [shift={(484,16)}, rotate = 95.86] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-%Straight Lines [id:da04954610847070795] 
 \draw  [dash pattern={on 4.5pt off 4.5pt}]  (234,92) -- (481.13,16.87) ;
 \draw [shift={(484,16)}, rotate = 163.09] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
-
-% Text Node
 \draw (172,178) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\nu }$};
-% Text Node
 \draw (370,236) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\mu }$};
-% Text Node
 \draw (494,104) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\nu }$};
-% Text Node
 \draw (288,34) node [anchor=north west][inner sep=0.75pt]   [align=left] { $\nabla _{\mu }$};
 \end{tikzpicture}
 \end{center}
@@ -190,10 +179,9 @@ So we will use a vector
 \begin{gather*}
 	[\nabla _{\mu },\nabla _{\nu }] V^{\rho } = \nabla _{\mu }\left( \nabla _{\nu }V^{\rho } \right) - \nabla_{\nu }\left( \nabla _{\mu }V^{\rho } \right)	 \\
 	\text{ now we take just one of the terms } \\
-	\nabla _{\mu }\left( \nabla _{\nu } V^{\rho } \right) = \partial_{\mu } \left( \nabla _{\nu } V^{\rho } \right) + \Gamma ^{\rho }_{\mu \beta } \nabla _{\nu }V^{\beta } - \Gamma ^{\beta }_{\mu \nu } \nabla _{\beta } V^{\rho } \\
-	\text{ again, we take the first term of the second part } \\
-	\partial_{\mu }\left( \partial_{\nu }V^{\rho } + \Gamma ^{\rho }_{\nu \alpha } V^{\alpha } \right) + \Gamma ^{\rho }_{\mu \beta } \left( \partial_{\nu }V^{\beta } + \Gamma ^{\beta}_{\nu \alpha } V^{\alpha } \right) - \Gamma ^{\beta }_{\mu \nu } \nabla _{\beta }V^{\rho } \\
-	\partial_{\mu }\partial_{\nu }V^{\rho } + \left( \partial_{\mu } \Gamma ^{\rho }_{\nu \alpha } \right)V^{\alpha } + \Gamma ^{\rho }_{\nu \alpha } \partial_{\mu }V^{\alpha } + \Gamma ^{\rho }_{\mu \beta } \partial_{\nu }V^{\beta } + \Gamma ^{\rho }_{\mu \beta }\Gamma ^{\beta }_{\nu \alpha } V^{\alpha }- \Gamma ^{\beta }_{\mu \nu }\nabla _{\beta} V^{\rho }
+	\nabla _{\mu }\left( \nabla _{\nu } V^{\rho } \right) = \partial_{\mu } \left( \nabla _{\nu } V^{\rho } \right) + \Gamma ^{\rho }_{\mu \beta } \nabla _{\nu }V^{\beta } - \Gamma ^{\beta }_{\mu \nu } \nabla _{\beta } V^{\rho } =\\
+	=\partial_{\mu }\left( \partial_{\nu }V^{\rho } + \Gamma ^{\rho }_{\nu \alpha } V^{\alpha } \right) + \Gamma ^{\rho }_{\mu \beta } \left( \partial_{\nu }V^{\beta } + \Gamma ^{\beta}_{\nu \alpha } V^{\alpha } \right) - \Gamma ^{\beta }_{\mu \nu } \nabla _{\beta }V^{\rho } \\
+	=\partial_{\mu }\partial_{\nu }V^{\rho } + \left( \partial_{\mu } \Gamma ^{\rho }_{\nu \alpha } \right)V^{\alpha } + \Gamma ^{\rho }_{\nu \alpha } \partial_{\mu }V^{\alpha } + \Gamma ^{\rho }_{\mu \beta } \partial_{\nu }V^{\beta } + \Gamma ^{\rho }_{\mu \beta }\Gamma ^{\beta }_{\nu \alpha } V^{\alpha }- \Gamma ^{\beta }_{\mu \nu }\nabla _{\beta} V^{\rho }
 \end{gather*}
 Now, let's look at this last row for some simplifications.
 \begin{itemize}
@@ -214,7 +202,7 @@ but since we work with torsion free connections, it's zero. We are left with
 \begin{equation}
 	[\nabla _{\mu }, \nabla _{\nu }]V^{\rho } = [\partial_{\mu }\Gamma ^{\rho }_{\nu \alpha } - \partial_{\nu }\Gamma ^{\rho }_{\mu \alpha } + \Gamma  ^{\rho }_{\mu  \beta }\Gamma  ^{ \beta }_{\nu  \alpha } - \Gamma ^{\rho }_{\nu \beta }\Gamma ^{\beta }_{\mu \alpha }] V^{\alpha }
 \end{equation}
-And this, can be written as 
+And this can be written as 
 \begin{equation}
 	[\nabla _{\mu }, \nabla _{\nu }] V^{ \rho } = R^{\rho }_{\sigma \mu \nu } V^{\sigma }
 \end{equation}
