@@ -123,15 +123,15 @@ Now we need a tensor in order to keep it null when we change frame. This means t
 \]
 where the tensor $G_{\mu \nu }$ called Einstein tensor is defined as
 \begin{equation}
-g_{\mu \nu } = R_{\mu \nu } - \frac{1}{2} g_{\mu \nu }R
+G_{\mu \nu } = R_{\mu \nu } - \frac{1}{2} g_{\mu \nu }R
 \end{equation}
-let's prove this.
+let's prove this, using a particular form of the Bianchi Identity:
 \begin{gather*}
 	g^{\mu \lambda } g^{\nu \sigma } \left[ \nabla _{\lambda } R_{\rho \sigma \mu \nu } + \nabla _{\rho }R_{\sigma \lambda \mu \nu } + \nabla _{\sigma }R_{\lambda \rho \mu \nu }\right] = 0 \\
 	\nabla ^{\mu }R_{\rho \mu } - \nabla _{\rho }R + \nabla ^{\mu }R_{\rho \nu }  = 0\\
 	\text{ or } \nabla ^{\mu }R_{\rho \mu } = \frac{1}{2} \nabla _{\rho }R
 \end{gather*}
-
+remember that on Riemann tensor you can move up only first index, and Ricci's is made from contracting the first(up) and the second lower. If you do not have the right setup to do this, you need to do some permutations, and from this come the minus sign.
 
 
 

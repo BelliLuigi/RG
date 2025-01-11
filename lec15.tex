@@ -9,7 +9,7 @@ Today we will derive the Einstein Equation. We will use a technique called \emph
 \end{enumerate}
 
 Let's start with the first step. \par
-We consider the motion of freely-falling particles. From cartesian coordinates, $x^{\mu }$, we have a straigt line \[
+We consider the motion of freely-falling particles. From cartesian coordinates, $x^{\mu }$, we have a straight line \[
 \frac{d ^{2}x^{\mu }}{d \lambda ^{2}} = 0 
 \]
 n.b. this is not a tensorial relation: $\frac{d x^{\mu }}{d \lambda }$ is a well-defined vector, but the second derivative is not.
@@ -39,7 +39,7 @@ So, let's show how results from the Newtonian limit fit in this picture. This li
 	\[
 		g_{\mu \nu } = \eta _{\mu \nu } + h_{\mu \nu }, |h_{\mu \nu }|\ll 1
 	\]
-\item the gravitational field is also static, it does not change in time ( $\partial_{0}g_{\mu \nu } = 0$)
+\item the gravitational field is static, it does not change in time ( $\partial_{0}g_{\mu \nu } = 0$)
 \end{itemize}
 We consider time-like geodesics, so trajectories of massive particles, so it is useful to parametrize them using the proper time $\tau $.
 \[
@@ -70,7 +70,7 @@ because the Minkowskian metric tensor is constant.
 Now, since the metric tensor is the Minkowskian one plus a little perturbation it could be
 assumed directly as minkowskian, so it is a first-order approximation.
 \begin{equation}
-\Gamma ^{\mu }_{00} = -\frac{1}{2} g^{\mu \alpha } \partial_{\alpha }h_{00} = - \frac{1}{2}\eta ^{\mu \alpha } \partial_{\alpha }h_{00} = - \frac{1}{2} d^{\mu }h_{00}	
+\Gamma ^{\mu }_{00} = -\frac{1}{2} g^{\mu \alpha } \partial_{\alpha }h_{00} = - \frac{1}{2}\eta ^{\mu \alpha } \partial_{\alpha }h_{00} = - \frac{1}{2} \partial^{\mu }h_{00}	
 \end{equation}
 
 At this point we can start to put together again the geodesic equation.
@@ -78,14 +78,14 @@ We have
 \begin{equation}
 \frac{d ^{2}x^{\mu }}{d \tau ^{2}} = \frac{1}{2} \partial^{\mu }h_{00} \left( \frac{d t}{d \tau } \right)^{2}
 \end{equation}
-Now let's look what happens base on which coordinates we choose.\par
+Now let's look what happens based on which coordinates we choose.\par
 For $\mu  = 0$ we are left with
 \[
 \frac{d^{2}t }{d \tau ^{2} } = 0 \implies \frac{d t}{d \tau } = \text{ const }
 \]
 while for $\mu  = i$
 \begin{equation}
-\frac{d ^{2}x^{i}}{d \tau ^{2}} = \frac{1}{2} \left( \frac{d t}{d \tau } \right)^{2}\partial^{i}h_{00}\left( \frac{d t}{d \tau } \right)^{2} \to  \frac{d ^{2}x^{i}}{d t^{2} } = \frac{1}{2}\partial_{i}h_{00}
+\frac{d ^{2}x^{i}}{d \tau ^{2}} \left(\frac{d \tau }{d t} \right)^{2} = \frac{1}{2} \left( \frac{d \tau }{d t } \right)^{2}\partial^{i}h_{00}\left( \frac{d t}{d \tau } \right)^{2} \to  \frac{d ^{2}x^{i}}{d t^{2} } = \frac{1}{2}\partial_{i}h_{00}
 \end{equation}
 this because we divided both sides by $\left( \frac{d t}{d \tau }\right)^{2}$.
 As we said before the left term is exactly the acceleration
@@ -99,15 +99,15 @@ and if $h_{00} = -2\Phi $ we get
 Also
 \[
 g_{00} = -\left( 1+ 2\Phi  \right)
-\].
-Now, we would like to substitute the poissonian equation for Newtonian potential.
+\]
+Now, we would like to substitute the poissonian equation for Newtonian potential in the Einstein equation.
 \[
 \nabla^{2} \Phi = 4\pi G\rho 	
 \]
 
 where $\nabla ^{2} = \delta ^{ij}\partial_{i}\partial_{j}  = \partial^{2}_{x}+\partial^{2}_{y}+\partial^{2}_{z}$. 
 
-So we have a second-order differential operator  acting on the  gravitational potential and non the right side a measure of the mass distribution, but we want an equation between tensors. The tensor generalization of the mass density is the energy-momentum tensor $T_{\mu \nu }$. The gravitational potential should get replaced by the metric tensor, because as above we need perturbed the metric to reproduce gravity. So the first attempt could be like
+So we have a second-order differential operator  acting on the  gravitational potential and on the right side a measure of the mass distribution, but we want an equation between tensors. The tensor generalization of the mass density is the energy-momentum tensor $T_{\mu \nu }$. The gravitational potential should get replaced by the metric tensor, because as above we need perturbed  metric to reproduce gravity. So the first attempt could be like
 \[
 \nabla ^{\sigma }\nabla _{\sigma }\left( g_{\mu \nu } \right) = k T_{\mu \nu }
 \]
@@ -138,11 +138,7 @@ This is what we were looking for: a combination of Ricci tensor and scalar that 
 \begin{equation}
 R_{\mu \nu } - \frac{1}{2}g_{\mu \nu }R = k T_{\mu \nu }
 \end{equation}
-It seems we are good about the left side, with
-\begin{equation}
-R_{\mu \nu } - \frac{1}{2} g_{\mu \nu } R = kT_{\mu \nu }
-\end{equation}
-we still consider something that is slow moving in a weak gravitational field. So we want to see if it works in this setup, so we need to choose $T_{\mu \nu }$.
+It seems we are good about the left side, we still are considering something that is slow moving in a weak gravitational field. We want to see if it works in this setup, so we need to choose $T_{\mu \nu }$.
 \[
 	T_{\mu \nu } = \rho  u_{\mu }u_{\nu }
 \]
@@ -157,20 +153,21 @@ g^{00} = -1 - h_{00}
 \end{gather*}
 So in first order in $h_{\mu \nu }$
 \begin{equation}
-u^{0} = 1+ \frac{1}{2}h_{00}
+u^{0} = 1+ \frac{1}{2}h_{00}\footnotemark
 \end{equation}
+\footnotetext{ $g_{00}u^{0}u^{0} = -1 \to  u^{0}u^{0} = -1/g_{00} = -1/\left(-1+h_{00}\right) = 1+ h_{00} \to u^{0} = \sqrt{1+h_{00}} \approx 1+ h_{00}/2$}
 This means that
 \begin{equation}
 T_{00} = \rho u_{0}u_{0} \approx \rho \left( 1+ h_{00} + \ldots  \right)	
 \end{equation}
 Starting from the Ricci tensor we can see what happens to the Riemann tensor with 00 components
 \begin{gather*}
-R_{00} = R^{i}_{0i0}  \text{ roman indices since the others need to be different from 0 }\\
+R_{00} = R^{i}_{0i0}  \text{\tiny   roman indices since they need to be different from 0 }\\
 R^{i}_{0j0} = \partial_{j}\Gamma ^{i}_{00} - \partial_{0}\Gamma ^{i}_{j0} + \Gamma ^{i}_{j\lambda }\Gamma ^{\lambda }_{00} - \Gamma ^{i}_{0\lambda }\Gamma ^{\lambda }_{j0} \\
-R^{i}_{0j0} = \partial_{j}\Gamma ^{i}_{00} = \partial_{j} \left[\frac{1}{2} g^{i_k} \left( \partial_{0}g_{k0}+ \partial_{0}g_{k0}- \partial_{k}g_{00} \right)\right] = \\
+R^{i}_{0j0} = \partial_{j}\Gamma ^{i}_{00} = \partial_{j} \left[\frac{1}{2} g^{i_k} \left( \partial_{0}g_{k0}+ \partial_{0}g_{k0}- \partial_{k}g_{00} \right)\right] = \label{eq:secondstep}\\
 = \frac{1}{2} \partial_{j}k^{ik} \left( -\partial_{k}k_{00} \right) = - \frac{1}{2} \partial_{j} \partial^{i}h_{00}
 \end{gather*}
-In the second step, the time derivative is null, since we assumed static gravitational field, while the third and fourth term are in the second order in the metric perturbation, so they can be neglected.\par
+in the eq.\ref{eq:secondstep}, the time derivative is null, since we assumed static gravitational field, while the third and fourth term are in the second order in the metric perturbation, so they can be neglected.\par
 Now we would like to try to contract the proposed equation
 \begin{gather*}
 R_{\mu \nu } - \frac{1}{2} g_{\mu \nu } R = k T_{\mu \nu } \\
@@ -185,7 +182,7 @@ R_{00} = -\frac{1}{2} \nabla ^{2}h_{00}
 for the energy-momentum tensor
 \begin{equation}
 T_{00} = \rho 
-\end{equation},
+\end{equation}
 it's trace
 \begin{equation}
 T = g^{\mu \nu } \left( \rho u_{\mu } u_{\nu }\right) = -\rho 

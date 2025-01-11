@@ -1,6 +1,7 @@
 \documentclass{report}
 
 \usepackage[hidelinks]{hyperref}
+\usepackage{pdfpages}
 \usepackage{color}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -33,7 +34,9 @@
 \include{lec19.tex}
 \include{lec20.tex}
 \include{lec21.tex}
-%\include{exes.pdf}
+\include{lec22.tex}
+\chapter{Exercises}
+\includepdf[pages=-]{exes.pdf}
 \include{doingexes.tex}
 \end{document}
 

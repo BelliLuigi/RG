@@ -7,7 +7,7 @@ There is more than one way to derive this solution, we will use the most boring 
 \begin{enumerate}
 \item \emph{Guess} a generic form for $g_{\mu \nu } $
 \item Compute $\Gamma ^{\mu }_{\alpha \beta }$, $R^{\alpha }_{\beta \gamma \delta }$, $R_{\alpha \beta }$
-\item Solve $R_{\mu \nu } = 0$, since the space outside the sun is empty space, vacuum.
+\item Solve $R_{\mu \nu } = 0$\footnote{Ricci tensor equal to zero means that the spacetime is locally flat in terms of volume deformation or contraction effects. It does not mean that spacetime is entirely flat.}, since the space outside the sun is empty space, vacuum.
 \end{enumerate}
 
 Let's start from the \textbf{guess} step.
@@ -16,14 +16,14 @@ We want to \emph{guess} the metric in spherical coordinates
 ds^{2}= -A\left( r \right) dt^{2} + B\left( r \right) dr^{2} + C\left( r \right) r^{2}d\Omega ^{2}
 \end{equation}
 
-where $d\Omega ^{2}$ is the metric on a $S^{2}$ sphere.
+where $d\Omega ^{2}$ is the solid angle in the metric on a $S^{2}$ sphere.
 \[
 	d\Omega ^{2} = d\theta ^{2} + \text{sin}^{2}\theta d\phi ^{2}
 \]
 Since we are almost in the vacuum, we can start in fact from the Minkowski metric in polar coordinates: $ds^{2 }=-dt^{2} +dr^{2}+r^{2}d\Omega ^{2} $.
 Now we would like simplify a little eq.\ref{eq:polarmetric}:
 \begin{itemize}
-\item $r^{2}C\left( r \right) \to  r^{2}$, this is a change of coordinates, nothing to do with spherical symmetry, but know we have to rescale $A\left( r \right), B\left( r \right)$
+\item $r^{2}C\left( r \right) \to  r^{2}$, this is a change of coordinates, nothing to do with spherical symmetry, but now we have to rescale $A\left( r \right), B\left( r \right)$
 \item $A \equiv e^{2\alpha \left( r \right)}$
 \item $B\equiv e^{2\beta \left( r \right)}$
 \end{itemize}.
@@ -32,7 +32,7 @@ With this, the most general guess is:
 ds^{2} = -e^{2\alpha \left( r \right)}dt^{2} + e^{2\beta \left( r \right)}dr^{2} + r^{2}d\Omega ^{2}
 \end{equation}
 We have now two unknown functions $\alpha ,\beta $ of the radial coordinate, not time because of staticness, not angle because of isotropy.\par
-Now it's time to \textbf{compute the metric tensor, Christoffel thing and Riemann tensor.}\par
+Now it's time to \textbf{compute the metric tensor, Christoffel symbols and Riemann tensor.}\par
 \paragraph{Metric} 
 \begin{equation}
 \begin{matrix} 
@@ -123,7 +123,7 @@ They are individually equal to zero.
 I will use some of these Ricci tensor components to retrieve some informations about $\alpha, \beta $.
 \begin{gather*}
 e^{2\left( \beta -\alpha  \right)}R_{tt} + R_{rr} = 0 \\
-\frac{2}{r}\left( \alpha '-\beta ' \right) = 0 , r\neq 0 \\
+\frac{2}{r}\left( \alpha '+\beta ' \right) = 0 , r\neq 0 \\
 \alpha '+ \beta ' = 0 \to  \alpha \left( r \right)+\beta \left( r \right) = \text{const}
 \end{gather*}
 it is possible to choose the time coordinates \emph{t} such that the constant is null.
@@ -131,7 +131,7 @@ it is possible to choose the time coordinates \emph{t} such that the constant is
 Now we can do some restrictions on the metric
 \begin{equation}
 \begin{cases}
-ds^{2} = -e ^{2\alpha \left( r \right)}dt^{2} + e^{2\beta \left( r \right)} dr^{2} + r^{2 d\Omega ^{2}} \\
+ds^{2} = -e ^{2\alpha \left( r \right)}dt^{2} + e^{2\beta \left( r \right)} dr^{2} + r^{2} d\Omega ^{2} \\
  \alpha \left( r  \right) + \beta \left( r \right) = \gamma \to  \text{ constant }\\
 \end{cases}
 \end{equation}
@@ -141,7 +141,7 @@ this allows us to write
 	       & = -e ^{-2\beta \left( r \right)} \left( e^{\gamma }dt \right)^{2} + e^{2\beta\left( r \right) }dr^{2} + r^{2} d\Omega ^{2}  
 \end{align}
 we will operate this change of variables $dt^{\prime } = e^{\gamma }dt$.\par
-Now I can set $\gamma =0$ and trying to fins the solution for $\alpha \left( r \right)$.
+Now I can set $\gamma =0$ and trying to find the solution for $\alpha \left( r \right)$.
 \[
 \alpha \left( r \right) = - \beta \left( r \right)
 \]
@@ -187,7 +187,7 @@ R_{S } = \frac{2GM}{c^{2}}
 Now if one plugs in the values of the masses of Sun and Earth, he can find the relative $R_{S}$, that is something like 3km and 9mm. This is where the metric blows up.\par
 
 \paragraph{Singularities}
-The metric blows up for $r = R_{S}, 0$, but this shouldn't be a problem since the metric previously derived is valid well outside the Sun. It could be a problem if the object is bigger or if the radius of the object is smaller than the Schwarzschild radius,\par
+The metric blows up for $r = \left(R_{S}, 0\right)$, but this shouldn't be a problem since the metric previously derived is valid well outside the Sun. It could be a problem if the object is bigger or if the radius of the object is smaller than the Schwarzschild radius,\par
 What is a singularity?  Be in polar coordinates in the plane
 \[
 g^{\theta \theta } = \frac{1}{r^{2}}

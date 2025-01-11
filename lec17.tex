@@ -6,7 +6,7 @@ ds^{2} = - \left( 1- \frac{2GM}{r} \right)dt^{2} + \left( 1- \frac{2GM}{r} \righ
 \]
 now, the geodesic for test particles is
 \[
-\frac{d x^{2}}{d \lambda ^{2}} + \Gamma ^{\mu }_{\alpha \beta } \frac{d x^{\alpha }}{d \lambda }\frac{d x^{\beta }}{d \lambda } = 0
+\frac{d^{2} x^{\mu }}{d \lambda ^{2}} + \Gamma ^{\mu }_{\alpha \beta } \frac{d x^{\alpha }}{d \lambda }\frac{d x^{\beta }}{d \lambda } = 0
 \]
 In the Newtonian limit there are two quantities that are the \emph{effective potential}, that combines multiple effect into a single potential. It is defined as
 \[
@@ -23,7 +23,7 @@ p^{\nu }\nabla _{\nu }p^{\mu } = 0
 \]
 lower one index, so
 \[
-p^{\nu }\nabla _{\nu }p_{\mu } = 0
+p^{\nu }\nabla _{\nu }g^{\mu \alpha } p_{\alpha  } = 0
 \]
 this is null also because of metric compatibility. I think this means that I can bring in the metric without spoiling the result. We remember that $p^{\nu } \equiv \frac{d x^{\nu }}{d \lambda }$.
 The equation will go in this way
@@ -44,34 +44,19 @@ Still because of spherical symmetry we can focus on trajectories such that $\the
 
 \subsubsection{Gravitational Redshift}
 We put ourselves on Earth, far away from $R_{S}$.
-\bigskip
-
-\tikzset{every picture/.style={line width=0.5pt}} %set default line width to 0.75pt
-
+\begin{center}
 \begin{tikzpicture}[x=0.5pt,y=0.5pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Circle [id:dp9321428345522449]
 \draw   (240,154.5) .. controls (240,107.28) and (278.28,69) .. (325.5,69) .. controls (372.72,69) and (411,107.28) .. (411,154.5) .. controls (411,201.72) and (372.72,240) .. (325.5,240) .. controls (278.28,240) and (240,201.72) .. (240,154.5) -- cycle ;
-%Shape: Circle [id:dp3143161131851636]
 \draw   (314.5,154.5) .. controls (314.5,148.42) and (319.42,143.5) .. (325.5,143.5) .. controls (331.58,143.5) and (336.5,148.42) .. (336.5,154.5) .. controls (336.5,160.58) and (331.58,165.5) .. (325.5,165.5) .. controls (319.42,165.5) and (314.5,160.58) .. (314.5,154.5) -- cycle ;
-%Straight Lines [id:da5051772731816909]
 \draw    (409,135) -- (528,99) ;
-%Straight Lines [id:da3890542297065277]
 \draw    (399,110) -- (518,74) ;
-%Straight Lines [id:da012166969683247708]
 \draw    (518,74) -- (528,99) ;
-%Shape: Free Drawing [id:dp5207276669171959]
 \draw  [line width=3] [line join = round][line cap = round] (386,93) .. controls (383.64,93) and (379.29,94.34) .. (379,92) .. controls (378.71,89.68) and (378.71,87.32) .. (379,85) .. controls (379.8,78.56) and (393.19,89) .. (385,89) ;
-%Shape: Free Drawing [id:dp028810113983297803]
 \draw  [line width=3] [line join = round][line cap = round] (521,72) .. controls (521,71.41) and (514.41,70.15) .. (518,68) .. controls (524.18,64.29) and (523.85,71) .. (520,71) ;
-
-% Text Node
 \draw (387,77) node [anchor=north west][inner sep=0.75pt]   [align=left] {1};
-% Text Node
 \draw (525,47) node [anchor=north west][inner sep=0.75pt]   [align=left] {2};
-
 \end{tikzpicture}
+\end{center}
 \bigskip
 We emit a photon from the bottom to the top of the tower, of frequency $\nu $, we will find the relation between $\omega _{1}, \omega _{2}$.\par
 This is a radial trajectory, this means that $d\phi =0$.
@@ -157,7 +142,7 @@ with some manipulation,
 \begin{equation}
 \frac{1}{2}E^{2} = \frac{1}{2} \left( \frac{d r}{d \lambda } \right)^{2} + \left( 1- \frac{2GM}{r} \right)\left( \frac{\epsilon }{2} + \frac{L^{2}}{2r^{2}} \right)
 \end{equation}
-the second term of the right-hand side is $V_{eff}\left( r \right)$, the effective potential
+the second term of the right-hand side is $V_{eff}\left( r \right)$, the effective potential that holds effects of gravity and angular momentum, while the first term on the right is the radial kinetic energy.
 \begin{equation}
 \frac{1}{2} \left( \frac{d r}{d \lambda } \right)^{2} + V_{eff}\left( r \right) = \frac{1}{2}E^{2} = \mathcal{E} 
 \end{equation}
@@ -217,8 +202,8 @@ With this we mean the rotation of the perihelium of the orbit of Mercury. It is 
 \[
 \Delta \phi = \frac{43^{\prime \prime }}{\text{century}}
 \]
-where $\phi $ is again the azimuthal angle. \par
-This phenomenon reflects the fact that noncircular orbits in GR are not perfect closed ellipses. We will try to derive it on our own. The strategy is to describe the evolution of the radial coordinate \emph{r} as function of $\phi $.\par
+where $\phi $ is still the azimuthal angle. \par
+This phenomenon reflects the fact that noncircular orbits in GR are not perfectly closed ellipses. We will try to derive it on our own. The strategy is to describe the evolution of the radial coordinate \emph{r} as function of $\phi $.\par
 We already talked about the fact that for a massive particle (e.g. Mercury), the symmetries of this spacetime, the Schwarzschild one, with metric
 \[
 ds^{2} = -\left( 1- \frac{2GM}{r} \right)dt^{2} + \left( 1- \frac{2GM}{r} \right)^{-1} + r^{2}d\Omega ^{2}
