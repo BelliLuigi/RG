@@ -63,7 +63,7 @@ Now we can compute the Christoffel symbol
 we kept just $\eta $ outside the square brackets because the partial derivatives inside them are already $O\left( h \right)$, since derivative of $\eta $ is null.\par
 \paragraph{Riemann tensor}
 \begin{align}
-	R^{\rho }_{\sigma \mu \nu } = \partial_{\mu }\Gamma ^{\rho }_{\sigma \nu } - \partial_{\nu }\Gamma ^{\rho }_{\sigma \mu } + \Gamma \Gamma -\Gamma \Gamma  = \nonumber\\
+	R^{\rho }_{\sigma \mu \nu } = \partial_{\mu }\Gamma ^{\rho }_{ \nu \sigma  } - \partial_{\nu }\Gamma ^{\rho }_{\sigma \mu } + \Gamma \Gamma -\Gamma \Gamma  = \nonumber\\
 				    = \frac{1}{2} \partial_{\mu } \left[ \eta ^{\rho \alpha }\left( \partial_{\sigma} h_{\alpha \nu }+ \partial_{\nu }h_{\alpha \sigma }- \partial_{\alpha }h_{\sigma \nu } \right) \right] - \nonumber\\
 				     \frac{1}{2}\partial_{\nu }\left[ \eta ^{\rho \alpha }\left( \partial_{\sigma }h_{\alpha \mu } +\partial_{\mu }h_{\sigma \alpha }- \partial_{\alpha }h_{\sigma \mu } \right) \right] \nonumber
 \end{align}
@@ -73,7 +73,7 @@ Now we will lower the upper index of the Riemann tensor since it is easier to ma
 	R_{\lambda \sigma \mu \nu } \simeq \eta _{\lambda \rho }R^{\rho }_{\sigma \mu \nu } = \nonumber \\
 	 =  \eta _{\lambda \rho }\eta ^{\rho \alpha } \left( \partial_{\mu }\partial_{\sigma }h _{\alpha \nu } + \partial_{\mu }\partial_{\nu }h_{\alpha \sigma }-\partial_{\mu }\partial_{\alpha }h_{\sigma \nu } \right) - \nonumber\\
 	  \frac{1}{2}\eta _{\lambda \rho }\eta ^{\rho \alpha }\left( \partial_{\nu }\partial_{\sigma }h_{\alpha \mu } + \partial_{\nu }\partial_{\mu }h_{\sigma \alpha }-\partial_{\nu }\partial_{\alpha }h_{\sigma \mu } \right) =  \nonumber\\
-	  = \frac{1}{2} \delta ^{\alpha }_{\lambda }\left[ \left( \ldots  \right)\left( \ldots  \right) \right] = \nonumber\\
+	  = \frac{1}{2} \delta ^{\alpha }_{\lambda }\left[ \left( \ldots  \right) - \left( \ldots  \right) \right] = \nonumber\\
 	  = \frac{1}{2} \left[ \left( \partial_{\mu }\partial_{\sigma }h_{\lambda \nu } +\partial_{\mu }\partial_{\nu }h_{\lambda \sigma }-\partial_{\nu }\partial_{\lambda }h_{\sigma \nu } \right) - \left( \partial_{\nu }\partial_{\sigma }h_{\lambda \mu }+ \partial_{\nu }\partial_{\mu }h_{\sigma \lambda } - \partial_{\nu }\partial_{\lambda }h_{\sigma \mu } \right) \right] \nonumber\\
 	 \text{ {\small Partial derivatives commute, \emph{h} is symmetric }} \nonumber\\
 	 = \frac{1}{2} \left[ \partial_{\mu }\partial_{\sigma }h_{\lambda \nu }-\partial_{\mu }\partial_{\lambda }h_{\sigma \nu } - \partial_{\nu }\partial_{\sigma }h_{\lambda \mu } + \partial_{\nu }\partial_{\lambda }h_{\sigma \mu } \right]
@@ -103,7 +103,7 @@ $\xi $ is dependent on coordinates, is not a constant, and is small.\par
 Let's see how we write the metric tensor in new coordinate system.
 \begin{align}
 	g_{\mu ^{\prime }\nu ^{\prime }} &= \frac{\partial x^{\mu }}{\partial x^{\mu ^{\prime }}} \frac{\partial x^{\nu }}{\partial x^{\nu ^{\prime }}} \left( \eta _{\mu \nu } +h_{\mu \nu } \right) = \nonumber\\
-					 &= \left( \delta ^{\mu }_{\mu ^{\prime }} + \partial_{\mu ^{\prime }}\xi ^{\mu } \right)\left( \partial^{\nu }_{\nu ^{\prime }}+\xi ^{\nu } \right)\left( \eta _{\mu \nu }+h_{\mu \nu } \right) = \nonumber\\
+	 &= \left( \delta ^{\mu }_{\mu ^{\prime }} + \partial_{\mu ^{\prime }}\xi ^{\mu } \right) \left( \delta^{\nu }_{\nu ^{\prime }} + \delta_{\nu ^{\prime }} \xi ^{\nu } \right) \left( \eta _{\mu \nu }+h_{\mu \nu } \right) = \nonumber\\
 	&= \eta _{\mu ^{\prime }\nu ^{\prime }} + h_{\mu ^{\prime }\nu ^{\prime }} +\partial_{\mu ^{\prime }}\xi _{\nu ^{\prime }}+\partial_{\nu ^{\prime }}\xi _{\mu ^{\prime }}
 \end{align}
 where the last three terms are
