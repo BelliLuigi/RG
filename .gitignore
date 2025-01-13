@@ -8,4 +8,5 @@ Carroll.pdf
 *.toc
 *.out
 *.py
-exes.pdf
+*.jpg
+*.pdf
