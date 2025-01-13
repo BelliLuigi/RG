@@ -1,4 +1,7 @@
+.gitignore
 Carroll.pdf
+exes.pdf
+*.swp
 *.djvu
 *.synctex.gz
 *.aux
