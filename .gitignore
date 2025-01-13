@@ -8,5 +8,5 @@ Carroll.pdf
 *.toc
 *.out
 *.py
-*.jpg
-*.pdf
+#*.jpg
+#*.pdf
