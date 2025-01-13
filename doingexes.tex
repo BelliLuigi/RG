@@ -138,8 +138,74 @@ ds^{2 } = -\left( 1- \frac{2GM}{r} \right)dt^{2} + \left( 1 - \frac{2GM}{r} \rig
 as before, get $g_{\mu \nu }, g^{\mu \nu }$, and the compute connections as usual. Straightforward, no tricks.
 
 \subsubsection{Ex 11}
+ Write Schwarzschild metric, and write down conserved quantities. Remember that four velocity satisfies this normalization:
+ \[
+ g_{\mu \nu }u^{\mu }u^{\nu } = -1
+ \]
+ for the case of a massive particle. So, first thing first, you have to say that you choose $\lambda $ in such a way that $ \frac{d x^{\mu }}{d \lambda }$ is the four-velocity\footnote{and this implies $\lambda =\tau $, but maybe it avoid you to do other things you don't want, idk.}.
+\begin{equation}
+g_{tt}\left( \frac{d t}{d \lambda } \right)^{2} + g_{rr}\left( \frac{d r}{d \lambda } \right)^{2} + g_{\phi \phi }\left( \frac{d \phi }{d \lambda } \right)^{2}  = - \epsilon_{r}
+\end{equation}
+by substituting the conserved quantities and their friends we got
+\begin{equation}
+-\left( 1- \frac{2GM}{r} \right) \frac{E^{2}}{\left( 1- \frac{2GM}{r} \right)^{2}} + \frac{1}{\left( 1 - \frac{2GM}{r} \right)}\left( \frac{d r}{d \lambda }\right)^{2} + \frac{r^{2}L^{2}}{r^{4}} = - \epsilon_{r}
+\end{equation}
+with some manipulation,
+\begin{equation}
+\frac{1}{2}E^{2} = \frac{1}{2} \left( \frac{d r}{d \lambda } \right)^{2} + \left( 1- \frac{2GM}{r} \right)\left( \frac{\epsilon }{2} + \frac{L^{2}}{2r^{2}} \right)
+\end{equation}
+the second term of the right-hand side is $V_{eff}\left( r \right)$, the effective potential that holds effects of gravity and angular momentum, while the first term on the right is the radial kinetic energy.
+\begin{equation}
+\frac{1}{2} \left( \frac{d r}{d \lambda } \right)^{2} + V_{eff}\left( r \right) = \frac{1}{2}E^{2} = \mathcal{E} 
+\end{equation}
+Let's focus on this potential
+\begin{equation}\label{eq:566}
+V_{eff}\left( r \right) = \frac{\epsilon }{2} + \frac{L^{2}}{2r^{2}}- \frac{\epsilon GM}{r} - \frac{GML^{2}}{r^{3}}
+\end{equation}
+If the massive particle is orbiting, $\frac{d r}{d \lambda } = 0$ and since $\frac{1}{2}E^{2}$ is constant, this means also $V_{eff}$ needs to be constant and so $\frac{d V}{d r} = 0$
+\[
+\frac{d V}{d r} = 0
+\]
+Differentiating eq.\ref{eq:566} we find that this kind of orbit happens when
+\[
+\epsilon GM r_{c}^{2}- L^{2}r_{c} + 3GML^{2} = 0
+\]
+Circular orbits to be stable need to correspond to a minimum of the potential, viceversa unstable if they correspond to a maximum.\par
+The critical radius \emph{r\textsubscript{c}} for a massive particle is
+\begin{equation}
+	r_{c} = \frac{L^{2} \pm \sqrt{ L^{4} - 12G^{2} M^{2}L^{2}}}{2GM}
+\end{equation}
+With decreasing \emph{ L} the two solutions come closer together , and coincide when we set $\Delta =0$.\par
+\[
+	L = \sqrt{12}GM \text{ for which } r_{c} = 6GM
+\]
+So this \emph{r\textsubscript{c}} is the smallest possible radius for a stable circular orbit in this metric.
 
+\subsubsection{Ex 12}
+It is basically the same as ex 11. But with little tweaks. Until $V_{eff}\left( r \right)$ it is all ok, but you need to distinguish the GR contribution like this:
+\[
+\frac{d V}{d r} = 0
+\]
+Differentiating eq.\ref{eq:566} we find that this kind of orbit happens when
+\[
+\epsilon GM r_{c}^{2}- L^{2}r_{c} + 3GML^{2}\gamma  = 0
+\]
+with
+\[
+\gamma = \begin{cases}
+0 \text{ for Newtonian gravity } \\
+1 \text{ for GR } \\
+\end{cases}
+\]
+So you then continue like before, but distinguish the two cases. For Newtonian case, solution is trivial.\par
+ For GR one, be aware that you need to do limit of $L\to \infty$, and also remember that $\sqrt{1-x} = 1 - \frac{x}{2}$ for small \emph{x}. You get the same solution for both cases, $r_{c} = L^{2}/GM$, because the GR solution $r_{c} = 3GM$ is an unstable orbit. Don't need to justify that. It is like it is.
 
+\subsubsection{Ex 13}
+Same as ex 11 but remember that four-velocity normalization for the case of massless particle is
+\[
+g_{\mu \nu }u^{\mu }u^{\nu } = 0
+\]
+After that is straightforward. Solution is $r_{c} = 3GM$, radius of photon sphere.
 
 
 
