@@ -1,5 +1,5 @@
 ## Last (important) update:
-12/01/2025
+13/01/2025 - lecture 22 is just a draft. Probably won't upload lec 23 and 24, if so just a draft. 
 
 
 
