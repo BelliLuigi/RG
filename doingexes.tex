@@ -85,6 +85,7 @@ we see that only non-zero component of derivative of metric is $\partial_{r}g_{\
 \Gamma ^{\phi }_{r\phi } = \Gamma ^{\phi }_{\phi r} = \frac{1}{2}g_{\phi \phi } \left( \partial_{\phi }g_{r\phi } + \partial_{r}g_{\phi \phi }-\partial_{\phi }g_{\phi r} \right) = \frac{1}{2}\cdot 2r\cdot \frac{1}{r^{2}}\\
 \Gamma ^{\phi }_{\phi \phi } = \oslash
 \end{gather*}
+
 \subsubsection{Ex 3}
 Same as Ex 2
 \subsubsection{Ex 4}
@@ -93,7 +94,7 @@ Same as Ex 2,3
 \[
 ds^{2} = -\left( 1+2\phi  \right)dt^{2} +\left( 1-2\phi  \right)dr^{2}+r^{2}d\theta ^{2}+r^{2}\text{sin}^{2}\theta d\phi ^{2}, \phi = - \frac{GM}{r}	
 \]
-To compute time, I need to compute an interval, but since both clock stand still in their position, in generic interval spatial coordinates vanish. I'm left with
+To compute time, I need to compute an interval, but since both clock stand still in their position, in any generic interval, spatial coordinates vanish. I'm left with
 \[
 ds^{2} = -\left( 1+2\phi  \right)dt^{2}
 \]
@@ -101,6 +102,7 @@ Being $d\tau ^{2} =- ds^{2} = \left( 1+2\phi  \right)dt^{2}$,
 \[
 	d\tau  = \sqrt{1+2\phi }dt
 \]
+After integrating in \emph{dt} in interval $\left[ 0,t \right]$:
 \begin{gather*}
 	\tau _{1} = \sqrt{1+2\phi \left( R \right)}t \\
 	\tau _{2} = \sqrt{1+2\phi \left( R+h \right)}t
@@ -110,12 +112,16 @@ Being $d\tau ^{2} =- ds^{2} = \left( 1+2\phi  \right)dt^{2}$,
 	\frac{\tau _{2}}{\tau _{1}} = \frac{\sqrt{1+2\phi\left( R+h \right)}}{\sqrt{1+2\phi \left( R \right)}} \\
 \phi \left( R+h \right) = \phi \left( R \right) +\phi ^{\prime }\left( R \right)h +\ldots = - \frac{GM}{R} + \frac{GMh}{R^{2}} +\ldots 	 
 \end{gather*}
-Since $\phi\gg 1 $, like $60e6 \frac{MJ}{kg}$, I thought that $1$ is negligible, so
+
 \begin{gather*}
-\frac{\tau _{2}}{\tau _{1}} = \frac{\sqrt{1+2\phi \left( R+h \right)}}{\sqrt{1+2\phi \left( R \right)}} = \frac{\sqrt{2\phi \left( R+h \right)}}{\sqrt{2\phi \left( R \right)}} = \sqrt{ \frac{\phi \left( R \right) + \phi ^{\prime }\left( R \right)h}{\phi \left( R \right)}} =\\
-= \sqrt{ 1+\frac{\phi ^{\prime }\left( R \right)h}{\phi \left( R \right)}} = \sqrt{1 + \frac{h}{R}} \approx 1+ \frac{h}{2R}	 
+\frac{\tau _{2}}{\tau _{1}} = \frac{\sqrt{1+2\phi \left( R+h \right)}}{\sqrt{1+2\phi \left( R \right)}} = \frac{\sqrt{1-2\phi \left( R \right) +2\phi^{\prime } \left( R \right)h }}{\sqrt{1-2\phi \left( R \right)}} = \sqrt{1 + \frac{ 2\phi^{\prime }\left( R \right)h}{1 -2\phi \left( R \right)}}
 \end{gather*}
-\subsubsection{Ex 6 wrong!!}
+Then you do some simplifications and then do series expansion for $\sqrt{1+x} \approx 1 + \frac{x}{2}$, and you should get 
+\[
+\frac{\Delta \tau _{2}}{\Delta \tau _{1}} \approx 1 + \frac{GMh}{2R\left( R-2GM \right)}
+\]
+
+\subsubsection{Ex 6}
 
 If you don't remember, you can get the geodesics equation from
 \[
@@ -207,7 +213,18 @@ g_{\mu \nu }u^{\mu }u^{\nu } = 0
 \]
 After that is straightforward. Solution is $r_{c} = 3GM$, radius of photon sphere.
 
+\subsubsection{Ex 14}
+I think one need to find the maximum of the effective potential, indeed:
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{imm/ex14.png}
+\caption{From Carroll}
+\label{imm:ex14.png}
+\end{figure}
 
+So as always, write down metric, conserved quantities, choose the adequate four-velocity normalization (=0), unravel the tensor product, substitute quantities, get yourself to equation of kinetic radial energy + $V_{eff}\left( r \right) = $ energy of the system. Take $ \frac{d V_{eff\left( r \right)}}{d r}$,  insert values, find stationary point. Should be $r = 3$, again radius of the photon sphere, not just any radius. Go back to equation of conservation of energy and substitute values, you find value of \emph{E}, should be $E = \frac{10}{3\sqrt{3}}$.
+
+\subsubsection{Ex 15}
 
 
 

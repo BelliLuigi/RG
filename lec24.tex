@@ -1,0 +1,262 @@
+\section{Lec 24}
+Yesterday we found the Robertson-Walker metric, we derived Christoffel symbols and we got Ricci tensor. Today we will focus on the Einstein Equation.
+\subsection{Einstein Equation for Cosmology}
+\[
+R_{\mu \nu } = 8\pi G \left( T_{\mu \nu } - \frac{1}{2}g_{\mu \nu }T \right)
+\]
+This is an equivalent mode to write down the EE, and right now it is more convenient because we already know the left-hand side. \par
+We will try to compute the Energy-momentum tensor, this is kinda new, because until now we treated EE in the vacuum.
+
+It makes sense to employ as E-M tensor the one of the \emph{perfect fluid},  that is
+\[
+T_{\mu \nu } = \left( \rho +p \right)u^{\mu }u^{\nu }+ pg^{\mu \nu }
+\]
+were we substituted $\eta _{\mu \nu }$ with $g_{\mu \nu }$,  for us is more convenient the following form
+\[
+T^{\mu }_{\nu } = \left( \rho +p \right)u^{\mu }u_{\nu }+ p \delta ^{\mu }_{\nu }
+\]
+so the metric tensor does not appear.
+I will remember you that in a comoving frame $u^{\mu } = \left( 1,0,0,0 \right)	$, so a particle of the fluid described bu this field of $u^{\mu }$ is at rest.	\par
+\[
+T^{\mu }_{\nu } = \begin{pmatrix}
+-\rho \left( t \right) & 0 & 0 & 0 \\
+0 & p\left( t \right) & 0 & 0 \\
+0 & 0 & p\left( t \right) & 0 \\
+0 & 0 & 0 & p\left( t \right)
+\end{pmatrix} 
+\]
+$\rho $ and \emph{p} are constant in space, but can be dependent on time. We see that the pressure part is the same along the three spatial axis, and so it is \emph{isotropic}. \par
+The trace
+\[
+T = g^{\mu \nu }T_{\mu \nu }= T^{\mu }_{\mu }=-\rho +3p
+\]
+if the e-m tensor is homogeneous and isotropic I expect also the metric to be like that.\par
+
+\subsection{Conservation of four-momentum}
+
+When we was building the EE, we said that $\nabla _{\mu }T_{\mu \nu } = 0$, this means $\nabla _{\mu }T^{\mu }_{\nu } = 0$
+\[
+\nabla _{\mu }T_{\nu }^{\mu } = \partial_{\mu }T^{\mu }_{\nu } + \Gamma ^{\mu }_{\mu \lambda }T^{\lambda }_{\nu } - \Gamma ^{\lambda }_{\mu \nu }T^{\mu }_{\lambda }
+\]
+here the only free index is $\nu $, so I can set it to zero, $\nu  = 0$	
+\begin{gather}
+\partial_{\mu }T^{\mu }_{0} + \Gamma ^{\mu }_{\mu \lambda }T^{\lambda }_{0} + \Gamma ^{\lambda }_{\mu  0}T^{\mu }_{\lambda } =  \nonumber\\
+ = -\partial_{t}\rho \left( t \right) + \Gamma ^{\mu }_{\mu 0} T^{0}_{0} - \Gamma ^{\lambda }_{\mu 0}T^{\mu }_{\lambda } = \nonumber\\
+ = -\partial_{t}\rho \left( t \right) - \frac{3 \dot{a}}{a}\rho \left( t \right) - \frac{3 \dot{a}}{a}p\left( t \right) = 0 \nonumber\\
+ \frac{\partial \rho }{\partial t} + \frac{3 \dot{a}}{a}\left( \rho +p \right) = 0 \label{eq:ofstate}
+\end{gather}
+on the second step we got that $\mu $ needs to be 0 to get a non zero contribution, this is valid for the first and second term ( $\lambda $). Regard the third term $\lambda $ can only be spatial, otherwise we would have a null connection.\par
+So from the last we see that the energy density  changes if $\dot{a}\neq0$.\par
+We will introduce the \emph{Hubble parameter, H} that is 
+\[
+H\left( t \right) = \frac{\dot{a}\left( t \right)}{a\left( t \right)}
+\]
+and we will write the equation of state 
+\[
+p = w\rho 
+\]
+this form is used in cosmology and the \emph{equation of state parameter, w} can take different values, based on what kind of fluid we are studying.\par
+Plugging the equation of state inside \ref{eq:ofstate}, we get
+\begin{gather}
+\frac{\partial \rho }{ t}  + 3H\left( 1+w \right) \rho  = 0 \nonumber\\
+\frac{d \rho }{d t} + \frac{3}{a} \frac{d a}{d t} \left( 1+w \right)\rho  = 0 \nonumber\\
+\text{ln}\rho = -3\left( 1+w \right)\text{ln}a + \text{ const } \nonumber\\
+\rho \left( a \right) = \rho \left( a_{0} \right)\left( \frac{a_{0}}{a} \right)^{3\left( 1+w \right)} \label{eq:densitime}
+\end{gather}
+last two steps are valid if \emph{w} is a constant. This gives us how $\rho $ behaves as the Universe expands (or shrinks).\par
+As said before \emph{w} can take different values:
+\subsubsection{Dust}
+Dust has been defined as \emph{something non-relativistic}. So the pressure is negligible compared to energy density. Indeed we have 
+\[
+w = 0 \to w = \frac{p}{\rho }\ll 1
+\]
+To understand this better we will take the Equation of Gasses, for an ideal gas
+\[
+pV = NK_{b}T
+\]
+in natural units $K_{b}=1$, so that temperature and pressure have the same dimension. Dividing by the volume we get
+\[
+p = nT
+\]
+with \emph{n} number density $n = \frac{N}{V}$. Using the expression for energy density for a NR gas, $\rho = m\\dot{c}n$ we get
+\[
+w = \frac{p}{\rho }  = \frac{T}{m}
+\]
+By the way, if we plug this specific \emph{w}, in \ref{eq:densitime} we get that $\rho \left( a \right) \propto a^{-3}  $.
+
+\subsubsection{Radiation}
+Radiation has been defined as \emph{anything that's massless, or that could be approximated as massless}. In this case $w = \frac{1}{3}$ and $p = \frac{1}{3}\rho $, so 
+\[
+\rho \left( a \right) \propto a^{-4} = a^{-3}a^{-1}
+\]
+we split the \emph{a} into two contribution
+\begin{itemize}
+\item $a^{-3}$ is the dilution, so the Universe is getting bigger
+\item $a^{-1}$ is due to the fact that expansion also stretches photon, and their wavelength
+\end{itemize}
+Let's study the motion of a photon in expanding Universe:
+\[
+	\frac{d p^{\mu }}{d \lambda } + \Gamma _{\alpha \beta }^{\mu }p^{\alpha }p^{\beta } =0
+\]
+I choose $\lambda $ such that $p^{\mu } = \left( E, \vec{p} \right) = \frac{d x^{\mu }}{d \lambda }$. We will take the equation for $\mu  = 0$, since we are interested in the energy of the photon.
+\begin{gather*}
+\frac{d p^{0}}{d \lambda } + \Gamma ^{0}_{\alpha \beta }p^{\alpha }p^{\beta } = 0\\
+\frac{d p^{0}}{d t}\frac{d t}{d \lambda } + \Gamma ^{0}_{ij}p^{i}p^{j} = 0 \\
+\frac{d E}{d t} E + a \dot{a} \gamma _{ij}p^{i}p^{j} = 0
+\end{gather*}
+Remember the four-velocity normalization for a massless particle 
+\[
+p^{\mu }p_{\mu } = g_{\mu \nu }p^{\mu }p^{\nu }=0
+\]
+We can unravel it avoiding to use the metric tensor:
+\[
+-E^{2} + a^{2}\left( \gamma _{ij}p^{i}p^{j} \right) = 0 \to  \gamma _{ij}p^{i}p^{j} = \frac{E^{2}}{a^{2}}
+\]
+With this we get a nicer equation of the variation of the energy with respect to the \emph{a} scale factor:
+\[
+E \frac{d E}{d t} + a \dot{a} \frac{E^{2}}{a^{2}} = 0 \to  \frac{d E}{E^{2}} = \frac{d a}{a} \to E\propto a^{-1}
+\]
+
+\subsubsection{Dark Energy / Cosmological constant}
+The equation of state parameter can take negative values to take in account entities with negative pressure, introduced to answer to the accelerated expansion of the Universe. To describe the Cosmological Constant, that takes in account the effects of dark energy, we have  $w = -1$. \par
+We mentioned \emph{acceleration} and \emph{w} in the same sentence and we would like to see them in the same equation, too. Be the EE
+\[
+R_{\mu \nu } = 8\pi G\left( T_{\mu \nu }-\frac{1}{2}g_{\mu \nu }T \right)
+\]
+I have 10 equation, but with isotropy we are left with two independent equations.
+First can be found with $\mu  = \nu  = 0$:
+\begin{align}
+	R_{00} = - \frac{3 \ddot{a}}{a} &= 8\pi G \left( T_{00}-\frac{1}{2}g_{00}T \right) \nonumber\\
+					&= 8\pi G \left( g_{00}T^{0}_{0}-\frac{1}{2}g_{00}T \right) \nonumber\\
+					&= 8\pi G \left( +\rho  +\frac{1}{2}\left( -\rho +3p \right) \right) \nonumber\\
+	\frac{\ddot{a}}{a} &= - \frac{8\pi G}{3} \left( \frac{\rho }{2} + \frac{3}{2}p \right) \nonumber\\
+	\frac{\ddot{a}}{a}&= - \frac{4\pi G}{3}\left( \rho +3p \right) \label{eq:acceleration}
+\end{align}
+Equation \ref{eq:acceleration} is the \emph{acceleration equation}, if $w < -\frac{1}{3}$ I get an accelerating universe.\par
+
+The second equation can be found with $\mu  = \nu  = i$, with any of the spatial coordinates. We will choose $\mu  = \nu  = r$.
+\begin{align}
+	R_{rr} = \frac{a \ddot{a} + 2 \dot{a}^{2} + 2 \kappa }{1 - \kappa r^{2}} &= 8\pi G \left( T_{rr} - \frac{1}{2}g_{rr} T \right) \nonumber\\
+										 &= 8\pi G \left( g_{rr}p - \frac{1}{2} g_{rr}\left( -\rho +3p \right) \right) \nonumber\\
+	\left( \text{\tiny with   } g_{rr} = \frac{a^{2}}{1-\kappa r^{2}} \right) \nonumber\\
+	\frac{\ddot{a}}{a} + 2 \frac{\dot{a}^{2}}{a^{2}}+ 2 \frac{\kappa }{a^{2}} &= 8\pi G \left( p + \frac{1}{2 \rho }- \frac{3}{2} p \right) \nonumber\\	
+	\frac{\ddot{a}}{a} + 2 \frac{\dot{a}^{2}}{a^{2}}+ 2 \frac{\kappa }{a^{2}} &= 4\pi G\left( +\rho -p \right) \label{eq:C}
+\end{align}
+If I get a combination of eqs. \ref{eq:acceleration} and \ref{eq:C}, I could erase the $ \frac{\ddot{a}}{a}$ term. We'll do $\ref{eq:C} - \ref{eq:acceleration}$.
+\begin{align}
+	2 \left( \frac{\dot{a}}{a} \right)^{2} + 2 \frac{\kappa }{a^{2}} &= 4\pi G \left( \rho  - p + \frac{\rho }{3} +p \right) = 4\pi G \left[ \frac{4}{3}\rho  \right] \nonumber\\
+	\left( \frac{\dot{a}}{a} \right)^{2} + \frac{\kappa }{a^{2}} &= \frac{8\pi G}{3}\rho  \nonumber\\
+	\left( \frac{\dot{a}}{a} \right)^{2} = \frac{8\pi G}{3}\rho - \frac{\kappa }{a^{2}}\label{eq:fried}
+\end{align}
+This last eq. \ref{eq:fried}, is known as the \emph{Friedmann Equation}.\par
+
+One probable question could be to try to derive \ref{eq:densitime} from \ref{eq:C}, \ref{eq:fried}, or other combinations of these three.\par
+
+Since the origin of the origin of the fluid equation (\ref{eq:densitime}) was the conservation of energy, $\nabla _{\mu }T^{\mu \nu }=0$, but this equation implies $\nabla _{\mu }G^{\mu \nu } = 0$, and since the two equations of Friedmann and \ref{eq:C}, are solution of the EE, they must respect the conservation of the energy.
+
+Now, why we want to study the cosmological constant? When these equation came out, it was strange to think that Universe was expanding, so people looked for static universe solutions, that are determined by
+\begin{gather*}
+a = \text{ const }\\
+\begin{cases}
+\dot{a} = 0 \\
+\ddot{a} = 0 \\
+\end{cases}
+\end{gather*}
+this is not possible because all the form of matter know back then, where known to have $\rho $ and \emph{p} to be both positive, and Universe was expected to be \emph{decelerating}. So they looked for a contribution to compensate the deceleration and get a static universe, $\Lambda $.
+\[
+ R_{\mu \nu } - \frac{1}{2} g_{\mu \nu }R + \Lambda g_{\mu \nu } = 8\pi Gt_{\mu \nu }
+\]
+and $\Lambda $ has an intepretation of \emph{vacuum energy} of the Universe.
+
+There are a fast way and a complete way to derive the cosmological constant. The latter implies the use of the \emph{principle of least action}, we will do the former.
+
+\begin{gather*}
+R_{\mu \nu }- \frac{1}{2}g_{\mu \nu }R = 8\pi GT_{\mu \nu }- \Lambda g_{\mu \nu } \\
+= 8\pi G \left( T_{\mu \nu }+ T_{\mu \nu }^{\Lambda } \right)
+\end{gather*}
+with 
+\begin{gather*}
+T^{\Lambda }_{\mu \nu } = - \frac{\Lambda }{8\pi G} g_{\mu \nu } \\
+\to  T^{\Lambda \mu }_{\nu } = \text{ diag}\left( -\rho _{\Lambda }, p_{\Lambda },p_{\Lambda },p_{\Lambda } \right) = - \frac{\Lambda }{8\pi G} \delta ^{\mu }_{\nu }
+\end{gather*}
+also
+\begin{gather*}
+\rho ^{\Lambda } = \frac{\Lambda }{8\pi G} \\
+p_{\Lambda } = - \frac{\Lambda }{8\pi G}
+\to  p_{\Lambda } = - \rho _{\Lambda }
+\end{gather*}
+this makes eq.\ref{eq:fried}, the Friedmann equation,
+\[
+	\left( \frac{\dot{a}}{a} \right)^{2} = \frac{8\pi G}{3}\rho - \frac{\kappa }{a^{2}} + \frac{\Lambda }{3}
+\]
+while the \emph{acceleration} equation, eq, \ref{eq:acceleration},
+\[
+\frac{\ddot{a}}{a} = - \frac{4\pi G}{3}\left( \rho +3p \right) + \frac{\Lambda }{3}
+\]
+\subsubsection{Solutions to \ref{eq:fried}}
+There are some evidences that says $\kappa =0$, so the Universe is flat. Be the Friedmann equation
+\[
+H^{2} = \frac{8\pi G}{3}\sum_{1}^{}{\rho _{i}} - \frac{\kappa }{a^{2}}
+\]
+and
+\begin{gather*}
+1 = \sum_{i}^{}{\Omega _{i}} + \Omega _{k} \\
+\Omega _{k} = - \frac{\kappa }{a^{2}H^{2}} \text{ contribute of curvature }\\
+\Omega _{i} = \frac{\rho _{i}}{\rho _{cr}} \text{ fractional density of each species }\\
+\rho _{ cr} = \frac{3H^{2}}{8\pi G}
+\end{gather*}
+so with $\kappa  = 0$	
+\begin{gather*}
+\frac{\dot{a}}{a} = \sqrt{ \frac{8\pi G}{3}} \sqrt{\rho } \\
+\rho \propto a ^{ -3 \left( 1+w \right)}\\
+\to  \frac{\dot{a}}{a} = \text{ const } a^{ \frac{-3 \left( 1+w \right)}{2}} 
+\end{gather*}
+and this will be an exercise, a differential equation to solve. 
+
+Some other solutions are
+\begin{itemize}
+\item $w =0 \to  a\left( t \right) \propto t^{2/3}; H = \frac{2}{3t} $
+\item $w = 1/3 \to  a\left( t \right) \propto t^{1/2}; H = \frac{1}{2t}$
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
