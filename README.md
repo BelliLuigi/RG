@@ -1,5 +1,5 @@
 ## Last (important) update:
-13/01/2025 - lecture 22 is just a draft. Probably  lec 23 and 24,will be a draft, until next tuesday.
+15/01/2025 - lectures 22,23,24 are drafts.
 
 
 
