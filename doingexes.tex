@@ -90,7 +90,7 @@ we see that only non-zero component of derivative of metric is $\partial_{r}g_{\
 Same as Ex 2
 \subsubsection{Ex 4}
 Same as Ex 2,3
-\subsubsection{Ex 5 wrong}
+\subsubsection{Ex 5}
 \[
 ds^{2} = -\left( 1+2\phi  \right)dt^{2} +\left( 1-2\phi  \right)dr^{2}+r^{2}d\theta ^{2}+r^{2}\text{sin}^{2}\theta d\phi ^{2}, \phi = - \frac{GM}{r}	
 \]
@@ -135,6 +135,33 @@ So we get two geodesics equations:
 Now you have to check both conditions for both equations.\par
 First one: constant longitude means $\frac{d x^{\phi }}{d \lambda } = 0$, I think it's trivial. \par
 Second one: you get that in \ref{ex:1g}, since we are at constant latitude, vanishes. In \ref{ex:2g} you get that the second term vanishes only for $\theta =0 , \frac{\pi }{2}$, but only 0 is a geodesics, other solution are the poles, degenerate solution. 
+
+\subsubsection{Ex 7}
+First request, just compute everything. Be aware to use all combinations.\par
+Second request: use product rule so
+\begin{align*}
+	\nabla _{\mu }\left( V^{\nu }V^{\nu } \right) &= \partial_{\mu }\left( V^{\nu }V_{\nu } \right)\\
+	\left( \nabla _{\mu }V^{\nu } \right)V_{\nu } + V^{\nu }\left( \nabla _{\mu }V_{\nu } \right) &= \left( \partial_{\mu }V^{\mu } \right)V_{\nu } + V^{\nu }\left( \partial_{\mu }V_{\nu } \right)
+\end{align*}
+Then you compute the covariant derivatives, you will find a piece that is the same as the one on the right-hand side, and a piece with the Connections.
+For this last piece, you rename some indices to make it like the other term. Be aware to justify some commutations. 
+
+\subsubsection{Ex 8}
+That commutator is how we defined the Riemann tensor, so
+\begin{gather*}
+\left[ \nabla _{\mu }, \nabla _{\nu } \right]W^{\mu \nu } = R^{\mu }_{\sigma \mu \nu }W^{\sigma \nu } + R^{\nu }_{\sigma \mu \nu }W^{\mu \sigma }\\
+R^{\mu }_{\sigma \mu \nu }W^{\sigma \nu } - R^{\nu }_{\sigma \nu \mu }W^{\mu \sigma } \text{ used anti-simmetry on last couple of indices }\\
+R_{\sigma \nu }W^{\sigma \nu } - R_{\sigma \mu }W^{\mu \sigma } \text{ contracted index to get Ricci tensor }\\
+R_{\sigma \nu }W^{\sigma \nu } - R_{\sigma \nu }W^{\nu \sigma } \text{ renamed $\mu\to \nu  $ }
+\end{gather*}
+At this point this is zero only if 
+\begin{itemize}
+\item  spacetime is flat $\to R_{\mu \nu }=0$
+\item $W^{\mu \nu }$ tensor is symmetric.
+\end{itemize}
+
+\subsubsection{Ex 9}
+
 
 \subsubsection{Ex 10}
 From 
@@ -249,6 +276,7 @@ Done
 
 \subsubsection{Ex 19}
 
+\subsubsection{Ex 20}
 
 
 
