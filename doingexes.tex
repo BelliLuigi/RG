@@ -1,6 +1,4 @@
-%\chapter{Exercises}
-%\include{exes.pdf}
-%\subsection{Execution}
+\chapter{Exercises}
 \subsubsection{Ex 1}
 Since metric is \[
 ds^{2}= dx^{2} +dy^{2}
@@ -161,14 +159,29 @@ At this point this is zero only if
 \end{itemize}
 
 \subsubsection{Ex 9}
-
-
+You get $g_{\mu \nu }, g^{\mu \nu }$, then you compute all non vanishing connections, $\Gamma ^{\mu }_{\alpha \beta }$:
+\[
+\Gamma ^{t}_{tx }= \Gamma ^{t}_{xt}, \Gamma ^{x}_{tt}
+\]
+then you write down the geodesic equation for \emph{t}. Watch out for the symmetric connection, that contributes two times. \par
+\[
+	\frac{d ^{2}t}{d \lambda ^{2} } + \frac{2x}{x^{2}+\ell^{2}}\frac{d x}{d \lambda }\frac{d t}{d \lambda } = 0
+\]
+Multiply by $\left( 1 + \frac{x^{2}}{\ell^{2}} \right)$, and you find that
+\[
+\frac{d }{d \lambda }\left( \left(  1+ \frac{x^{2}}{\ell^{2}} \right) \frac{d t}{d \lambda } \right) = 0
+\]
+You see that that quantity is conserved, and you will call it \emph{E}. Then you use four-velocity/four-momentum normalization, substitute $\frac{d t}{d \lambda }$, with $\frac{E}{\ldots }$, you get that you have 
+\[
+\frac{d x}{d \lambda } = \frac{E}{\sqrt{1 + x^{2}/\ell^{2}}}
+\]
+Done.
 \subsubsection{Ex 10}
 From 
 \[
 ds^{2 } = -\left( 1- \frac{2GM}{r} \right)dt^{2} + \left( 1 - \frac{2GM}{r} \right)^{-1}dr^{2} + r^{2}d\Omega ^{2}
 \]
-as before, get $g_{\mu \nu }, g^{\mu \nu }$, and the compute connections as usual. Straightforward, no tricks.
+as before, get $g_{\mu \nu }, g^{\mu \nu }$ and then compute connections as usual. Straightforward, no tricks.
 
 \subsubsection{Ex 11}
  Write Schwarzschild metric, and write down conserved quantities. Remember that four velocity satisfies this normalization:
@@ -275,6 +288,43 @@ Derive by time
 Done
 
 \subsubsection{Ex 19}
+
+Remember $p = w\rho  \to  p = \frac{2}{3}\rho $. \par
+First question: $\rho \left( a \right)\propto a $:
+\begin{gather*}
+\dot{\rho } + 3H\left( 1+w \right)\rho = \dot{\rho }+ 3H\left( \frac{5}{3} \right)\rho  \\
+\text{ take directly the solution }\\
+\rho \left( a \right) = \rho \left( a_{0} \right)\left( \frac{a_{0}}{a} \right)^{3 \cdot \frac{5}{3}} = \rho _{0} \left( \frac{1}{a} \right)^{5} = \rho _{0}a^{-5}\\
+\to \rho\left( a \right)\propto a^{-5}
+\end{gather*}
+Second question: $a\left( t \right)\propto t$?\par
+\begin{gather*}
+	\left( \frac{\dot{a}}{a} \right)^{2} = \frac{8\pi G}{3}\rho  - \frac{\kappa }{a^{2}}= C \rho  \\
+	\frac{\dot{a}}{a} = \sqrt{C}\rho ^{\frac{1}{2}} = \sqrt{C} \rho _{0} a^{-5/2}\\
+	\dot{a} = \sqrt{C}\rho _{0} a^{-\frac{3}{2}} \\
+	\frac{d a}{d t} = D a^{-3/2}\\
+	\int_{0}^{a}{a^{\frac{3}{2}}da} = \int_{0}^{t}{ D dt}\\
+	\frac{2}{5}a^{\frac{5}{2}} = D t\\
+	a = \left( \frac{5}{2}D t \right)^{\frac{2}{5}}\\
+	a\left( t \right)\propto t^{\frac{2}{5}}
+\end{gather*}
+Third question: $H\left( t \right)\propto t?$\par
+Since $\ddot{a} = \frac{d }{d t} \dot{a}$, then $ \frac{\ddot{a}}{a} = \frac{d }{d t} H$
+\begin{gather*}
+\frac{d }{d t} H = - \frac{4\pi G}{3} \left( \rho  + \frac{2}{3}\rho  \right) = - C \left( \frac{5}{3} \rho  \right) = - D \rho  \\
+dH = - D \rho dt
+\end{gather*}
+with 
+\begin{gather*}
+\begin{cases}
+\rho  \propto a^{-5} \\
+a \propto t^{\frac{2}{5}}
+\end{cases} \to \rho \propto t^{-2} \\
+\int_{}^{}{dH} = \int_{}^{}{- D t^{-2} dt}\\
+H \propto t^{-1}
+\end{gather*}
+Fourth question: $\rho \left( t \right) \propto t$?\par
+Already answered: $\rho \propto t^{-2}$
 
 \subsubsection{Ex 20}
 

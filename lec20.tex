@@ -110,7 +110,7 @@ where the last three terms are
 \begin{equation}
 \delta ^{\mu }_{\mu ^{\prime }}\delta ^{\nu }_{\nu ^{\prime }}h_{\mu \nu } \equiv   h_{\mu ^{\prime }\nu ^{\prime }} +\partial_{\mu ^{\prime }}\xi _{\nu ^{\prime }}+\partial_{\nu ^{\prime }}\xi _{\mu ^{\prime }}
 \end{equation}
-we did this infinitesimal change of coordinates and we found that the metric is minkowskian plus a correction.\par
+we did this infinitesimal change of coordinates and we found that the metric is minkowskian plus a correction. $h_{\mu \nu }$ and $\xi _{\mu }$	are both infinitesimal quantities, we disregarded $O\left( \xi ^{2} \right), O\left( \xi h \right)$, because they are perturbations of the $2^{nd}$ order. \par
 We have
 \[
 \begin{rcases*}
@@ -119,7 +119,7 @@ h_{\mu \nu }+ 2\partial_{(\mu  }\xi _{\nu )}
 \end{rcases*}
 \text{ that are equivalent }
 \]
-they both describe the same physical perturbation. Indeed \emph{gauge invariance} allows $h_{\mu \nu } $ to be shifted as
+they both describe the same physical perturbation, that is the gravitational wave. Indeed \emph{gauge invariance} allows $h_{\mu \nu } $ to be shifted as
 \[
 h_{\mu \nu }\to h_{\mu \nu }+\partial_{\mu }\xi _{\nu }+\partial_{\nu }\xi _{\mu }
 \]
@@ -131,9 +131,54 @@ Now we can compute the variation of the linearized Riemann tensor under this tra
 \end{gather*}
 As you see by colors and underlining each term cancel with an opposite other. Since the variation of the Riemann tensor is null, this transformation leaves Riemann tensor, Ricci tensor and scalar unchanged.\par
 
-If you have a gauge transformation, which is defined as the actual \emph{h}, nothing changes at the level of the Riemann tensor. 
+If you have a gauge transformation, which is defined as the actual \emph{h}, nothing changes at the level of the Riemann tensor.\par
+You can impose different conditions, the action of imposing a condition is denoted as \emph{choosing a gauge}. 
+\begin{quote}
+Give an generic $h_{\mu \nu } \neq 0$, we \textbf{cannot} find a $\xi ^{\mu }$ such that 
+\[
+h_{\mu \nu } = h_{\mu \nu } -\partial_{\mu }\xi _{\nu }-\partial_{\nu }\xi _{\mu } = 0
+\]
+If we could do that, it would mean that a geometry with a gravitational wave is equivalent to a geometry with no GWs.
+\end{quote}
+
+\subsubsection{Harmonic Gauge}
+This has not be covered in the lecture, but it is useful to do the exercises.\par
+There is a peculiar \emph{gauge choice} in which the expression in parenthesis vanishes that is 
+\[
+	\partial_{\lambda }h^{\lambda }_{\nu } - \frac{1}{2} \partial_{\nu }h= 0
+\]
+We ask ourselves: Can we impose this condition?\par
+
+Starting from a generic $h_{\mu \nu } $, we can find an infinitesimal parameter $\xi ^{\mu }$ so that $h_{\mu \nu } = h_{\mu \nu } - \partial_{\mu }\xi _{\nu }-\partial_{\nu }\xi _{\mu }$ satisfies the harmonic gauge condition.
+
+\begin{gather*}
+\partial_{\lambda }h^{\lambda }_{\nu } - \frac{1}{2}\partial_{\nu }h  = \partial_{\lambda }\left( h^{\lambda }_{\nu }-\partial_{\lambda }\xi_{\nu } - \partial_{\nu }\xi ^{\lambda }\right) - \frac{1}{2}\partial_{\nu }\left( h - 2\partial_{\lambda } \xi ^{\lambda } \right) =\\
+= \partial_{\lambda }h^{\lambda }_{\nu } - \frac{1}{2}\partial_{\nu }h - \Box \xi _{\nu }
+\end{gather*}
+so starting from a generic $h_{\mu \nu }$ such that $\partial_{\lambda }h^{\lambda }_{\nu }- \frac{1}{2}\partial_{\nu }h$, we can choose $xi_{\nu }$ that satisfies 
+\[
+\Box \xi _{\nu } = \partial_{\lambda }h^{\lambda }_{\nu } - \frac{1}{2}\partial_{\nu }h =0
+\]
+since these are 4 second order differential equation, we need tho find all $\xi _{\nu }$ that satisfy them.
+
+In this gauge
+\begin{equation}
+R_{\mu \nu } = -\frac{1}{2}\Box h_{\mu \nu } + \frac{1}{2} \partial_{\mu }\left( \partial_{\lambda }h^{\lambda }_{\nu }- \frac{1}{2}\partial_{\nu }h \right) + \frac{1}{2}\partial_{\nu }\left( \partial_{\lambda }h^{\lambda }_{\mu } - \frac{1}{2}\partial_{\mu }h \right) = - \frac{1}{2}\Box h_{\mu \nu }
+\end{equation}
+and since the GWs satisfies $R_{\mu \nu }=0$, we have
+\begin{equation}
+\begin{cases}
+\Box h_{\mu \nu } = 0 \\
+\partial_{\lambda }h^{\lambda }_{\nu }- \frac{1}{2}\partial_{\nu }h = 0 
+\end{cases}
+\end{equation}
+
+
+
 \subsection{Degrees of Freedom for $h_{\mu \nu }$}
-I can choose $\xi $ in such a way that $h$ takes the form that is particularly convenient for our purposes. Let's see more deeply the meaning of $h_{\mu \nu }$ tensor and its components.\par
+
+I can choose $\xi $ in such a way that $h$ takes the form that is particularly convenient for our purposes (for example we want it to satisfy $R_{\mu \nu } = 0 $, so we are in the vacuum).
+Let's see more deeply the meaning of $h_{\mu \nu }$ tensor and its components.\par
 The issue of gauge invariant will be postponed to the next lecture.\par
 We assumed we work on a given coordinates system, we pick a specific gauge, and we will discuss what happens to $h_{\mu \nu }$.\par
 As one may remember
