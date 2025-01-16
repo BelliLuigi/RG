@@ -1,5 +1,5 @@
 ## Last (important) update:
-15/01/2025 - lectures 22,23,24 are drafts.
+16/01/2025 - lectures 22,23,24 are drafts.
 
 
 
