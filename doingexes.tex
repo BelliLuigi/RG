@@ -163,6 +163,7 @@ You get $g_{\mu \nu }, g^{\mu \nu }$, then you compute all non vanishing connect
 \[
 \Gamma ^{t}_{tx }= \Gamma ^{t}_{xt}, \Gamma ^{x}_{tt}
 \]
+
 then you write down the geodesic equation for \emph{t}. Watch out for the symmetric connection, that contributes two times. \par
 \[
 	\frac{d ^{2}t}{d \lambda ^{2} } + \frac{2x}{x^{2}+\ell^{2}}\frac{d x}{d \lambda }\frac{d t}{d \lambda } = 0
@@ -254,11 +255,13 @@ g_{\mu \nu }u^{\mu }u^{\nu } = 0
 After that is straightforward. Solution is $r_{c} = 3GM$, radius of photon sphere.
 
 \subsubsection{Ex 14}
+
 I think one need to find the maximum of the effective potential, indeed:
 \begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth]{imm/ex14.png}
 \caption{From Carroll}
+
 \label{imm:ex14.png}
 \end{figure}
 
@@ -272,17 +275,113 @@ You apply the gauge transformation to $V_{\mu }$:
 				       &= \partial_{\nu }\left( h^{\nu }_{\mu } + \partial^{\nu }\xi _{\mu } + \partial_{\mu }\xi ^{\nu } \right) - \frac{1}{2}\partial_{\mu }\left( h + \partial_{\nu }\xi ^{\nu }+\partial^{\nu }\xi _{\nu } \right) = \\
 				       &= \partial_{\nu }\left( h^{\nu }_{\mu } + \partial^{\nu }\xi _{\mu } + \partial_{\mu }\xi ^{\nu } \right) - \frac{1}{2}\partial_{\mu }\left( h + 2\partial_{\nu }\xi ^{\nu } \right) = \\
 				       &= \partial_{\nu }h^{\nu }_{\mu } + \partial_{\nu }\partial^{\nu }\xi _{\mu } - \frac{1}{2} \partial_{\mu }h + \partial_{\nu }\partial_{\mu }\xi ^{\nu }- \frac{1}{2}2 \partial_{\mu }\partial_{\nu }\xi ^{\nu } = \\
-				       &= \partial_{\nu }h^{\nu}_{\mu }
+				       &= \partial_{\nu }h^{\nu}_{\mu } + \Box \xi _{\mu } - \frac{1}{2}\partial_{\mu }h
 \end{align*}
 
 So this is how the vector changes.\par
-I can make $\tilde{V}^{\mu }$ vanish if I choose a gauge such that $\Box \xi _{\nu } = -\partial_{\mu }h_{\mu }_{\nu } + \frac{1}{2}\partial_{\nu }h$
+I can make $\tilde{V}^{\mu }$ vanish if I choose a gauge such that $\Box \xi _{\nu } = -\partial_{\nu }h^{\nu }_{\mu } + \frac{1}{2}\partial_{\mu  }h$
 
 \subsubsection{Ex 16}
+First request: $K^{\mu } = \left( \omega , 0,0,k \right)$, since it propagates along $z^{+}$-axis. Wave vector is light-like
+\[
+k_{\mu }k^{\mu } = \eta _{\mu \nu } k^{\mu }k^{\nu } = 0 = -\omega ^{2} + k^{2} \to  \omega = \pm k
+\]
+we used Minkowski metric tensor because we are in linearized gravity. We choose $\omega  = + k$, since it propagates along positive direction of \emph{z-}axis.\par
 
-
+Second request: C is made of constants, is traceless and $C_{00} = C_{i0} = 0$ and the wave vector is orthogonal to $C_{\mu \nu } \to  k^{\mu }C_{\mu \nu } = 0$. this means
+\[
+C_{\mu \nu } = \begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & C_{11} & C_{12} & 0 \\
+0 & C_{21} & C_{22} & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}  = \begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & C_{11} & 0 & 0 \\
+0 & 0 & -C_{11} & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix} 
+\]
+Since we have just $h_{+}$ polarization.\par
+About the exponential, $k_{\mu }x_{\mu } = -\omega t + \omega z$, and using Euler's formula $e^{ix} = \text{cos}x + i \text{sin}x$, we get
+\[
+h^{TT}_{\mu \nu } = \begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & C & 0 & 0 \\
+0 & 0 & C & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix} \text{cos}\left( \omega \left( z-t \right) \right)	
+\]
+Third request: we do gauge transformation $h_{\mu \nu }^{TT} \to  \tilde{h}_{\mu \nu }^{TT} = h_{\mu \nu }^{TT} +\partial_{\mu }\xi _{\nu }+\partial_{\nu }\xi _{\mu }$.
+We lower index of $\xi ^{\mu } = \left( \alpha \left( x^{\mu } \right), \beta \left( x^{\mu } \right), 0,0 \right) \to  \eta ^{\mu \nu }\xi ^{\nu } = \xi _{\mu } = \left( -\alpha ,\beta ,0,0 \right)$. \par
+Now you need to compute the transformation. Since $\tilde{h}^{TT}_{\mu \nu } = h^{TT}_{\mu \nu } + \delta h^{TT}_{\mu \nu } $, with $\delta H^{TT}_{\mu \nu } = \partial_{\mu }\xi _{\nu} +\partial_{\nu }\xi _{\mu }$, we will compute just that. It's not difficult, you know that we have non-zero just $\xi _{0} =- \alpha , \xi _{1}=\beta $, and all $\partial_{\mu }$ are valid.
+\begin{equation}
+\delta h^{TT}_{\mu \nu } = \begin{pmatrix}
+2\partial_{0}\xi _{0} & \partial_{0}\xi _{1}+\partial_{1\xi _{0}} & \partial_{2}\xi _{0} & \partial_{3}\xi _{0} \\
+=_{01} & 2\partial_{1}\xi _{1} & \partial_{2}\xi _{1} & \partial_{3}\xi _{1} \\
+=_{02} & =_{12} & 0 & 0 \\
+=_{03} & =_{13} & 0 & 0
+\end{pmatrix}  = \begin{pmatrix}
+-2\partial_{0}\alpha  & \partial_{0}\beta -\partial_{1}\alpha  & -\partial_{2} \alpha   & -\partial_{3}\alpha  \\
+=_{01} & 2\partial_{1}\beta  & \partial_{2}\beta  & \partial_{3}\beta  \\
+=_{02} & =_{12} & 0 & 0 \\
+=_{03} & =_{12} & 0 & 0
+\end{pmatrix} 
+\end{equation}
+And then you get 
+\[
+\tilde{h}^{TT}_{\mu \nu } =\left( h^{TT}_{\mu \nu } + \delta h^{TT}_{\mu \nu }\right) \text{cos}\left( \omega \left( z-t \right) \right)	
+\]
+Done. 
 
 \subsubsection{Ex 17}
+
+First request: since the wave vector is light-like $k_{\mu }k^{\mu } = 0$, since we are in linearized gravity we will use the Minkowski metric tensor to pull down the index, so
+\[
+\eta _{\mu \nu }k^{\mu }k^{\nu } = - \omega ^{2} + 2k^{2} \to k = \frac{\omega }{\sqrt{2}} \to  k^{\mu } = \left( \omega , 0, \frac{\omega }{\sqrt{2}}, \frac{\omega }{\sqrt{2}} \right)
+\]
+Second request: One need to find the rotation matrix, because the requested transformation is a rotation along \emph{x-axis} of $45°$. so 
+\[
+R^{i }_{j} = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & \text{cos}45 & -\text{sin}45 \\
+0 & \text{sin}45 & \text{cos}45
+\end{pmatrix} \to  R^{\mu }_{\nu } = \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\
+0 & 0 & \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}
+\end{pmatrix} 
+\]
+Now $C_{\mu ^{\prime }\nu ^{\prime }}$ is a superposition of superposition of a “+ polarization” with amplitude $h^{\prime }_{+}$  and a “ $\times$ polarization” with amplitude $h^{\prime }_{\times}$ so will be
+\[
+c_{\mu ^{\prime }\nu ^{\prime }} = \begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & h^{\prime }_{+} & h^{\prime }_{\times} & 0 \\
+0 & h^{\prime }_{\times} & -h^{\prime }_{+} & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix} 
+\]
+We want to bring it back to our original system $\left( x,y,z \right)$, and it is possible to use the rule to transform a tensor
+\[
+C_{\mu \nu } = \Lambda ^{\alpha }_{\mu }\Lambda ^{\beta }_{\nu }C_{\alpha \beta }
+\]
+But it is far easier and more efficient to use
+\[
+C = R^{T}C^{\prime }R
+\]
+and also equivalent. 
+
+What you obtain is
+\[
+C_{\mu \nu } = \frac{1}{2} \begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & 2h^{\prime }_{+} & \frac{2}{\sqrt{2}}h^{\prime }_{\times} & - \frac{2}{\sqrt{2}}h^{\prime }_{\times} \\
+0 & =C_{12} & -h^{\prime }_{+} & h^{\prime }_{+} \\
+0 & =C_{13} & =C_{23} & -h_{+}
+\end{pmatrix} 
+\]
+
 
 \subsubsection{Ex 18}
 Derive by time
@@ -343,9 +442,37 @@ Already answered: $\rho \propto t^{-2}$
 \subsubsection{Ex 20}
 
 
+First request: Non relativistic matter has : $\rho \left( a \right) = \rho _{0}a^{-3}$. You need to remember that $\rho _{cr} = \frac{3H^{2}}{8\pi G}$. Write down
+\[
+\Omega _{M}\left( a \right) = \frac{\rho _{0}a^{-3}}{ \frac{3H^{2}}{8\pi G}} = \frac{8\pi G}{3H^{2}}\rho _{0}a^{-3} \frac{H_{0}^{2}}{H_{0}^{2}} = \Omega _{0} \frac{H_{0}^{2}}{H^{2}}a^{-3}
+\]
+so remember that 
+\[
+\Omega _{0} = \frac{8\pi G}{3 H_{0}^{2}} \rho _{0}
+\]
+Then you write down the Friedmann equation with also Cosmological constant
+\[
+H^{2} = \frac{8\pi G}{3}\rho + \frac{\Lambda }{3} = \frac{8\pi G}{3}\rho _{0}a^{-3} + \frac{\Lambda }{3}	
+\]
+Make it to \emph{today}'s values:
+\[
+H_{0}^{2} = \frac{8\pi G}{3H^{2}_{0}}\rho _{0}H_{0}^{2} + \frac{\Lambda }{3}
+\]
+After a little manipulation $ \frac{\Lambda }{3} = H_{0}^{2}\left( 1 - \Omega _{0} \right)$, and you put this back in Friedmann Equation to find $H^{2}$, so you can substitute it in $\Omega _{M}\left( a \right)$ equation.\par
 
-
-
+Second request: From \emph{acceleration equation}
+\[
+\frac{\ddot{a}}{a} = - \frac{4\pi G}{3}\left( \rho + 3p \right) + \frac{\Lambda }{3}
+\]
+since $\rho = \rho _{M}+ \rho _{\Lambda }$ and $p = p_{M} + p_{\Lambda }$, from $p = w \rho $ with $w_{M} = 0, w_{\Lambda } =- 1$, you get
+\[
+\frac{\ddot{a}}{a} = - \frac{4\pi G}{3} \left( \rho _{M} -2\rho _{\Lambda } \right)
+\]
+with $\rho _{m }= \rho _{0}a^{-3}$ and
+\[
+\rho  _{\Lambda } = \frac{\Lambda }{8\pi G} = \frac{3H_{0}^{2} \left( 1-\Omega _{0} \right)}{8\pi G}
+\]
+You also get that if you want acceleration you need $\left( \rho _{M} - 2\rho _{\Lambda } \right)<0$. Look at $\rho _{\Lambda }$ and see that $\rho _{\Lambda } = \frac{\rho _{0}}{\Omega _{0}}\left( 1-\Omega _{0} \right)$. You put this in the disequation, solve for \emph{a}, put $\Omega _{0} $ value.
 
 
 
