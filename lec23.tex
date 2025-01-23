@@ -98,30 +98,80 @@ g_{\mu \nu  } = \begin{pmatrix}
 0 & 0 & 0 & a^{2}r^{2}\text{sin}^{2}\theta 
 \end{pmatrix} 
 \]
-The inverse is a normal inverse. After this there is computation of all non-vanishing Christoffel symbols, I will skip that for now.
+The inverse is a normal inverse. We see that the metric depends on time just because $a\left( t \right)$, while it does not depend on $\phi $.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{imm/lec23_2_1.jpg}
-\caption{}
-\label{imm:lec23_2_1.jpg}
-\end{figure}
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{imm/lec23_2_2.jpg}
-\caption{}
-\label{imm:lec23_2_2.jpg}
-\end{figure}
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth]{imm/lec23_2_3.jpg}
-\caption{}
-\label{imm:lec23_2_3.jpg}
-\end{figure}
+After this there is computation of all non-vanishing Christoffel symbols.
 
+\subsection{Christoffel symbols}
+Be
+\[
+\Gamma^{\mu }_{\alpha \beta } = \frac{1}{2} g^{\mu \rho } \left[ \partial_{\alpha }g_{\beta \rho } + \partial_{\beta }g_{\rho \alpha } - \partial_{\rho }g_{\alpha \beta } \right]
+\]
+If $\mu  = 0 \to \rho = 0$, since we have diagonal matrix.
 
-
-
+\begin{gather*}
+\Gamma ^{0}_{\alpha \beta } = \frac{1}{2} g^{00} \left[ \partial_{\alpha }g_{\beta 0} + \partial_{\beta} g_{\beta 0} - \partial_{0}g_{\alpha \beta } \right] =  \\
+= -\frac{1}{2} \left[ \partial_{\alpha }g_{0\beta }+ \partial_{\beta }g_{0\alpha } -\partial_{0}g_{\alpha \beta } \right] = + \frac{1}{2} \partial_{0}g_{\alpha \beta }
+\end{gather*}
+$g_{00}$ is $-1$, to get contribution from the first two terms inside square brackets, we would need $\alpha , \beta =0$, but that would be $0$, so we'll get contribution from the last term.\par
+Now we have
+\begin{itemize}
+\item $\alpha ,\beta  = 0 \to  \Gamma ^{0}_{00} = 0$
+\item $\alpha ,\beta  = 0,i \to  \Gamma ^{0}_{0i} = \Gamma ^{0}_{i0} = 0$
+\item $\alpha ,\beta = i,j \to  \Gamma ^{0}_{ij} = \frac{1}{2}\partial_{0}g_{ij} = \frac{1}{2} \partial_{0}\left( a\left( t \right)^{2}\gamma_{ij} \right) = \dot{a}a\gamma _{ij}$
+\end{itemize}
+If $\mu  = i$
+\begin{gather*}
+\Gamma ^{i}_{\alpha \beta } = \frac{1}{2}g^{ii }\left[ \partial_{\alpha }g_{\beta i} + \partial_{\beta }g_{i \alpha } - \partial_{i}g_{\alpha \beta } \right] \\
+= \frac{1}{2 a^{2}} \left( \gamma _{ij} \right)^{-1}\left[ \partial_{\alpha }g_{\beta i} + \partial_{\beta }g_{i \alpha } - \partial_{i}g_{\alpha \beta } \right]
+\end{gather*}
+About $g^{ii}$, since $g_{ii} = a^{2}\gamma _{ij}$, then $g^{ii} = a^{-2} \gamma ^{ii} = a^{-2}\gamma _{ii}$.
+\begin{itemize}
+\item $\alpha, \beta =0 \to  \Gamma ^{i}_{00} = 0$
+\item $\alpha \beta  = j,0 \to  \Gamma ^{i}_{j0} = \frac{1}{2} g^{ii}\left[ \partial_{j}g_{i0} + \partial_{j}g_{0i} - \partial_{0}g_{ij} \right] = \frac{1}{2 a^{2}}\left( \gamma _{ij} \right)^{-1}\partial_{0}g_{ij} $, then since it's diagonal we choose $j = i$ so $\frac{1}{2a^{2}}\left( \gamma _{ii} \right)^{-1}\partial_{0}\left[ a^{2}\gamma _{ii}\delta _{ii} \right] = \frac{\dot{a}}{a} \delta _{ii}$
+\item $\alpha , \beta  = j,k \to \Gamma _{jk}^{i} = \frac{1}{2}g^{ii}\left[ \partial_{j}g_{ki} + \partial_{k}g_{ij} - \partial_{i}g_{jk} \right] = \frac{1}{2a^{2}}\left( \gamma _{ii} \right)^{-1} \left[\partial_{k}g_{ki} +\partial_{k}g_{ij} - \partial_{i}g_{jk}  \right] $
+\end{itemize}
+Now we can try to substitute $i,j,k$ and see what turns out.\par
+For $i,j,k = r$
+\[
+\Gamma ^{r}_{rr} = \frac{1}{2} \left( \gamma _{rr} \right)^{-1} \partial_{r}g_{rr} = \frac{1}{2} \left( \frac{1-\kappar^{2} }{r^{2}} \right) \frac{2\kappa r}{\left( 1-\kappa r^{2} \right)^{2}} = \frac{\kappa r}{1- \kappa r^{2}}
+\]
+Now we will work with \emph{roman indices.} If $\mu  = r$
+\[
+\Gamma ^{r}_{jk} = -\frac{1}{2}\left( \gamma _{rr} \right)^{-1}\partial_{r}\gamma_{jk}
+\]
+If \emph{j} or \emph{k} $\neq r$, then
+\[
+\Gamma ^{r}_{\phi \phi } = \Gamma ^{r}_{\theta \theta }\text{sin}^{2}\theta 
+\]
+\[
+\Gamma ^{r}_{\theta \theta } = -r\left( 1-\kappa r^{2} \right)
+\]
+What if $\mu = \theta $?
+\[
+	\Gamma ^{\theta }_{jk} = \frac{1}{2}\left( \gamma _{\theta \theta } \right)^{-1}\left[ \partial_{j}\gamma _{\theta k} + \partial_{k}\gamma _{\theta j}- \partial_{\theta }\gamma _{jk} \right]
+\]
+\[
+\to  \Gamma ^{\theta }_{\phi \phi } = \frac{1}{2} \left( \gamma _{\theta \theta } \right)^{-1} \left( -\partial_{\theta }g_{\phi \phi } \right) = \frac{1}{2}\frac{1}{r^{2}}\left( -2\text{sin}\theta \text{cos}\theta r^{2} \right) = -\text{sin}\theta \text{cos}\theta 
+\]
+\[
+\Gamma ^{\theta }_{r \theta } = \frac{1}{2} \left( \gamma _{\theta \theta } \right)^{-1}\left[ \partial_{r}\gamma _{\theta \theta } \right] = \frac{1}{r}
+\]
+If $\mu  = \phi $?
+\[
+\Gamma ^{\phi }_{\phi r} = \frac{1}{2} \frac{1}{r^{2\text{sin}^{2}\theta }}\partial_{r}\left( r^{2}\text{sin}^{2}\theta  \right) = \frac{1}{2}
+\]
+\[
+\Gamma ^{\phi }_{\phi \theta } = \frac{1}{2} \frac{1}{r^{2}\text{sin}^{2}\theta }\partial_{\theta }\left( r^{2}\text{sin}^{2}\theta  \right) = \frac{\text{cos}\theta }{\text{sin}\theta }
+\]
+\subsection{Ricci tensor}
+From $R_{\mu \nu } = R^{\alpha }_{\mu \alpha \nu }$, we get
+\begin{gather*}
+R_{tt } = - 3 \frac{\ddot{a}}{a} \\
+R_{rr} = \frac{a \ddot{a} + 2 \dot{a}^{2} +2\kappa }{1-\kappa r^{2}}\\
+R_{\theta \theta } = r^{2} \left( a \ddot{a} + 2\dot{a}^{2}+2k \right)\\
+R_{\phi \phi } = R_{\theta \theta }\text{sin}^{2}\theta 
+\end{gather*}
 
 
 

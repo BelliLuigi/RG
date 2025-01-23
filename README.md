@@ -1,5 +1,5 @@
 ## Last (important) update:
-23/01/2025 - added some of the surprise questions.
+23/01/2025 - added some of the surprise questions, done lec 23. 
 
 16/01/2025 - lectures 22,23,24 are drafts.
 
