@@ -1,3 +1,6 @@
+## Second question progress tracker
+[HEREHEREHERE](progresstracker.md)
+
 ## Last (important) update:
 23/01/2025 - added some of the surprise questions, done lec 23. 
 
